@@ -1,6 +1,6 @@
 ﻿using System;
 using log4net;
-using LogWriter4.Core.Interface;
+using ScanOpts.Core.Interface;
 
 namespace Logger
 {

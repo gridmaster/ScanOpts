@@ -4,6 +4,7 @@ using ScanOpts.Models;
 using ScanOpts.Web;
 using Ninject;
 using ScanOpts.DIModule;
+using ScanOpts.Core.Interface;
 using DIContainer;
 
 namespace ScanOpts
@@ -54,15 +55,32 @@ namespace ScanOpts
         {
 
             Console.WriteLine("Start: {0}", DateTime.Now);
-            // string symbol = "IBM";
+            string symbol = "VXX";
+            decimal date = 1487289600;
 
-            // this gets the options chain ... need the dates.
-            string uriString = "https://query2.finance.yahoo.com/v7/finance/options/UAA?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date=1487289600&corsDomain=";
-            string sPage = WebPage.Get(uriString);
+            try
+            {
+                InitializeDiContainer();
+                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Main's runnin'...{0}", Environment.NewLine);
+                // this gets the options chain ... need the dates.
+                string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
+                string sPage = WebPage.Get(String.Format(uriString, symbol, date));
 
-            JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
+                JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
 
-            Console.ReadKey();
+            }
+            catch (Exception exc)
+            {
+                DIContainer.IOCContainer.Instance.Get<ILogger>().Fatal("Sucker blew up: {0}", exc);
+            }
+            finally
+            {
+                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Main's done'...{0}", Environment.NewLine);
+                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+
+                Console.ReadKey();
+            }
         }
     }
 }
