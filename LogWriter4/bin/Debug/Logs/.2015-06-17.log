@@ -1,0 +1,24 @@
+2015-06-17 13:02:53,564 [1] INFO   
+********************************************************************************
+
+2015-06-17 13:02:53,601 [1] INFO   
+Main's runnin'...
+
+2015-06-17 13:02:53,609 [1] DEBUG  
+write something here: I did something...
+2015-06-17 13:02:53,616 [1] ERROR  Unable to process MyFakeService.DoSomething
+surveyId: 1
+token: 123
+Error Message!
+2015-06-17 13:02:53,618 [1] DEBUG  
+write something here: I did something else...
+2015-06-17 13:02:53,619 [1] ERROR  Unable to process MyOtherService.DoSomethingElse
+surveyId: 1
+token: 456
+Other Message!
+2015-06-17 13:02:53,620 [1] INFO   
+Main's done'...
+
+2015-06-17 13:02:53,620 [1] INFO   
+********************************************************************************
+
