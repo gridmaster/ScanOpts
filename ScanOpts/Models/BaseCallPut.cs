@@ -1,11 +1,18 @@
-﻿namespace ScanOpts.Models
+﻿using System;
+
+namespace ScanOpts.Models
 {
     public class BaseCallPut
     {
+        public int ID { get; set; }
+        public int QuoteID { get; set; }
+        public string Symbol { get; set; }
+        public decimal ExpirationDate { get; set; }
+        public Strike strike { get; set; }
+        public DateTime Date { get; set; }
         public PercentChange PercentChange { get; set; }
         public OpenInterest openInterest { get; set; }
         public Change change { get; set; }
-        public Strike strike { get; set; }
         public bool inTheMoney { get; set; }
         public ImpliedVolatility impliedVolatility { get; set; }
         public Volume volume { get; set; }

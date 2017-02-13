@@ -1,7 +1,14 @@
-﻿namespace ScanOpts.Models
+﻿using System;
+
+namespace ScanOpts.Models
 {
     public class Quote
     {
+        public int ID { get; set; }
+        public string Symbol { get; set; }
+        public DateTime Date { get; set; }
+        public decimal ExpirationDate { get; set; }
+        public string Exchange { get; set; }
         public string QuoteType { get; set; }
 		public string QuoteSourceName { get; set; }
         public string Currency { get; set; }
@@ -48,7 +55,8 @@
         public decimal TwoHundredDayAverageChangePercent { get; set; }
         public decimal MarketCap { get; set; }
         public decimal SourceInterval { get; set; }
-        public string Exchange { get; set; }
-        public string Symbol { get; set; }
+        public string ExpirationDates { get; set; }
+        public string Strikes { get; set; }
+        public bool HasMiniOptions { get; set; }
     }
 }

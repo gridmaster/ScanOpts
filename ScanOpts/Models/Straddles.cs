@@ -1,12 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace ScanOpts.Models
+﻿namespace ScanOpts.Models
 {
     public class Straddles
     {
-        //public List<Strike> strike { get; set; }
-        //public List<Call> call { get; set; }
-        //public List<Put> put { get; set; }
         public Strike strike { get; set; }
         public Call call { get; set; }
         public Put put { get; set; }
@@ -14,6 +9,8 @@ namespace ScanOpts.Models
 
     public class Strike : BaseRawFmt
     {
+        public int ID { get; set; }
+        public int QuoteID { get; set; }
     }
 
     public class Call : BaseCallPut
