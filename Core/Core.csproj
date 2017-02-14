@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +44,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\ILogger.cs" />
+    <Compile Include="Models\BaseCallPut.cs" />
+    <Compile Include="Models\BaseData.cs" />
+    <Compile Include="Models\BaseRawFmt.cs" />
+    <Compile Include="Models\Companies.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Daily.cs" />
+    <Compile Include="Models\Industries.cs" />
+    <Compile Include="Models\Industry.cs" />
+    <Compile Include="Models\JsonResult.cs" />
+    <Compile Include="Models\Option.cs" />
+    <Compile Include="Models\OptionChain.cs" />
+    <Compile Include="Models\Options.cs" />
+    <Compile Include="Models\Quote.cs" />
+    <Compile Include="Models\Result.cs" />
+    <Compile Include="Models\Sector.cs" />
+    <Compile Include="Models\Sectors.cs" />
+    <Compile Include="Models\Straddles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

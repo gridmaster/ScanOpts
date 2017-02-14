@@ -3,3 +3,7 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\ORMService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.xml

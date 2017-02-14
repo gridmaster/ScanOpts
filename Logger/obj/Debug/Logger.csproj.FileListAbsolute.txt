@@ -25,3 +25,5 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\log
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.xml
