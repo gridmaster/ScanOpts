@@ -1,4 +1,4 @@
-﻿namespace ScanOpts.Core.Models
+﻿namespace Core.Models
 {
     public class Straddles
     {

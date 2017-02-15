@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScanOpts.Core.Interface
+namespace Core.Interface
 {
     public interface ILogger
     {

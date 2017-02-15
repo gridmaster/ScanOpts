@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Sector : BaseData
     {

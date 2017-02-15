@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using ScanOpts.Core.Interface;
+using Core.Interface;
 
 namespace Logger
 {

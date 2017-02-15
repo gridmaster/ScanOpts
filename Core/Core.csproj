@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\ILogger.cs" />
+    <Compile Include="Interface\IOptionORMService.cs" />
+    <Compile Include="Interface\IQuoteORMService.cs" />
     <Compile Include="Models\BaseCallPut.cs" />
     <Compile Include="Models\BaseData.cs" />
     <Compile Include="Models\BaseRawFmt.cs" />

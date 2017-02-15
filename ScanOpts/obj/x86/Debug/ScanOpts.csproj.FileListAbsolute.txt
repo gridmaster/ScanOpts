@@ -1,5 +1,5 @@
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe.config
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe.config
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Core.dll
@@ -10,6 +10,7 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\l
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Logger.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Ninject.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Core.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\DIContainer.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\EntityFramework.xml
@@ -18,5 +19,6 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\l
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Logger.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\Ninject.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.exe
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.pdb

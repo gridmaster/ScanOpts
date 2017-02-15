@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Quote
     {
@@ -16,6 +16,10 @@ namespace ScanOpts.Core.Models
         public string ShortName { get; set; }
         public string Market { get; set; }
         public string LongName { get; set; }
+        public decimal PreMarketChangePercent { get; set; }
+        public decimal PreMarketTime { get; set; }
+        public decimal PreMarketPrice { get; set; }
+        public decimal PreMarketChange { get; set; }
         public decimal PostMarketChangePercent { get; set; }
         public decimal PostMarketTime { get; set; }
         public decimal PostMarketPrice { get; set; }

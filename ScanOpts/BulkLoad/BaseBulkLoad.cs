@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 //using SymbolService.Logs;
 
-namespace ScanOpts.BulkLoad
+namespace Core.BulkLoad
 {
     public class BaseBulkLoad
     {

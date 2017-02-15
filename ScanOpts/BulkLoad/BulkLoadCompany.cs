@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Runtime.InteropServices;
-using ScanOpts.Models;
+using Core.Models;
 
-namespace ScanOpts.BulkLoad
+namespace Core.BulkLoad
 {
     class BulkLoadCompany : BaseBulkLoad, IDisposable
     {

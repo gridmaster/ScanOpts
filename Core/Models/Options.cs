@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 { 
     public class Options : List<Option>
     {

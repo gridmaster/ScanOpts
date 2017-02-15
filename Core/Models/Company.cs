@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Company : BaseData, IDisposable
     {

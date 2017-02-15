@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Companies : List<Company>
     {

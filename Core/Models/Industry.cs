@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Industry : BaseData, IDisposable
     {

@@ -1,11 +1,9 @@
-﻿using Logger;
-using ScanOpts.Core.Interface;
+﻿using Core.Interface;
+using Logger;
 using Ninject.Modules;
+using ORMService;
 
-//using Services.Interface;
-//using Services.Service;
-
-namespace ScanOpts.DIModule
+namespace Core.DIModule
 {
     class DebugModule : NinjectModule
     {
@@ -13,6 +11,9 @@ namespace ScanOpts.DIModule
         {
             Bind<ILogger>().To<Log4NetLogger>().InSingletonScope()
                 .WithConstructorArgument("loglevel", LogLevelEnum.Debug);
+
+            Bind<IQuoteORMService>().To<QuoteORMService>().InSingletonScope();
+            Bind<IOptionORMService>().To<OptionORMService>().InSingletonScope();
 
             //    Bind<IMyFakeService>().To<MyFakeService>().InSingletonScope();
             //    Bind<IMyOtherService>().To<MyOtherService>().InSingletonScope();

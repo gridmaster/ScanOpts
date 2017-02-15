@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using log4net;
-using ScanOpts.Core.Interface;
+using Core.Interface;
 
 namespace Logger
 {

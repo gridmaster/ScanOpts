@@ -1,11 +1,8 @@
 ﻿using ORMService.Contracts;
-using ScanOpts.Core.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using ScanOpts.Core;
 using System.Linq.Expressions;
+using Core.Models;
 
 namespace ORMService.Models
 {

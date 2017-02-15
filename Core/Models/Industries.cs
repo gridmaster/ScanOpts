@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace ScanOpts.Core.Models
+namespace Core.Models
 {
     public class Industries : List<Industry>
     {

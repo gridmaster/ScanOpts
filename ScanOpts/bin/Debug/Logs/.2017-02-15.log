@@ -1,0 +1,61 @@
+2017-02-15 12:21:45,291 [10] INFO   Get VXX page for expiration date 1490918400
+
+2017-02-15 12:21:45,394 [10] INFO   Page captured
+
+2017-02-15 12:21:45,397 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,401 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,403 [10] INFO   Get VXX page for expiration date 1492732800
+
+2017-02-15 12:21:45,497 [10] INFO   Page captured
+
+2017-02-15 12:21:45,500 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,504 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,506 [10] INFO   Get VXX page for expiration date 1495152000
+
+2017-02-15 12:21:45,586 [10] INFO   Page captured
+
+2017-02-15 12:21:45,588 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,591 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,593 [10] INFO   Get VXX page for expiration date 1497571200
+
+2017-02-15 12:21:45,714 [10] INFO   Page captured
+
+2017-02-15 12:21:45,716 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,722 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,724 [10] INFO   Get VXX page for expiration date 1505433600
+
+2017-02-15 12:21:45,806 [10] INFO   Page captured
+
+2017-02-15 12:21:45,809 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,820 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,823 [10] INFO   Get VXX page for expiration date 1516320000
+
+2017-02-15 12:21:45,963 [10] INFO   Page captured
+
+2017-02-15 12:21:45,968 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:45,977 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:45,980 [10] INFO   Get VXX page for expiration date 1547769600
+
+2017-02-15 12:21:46,079 [10] INFO   Page captured
+
+2017-02-15 12:21:46,081 [10] INFO   Deserialize VXX
+
+2017-02-15 12:21:46,087 [10] INFO   VXX deserialized
+
+2017-02-15 12:21:46,089 [10] INFO   We're done'...
+
+2017-02-15 12:21:46,090 [10] INFO   
+********************************************************************************
+
