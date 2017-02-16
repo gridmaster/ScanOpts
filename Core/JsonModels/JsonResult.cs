@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Core.Models
+namespace Core.JsonModels
 {
     public class JsonResult
     {

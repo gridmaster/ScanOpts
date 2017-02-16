@@ -1,42 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Runtime.InteropServices;
 
-namespace Core.Models
+namespace Core.JsonModels
 {
-    public class Company : BaseData, IDisposable
+    public class Industry : BaseData, IDisposable
     {
-        public string GeneralInfoURI { get; set; }
-        public string Symbol { get; set; }
+        public string MoreInfoLink { get; set; }
 
         public string Sector { get; set; }
         public int SectorId { get; set; }
 
-        public string Industry { get; set; }
-        public int IndustryId { get; set; }
-
-        public string Exchange { get; set; }
-        public int ExchangeId { get; set; }
-
-        public Companies GetCompanies(string sector, string industry, string[] rows)
+        public Industries GetIndustries(string sector, string[] rows)
         {
-            Companies companies = new Companies();
+            Industries industries = new Industries();
 
             string[] stringSeparators = new string[] { "<td" };
-            
+
             DateTime date = DateTime.Now;
 
-            Dictionary<string, DateTime> myDic = new Dictionary<string, DateTime>();
-
-            for (int i = 5; i < rows.Length; i++)
+            for (int i = 4; i < rows.Length; i++)
             {
                 var columns = rows[i].Split(stringSeparators, StringSplitOptions.None);
 
-                Company company = new Company()
+                Industry industry = new Industry()
                 {
-                    URI = columns[1].Split('<', '>')[4].Substring(columns[1].Split('<', '>')[4].LastIndexOf("http")).Replace("\"", ""),
+                    URI = columns[1].Split('<', '>')[2].Replace("a href=", baseUri),
                     Name = columns[1].Split('<', '>')[5],
                     OneDayPriceChangePercent = ScrubData(columns[2].Split('<', '>')[3]),
                     MarketCap = columns[3].Split('<', '>')[3],
@@ -47,33 +35,21 @@ namespace Core.Models
                     PriceToBookValue = ScrubData(columns[8].Split('<', '>')[3]),
                     NetProfitMarginPercentMRQ = ScrubData(columns[9].Split('<', '>')[3]),
                     PriceToFreeCashFlowMRQ = ScrubData(columns[10].Split('<', '>')[3]),
-                    Symbol = columns[1].Split('(', ')')[1].Split('<', '>')[0] == "" ? columns[1].Split('(', ')')[1].Split('<', '>')[2] : columns[1].Split('(', ')')[1].Split('<', '>')[0],
+                    MoreInfoLink = columns[11].Split('<', '>')[4].Replace("a href=", ""),
                     Sector = sector,
                     SectorId = 0,
-                    Industry = industry,
-                    IndustryId = 0,
-                    Exchange = Exchange,
-                    ExchangeId = 0,
-                    GeneralInfoURI = columns[1].Split('<', '>')[8].LastIndexOf("http") >= 0 ? columns[1].Split('<', '>')[8].Substring(columns[1].Split('<', '>')[8].LastIndexOf("http")).Replace("\"", "") : "",
-                    Date = date,
+                    Date = date
                 };
 
-                try
-                {
-                    myDic.Add(company.Name + " " + company.Symbol, date); //  + " " + company.Symbol);
-                    companies.Add(company);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(company.Name + ": " +ex.Message);
-                }
+                industries.Add(industry);
             }
-            return companies;
+            return industries;
         }
 
         #region Implement IDisposable
 
         private IntPtr nativeResource = Marshal.AllocHGlobal(100);
+        //More Info
 
         // Dispose() calls Dispose(true)
         public void Dispose()
@@ -85,7 +61,7 @@ namespace Core.Models
         // NOTE: Leave out the finalizer altogether if this class doesn't 
         // own unmanaged resources itself, but leave the other methods
         // exactly as they are. 
-        ~Company()
+        ~Industry()
         {
             // Finalizer calls Dispose(false)
             Dispose(false);
@@ -105,7 +81,6 @@ namespace Core.Models
                 nativeResource = IntPtr.Zero;
             }
         }
-#endregion Implement IDisposable
-
+        #endregion Implement IDisposable
     }
 }

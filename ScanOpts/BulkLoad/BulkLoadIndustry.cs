@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Runtime.InteropServices;
-using Core.Models;
+using Core.JsonModels;
 
 namespace Core.BulkLoad
 {

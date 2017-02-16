@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Core.Models
+namespace Core.JsonModels
 {
     public class OptionChain
     {

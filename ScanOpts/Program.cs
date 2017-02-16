@@ -1,6 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
-using Core.Models;
+using Core.JsonModels;
 using Core.Web;
 using Ninject;
 using Core.DIModule;
@@ -96,7 +96,7 @@ namespace Core
 
                     List<Straddles> wtf = optionChain.OptionChain.Result[0].Options[0].Straddles;
 
-                    IOCContainer.Instance.Get<IOptionORMService>().ExtractAndSaveOptionChainForExpireDate(optionChain.OptionChain.Result[0].Options[0].Straddles);
+                    IOCContainer.Instance.Get<IOptionORMService>().ExtractAndSaveOptionChainForExpireDate(quote.Symbol, optionChain.OptionChain.Result[0].Options[0].Straddles);
 
                 }
             }

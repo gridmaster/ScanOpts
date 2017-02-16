@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace Core.Models
+namespace Core.JsonModels
 {
     public class Sector : BaseData
     {

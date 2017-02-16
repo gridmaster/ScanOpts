@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Core.Models;
+using Core.JsonModels;
 
 namespace ORMService.Models
 {

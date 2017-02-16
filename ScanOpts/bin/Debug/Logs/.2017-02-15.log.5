@@ -1,63 +1,75 @@
-2017-02-15 08:51:41,059 [7] INFO   
+2017-02-15 12:04:51,538 [10] INFO   DIContainer initialized
+
+2017-02-15 12:04:51,551 [10] INFO   Get VXX page 
+
+2017-02-15 12:04:52,064 [10] INFO   Page captured
+
+2017-02-15 12:04:52,066 [10] INFO   Deserialize VXX
+
+2017-02-15 12:04:52,453 [10] INFO   VXX deserialized
+
+2017-02-15 12:05:02,817 [10] INFO   Get VXX page for expiration date 1487289600
+
+2017-02-15 12:05:04,065 [10] INFO   Page captured
+
+2017-02-15 12:05:04,784 [10] INFO   Deserialize VXX
+
+2017-02-15 12:05:06,093 [10] INFO   VXX deserialized
+
+2017-02-15 12:15:38,357 [9] INFO   
 ********************************************************************************
-2017-02-15 08:51:41,258 [7] INFO   DIContainer initialized
+2017-02-15 12:15:38,403 [9] INFO   DIContainer initialized
 
-2017-02-15 08:51:41,261 [7] INFO   Get VXX page 
+2017-02-15 12:15:38,414 [9] INFO   Get VXX page 
 
-2017-02-15 08:51:42,007 [7] INFO   Page captured
+2017-02-15 12:15:38,752 [9] INFO   Page captured
 
-2017-02-15 08:51:42,010 [7] INFO   Deserialize VXX
+2017-02-15 12:15:38,753 [9] INFO   Deserialize VXX
 
-2017-02-15 08:51:42,389 [7] INFO   VXX deserialized
+2017-02-15 12:15:39,037 [9] INFO   VXX deserialized
 
-2017-02-15 09:18:02,477 [7] INFO   We're done'...
+2017-02-15 12:15:39,038 [9] INFO   Get VXX page for expiration date 1487289600
 
-2017-02-15 09:18:02,482 [7] INFO   
+2017-02-15 12:15:39,149 [9] INFO   Page captured
+
+2017-02-15 12:15:39,150 [9] INFO   Deserialize VXX
+
+2017-02-15 12:15:39,201 [9] INFO   VXX deserialized
+
+2017-02-15 12:16:17,365 [8] INFO   
 ********************************************************************************
+2017-02-15 12:16:17,402 [8] INFO   DIContainer initialized
 
-2017-02-15 09:33:39,929 [8] INFO   
-********************************************************************************
-2017-02-15 09:33:39,964 [8] INFO   DIContainer initialized
+2017-02-15 12:16:17,404 [8] INFO   Get VXX page 
 
-2017-02-15 09:33:39,965 [8] INFO   Get VXX page 
+2017-02-15 12:16:17,962 [8] INFO   Page captured
 
-2017-02-15 09:33:40,375 [8] INFO   Page captured
+2017-02-15 12:16:17,965 [8] INFO   Deserialize VXX
 
-2017-02-15 09:33:40,377 [8] INFO   Deserialize VXX
+2017-02-15 12:16:18,291 [8] INFO   VXX deserialized
 
-2017-02-15 09:33:40,683 [8] INFO   VXX deserialized
+2017-02-15 12:16:18,294 [8] INFO   Get VXX page for expiration date 1487289600
 
-2017-02-15 09:34:41,427 [8] INFO   We're done'...
+2017-02-15 12:16:18,445 [8] INFO   Page captured
 
-2017-02-15 09:34:41,429 [8] INFO   
-********************************************************************************
+2017-02-15 12:16:18,448 [8] INFO   Deserialize VXX
 
-2017-02-15 10:21:19,654 [9] INFO   
-********************************************************************************
-2017-02-15 10:21:19,688 [9] INFO   DIContainer initialized
+2017-02-15 12:16:18,494 [8] INFO   VXX deserialized
 
-2017-02-15 10:21:19,689 [9] INFO   Get VXX page 
+2017-02-15 12:18:27,857 [8] FATAL  Sucker blew up: Ninject.ActivationException: Error activating IOptionORMService
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  1) Request for IOptionORMService
 
-2017-02-15 10:21:20,744 [9] INFO   Page captured
+Suggestions:
+  1) Ensure that you have defined a binding for IOptionORMService.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
 
-2017-02-15 10:21:20,745 [9] INFO   Deserialize VXX
-
-2017-02-15 10:21:21,045 [9] INFO   VXX deserialized
-
-2017-02-15 10:43:36,197 [9] INFO   Page captured
-
-2017-02-15 10:43:36,905 [9] INFO   Deserialize VXX
-
-2017-02-15 10:43:38,532 [9] INFO   VXX deserialized
-
-2017-02-15 10:47:58,111 [9] INFO   We're done'...
-
-2017-02-15 10:47:58,116 [9] INFO   
-********************************************************************************
-
-2017-02-15 11:28:42,108 [9] INFO   
-********************************************************************************
-2017-02-15 11:28:42,154 [9] INFO   DIContainer initialized
-
-2017-02-15 11:28:42,155 [9] INFO   Get VXX page 
-
+   at Ninject.KernelBase.Resolve(IRequest request)
+   at Ninject.ResolutionExtensions.GetResolutionIterator(IResolutionRoot root, Type service, Func`2 constraint, IEnumerable`1 parameters, Boolean isOptional, Boolean isUnique)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters)
+   at DIContainer.IOCContainer.Get[T]() in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\IOCContainer.cs:line 40
+   at Core.Program.Main(String[] args)

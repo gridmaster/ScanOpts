@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Core.Models
+namespace Core.JsonModels
 { 
     public class Options : List<Option>
     {
