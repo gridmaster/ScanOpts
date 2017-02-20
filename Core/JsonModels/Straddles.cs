@@ -2,6 +2,7 @@
 {
     public class Straddles
     {
+        public int Id { get; set; }
         public Strike strike { get; set; }
         public Call call { get; set; }
         public Put put { get; set; }

@@ -1,0 +1,47 @@
+2017-02-18 12:19:36,332 [8] INFO   
+********************************************************************************
+2017-02-18 12:19:36,663 [8] INFO   DIContainer initialized
+
+2017-02-18 12:19:36,664 [8] INFO   Get VXX page 
+
+2017-02-18 12:19:40,883 [8] INFO   Page captured
+
+2017-02-18 12:19:40,884 [8] INFO   Deserialize VXX
+
+2017-02-18 12:19:41,201 [8] INFO   VXX deserialized
+
+2017-02-18 12:19:41,203 [8] INFO   Get VXX page for expiration date 1487894400
+
+2017-02-18 12:19:41,333 [8] INFO   Page captured
+
+2017-02-18 12:19:41,334 [8] INFO   Deserialize VXX
+
+2017-02-18 12:19:41,381 [8] INFO   VXX deserialized
+
+2017-02-18 12:25:43,763 [8] FATAL  Sucker blew up: System.InvalidOperationException: The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer' registered in the application config file for the ADO.NET provider with invariant name 'System.Data.SqlClient' could not be loaded. Make sure that the assembly-qualified name is used and that the assembly is available to the running application. See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
+   at System.Data.Entity.Infrastructure.DependencyResolution.ProviderServicesFactory.GetInstance(String providerTypeName, String providerInvariantName)
+   at System.Data.Entity.Internal.AppConfig.<.ctor>b__2(ProviderElement e)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Internal.AppConfig.<.ctor>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.AppConfig.get_DbProviderServices()
+   at System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.RegisterDbProviderServices()
+   at System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.GetServiceFactory(Type type, String name)
+   at System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.<>c__DisplayClass1.<GetService>b__0(Tuple`2 t)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.GetService(Type type, Object key)
+   at System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.<>c__DisplayClass3.<GetService>b__0(IDbDependencyResolver r)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.GetService(Type type, Object key)
+   at System.Data.Entity.Infrastructure.DependencyResolution.CompositeResolver`2.GetService(Type type, Object key)
+   at System.Data.Entity.Infrastructure.DependencyResolution.DbDependencyResolverExtensions.GetService[T](IDbDependencyResolver resolver)
+   at System.Data.Entity.DbContext.InitializeLazyInternalContext(IInternalConnection internalConnection, DbCompiledModel model)
+   at System.Data.Entity.DbContext..ctor()
+   at ORMService.Context.ScanOptsContext..ctor()
+   at ORMService.QuoteORMService.Add(Quote entity) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\QuoteORMService.cs:line 100
+   at Core.Program.Main(String[] args) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\Program.cs:line 95

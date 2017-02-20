@@ -4,10 +4,11 @@ using System.Linq.Expressions;
 using Core.Interface;
 using Core.JsonModels;
 using ORMService.Contracts;
+using ORMService.Context;
 
 namespace ORMService
 {
-    public class QuoteORMService : IRepository<Quote>, IQuoteORMService
+    public class QuoteORMService : IQuoteORMService
     {
 
         public Quote ExtractAndSaveQuoteFromOptionChain(JsonResult optionChain)
@@ -40,7 +41,7 @@ namespace ORMService
                 FullExchangeName = result.Quote.FullExchangeName,
                 GmtOffSetMilliseconds = result.Quote.GmtOffSetMilliseconds,
                 HasMiniOptions = result.Quote.HasMiniOptions,
-                ID = result.Quote.ID,
+                Id = result.Quote.Id,
                 LongName = result.Quote.LongName,
                 Market = result.Quote.Market,
                 MarketCap = result.Quote.MarketCap,
@@ -94,9 +95,15 @@ namespace ORMService
             throw new NotImplementedException();
         }
 
-        public void Add(Quote entity)
+        public int Add(Quote entity)
         {
-            throw new NotImplementedException();
+            using (var db = new ScanOptsContext())
+            {
+                db.Quotes.Add(entity);
+                db.SaveChanges();
+            }
+
+            return entity.Id;
         }
 
         public void Delete(Quote entity)

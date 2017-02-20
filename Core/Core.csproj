@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\ICallPutORMService.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IQuoteORMService.cs" />
     <Compile Include="JsonModels\BaseCallPut.cs" />
     <Compile Include="JsonModels\BaseData.cs" />
     <Compile Include="JsonModels\BaseRawFmt.cs" />
+    <Compile Include="JsonModels\CallPut.cs" />
     <Compile Include="JsonModels\Companies.cs" />
     <Compile Include="JsonModels\Company.cs" />
     <Compile Include="JsonModels\Industries.cs" />

@@ -4,7 +4,7 @@ namespace Core.JsonModels
 {
     public class Quote
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Symbol { get; set; }
         public DateTime Date { get; set; }
         public decimal ExpirationDate { get; set; }

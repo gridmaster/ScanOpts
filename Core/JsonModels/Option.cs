@@ -6,6 +6,7 @@ namespace Core.JsonModels
 {
     public class Option
     {
+        public int Id { get; set; }
         public string Symbol { get; set; }
         public DateTime Date { get; set; }
         public long ExpirationDate { get; set; }

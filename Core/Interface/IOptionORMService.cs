@@ -5,6 +5,6 @@ namespace Core.Interface
 {
     public interface IOptionORMService
     {
-        void ExtractAndSaveOptionChainForExpireDate(string symbol, List<Straddles> straddles);
+        List<CallPut> ExtractCallsAndPutsFromOptionChain(string symbol, int newId, List<Straddles> straddles);
     }
 }

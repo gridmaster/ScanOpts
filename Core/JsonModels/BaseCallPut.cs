@@ -4,8 +4,8 @@ namespace Core.JsonModels
 {
     public class BaseCallPut
     {
-        public int ID { get; set; }
-        public int QuoteID { get; set; }
+        public int Id { get; set; }
+        public int QuoteId { get; set; }
         public string Symbol { get; set; }
         public decimal ExpirationDate { get; set; }
         public Strike strike { get; set; }

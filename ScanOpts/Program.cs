@@ -56,7 +56,24 @@ namespace Core
         {
 
             Console.WriteLine("Start: {0}", DateTime.Now);
-            string symbol = "VXX";
+            List<string> symbols = new List<string> {
+                "VXX",
+                "SPY",
+                "BAC",
+                "XLV",
+                "QQQ",
+                "AAPL",
+                "JNJ",
+                "PG",
+                "TSLA",
+                "FB",
+                "AMZN",
+                "CSCO",
+                "INTC",
+                "DIS",
+                "PIR"
+            };
+
             decimal date = 1487200000; //  1487289600;
 
             try
@@ -65,39 +82,46 @@ namespace Core
                 InitializeDiContainer();
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("DIContainer initialized{0}", Environment.NewLine);
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page {0}", Environment.NewLine, symbol);
-                // this gets the options chain ... need the dates.
-                string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
-                string sPage = WebPage.Get(String.Format(uriString, symbol, date));
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("Page captured{1}", symbol, Environment.NewLine);
 
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}{1}", symbol, Environment.NewLine);
-                JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized{1}", symbol, Environment.NewLine);
-
-                List<decimal> expireDates = optionChain.OptionChain.Result[0].ExpirationDates;
-
-                Quote quote = new Quote();
-
-                foreach(decimal eDate in expireDates)
+                foreach (string symbol in symbols)
                 {
-                    IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page for expiration date {2}{0}", Environment.NewLine, symbol, eDate);
-                    sPage = WebPage.Get(String.Format(uriString, symbol, eDate));
+                    IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page {0}", Environment.NewLine, symbol);
+                    // this gets the options chain ... need the dates.
+                    string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
+                    string sPage = WebPage.Get(String.Format(uriString, symbol, date));
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Page captured{1}", symbol, Environment.NewLine);
 
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}{1}", symbol, Environment.NewLine);
-                    optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
+                    JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized{1}", symbol, Environment.NewLine);
 
-                    if (String.IsNullOrEmpty(quote.Symbol))
+                    List<decimal> expireDates = optionChain.OptionChain.Result[0].ExpirationDates;
+
+                    Quote quote = new Quote();
+                    int newId = 0;
+
+                    foreach (decimal eDate in expireDates)
                     {
-                        quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
+                        IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page for expiration date {2}{0}", Environment.NewLine, symbol, eDate);
+                        sPage = WebPage.Get(String.Format(uriString, symbol, eDate));
+                        IOCContainer.Instance.Get<ILogger>().InfoFormat("Page captured{1}", symbol, Environment.NewLine);
+
+                        IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}{1}", symbol, Environment.NewLine);
+                        optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
+                        IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized{1}", symbol, Environment.NewLine);
+
+                        if (String.IsNullOrEmpty(quote.Symbol))
+                        {
+                            quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
+                            newId = IOCContainer.Instance.Get<IQuoteORMService>().Add(quote);
+                        }
+
+                        List<Straddles> wtf = optionChain.OptionChain.Result[0].Options[0].Straddles;
+
+                        List<CallPut> callputs = IOCContainer.Instance.Get<IOptionORMService>().ExtractCallsAndPutsFromOptionChain(quote.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
+
+                        IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
                     }
-
-                    List<Straddles> wtf = optionChain.OptionChain.Result[0].Options[0].Straddles;
-
-                    IOCContainer.Instance.Get<IOptionORMService>().ExtractAndSaveOptionChainForExpireDate(quote.Symbol, optionChain.OptionChain.Result[0].Options[0].Straddles);
-
                 }
             }
             catch (Exception exc)
@@ -111,6 +135,7 @@ namespace Core
 
                 Console.ReadKey();
             }
+
         }
     }
 }

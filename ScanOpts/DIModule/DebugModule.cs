@@ -14,6 +14,7 @@ namespace Core.DIModule
 
             Bind<IQuoteORMService>().To<QuoteORMService>().InSingletonScope();
             Bind<IOptionORMService>().To<OptionORMService>().InSingletonScope();
+            Bind<ICallPutORMService>().To<CallPutORMService>().InSingletonScope();
 
             //    Bind<IMyFakeService>().To<MyFakeService>().InSingletonScope();
             //    Bind<IMyOtherService>().To<MyOtherService>().InSingletonScope();
