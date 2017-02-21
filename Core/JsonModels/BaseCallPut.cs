@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Core.JsonModels
 {
@@ -6,8 +8,11 @@ namespace Core.JsonModels
     {
         public int Id { get; set; }
         public int QuoteId { get; set; }
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(60)]
         public string Symbol { get; set; }
-        public decimal ExpirationDate { get; set; }
+        [Column(TypeName = "INT")]
+        public int ExpirationDate { get; set; }
         public Strike strike { get; set; }
         public DateTime Date { get; set; }
         public PercentChange PercentChange { get; set; }
@@ -44,7 +49,7 @@ namespace Core.JsonModels
     {
     }
 
-    public class Volume : BaseRawFmt
+    public class Volume : BaseRawFmtDate
     {
     }
 
@@ -52,11 +57,11 @@ namespace Core.JsonModels
     {
     }
 
-    public class LastTradeDate : BaseRawFmt
+    public class LastTradeDate : BaseRawFmtDate
     {
     }
 
-    public class Expiration : BaseRawFmt
+    public class Expiration : BaseRawFmtDate
     {
     }
 

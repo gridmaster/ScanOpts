@@ -1,3 +1,4 @@
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\ORMService.dll.config
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\ORMService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\ORMService.pdb
@@ -14,6 +15,5 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Ninject.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.pdb

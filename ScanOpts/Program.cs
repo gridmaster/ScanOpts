@@ -71,7 +71,28 @@ namespace Core
                 "CSCO",
                 "INTC",
                 "DIS",
-                "PIR"
+                "PIR",
+                "XIV",
+                "BABA",
+                "VS",
+                "UAA",
+                "CAT",
+                "V",
+                "T",
+                "PEP",
+                "K",
+                "KO",
+                "KLAC",
+                "X",
+                "SBUX",
+                "MAR",
+                "UNP",
+                "XOP",
+                "MAT",
+                "XLF",
+                "EEM",
+                "EFA",
+                "SYF"
             };
 
             decimal date = 1487200000; //  1487289600;
@@ -113,6 +134,7 @@ namespace Core
                         if (String.IsNullOrEmpty(quote.Symbol))
                         {
                             quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
+                            var result = JsonConvert.SerializeObject(quote);
                             newId = IOCContainer.Instance.Get<IQuoteORMService>().Add(quote);
                         }
 

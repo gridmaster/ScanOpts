@@ -97,13 +97,22 @@ namespace ORMService
 
         public int Add(Quote entity)
         {
-            using (var db = new ScanOptsContext())
+            try
             {
-                db.Quotes.Add(entity);
-                db.SaveChanges();
+                using (var db = new ScanOptsContext())
+                {
+                    db.Quotes.Add(entity);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                var i = 0;
+                i++;
             }
 
             return entity.Id;
+
         }
 
         public void Delete(Quote entity)
