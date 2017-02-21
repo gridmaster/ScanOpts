@@ -74,7 +74,7 @@ namespace Core
                 "PIR",
                 "XIV",
                 "BABA",
-                "VS",
+                "VZ",
                 "UAA",
                 "CAT",
                 "V",
@@ -92,7 +92,8 @@ namespace Core
                 "XLF",
                 "EEM",
                 "EFA",
-                "SYF"
+                "SYF",
+                "VSAT"
             };
 
             decimal date = 1487200000; //  1487289600;
@@ -104,7 +105,7 @@ namespace Core
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("DIContainer initialized{0}", Environment.NewLine);
 
-                foreach (string symbol in symbols)
+                foreach (string symbol in symbols) 
                 {
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page {0}", Environment.NewLine, symbol);
                     // this gets the options chain ... need the dates.
@@ -134,7 +135,7 @@ namespace Core
                         if (String.IsNullOrEmpty(quote.Symbol))
                         {
                             quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
-                            var result = JsonConvert.SerializeObject(quote);
+                            //var result = JsonConvert.SerializeObject(quote);
                             newId = IOCContainer.Instance.Get<IQuoteORMService>().Add(quote);
                         }
 
