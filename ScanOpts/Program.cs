@@ -93,7 +93,11 @@ namespace Core
                 "EEM",
                 "EFA",
                 "SYF",
-                "VSAT"
+                "VSAT",
+                "IWM",
+                "SSO",
+                "SDS",
+                "S"
             };
 
             decimal date = 1487200000; //  1487289600;

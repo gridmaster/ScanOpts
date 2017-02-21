@@ -3792,3 +3792,476 @@
 2017-02-21 11:54:16,376 [10] INFO   
 ********************************************************************************
 
+2017-02-21 12:36:30,617 [9] INFO   
+********************************************************************************
+2017-02-21 12:36:30,671 [9] INFO   DIContainer initialized
+
+2017-02-21 12:36:30,672 [9] INFO   Get IWM page 
+
+2017-02-21 12:36:31,163 [9] INFO   Page captured
+
+2017-02-21 12:36:31,164 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:31,484 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:31,487 [9] INFO   Get IWM page for expiration date 1487894400
+
+2017-02-21 12:36:31,619 [9] INFO   Page captured
+
+2017-02-21 12:36:31,623 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:31,676 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:35,440 [9] INFO   Get IWM page for expiration date 1488499200
+
+2017-02-21 12:36:35,684 [9] INFO   Page captured
+
+2017-02-21 12:36:35,687 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:35,695 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:35,960 [9] INFO   Get IWM page for expiration date 1489104000
+
+2017-02-21 12:36:36,072 [9] INFO   Page captured
+
+2017-02-21 12:36:36,080 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:36,088 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:36,316 [9] INFO   Get IWM page for expiration date 1489708800
+
+2017-02-21 12:36:36,445 [9] INFO   Page captured
+
+2017-02-21 12:36:36,448 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:36,476 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:36,909 [9] INFO   Get IWM page for expiration date 1490313600
+
+2017-02-21 12:36:37,021 [9] INFO   Page captured
+
+2017-02-21 12:36:37,023 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:37,029 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:37,182 [9] INFO   Get IWM page for expiration date 1490918400
+
+2017-02-21 12:36:37,292 [9] INFO   Page captured
+
+2017-02-21 12:36:37,295 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:37,304 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:37,551 [9] INFO   Get IWM page for expiration date 1492732800
+
+2017-02-21 12:36:37,661 [9] INFO   Page captured
+
+2017-02-21 12:36:37,663 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:37,673 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:37,925 [9] INFO   Get IWM page for expiration date 1495152000
+
+2017-02-21 12:36:38,041 [9] INFO   Page captured
+
+2017-02-21 12:36:38,044 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:38,052 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:38,309 [9] INFO   Get IWM page for expiration date 1497571200
+
+2017-02-21 12:36:38,493 [9] INFO   Page captured
+
+2017-02-21 12:36:38,497 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:38,521 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:38,947 [9] INFO   Get IWM page for expiration date 1498780800
+
+2017-02-21 12:36:39,070 [9] INFO   Page captured
+
+2017-02-21 12:36:39,072 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:39,080 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:39,307 [9] INFO   Get IWM page for expiration date 1503014400
+
+2017-02-21 12:36:39,418 [9] INFO   Page captured
+
+2017-02-21 12:36:39,420 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:39,429 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:39,671 [9] INFO   Get IWM page for expiration date 1505433600
+
+2017-02-21 12:36:39,864 [9] INFO   Page captured
+
+2017-02-21 12:36:39,867 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:39,884 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:40,262 [9] INFO   Get IWM page for expiration date 1506643200
+
+2017-02-21 12:36:40,364 [9] INFO   Page captured
+
+2017-02-21 12:36:40,367 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:40,374 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:40,559 [9] INFO   Get IWM page for expiration date 1510876800
+
+2017-02-21 12:36:40,634 [9] INFO   Page captured
+
+2017-02-21 12:36:40,636 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:40,641 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:40,766 [9] INFO   Get IWM page for expiration date 1513296000
+
+2017-02-21 12:36:40,878 [9] INFO   Page captured
+
+2017-02-21 12:36:40,881 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:40,888 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:41,084 [9] INFO   Get IWM page for expiration date 1514505600
+
+2017-02-21 12:36:41,165 [9] INFO   Page captured
+
+2017-02-21 12:36:41,166 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:41,171 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:41,281 [9] INFO   Get IWM page for expiration date 1516320000
+
+2017-02-21 12:36:41,461 [9] INFO   Page captured
+
+2017-02-21 12:36:41,463 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:41,476 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:42,141 [9] INFO   Get IWM page for expiration date 1521158400
+
+2017-02-21 12:36:42,308 [9] INFO   Page captured
+
+2017-02-21 12:36:42,310 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:42,316 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:42,503 [9] INFO   Get IWM page for expiration date 1529020800
+
+2017-02-21 12:36:42,674 [9] INFO   Page captured
+
+2017-02-21 12:36:42,676 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:42,684 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:42,928 [9] INFO   Get IWM page for expiration date 1537488000
+
+2017-02-21 12:36:43,023 [9] INFO   Page captured
+
+2017-02-21 12:36:43,026 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:43,035 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:43,313 [9] INFO   Get IWM page for expiration date 1546214400
+
+2017-02-21 12:36:43,463 [9] INFO   Page captured
+
+2017-02-21 12:36:43,465 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:43,470 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:43,492 [9] INFO   Get IWM page for expiration date 1547769600
+
+2017-02-21 12:36:43,593 [9] INFO   Page captured
+
+2017-02-21 12:36:43,598 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:43,609 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:44,322 [9] INFO   Get IWM page for expiration date 1771632000
+
+2017-02-21 12:36:44,576 [9] INFO   Page captured
+
+2017-02-21 12:36:44,578 [9] INFO   Deserialize IWM
+
+2017-02-21 12:36:44,580 [9] INFO   IWM deserialized
+
+2017-02-21 12:36:44,583 [9] INFO   Get SSO page 
+
+2017-02-21 12:36:44,684 [9] INFO   Page captured
+
+2017-02-21 12:36:44,689 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:44,694 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:44,698 [9] INFO   Get SSO page for expiration date 1487894400
+
+2017-02-21 12:36:44,790 [9] INFO   Page captured
+
+2017-02-21 12:36:44,792 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:44,798 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:45,155 [9] INFO   Get SSO page for expiration date 1488499200
+
+2017-02-21 12:36:45,256 [9] INFO   Page captured
+
+2017-02-21 12:36:45,258 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:45,263 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:45,456 [9] INFO   Get SSO page for expiration date 1489104000
+
+2017-02-21 12:36:45,533 [9] INFO   Page captured
+
+2017-02-21 12:36:45,536 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:45,542 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:45,881 [9] INFO   Get SSO page for expiration date 1489708800
+
+2017-02-21 12:36:46,076 [9] INFO   Page captured
+
+2017-02-21 12:36:46,079 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:46,087 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:46,283 [9] INFO   Get SSO page for expiration date 1490313600
+
+2017-02-21 12:36:46,351 [9] INFO   Page captured
+
+2017-02-21 12:36:46,354 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:46,358 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:46,412 [9] INFO   Get SSO page for expiration date 1490918400
+
+2017-02-21 12:36:46,481 [9] INFO   Page captured
+
+2017-02-21 12:36:46,483 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:46,488 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:46,586 [9] INFO   Get SSO page for expiration date 1497571200
+
+2017-02-21 12:36:46,676 [9] INFO   Page captured
+
+2017-02-21 12:36:46,678 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:46,684 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:46,913 [9] INFO   Get SSO page for expiration date 1505433600
+
+2017-02-21 12:36:47,007 [9] INFO   Page captured
+
+2017-02-21 12:36:47,010 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:47,014 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:47,120 [9] INFO   Get SSO page for expiration date 1516320000
+
+2017-02-21 12:36:47,215 [9] INFO   Page captured
+
+2017-02-21 12:36:47,218 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:47,223 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:47,365 [9] INFO   Get SSO page for expiration date 1547769600
+
+2017-02-21 12:36:47,427 [9] INFO   Page captured
+
+2017-02-21 12:36:47,430 [9] INFO   Deserialize SSO
+
+2017-02-21 12:36:47,435 [9] INFO   SSO deserialized
+
+2017-02-21 12:36:47,513 [9] INFO   Get SDS page 
+
+2017-02-21 12:36:47,565 [9] INFO   Page captured
+
+2017-02-21 12:36:47,566 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:47,568 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:47,570 [9] INFO   Get SDS page for expiration date 1487894400
+
+2017-02-21 12:36:47,622 [9] INFO   Page captured
+
+2017-02-21 12:36:47,624 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:47,628 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:47,669 [9] INFO   Get SDS page for expiration date 1488499200
+
+2017-02-21 12:36:47,722 [9] INFO   Page captured
+
+2017-02-21 12:36:47,725 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:47,729 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:47,776 [9] INFO   Get SDS page for expiration date 1489104000
+
+2017-02-21 12:36:47,824 [9] INFO   Page captured
+
+2017-02-21 12:36:47,826 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:47,828 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:47,843 [9] INFO   Get SDS page for expiration date 1489708800
+
+2017-02-21 12:36:47,919 [9] INFO   Page captured
+
+2017-02-21 12:36:47,921 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:47,924 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:47,997 [9] INFO   Get SDS page for expiration date 1490313600
+
+2017-02-21 12:36:48,043 [9] INFO   Page captured
+
+2017-02-21 12:36:48,045 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,047 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,068 [9] INFO   Get SDS page for expiration date 1490918400
+
+2017-02-21 12:36:48,123 [9] INFO   Page captured
+
+2017-02-21 12:36:48,125 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,128 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,158 [9] INFO   Get SDS page for expiration date 1497571200
+
+2017-02-21 12:36:48,250 [9] INFO   Page captured
+
+2017-02-21 12:36:48,251 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,256 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,429 [9] INFO   Get SDS page for expiration date 1505433600
+
+2017-02-21 12:36:48,482 [9] INFO   Page captured
+
+2017-02-21 12:36:48,484 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,487 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,514 [9] INFO   Get SDS page for expiration date 1516320000
+
+2017-02-21 12:36:48,597 [9] INFO   Page captured
+
+2017-02-21 12:36:48,599 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,603 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,717 [9] INFO   Get SDS page for expiration date 1547769600
+
+2017-02-21 12:36:48,786 [9] INFO   Page captured
+
+2017-02-21 12:36:48,787 [9] INFO   Deserialize SDS
+
+2017-02-21 12:36:48,791 [9] INFO   SDS deserialized
+
+2017-02-21 12:36:48,861 [9] INFO   Get S page 
+
+2017-02-21 12:36:48,907 [9] INFO   Page captured
+
+2017-02-21 12:36:48,908 [9] INFO   Deserialize S
+
+2017-02-21 12:36:48,910 [9] INFO   S deserialized
+
+2017-02-21 12:36:48,915 [9] INFO   Get S page for expiration date 1487894400
+
+2017-02-21 12:36:48,985 [9] INFO   Page captured
+
+2017-02-21 12:36:48,987 [9] INFO   Deserialize S
+
+2017-02-21 12:36:48,989 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,043 [9] INFO   Get S page for expiration date 1488499200
+
+2017-02-21 12:36:49,158 [9] INFO   Page captured
+
+2017-02-21 12:36:49,161 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,165 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,195 [9] INFO   Get S page for expiration date 1489104000
+
+2017-02-21 12:36:49,250 [9] INFO   Page captured
+
+2017-02-21 12:36:49,252 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,255 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,297 [9] INFO   Get S page for expiration date 1489708800
+
+2017-02-21 12:36:49,370 [9] INFO   Page captured
+
+2017-02-21 12:36:49,372 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,374 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,404 [9] INFO   Get S page for expiration date 1490313600
+
+2017-02-21 12:36:49,462 [9] INFO   Page captured
+
+2017-02-21 12:36:49,464 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,467 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,498 [9] INFO   Get S page for expiration date 1490918400
+
+2017-02-21 12:36:49,543 [9] INFO   Page captured
+
+2017-02-21 12:36:49,545 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,547 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,566 [9] INFO   Get S page for expiration date 1495152000
+
+2017-02-21 12:36:49,635 [9] INFO   Page captured
+
+2017-02-21 12:36:49,637 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,640 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,696 [9] INFO   Get S page for expiration date 1497571200
+
+2017-02-21 12:36:49,779 [9] INFO   Page captured
+
+2017-02-21 12:36:49,781 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,785 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,850 [9] INFO   Get S page for expiration date 1503014400
+
+2017-02-21 12:36:49,912 [9] INFO   Page captured
+
+2017-02-21 12:36:49,916 [9] INFO   Deserialize S
+
+2017-02-21 12:36:49,919 [9] INFO   S deserialized
+
+2017-02-21 12:36:49,962 [9] INFO   Get S page for expiration date 1516320000
+
+2017-02-21 12:36:50,034 [9] INFO   Page captured
+
+2017-02-21 12:36:50,036 [9] INFO   Deserialize S
+
+2017-02-21 12:36:50,040 [9] INFO   S deserialized
+
+2017-02-21 12:36:50,113 [9] INFO   Get S page for expiration date 1547769600
+
+2017-02-21 12:36:50,210 [9] INFO   Page captured
+
+2017-02-21 12:36:50,212 [9] INFO   Deserialize S
+
+2017-02-21 12:36:50,215 [9] INFO   S deserialized
+
+2017-02-21 12:36:50,238 [9] INFO   We're done'...
+
+2017-02-21 12:36:50,240 [9] INFO   
+********************************************************************************
+
