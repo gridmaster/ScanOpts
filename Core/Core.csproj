@@ -56,6 +56,7 @@
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IQuoteORMService.cs" />
+    <Compile Include="Interface\ISymbolORMService.cs" />
     <Compile Include="JsonModels\BaseCallPut.cs" />
     <Compile Include="JsonModels\BaseData.cs" />
     <Compile Include="JsonModels\BaseRawFmt.cs" />

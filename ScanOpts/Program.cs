@@ -7,6 +7,9 @@ using Core.DIModule;
 using DIContainer;
 using Core.Interface;
 using System.Collections.Generic;
+using System.Timers;
+using ORMService;
+using ScanOpts.Utility;
 
 namespace Core
 {
@@ -56,59 +59,47 @@ namespace Core
         {
 
             Console.WriteLine("Start: {0}", DateTime.Now);
-            List<string> symbols = new List<string> {
-                "VXX",
-                "SPY",
-                "BAC",
-                "XLV",
-                "QQQ",
-                "AAPL",
-                "JNJ",
-                "PG",
-                "TSLA",
-                "FB",
-                "AMZN",
-                "CSCO",
-                "INTC",
-                "DIS",
-                "PIR",
-                "XIV",
-                "BABA",
-                "VZ",
-                "UAA",
-                "CAT",
-                "V",
-                "T",
-                "PEP",
-                "K",
-                "KO",
-                "KLAC",
-                "X",
-                "SBUX",
-                "MAR",
-                "UNP",
-                "XOP",
-                "MAT",
-                "XLF",
-                "EEM",
-                "EFA",
-                "SYF",
-                "VSAT",
-                "IWM",
-                "SSO",
-                "SDS",
-                "S"
-            };
 
+            Console.WriteLine(String.Format("{0}{1} Initialize DIContainer{0}", Environment.NewLine, DateTime.Now));
+            InitializeDiContainer();
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("DIContainer initialized{0}", Environment.NewLine);
+
+            List<string> symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols();
+
+            var crap = string.Join(",", symbols);
+            Timer timer = new Timer();
+
+            //OncePerDayTimer iodt = new OncePerDayTimer(TimeSpan., RunOptionsCollection(GetSymbols()));
+            
+            RunOptionsCollection(symbols);
+
+            Console.ReadKey();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            bool _ran = false; //initial setting at start up
+
+            if (DateTime.Now.Hour == 7 && _ran == false)
+            {
+                _ran = true;
+                RunOptionsCollection(IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols());
+            }
+
+            if (DateTime.Now.Hour != 7 && _ran == true)
+            {
+                _ran = false;
+            }
+        }
+
+        private static void RunOptionsCollection(List<string> symbols)
+        {
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
             decimal date = 1487200000; //  1487289600;
 
             try
             {
-                Console.WriteLine(String.Format("{0}{1} Initialize DIContainer{0}", Environment.NewLine, DateTime.Now));
-                InitializeDiContainer();
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("DIContainer initialized{0}", Environment.NewLine);
-
                 foreach (string symbol in symbols) 
                 {
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {1} page {0}", Environment.NewLine, symbol);
@@ -157,10 +148,9 @@ namespace Core
             }
             finally
             {
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("We're done'...{0}", Environment.NewLine);
+                IOCContainer.Instance.Get<ILogger>().InfoFormat("End - RunOptionsCollection");
+                //IOCContainer.Instance.Get<ILogger>().InfoFormat("We're done'...{0}", Environment.NewLine);
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
-
-                Console.ReadKey();
             }
 
         }

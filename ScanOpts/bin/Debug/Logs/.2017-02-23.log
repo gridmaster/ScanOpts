@@ -1,0 +1,5825 @@
+2017-02-23 10:24:14,853 [9] INFO   
+********************************************************************************
+2017-02-23 10:24:14,898 [9] INFO   DIContainer initialized
+
+2017-02-23 10:24:14,916 [9] INFO   Start - RunOptionsCollection
+2017-02-23 10:24:14,918 [9] INFO   Get AAPL page 
+
+2017-02-23 10:24:15,425 [9] INFO   Page captured
+
+2017-02-23 10:24:15,430 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:15,716 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:15,717 [9] INFO   Get AAPL page for expiration date 1487894400
+
+2017-02-23 10:24:15,851 [9] INFO   Page captured
+
+2017-02-23 10:24:15,853 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:15,897 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:20,136 [9] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-23 10:24:20,252 [9] INFO   Page captured
+
+2017-02-23 10:24:20,265 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:20,271 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:20,421 [9] INFO   Get AAPL page for expiration date 1489104000
+
+2017-02-23 10:24:20,795 [9] INFO   Page captured
+
+2017-02-23 10:24:20,797 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:20,803 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:21,014 [9] INFO   Get AAPL page for expiration date 1489708800
+
+2017-02-23 10:24:21,161 [9] INFO   Page captured
+
+2017-02-23 10:24:21,162 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:21,172 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:21,395 [9] INFO   Get AAPL page for expiration date 1490313600
+
+2017-02-23 10:24:21,635 [9] INFO   Page captured
+
+2017-02-23 10:24:21,636 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:21,642 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:21,837 [9] INFO   Get AAPL page for expiration date 1490918400
+
+2017-02-23 10:24:21,908 [9] INFO   Page captured
+
+2017-02-23 10:24:21,910 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:21,917 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:21,989 [9] INFO   Get AAPL page for expiration date 1492732800
+
+2017-02-23 10:24:22,066 [9] INFO   Page captured
+
+2017-02-23 10:24:22,068 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:22,072 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:22,208 [9] INFO   Get AAPL page for expiration date 1495152000
+
+2017-02-23 10:24:22,265 [9] INFO   Page captured
+
+2017-02-23 10:24:22,267 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:22,272 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:22,365 [9] INFO   Get AAPL page for expiration date 1497571200
+
+2017-02-23 10:24:22,453 [9] INFO   Page captured
+
+2017-02-23 10:24:22,455 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:22,460 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:22,568 [9] INFO   Get AAPL page for expiration date 1500595200
+
+2017-02-23 10:24:22,649 [9] INFO   Page captured
+
+2017-02-23 10:24:22,651 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:22,656 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:22,764 [9] INFO   Get AAPL page for expiration date 1508457600
+
+2017-02-23 10:24:22,842 [9] INFO   Page captured
+
+2017-02-23 10:24:22,843 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:22,848 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:22,928 [9] INFO   Get AAPL page for expiration date 1510876800
+
+2017-02-23 10:24:22,999 [9] INFO   Page captured
+
+2017-02-23 10:24:23,001 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:23,006 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:23,106 [9] INFO   Get AAPL page for expiration date 1516320000
+
+2017-02-23 10:24:23,249 [9] INFO   Page captured
+
+2017-02-23 10:24:23,251 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:23,256 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:23,496 [9] INFO   Get AAPL page for expiration date 1529020800
+
+2017-02-23 10:24:23,575 [9] INFO   Page captured
+
+2017-02-23 10:24:23,577 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:23,581 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:23,690 [9] INFO   Get AAPL page for expiration date 1547769600
+
+2017-02-23 10:24:23,768 [9] INFO   Page captured
+
+2017-02-23 10:24:23,770 [9] INFO   Deserialize AAPL
+
+2017-02-23 10:24:23,774 [9] INFO   AAPL deserialized
+
+2017-02-23 10:24:23,893 [9] INFO   Get AMZN page 
+
+2017-02-23 10:24:23,931 [9] INFO   Page captured
+
+2017-02-23 10:24:23,932 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:23,934 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:23,935 [9] INFO   Get AMZN page for expiration date 1487894400
+
+2017-02-23 10:24:24,058 [9] INFO   Page captured
+
+2017-02-23 10:24:24,062 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:24,073 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:24,515 [9] INFO   Get AMZN page for expiration date 1488499200
+
+2017-02-23 10:24:24,811 [9] INFO   Page captured
+
+2017-02-23 10:24:24,812 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:24,819 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:25,013 [9] INFO   Get AMZN page for expiration date 1489104000
+
+2017-02-23 10:24:25,104 [9] INFO   Page captured
+
+2017-02-23 10:24:25,106 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:25,112 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:25,299 [9] INFO   Get AMZN page for expiration date 1489708800
+
+2017-02-23 10:24:25,446 [9] INFO   Page captured
+
+2017-02-23 10:24:25,448 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:25,461 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:25,802 [9] INFO   Get AMZN page for expiration date 1490313600
+
+2017-02-23 10:24:25,894 [9] INFO   Page captured
+
+2017-02-23 10:24:25,896 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:25,901 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:26,046 [9] INFO   Get AMZN page for expiration date 1490918400
+
+2017-02-23 10:24:26,125 [9] INFO   Page captured
+
+2017-02-23 10:24:26,127 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:26,131 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:26,742 [9] INFO   Get AMZN page for expiration date 1492732800
+
+2017-02-23 10:24:26,852 [9] INFO   Page captured
+
+2017-02-23 10:24:26,854 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:26,865 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:27,215 [9] INFO   Get AMZN page for expiration date 1495152000
+
+2017-02-23 10:24:27,443 [9] INFO   Page captured
+
+2017-02-23 10:24:27,447 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:27,450 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:27,506 [9] INFO   Get AMZN page for expiration date 1497571200
+
+2017-02-23 10:24:27,602 [9] INFO   Page captured
+
+2017-02-23 10:24:27,603 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:27,611 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:27,827 [9] INFO   Get AMZN page for expiration date 1500595200
+
+2017-02-23 10:24:27,986 [9] INFO   Page captured
+
+2017-02-23 10:24:27,988 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:27,996 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:28,267 [9] INFO   Get AMZN page for expiration date 1508457600
+
+2017-02-23 10:24:28,376 [9] INFO   Page captured
+
+2017-02-23 10:24:28,378 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:28,380 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:28,491 [9] INFO   Get AMZN page for expiration date 1513296000
+
+2017-02-23 10:24:28,597 [9] INFO   Page captured
+
+2017-02-23 10:24:28,599 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:28,607 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:28,805 [9] INFO   Get AMZN page for expiration date 1516320000
+
+2017-02-23 10:24:28,977 [9] INFO   Page captured
+
+2017-02-23 10:24:28,980 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:28,993 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:29,306 [9] INFO   Get AMZN page for expiration date 1529020800
+
+2017-02-23 10:24:29,583 [9] INFO   Page captured
+
+2017-02-23 10:24:29,585 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:29,592 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:29,685 [9] INFO   Get AMZN page for expiration date 1547769600
+
+2017-02-23 10:24:29,800 [9] INFO   Page captured
+
+2017-02-23 10:24:29,802 [9] INFO   Deserialize AMZN
+
+2017-02-23 10:24:29,810 [9] INFO   AMZN deserialized
+
+2017-02-23 10:24:30,045 [9] INFO   Get BABA page 
+
+2017-02-23 10:24:30,085 [9] INFO   Page captured
+
+2017-02-23 10:24:30,086 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:30,088 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:30,089 [9] INFO   Get BABA page for expiration date 1487894400
+
+2017-02-23 10:24:30,176 [9] INFO   Page captured
+
+2017-02-23 10:24:30,181 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:30,188 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:30,437 [9] INFO   Get BABA page for expiration date 1488499200
+
+2017-02-23 10:24:30,555 [9] INFO   Page captured
+
+2017-02-23 10:24:30,558 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:30,578 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:30,824 [9] INFO   Get BABA page for expiration date 1489104000
+
+2017-02-23 10:24:30,907 [9] INFO   Page captured
+
+2017-02-23 10:24:30,913 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:30,920 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:31,000 [9] INFO   Get BABA page for expiration date 1489708800
+
+2017-02-23 10:24:31,093 [9] INFO   Page captured
+
+2017-02-23 10:24:31,095 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:31,100 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:31,236 [9] INFO   Get BABA page for expiration date 1490313600
+
+2017-02-23 10:24:31,313 [9] INFO   Page captured
+
+2017-02-23 10:24:31,314 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:31,319 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:31,459 [9] INFO   Get BABA page for expiration date 1490918400
+
+2017-02-23 10:24:31,604 [9] INFO   Page captured
+
+2017-02-23 10:24:31,607 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:31,615 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:31,697 [9] INFO   Get BABA page for expiration date 1492732800
+
+2017-02-23 10:24:35,180 [9] INFO   Page captured
+
+2017-02-23 10:24:35,181 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,185 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:35,282 [9] INFO   Get BABA page for expiration date 1495152000
+
+2017-02-23 10:24:35,368 [9] INFO   Page captured
+
+2017-02-23 10:24:35,369 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,372 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:35,431 [9] INFO   Get BABA page for expiration date 1497571200
+
+2017-02-23 10:24:35,498 [9] INFO   Page captured
+
+2017-02-23 10:24:35,506 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,510 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:35,563 [9] INFO   Get BABA page for expiration date 1500595200
+
+2017-02-23 10:24:35,647 [9] INFO   Page captured
+
+2017-02-23 10:24:35,649 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,653 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:35,728 [9] INFO   Get BABA page for expiration date 1508457600
+
+2017-02-23 10:24:35,789 [9] INFO   Page captured
+
+2017-02-23 10:24:35,790 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,793 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:35,836 [9] INFO   Get BABA page for expiration date 1516320000
+
+2017-02-23 10:24:35,926 [9] INFO   Page captured
+
+2017-02-23 10:24:35,928 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:35,933 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:36,037 [9] INFO   Get BABA page for expiration date 1547769600
+
+2017-02-23 10:24:36,157 [9] INFO   Page captured
+
+2017-02-23 10:24:36,159 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:36,163 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:36,477 [9] INFO   Get BABA page for expiration date 1579219200
+
+2017-02-23 10:24:36,524 [9] INFO   Page captured
+
+2017-02-23 10:24:36,526 [9] INFO   Deserialize BABA
+
+2017-02-23 10:24:36,527 [9] INFO   BABA deserialized
+
+2017-02-23 10:24:36,539 [9] INFO   Get BAC page 
+
+2017-02-23 10:24:36,575 [9] INFO   Page captured
+
+2017-02-23 10:24:36,578 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:36,580 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:36,581 [9] INFO   Get BAC page for expiration date 1487894400
+
+2017-02-23 10:24:36,645 [9] INFO   Page captured
+
+2017-02-23 10:24:36,647 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:36,650 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:36,743 [9] INFO   Get BAC page for expiration date 1488499200
+
+2017-02-23 10:24:36,856 [9] INFO   Page captured
+
+2017-02-23 10:24:36,857 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:36,861 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:36,948 [9] INFO   Get BAC page for expiration date 1489104000
+
+2017-02-23 10:24:37,051 [9] INFO   Page captured
+
+2017-02-23 10:24:37,053 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,055 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,106 [9] INFO   Get BAC page for expiration date 1489708800
+
+2017-02-23 10:24:37,204 [9] INFO   Page captured
+
+2017-02-23 10:24:37,205 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,210 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,333 [9] INFO   Get BAC page for expiration date 1490313600
+
+2017-02-23 10:24:37,519 [9] INFO   Page captured
+
+2017-02-23 10:24:37,521 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,524 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,580 [9] INFO   Get BAC page for expiration date 1490918400
+
+2017-02-23 10:24:37,636 [9] INFO   Page captured
+
+2017-02-23 10:24:37,637 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,641 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,687 [9] INFO   Get BAC page for expiration date 1492732800
+
+2017-02-23 10:24:37,755 [9] INFO   Page captured
+
+2017-02-23 10:24:37,757 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,763 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,827 [9] INFO   Get BAC page for expiration date 1495152000
+
+2017-02-23 10:24:37,892 [9] INFO   Page captured
+
+2017-02-23 10:24:37,894 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:37,899 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:37,971 [9] INFO   Get BAC page for expiration date 1497571200
+
+2017-02-23 10:24:38,093 [9] INFO   Page captured
+
+2017-02-23 10:24:38,094 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,099 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,178 [9] INFO   Get BAC page for expiration date 1503014400
+
+2017-02-23 10:24:38,259 [9] INFO   Page captured
+
+2017-02-23 10:24:38,261 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,265 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,323 [9] INFO   Get BAC page for expiration date 1510876800
+
+2017-02-23 10:24:38,374 [9] INFO   Page captured
+
+2017-02-23 10:24:38,375 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,378 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,436 [9] INFO   Get BAC page for expiration date 1513296000
+
+2017-02-23 10:24:38,479 [9] INFO   Page captured
+
+2017-02-23 10:24:38,480 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,483 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,510 [9] INFO   Get BAC page for expiration date 1516320000
+
+2017-02-23 10:24:38,617 [9] INFO   Page captured
+
+2017-02-23 10:24:38,620 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,624 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,659 [9] INFO   Get BAC page for expiration date 1529020800
+
+2017-02-23 10:24:38,701 [9] INFO   Page captured
+
+2017-02-23 10:24:38,703 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,705 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,729 [9] INFO   Get BAC page for expiration date 1547769600
+
+2017-02-23 10:24:38,801 [9] INFO   Page captured
+
+2017-02-23 10:24:38,803 [9] INFO   Deserialize BAC
+
+2017-02-23 10:24:38,807 [9] INFO   BAC deserialized
+
+2017-02-23 10:24:38,847 [9] INFO   Get BMY page 
+
+2017-02-23 10:24:38,889 [9] INFO   Page captured
+
+2017-02-23 10:24:38,890 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:38,891 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:38,892 [9] INFO   Get BMY page for expiration date 1487894400
+
+2017-02-23 10:24:38,986 [9] INFO   Page captured
+
+2017-02-23 10:24:38,987 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:38,994 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:39,138 [9] INFO   Get BMY page for expiration date 1488499200
+
+2017-02-23 10:24:39,232 [9] INFO   Page captured
+
+2017-02-23 10:24:39,235 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:39,246 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:39,389 [9] INFO   Get BMY page for expiration date 1489104000
+
+2017-02-23 10:24:39,471 [9] INFO   Page captured
+
+2017-02-23 10:24:39,474 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:39,480 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:39,581 [9] INFO   Get BMY page for expiration date 1489708800
+
+2017-02-23 10:24:39,727 [9] INFO   Page captured
+
+2017-02-23 10:24:39,729 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:39,735 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:39,861 [9] INFO   Get BMY page for expiration date 1490313600
+
+2017-02-23 10:24:39,933 [9] INFO   Page captured
+
+2017-02-23 10:24:39,935 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:39,939 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:40,071 [9] INFO   Get BMY page for expiration date 1490918400
+
+2017-02-23 10:24:40,156 [9] INFO   Page captured
+
+2017-02-23 10:24:40,158 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:40,162 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:40,245 [9] INFO   Get BMY page for expiration date 1492732800
+
+2017-02-23 10:24:40,576 [9] INFO   Page captured
+
+2017-02-23 10:24:40,578 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:40,581 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:40,625 [9] INFO   Get BMY page for expiration date 1497571200
+
+2017-02-23 10:24:40,692 [9] INFO   Page captured
+
+2017-02-23 10:24:40,695 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:40,699 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:40,795 [9] INFO   Get BMY page for expiration date 1505433600
+
+2017-02-23 10:24:40,857 [9] INFO   Page captured
+
+2017-02-23 10:24:40,859 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:40,863 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:40,924 [9] INFO   Get BMY page for expiration date 1516320000
+
+2017-02-23 10:24:41,059 [9] INFO   Page captured
+
+2017-02-23 10:24:41,061 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:41,065 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:41,153 [9] INFO   Get BMY page for expiration date 1547769600
+
+2017-02-23 10:24:41,223 [9] INFO   Page captured
+
+2017-02-23 10:24:41,225 [9] INFO   Deserialize BMY
+
+2017-02-23 10:24:41,230 [9] INFO   BMY deserialized
+
+2017-02-23 10:24:41,297 [9] INFO   Get CAT page 
+
+2017-02-23 10:24:41,373 [9] INFO   Page captured
+
+2017-02-23 10:24:41,374 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:41,376 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:41,378 [9] INFO   Get CAT page for expiration date 1487894400
+
+2017-02-23 10:24:41,475 [9] INFO   Page captured
+
+2017-02-23 10:24:41,476 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:41,481 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:41,662 [9] INFO   Get CAT page for expiration date 1488499200
+
+2017-02-23 10:24:41,749 [9] INFO   Page captured
+
+2017-02-23 10:24:41,751 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:41,756 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:41,847 [9] INFO   Get CAT page for expiration date 1489104000
+
+2017-02-23 10:24:41,919 [9] INFO   Page captured
+
+2017-02-23 10:24:41,920 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:41,925 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,015 [9] INFO   Get CAT page for expiration date 1489708800
+
+2017-02-23 10:24:42,092 [9] INFO   Page captured
+
+2017-02-23 10:24:42,094 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,099 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,195 [9] INFO   Get CAT page for expiration date 1490313600
+
+2017-02-23 10:24:42,261 [9] INFO   Page captured
+
+2017-02-23 10:24:42,263 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,267 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,349 [9] INFO   Get CAT page for expiration date 1490918400
+
+2017-02-23 10:24:42,407 [9] INFO   Page captured
+
+2017-02-23 10:24:42,409 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,413 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,471 [9] INFO   Get CAT page for expiration date 1492732800
+
+2017-02-23 10:24:42,599 [9] INFO   Page captured
+
+2017-02-23 10:24:42,602 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,607 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,646 [9] INFO   Get CAT page for expiration date 1495152000
+
+2017-02-23 10:24:42,707 [9] INFO   Page captured
+
+2017-02-23 10:24:42,708 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,712 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,764 [9] INFO   Get CAT page for expiration date 1503014400
+
+2017-02-23 10:24:42,823 [9] INFO   Page captured
+
+2017-02-23 10:24:42,825 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,828 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:42,878 [9] INFO   Get CAT page for expiration date 1516320000
+
+2017-02-23 10:24:42,958 [9] INFO   Page captured
+
+2017-02-23 10:24:42,960 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:42,966 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:43,057 [9] INFO   Get CAT page for expiration date 1547769600
+
+2017-02-23 10:24:43,134 [9] INFO   Page captured
+
+2017-02-23 10:24:43,135 [9] INFO   Deserialize CAT
+
+2017-02-23 10:24:43,140 [9] INFO   CAT deserialized
+
+2017-02-23 10:24:43,225 [9] INFO   Get CSCO page 
+
+2017-02-23 10:24:43,279 [9] INFO   Page captured
+
+2017-02-23 10:24:43,281 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,283 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,285 [9] INFO   Get CSCO page for expiration date 1487894400
+
+2017-02-23 10:24:43,348 [9] INFO   Page captured
+
+2017-02-23 10:24:43,349 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,353 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,421 [9] INFO   Get CSCO page for expiration date 1488499200
+
+2017-02-23 10:24:43,510 [9] INFO   Page captured
+
+2017-02-23 10:24:43,512 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,515 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,559 [9] INFO   Get CSCO page for expiration date 1489104000
+
+2017-02-23 10:24:43,635 [9] INFO   Page captured
+
+2017-02-23 10:24:43,637 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,641 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,675 [9] INFO   Get CSCO page for expiration date 1489708800
+
+2017-02-23 10:24:43,747 [9] INFO   Page captured
+
+2017-02-23 10:24:43,749 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,753 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,810 [9] INFO   Get CSCO page for expiration date 1490313600
+
+2017-02-23 10:24:43,857 [9] INFO   Page captured
+
+2017-02-23 10:24:43,858 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,861 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:43,893 [9] INFO   Get CSCO page for expiration date 1490918400
+
+2017-02-23 10:24:43,949 [9] INFO   Page captured
+
+2017-02-23 10:24:43,951 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:43,955 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,015 [9] INFO   Get CSCO page for expiration date 1492732800
+
+2017-02-23 10:24:44,087 [9] INFO   Page captured
+
+2017-02-23 10:24:44,089 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:44,093 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,145 [9] INFO   Get CSCO page for expiration date 1495152000
+
+2017-02-23 10:24:44,199 [9] INFO   Page captured
+
+2017-02-23 10:24:44,201 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:44,204 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,261 [9] INFO   Get CSCO page for expiration date 1497571200
+
+2017-02-23 10:24:44,336 [9] INFO   Page captured
+
+2017-02-23 10:24:44,337 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:44,341 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,410 [9] INFO   Get CSCO page for expiration date 1500595200
+
+2017-02-23 10:24:44,468 [9] INFO   Page captured
+
+2017-02-23 10:24:44,469 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:44,473 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,558 [9] INFO   Get CSCO page for expiration date 1508457600
+
+2017-02-23 10:24:44,686 [9] INFO   Page captured
+
+2017-02-23 10:24:44,688 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:44,694 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:44,782 [9] INFO   Get CSCO page for expiration date 1516320000
+
+2017-02-23 10:24:45,297 [9] INFO   Page captured
+
+2017-02-23 10:24:45,300 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:45,303 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:45,351 [9] INFO   Get CSCO page for expiration date 1529020800
+
+2017-02-23 10:24:45,479 [9] INFO   Page captured
+
+2017-02-23 10:24:45,481 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:45,483 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:45,509 [9] INFO   Get CSCO page for expiration date 1547769600
+
+2017-02-23 10:24:45,563 [9] INFO   Page captured
+
+2017-02-23 10:24:45,565 [9] INFO   Deserialize CSCO
+
+2017-02-23 10:24:45,567 [9] INFO   CSCO deserialized
+
+2017-02-23 10:24:45,603 [9] INFO   Get DB page 
+
+2017-02-23 10:24:45,645 [9] INFO   Page captured
+
+2017-02-23 10:24:45,647 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:45,648 [9] INFO   DB deserialized
+
+2017-02-23 10:24:45,650 [9] INFO   Get DB page for expiration date 1487894400
+
+2017-02-23 10:24:45,701 [9] INFO   Page captured
+
+2017-02-23 10:24:45,703 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:45,705 [9] INFO   DB deserialized
+
+2017-02-23 10:24:45,737 [9] INFO   Get DB page for expiration date 1488499200
+
+2017-02-23 10:24:45,790 [9] INFO   Page captured
+
+2017-02-23 10:24:45,791 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:45,794 [9] INFO   DB deserialized
+
+2017-02-23 10:24:45,823 [9] INFO   Get DB page for expiration date 1489104000
+
+2017-02-23 10:24:45,871 [9] INFO   Page captured
+
+2017-02-23 10:24:45,873 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:45,877 [9] INFO   DB deserialized
+
+2017-02-23 10:24:45,896 [9] INFO   Get DB page for expiration date 1489708800
+
+2017-02-23 10:24:45,962 [9] INFO   Page captured
+
+2017-02-23 10:24:45,964 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:45,967 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,020 [9] INFO   Get DB page for expiration date 1490313600
+
+2017-02-23 10:24:46,064 [9] INFO   Page captured
+
+2017-02-23 10:24:46,065 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,067 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,091 [9] INFO   Get DB page for expiration date 1490918400
+
+2017-02-23 10:24:46,136 [9] INFO   Page captured
+
+2017-02-23 10:24:46,137 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,139 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,177 [9] INFO   Get DB page for expiration date 1492732800
+
+2017-02-23 10:24:46,243 [9] INFO   Page captured
+
+2017-02-23 10:24:46,250 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,258 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,341 [9] INFO   Get DB page for expiration date 1495152000
+
+2017-02-23 10:24:46,393 [9] INFO   Page captured
+
+2017-02-23 10:24:46,395 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,398 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,432 [9] INFO   Get DB page for expiration date 1500595200
+
+2017-02-23 10:24:46,495 [9] INFO   Page captured
+
+2017-02-23 10:24:46,496 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,500 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,615 [9] INFO   Get DB page for expiration date 1508457600
+
+2017-02-23 10:24:46,653 [9] INFO   Page captured
+
+2017-02-23 10:24:46,654 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,657 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,665 [9] INFO   Get DB page for expiration date 1513296000
+
+2017-02-23 10:24:46,730 [9] INFO   Page captured
+
+2017-02-23 10:24:46,732 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,734 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,779 [9] INFO   Get DB page for expiration date 1516320000
+
+2017-02-23 10:24:46,847 [9] INFO   Page captured
+
+2017-02-23 10:24:46,849 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,852 [9] INFO   DB deserialized
+
+2017-02-23 10:24:46,909 [9] INFO   Get DB page for expiration date 1547769600
+
+2017-02-23 10:24:46,974 [9] INFO   Page captured
+
+2017-02-23 10:24:46,980 [9] INFO   Deserialize DB
+
+2017-02-23 10:24:46,984 [9] INFO   DB deserialized
+
+2017-02-23 10:24:47,036 [9] INFO   Get DIS page 
+
+2017-02-23 10:24:47,073 [9] INFO   Page captured
+
+2017-02-23 10:24:47,074 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,076 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,078 [9] INFO   Get DIS page for expiration date 1487894400
+
+2017-02-23 10:24:47,140 [9] INFO   Page captured
+
+2017-02-23 10:24:47,141 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,146 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,248 [9] INFO   Get DIS page for expiration date 1488499200
+
+2017-02-23 10:24:47,311 [9] INFO   Page captured
+
+2017-02-23 10:24:47,313 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,317 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,387 [9] INFO   Get DIS page for expiration date 1489104000
+
+2017-02-23 10:24:47,460 [9] INFO   Page captured
+
+2017-02-23 10:24:47,462 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,465 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,523 [9] INFO   Get DIS page for expiration date 1489708800
+
+2017-02-23 10:24:47,613 [9] INFO   Page captured
+
+2017-02-23 10:24:47,615 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,621 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,690 [9] INFO   Get DIS page for expiration date 1490313600
+
+2017-02-23 10:24:47,760 [9] INFO   Page captured
+
+2017-02-23 10:24:47,762 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,766 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,825 [9] INFO   Get DIS page for expiration date 1490918400
+
+2017-02-23 10:24:47,895 [9] INFO   Page captured
+
+2017-02-23 10:24:47,897 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:47,901 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:47,949 [9] INFO   Get DIS page for expiration date 1492732800
+
+2017-02-23 10:24:48,006 [9] INFO   Page captured
+
+2017-02-23 10:24:48,008 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,015 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,082 [9] INFO   Get DIS page for expiration date 1495152000
+
+2017-02-23 10:24:48,129 [9] INFO   Page captured
+
+2017-02-23 10:24:48,131 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,132 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,144 [9] INFO   Get DIS page for expiration date 1497571200
+
+2017-02-23 10:24:48,281 [9] INFO   Page captured
+
+2017-02-23 10:24:48,283 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,287 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,352 [9] INFO   Get DIS page for expiration date 1500595200
+
+2017-02-23 10:24:48,413 [9] INFO   Page captured
+
+2017-02-23 10:24:48,414 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,417 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,467 [9] INFO   Get DIS page for expiration date 1508457600
+
+2017-02-23 10:24:48,512 [9] INFO   Page captured
+
+2017-02-23 10:24:48,514 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,516 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,541 [9] INFO   Get DIS page for expiration date 1516320000
+
+2017-02-23 10:24:48,614 [9] INFO   Page captured
+
+2017-02-23 10:24:48,617 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,622 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,715 [9] INFO   Get DIS page for expiration date 1547769600
+
+2017-02-23 10:24:48,778 [9] INFO   Page captured
+
+2017-02-23 10:24:48,780 [9] INFO   Deserialize DIS
+
+2017-02-23 10:24:48,784 [9] INFO   DIS deserialized
+
+2017-02-23 10:24:48,873 [9] INFO   Get EEM page 
+
+2017-02-23 10:24:48,910 [9] INFO   Page captured
+
+2017-02-23 10:24:48,912 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:48,913 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:48,915 [9] INFO   Get EEM page for expiration date 1487894400
+
+2017-02-23 10:24:48,980 [9] INFO   Page captured
+
+2017-02-23 10:24:48,981 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:48,984 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:49,068 [9] INFO   Get EEM page for expiration date 1488499200
+
+2017-02-23 10:24:49,122 [9] INFO   Page captured
+
+2017-02-23 10:24:49,123 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:49,126 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:49,171 [9] INFO   Get EEM page for expiration date 1489104000
+
+2017-02-23 10:24:49,229 [9] INFO   Page captured
+
+2017-02-23 10:24:49,231 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:49,234 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:49,267 [9] INFO   Get EEM page for expiration date 1489708800
+
+2017-02-23 10:24:49,584 [9] INFO   Page captured
+
+2017-02-23 10:24:49,585 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:49,592 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:49,737 [9] INFO   Get EEM page for expiration date 1490313600
+
+2017-02-23 10:24:49,798 [9] INFO   Page captured
+
+2017-02-23 10:24:49,799 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:49,802 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:49,842 [9] INFO   Get EEM page for expiration date 1490918400
+
+2017-02-23 10:24:49,922 [9] INFO   Page captured
+
+2017-02-23 10:24:49,924 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:49,928 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,062 [9] INFO   Get EEM page for expiration date 1492732800
+
+2017-02-23 10:24:50,144 [9] INFO   Page captured
+
+2017-02-23 10:24:50,146 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:50,153 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,238 [9] INFO   Get EEM page for expiration date 1495152000
+
+2017-02-23 10:24:50,320 [9] INFO   Page captured
+
+2017-02-23 10:24:50,323 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:50,328 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,398 [9] INFO   Get EEM page for expiration date 1497571200
+
+2017-02-23 10:24:50,496 [9] INFO   Page captured
+
+2017-02-23 10:24:50,497 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:50,504 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,647 [9] INFO   Get EEM page for expiration date 1498780800
+
+2017-02-23 10:24:50,704 [9] INFO   Page captured
+
+2017-02-23 10:24:50,710 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:50,716 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,773 [9] INFO   Get EEM page for expiration date 1505433600
+
+2017-02-23 10:24:50,852 [9] INFO   Page captured
+
+2017-02-23 10:24:50,854 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:50,861 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:50,989 [9] INFO   Get EEM page for expiration date 1506643200
+
+2017-02-23 10:24:51,039 [9] INFO   Page captured
+
+2017-02-23 10:24:51,042 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,045 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,084 [9] INFO   Get EEM page for expiration date 1513296000
+
+2017-02-23 10:24:51,171 [9] INFO   Page captured
+
+2017-02-23 10:24:51,173 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,179 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,271 [9] INFO   Get EEM page for expiration date 1514505600
+
+2017-02-23 10:24:51,320 [9] INFO   Page captured
+
+2017-02-23 10:24:51,323 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,330 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,381 [9] INFO   Get EEM page for expiration date 1516320000
+
+2017-02-23 10:24:51,503 [9] INFO   Page captured
+
+2017-02-23 10:24:51,505 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,526 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,629 [9] INFO   Get EEM page for expiration date 1521158400
+
+2017-02-23 10:24:51,670 [9] INFO   Page captured
+
+2017-02-23 10:24:51,673 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,675 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,688 [9] INFO   Get EEM page for expiration date 1547769600
+
+2017-02-23 10:24:51,767 [9] INFO   Page captured
+
+2017-02-23 10:24:51,789 [9] INFO   Deserialize EEM
+
+2017-02-23 10:24:51,797 [9] INFO   EEM deserialized
+
+2017-02-23 10:24:51,880 [9] INFO   Get EFA page 
+
+2017-02-23 10:24:51,917 [9] INFO   Page captured
+
+2017-02-23 10:24:51,919 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:51,920 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:51,921 [9] INFO   Get EFA page for expiration date 1487894400
+
+2017-02-23 10:24:51,982 [9] INFO   Page captured
+
+2017-02-23 10:24:51,986 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:51,989 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,022 [9] INFO   Get EFA page for expiration date 1488499200
+
+2017-02-23 10:24:52,076 [9] INFO   Page captured
+
+2017-02-23 10:24:52,077 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,080 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,112 [9] INFO   Get EFA page for expiration date 1489104000
+
+2017-02-23 10:24:52,156 [9] INFO   Page captured
+
+2017-02-23 10:24:52,158 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,161 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,185 [9] INFO   Get EFA page for expiration date 1489708800
+
+2017-02-23 10:24:52,277 [9] INFO   Page captured
+
+2017-02-23 10:24:52,279 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,284 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,419 [9] INFO   Get EFA page for expiration date 1490313600
+
+2017-02-23 10:24:52,475 [9] INFO   Page captured
+
+2017-02-23 10:24:52,477 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,479 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,517 [9] INFO   Get EFA page for expiration date 1490918400
+
+2017-02-23 10:24:52,569 [9] INFO   Page captured
+
+2017-02-23 10:24:52,571 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,574 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,631 [9] INFO   Get EFA page for expiration date 1492732800
+
+2017-02-23 10:24:52,695 [9] INFO   Page captured
+
+2017-02-23 10:24:52,696 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,699 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,747 [9] INFO   Get EFA page for expiration date 1495152000
+
+2017-02-23 10:24:52,818 [9] INFO   Page captured
+
+2017-02-23 10:24:52,820 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,824 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:52,876 [9] INFO   Get EFA page for expiration date 1497571200
+
+2017-02-23 10:24:52,967 [9] INFO   Page captured
+
+2017-02-23 10:24:52,968 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:52,973 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,078 [9] INFO   Get EFA page for expiration date 1498780800
+
+2017-02-23 10:24:53,180 [9] INFO   Page captured
+
+2017-02-23 10:24:53,181 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,184 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,226 [9] INFO   Get EFA page for expiration date 1505433600
+
+2017-02-23 10:24:53,308 [9] INFO   Page captured
+
+2017-02-23 10:24:53,310 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,316 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,446 [9] INFO   Get EFA page for expiration date 1506643200
+
+2017-02-23 10:24:53,497 [9] INFO   Page captured
+
+2017-02-23 10:24:53,499 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,501 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,571 [9] INFO   Get EFA page for expiration date 1513296000
+
+2017-02-23 10:24:53,641 [9] INFO   Page captured
+
+2017-02-23 10:24:53,642 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,646 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,707 [9] INFO   Get EFA page for expiration date 1514505600
+
+2017-02-23 10:24:53,748 [9] INFO   Page captured
+
+2017-02-23 10:24:53,750 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,752 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,769 [9] INFO   Get EFA page for expiration date 1516320000
+
+2017-02-23 10:24:53,854 [9] INFO   Page captured
+
+2017-02-23 10:24:53,860 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:53,866 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:53,967 [9] INFO   Get EFA page for expiration date 1547769600
+
+2017-02-23 10:24:54,091 [9] INFO   Page captured
+
+2017-02-23 10:24:54,093 [9] INFO   Deserialize EFA
+
+2017-02-23 10:24:54,097 [9] INFO   EFA deserialized
+
+2017-02-23 10:24:54,391 [9] INFO   Get F page 
+
+2017-02-23 10:24:54,439 [9] INFO   Page captured
+
+2017-02-23 10:24:54,441 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,442 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,445 [9] INFO   Get F page for expiration date 1487894400
+
+2017-02-23 10:24:54,497 [9] INFO   Page captured
+
+2017-02-23 10:24:54,503 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,509 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,583 [9] INFO   Get F page for expiration date 1488499200
+
+2017-02-23 10:24:54,672 [9] INFO   Page captured
+
+2017-02-23 10:24:54,674 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,678 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,719 [9] INFO   Get F page for expiration date 1489104000
+
+2017-02-23 10:24:54,762 [9] INFO   Page captured
+
+2017-02-23 10:24:54,763 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,765 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,780 [9] INFO   Get F page for expiration date 1489708800
+
+2017-02-23 10:24:54,849 [9] INFO   Page captured
+
+2017-02-23 10:24:54,851 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,853 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,915 [9] INFO   Get F page for expiration date 1490313600
+
+2017-02-23 10:24:54,958 [9] INFO   Page captured
+
+2017-02-23 10:24:54,959 [9] INFO   Deserialize F
+
+2017-02-23 10:24:54,962 [9] INFO   F deserialized
+
+2017-02-23 10:24:54,984 [9] INFO   Get F page for expiration date 1490918400
+
+2017-02-23 10:24:55,029 [9] INFO   Page captured
+
+2017-02-23 10:24:55,031 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,032 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,058 [9] INFO   Get F page for expiration date 1492732800
+
+2017-02-23 10:24:55,114 [9] INFO   Page captured
+
+2017-02-23 10:24:55,116 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,120 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,163 [9] INFO   Get F page for expiration date 1495152000
+
+2017-02-23 10:24:55,367 [9] INFO   Page captured
+
+2017-02-23 10:24:55,372 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,376 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,491 [9] INFO   Get F page for expiration date 1497571200
+
+2017-02-23 10:24:55,546 [9] INFO   Page captured
+
+2017-02-23 10:24:55,551 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,555 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,616 [9] INFO   Get F page for expiration date 1505433600
+
+2017-02-23 10:24:55,678 [9] INFO   Page captured
+
+2017-02-23 10:24:55,679 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,681 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,750 [9] INFO   Get F page for expiration date 1513296000
+
+2017-02-23 10:24:55,922 [9] INFO   Page captured
+
+2017-02-23 10:24:55,923 [9] INFO   Deserialize F
+
+2017-02-23 10:24:55,925 [9] INFO   F deserialized
+
+2017-02-23 10:24:55,936 [9] INFO   Get F page for expiration date 1516320000
+
+2017-02-23 10:24:56,006 [9] INFO   Page captured
+
+2017-02-23 10:24:56,007 [9] INFO   Deserialize F
+
+2017-02-23 10:24:56,010 [9] INFO   F deserialized
+
+2017-02-23 10:24:56,052 [9] INFO   Get F page for expiration date 1547769600
+
+2017-02-23 10:24:56,119 [9] INFO   Page captured
+
+2017-02-23 10:24:56,120 [9] INFO   Deserialize F
+
+2017-02-23 10:24:56,123 [9] INFO   F deserialized
+
+2017-02-23 10:24:56,153 [9] INFO   Get FB page 
+
+2017-02-23 10:24:56,190 [9] INFO   Page captured
+
+2017-02-23 10:24:56,193 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:56,195 [9] INFO   FB deserialized
+
+2017-02-23 10:24:56,197 [9] INFO   Get FB page for expiration date 1487894400
+
+2017-02-23 10:24:56,321 [9] INFO   Page captured
+
+2017-02-23 10:24:56,322 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:56,328 [9] INFO   FB deserialized
+
+2017-02-23 10:24:56,482 [9] INFO   Get FB page for expiration date 1488499200
+
+2017-02-23 10:24:56,573 [9] INFO   Page captured
+
+2017-02-23 10:24:56,575 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:56,580 [9] INFO   FB deserialized
+
+2017-02-23 10:24:56,694 [9] INFO   Get FB page for expiration date 1489104000
+
+2017-02-23 10:24:56,796 [9] INFO   Page captured
+
+2017-02-23 10:24:56,798 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:56,804 [9] INFO   FB deserialized
+
+2017-02-23 10:24:56,923 [9] INFO   Get FB page for expiration date 1489708800
+
+2017-02-23 10:24:57,023 [9] INFO   Page captured
+
+2017-02-23 10:24:57,025 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,031 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,146 [9] INFO   Get FB page for expiration date 1490313600
+
+2017-02-23 10:24:57,226 [9] INFO   Page captured
+
+2017-02-23 10:24:57,227 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,234 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,316 [9] INFO   Get FB page for expiration date 1490918400
+
+2017-02-23 10:24:57,394 [9] INFO   Page captured
+
+2017-02-23 10:24:57,396 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,401 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,486 [9] INFO   Get FB page for expiration date 1492732800
+
+2017-02-23 10:24:57,601 [9] INFO   Page captured
+
+2017-02-23 10:24:57,603 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,607 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,671 [9] INFO   Get FB page for expiration date 1495152000
+
+2017-02-23 10:24:57,714 [9] INFO   Page captured
+
+2017-02-23 10:24:57,716 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,717 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,734 [9] INFO   Get FB page for expiration date 1497571200
+
+2017-02-23 10:24:57,867 [9] INFO   Page captured
+
+2017-02-23 10:24:57,868 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:57,873 [9] INFO   FB deserialized
+
+2017-02-23 10:24:57,964 [9] INFO   Get FB page for expiration date 1505433600
+
+2017-02-23 10:24:58,036 [9] INFO   Page captured
+
+2017-02-23 10:24:58,038 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:58,045 [9] INFO   FB deserialized
+
+2017-02-23 10:24:58,120 [9] INFO   Get FB page for expiration date 1513296000
+
+2017-02-23 10:24:58,193 [9] INFO   Page captured
+
+2017-02-23 10:24:58,195 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:58,198 [9] INFO   FB deserialized
+
+2017-02-23 10:24:58,293 [9] INFO   Get FB page for expiration date 1516320000
+
+2017-02-23 10:24:58,396 [9] INFO   Page captured
+
+2017-02-23 10:24:58,398 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:58,404 [9] INFO   FB deserialized
+
+2017-02-23 10:24:58,546 [9] INFO   Get FB page for expiration date 1547769600
+
+2017-02-23 10:24:58,613 [9] INFO   Page captured
+
+2017-02-23 10:24:58,614 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:58,619 [9] INFO   FB deserialized
+
+2017-02-23 10:24:58,737 [9] INFO   Get FB page for expiration date 1771632000
+
+2017-02-23 10:24:58,827 [9] INFO   Page captured
+
+2017-02-23 10:24:58,828 [9] INFO   Deserialize FB
+
+2017-02-23 10:24:58,829 [9] INFO   FB deserialized
+
+2017-02-23 10:24:58,830 [9] INFO   Get FCX page 
+
+2017-02-23 10:24:58,867 [9] INFO   Page captured
+
+2017-02-23 10:24:58,869 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:58,871 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:58,873 [9] INFO   Get FCX page for expiration date 1487894400
+
+2017-02-23 10:24:58,979 [9] INFO   Page captured
+
+2017-02-23 10:24:58,980 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:58,983 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,037 [9] INFO   Get FCX page for expiration date 1488499200
+
+2017-02-23 10:24:59,101 [9] INFO   Page captured
+
+2017-02-23 10:24:59,103 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,106 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,165 [9] INFO   Get FCX page for expiration date 1489104000
+
+2017-02-23 10:24:59,217 [9] INFO   Page captured
+
+2017-02-23 10:24:59,218 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,221 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,277 [9] INFO   Get FCX page for expiration date 1489708800
+
+2017-02-23 10:24:59,402 [9] INFO   Page captured
+
+2017-02-23 10:24:59,404 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,408 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,473 [9] INFO   Get FCX page for expiration date 1490313600
+
+2017-02-23 10:24:59,547 [9] INFO   Page captured
+
+2017-02-23 10:24:59,549 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,552 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,602 [9] INFO   Get FCX page for expiration date 1490918400
+
+2017-02-23 10:24:59,657 [9] INFO   Page captured
+
+2017-02-23 10:24:59,658 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,661 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,705 [9] INFO   Get FCX page for expiration date 1492732800
+
+2017-02-23 10:24:59,765 [9] INFO   Page captured
+
+2017-02-23 10:24:59,766 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,768 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,811 [9] INFO   Get FCX page for expiration date 1495152000
+
+2017-02-23 10:24:59,891 [9] INFO   Page captured
+
+2017-02-23 10:24:59,892 [9] INFO   Deserialize FCX
+
+2017-02-23 10:24:59,895 [9] INFO   FCX deserialized
+
+2017-02-23 10:24:59,987 [9] INFO   Get FCX page for expiration date 1497571200
+
+2017-02-23 10:25:00,047 [9] INFO   Page captured
+
+2017-02-23 10:25:00,049 [9] INFO   Deserialize FCX
+
+2017-02-23 10:25:00,053 [9] INFO   FCX deserialized
+
+2017-02-23 10:25:00,109 [9] INFO   Get FCX page for expiration date 1503014400
+
+2017-02-23 10:25:00,214 [9] INFO   Page captured
+
+2017-02-23 10:25:00,216 [9] INFO   Deserialize FCX
+
+2017-02-23 10:25:00,220 [9] INFO   FCX deserialized
+
+2017-02-23 10:25:00,286 [9] INFO   Get FCX page for expiration date 1513296000
+
+2017-02-23 10:25:00,340 [9] INFO   Page captured
+
+2017-02-23 10:25:00,343 [9] INFO   Deserialize FCX
+
+2017-02-23 10:25:00,347 [9] INFO   FCX deserialized
+
+2017-02-23 10:25:00,448 [9] INFO   Get FCX page for expiration date 1516320000
+
+2017-02-23 10:25:00,526 [9] INFO   Page captured
+
+2017-02-23 10:25:00,535 [9] INFO   Deserialize FCX
+
+2017-02-23 10:25:00,541 [9] INFO   FCX deserialized
+
+2017-02-23 10:25:00,615 [9] INFO   Get FCX page for expiration date 1547769600
+
+2017-02-23 10:25:00,701 [9] INFO   Page captured
+
+2017-02-23 10:25:00,703 [9] INFO   Deserialize FCX
+
+2017-02-23 10:25:00,706 [9] INFO   FCX deserialized
+
+2017-02-23 10:25:00,777 [9] INFO   Get GIS page 
+
+2017-02-23 10:25:00,813 [9] INFO   Page captured
+
+2017-02-23 10:25:00,816 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:00,818 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:00,820 [9] INFO   Get GIS page for expiration date 1489708800
+
+2017-02-23 10:25:00,866 [9] INFO   Page captured
+
+2017-02-23 10:25:00,868 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:00,870 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:00,911 [9] INFO   Get GIS page for expiration date 1492732800
+
+2017-02-23 10:25:00,976 [9] INFO   Page captured
+
+2017-02-23 10:25:00,978 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:00,981 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:01,081 [9] INFO   Get GIS page for expiration date 1500595200
+
+2017-02-23 10:25:01,139 [9] INFO   Page captured
+
+2017-02-23 10:25:01,141 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:01,144 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:01,184 [9] INFO   Get GIS page for expiration date 1508457600
+
+2017-02-23 10:25:01,233 [9] INFO   Page captured
+
+2017-02-23 10:25:01,238 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:01,241 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:01,305 [9] INFO   Get GIS page for expiration date 1516320000
+
+2017-02-23 10:25:01,375 [9] INFO   Page captured
+
+2017-02-23 10:25:01,377 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:01,380 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:01,485 [9] INFO   Get GIS page for expiration date 1547769600
+
+2017-02-23 10:25:01,594 [9] INFO   Page captured
+
+2017-02-23 10:25:01,596 [9] INFO   Deserialize GIS
+
+2017-02-23 10:25:01,599 [9] INFO   GIS deserialized
+
+2017-02-23 10:25:01,668 [9] INFO   Get GM page 
+
+2017-02-23 10:25:01,767 [9] INFO   Page captured
+
+2017-02-23 10:25:01,769 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:01,771 [9] INFO   GM deserialized
+
+2017-02-23 10:25:01,773 [9] INFO   Get GM page for expiration date 1487894400
+
+2017-02-23 10:25:01,842 [9] INFO   Page captured
+
+2017-02-23 10:25:01,844 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:01,848 [9] INFO   GM deserialized
+
+2017-02-23 10:25:01,975 [9] INFO   Get GM page for expiration date 1488499200
+
+2017-02-23 10:25:02,052 [9] INFO   Page captured
+
+2017-02-23 10:25:02,054 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,058 [9] INFO   GM deserialized
+
+2017-02-23 10:25:02,129 [9] INFO   Get GM page for expiration date 1489104000
+
+2017-02-23 10:25:02,195 [9] INFO   Page captured
+
+2017-02-23 10:25:02,197 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,202 [9] INFO   GM deserialized
+
+2017-02-23 10:25:02,347 [9] INFO   Get GM page for expiration date 1489708800
+
+2017-02-23 10:25:02,428 [9] INFO   Page captured
+
+2017-02-23 10:25:02,430 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,435 [9] INFO   GM deserialized
+
+2017-02-23 10:25:02,580 [9] INFO   Get GM page for expiration date 1490313600
+
+2017-02-23 10:25:02,640 [9] INFO   Page captured
+
+2017-02-23 10:25:02,642 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,648 [9] INFO   GM deserialized
+
+2017-02-23 10:25:02,714 [9] INFO   Get GM page for expiration date 1490918400
+
+2017-02-23 10:25:02,774 [9] INFO   Page captured
+
+2017-02-23 10:25:02,776 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,779 [9] INFO   GM deserialized
+
+2017-02-23 10:25:02,833 [9] INFO   Get GM page for expiration date 1492732800
+
+2017-02-23 10:25:02,968 [9] INFO   Page captured
+
+2017-02-23 10:25:02,974 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:02,977 [9] INFO   GM deserialized
+
+2017-02-23 10:25:03,016 [9] INFO   Get GM page for expiration date 1497571200
+
+2017-02-23 10:25:03,084 [9] INFO   Page captured
+
+2017-02-23 10:25:03,085 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:03,089 [9] INFO   GM deserialized
+
+2017-02-23 10:25:03,187 [9] INFO   Get GM page for expiration date 1505433600
+
+2017-02-23 10:25:03,251 [9] INFO   Page captured
+
+2017-02-23 10:25:03,254 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:03,259 [9] INFO   GM deserialized
+
+2017-02-23 10:25:03,323 [9] INFO   Get GM page for expiration date 1516320000
+
+2017-02-23 10:25:03,413 [9] INFO   Page captured
+
+2017-02-23 10:25:03,415 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:03,419 [9] INFO   GM deserialized
+
+2017-02-23 10:25:03,491 [9] INFO   Get GM page for expiration date 1547769600
+
+2017-02-23 10:25:03,557 [9] INFO   Page captured
+
+2017-02-23 10:25:03,559 [9] INFO   Deserialize GM
+
+2017-02-23 10:25:03,563 [9] INFO   GM deserialized
+
+2017-02-23 10:25:03,629 [9] INFO   Get GOOGL page 
+
+2017-02-23 10:25:03,746 [9] INFO   Page captured
+
+2017-02-23 10:25:03,747 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:03,749 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:03,751 [9] INFO   Get GOOGL page for expiration date 1487894400
+
+2017-02-23 10:25:03,846 [9] INFO   Page captured
+
+2017-02-23 10:25:03,848 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:03,854 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:04,005 [9] INFO   Get GOOGL page for expiration date 1488499200
+
+2017-02-23 10:25:04,104 [9] INFO   Page captured
+
+2017-02-23 10:25:04,106 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:04,112 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:04,288 [9] INFO   Get GOOGL page for expiration date 1489104000
+
+2017-02-23 10:25:04,401 [9] INFO   Page captured
+
+2017-02-23 10:25:04,403 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:04,409 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:04,553 [9] INFO   Get GOOGL page for expiration date 1489708800
+
+2017-02-23 10:25:04,690 [9] INFO   Page captured
+
+2017-02-23 10:25:04,691 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:04,702 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:05,034 [9] INFO   Get GOOGL page for expiration date 1490313600
+
+2017-02-23 10:25:05,200 [9] INFO   Page captured
+
+2017-02-23 10:25:05,201 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:05,206 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:05,413 [9] INFO   Get GOOGL page for expiration date 1490918400
+
+2017-02-23 10:25:05,497 [9] INFO   Page captured
+
+2017-02-23 10:25:05,500 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:05,512 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:06,150 [9] INFO   Get GOOGL page for expiration date 1492732800
+
+2017-02-23 10:25:06,252 [9] INFO   Page captured
+
+2017-02-23 10:25:06,254 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:06,261 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:06,477 [9] INFO   Get GOOGL page for expiration date 1495152000
+
+2017-02-23 10:25:06,537 [9] INFO   Page captured
+
+2017-02-23 10:25:06,539 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:06,542 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:06,609 [9] INFO   Get GOOGL page for expiration date 1497571200
+
+2017-02-23 10:25:06,764 [9] INFO   Page captured
+
+2017-02-23 10:25:06,766 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:06,779 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:07,159 [9] INFO   Get GOOGL page for expiration date 1505433600
+
+2017-02-23 10:25:07,237 [9] INFO   Page captured
+
+2017-02-23 10:25:07,238 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:07,245 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:07,435 [9] INFO   Get GOOGL page for expiration date 1516320000
+
+2017-02-23 10:25:07,547 [9] INFO   Page captured
+
+2017-02-23 10:25:07,556 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:07,567 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:07,779 [9] INFO   Get GOOGL page for expiration date 1529020800
+
+2017-02-23 10:25:07,972 [9] INFO   Page captured
+
+2017-02-23 10:25:07,973 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:07,977 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:08,089 [9] INFO   Get GOOGL page for expiration date 1547769600
+
+2017-02-23 10:25:08,246 [9] INFO   Page captured
+
+2017-02-23 10:25:08,247 [9] INFO   Deserialize GOOGL
+
+2017-02-23 10:25:08,257 [9] INFO   GOOGL deserialized
+
+2017-02-23 10:25:08,501 [9] INFO   Get GS page 
+
+2017-02-23 10:25:08,536 [9] INFO   Page captured
+
+2017-02-23 10:25:08,538 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:08,540 [9] INFO   GS deserialized
+
+2017-02-23 10:25:08,542 [9] INFO   Get GS page for expiration date 1487894400
+
+2017-02-23 10:25:08,625 [9] INFO   Page captured
+
+2017-02-23 10:25:08,626 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:08,630 [9] INFO   GS deserialized
+
+2017-02-23 10:25:08,763 [9] INFO   Get GS page for expiration date 1488499200
+
+2017-02-23 10:25:08,864 [9] INFO   Page captured
+
+2017-02-23 10:25:08,866 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:08,872 [9] INFO   GS deserialized
+
+2017-02-23 10:25:08,964 [9] INFO   Get GS page for expiration date 1489104000
+
+2017-02-23 10:25:09,031 [9] INFO   Page captured
+
+2017-02-23 10:25:09,033 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:09,037 [9] INFO   GS deserialized
+
+2017-02-23 10:25:09,102 [9] INFO   Get GS page for expiration date 1489708800
+
+2017-02-23 10:25:09,194 [9] INFO   Page captured
+
+2017-02-23 10:25:09,196 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:09,200 [9] INFO   GS deserialized
+
+2017-02-23 10:25:09,325 [9] INFO   Get GS page for expiration date 1490313600
+
+2017-02-23 10:25:09,437 [9] INFO   Page captured
+
+2017-02-23 10:25:09,439 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:09,443 [9] INFO   GS deserialized
+
+2017-02-23 10:25:09,530 [9] INFO   Get GS page for expiration date 1490918400
+
+2017-02-23 10:25:09,619 [9] INFO   Page captured
+
+2017-02-23 10:25:09,620 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:09,625 [9] INFO   GS deserialized
+
+2017-02-23 10:25:09,689 [9] INFO   Get GS page for expiration date 1492732800
+
+2017-02-23 10:25:09,811 [9] INFO   Page captured
+
+2017-02-23 10:25:09,813 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:09,818 [9] INFO   GS deserialized
+
+2017-02-23 10:25:09,925 [9] INFO   Get GS page for expiration date 1497571200
+
+2017-02-23 10:25:10,018 [9] INFO   Page captured
+
+2017-02-23 10:25:10,020 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:10,027 [9] INFO   GS deserialized
+
+2017-02-23 10:25:10,147 [9] INFO   Get GS page for expiration date 1500595200
+
+2017-02-23 10:25:10,270 [9] INFO   Page captured
+
+2017-02-23 10:25:10,274 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:10,279 [9] INFO   GS deserialized
+
+2017-02-23 10:25:10,430 [9] INFO   Get GS page for expiration date 1508457600
+
+2017-02-23 10:25:10,489 [9] INFO   Page captured
+
+2017-02-23 10:25:10,491 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:10,494 [9] INFO   GS deserialized
+
+2017-02-23 10:25:10,531 [9] INFO   Get GS page for expiration date 1516320000
+
+2017-02-23 10:25:12,541 [9] INFO   Page captured
+
+2017-02-23 10:25:12,543 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:12,549 [9] INFO   GS deserialized
+
+2017-02-23 10:25:12,695 [9] INFO   Get GS page for expiration date 1547769600
+
+2017-02-23 10:25:12,778 [9] INFO   Page captured
+
+2017-02-23 10:25:12,779 [9] INFO   Deserialize GS
+
+2017-02-23 10:25:12,783 [9] INFO   GS deserialized
+
+2017-02-23 10:25:12,945 [9] INFO   Get INTC page 
+
+2017-02-23 10:25:12,975 [9] INFO   Page captured
+
+2017-02-23 10:25:12,977 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:12,978 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:12,979 [9] INFO   Get INTC page for expiration date 1487894400
+
+2017-02-23 10:25:13,031 [9] INFO   Page captured
+
+2017-02-23 10:25:13,032 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:13,036 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:13,100 [9] INFO   Get INTC page for expiration date 1488499200
+
+2017-02-23 10:25:13,164 [9] INFO   Page captured
+
+2017-02-23 10:25:13,166 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:13,169 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:13,212 [9] INFO   Get INTC page for expiration date 1489104000
+
+2017-02-23 10:25:13,268 [9] INFO   Page captured
+
+2017-02-23 10:25:13,271 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:13,277 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:13,356 [9] INFO   Get INTC page for expiration date 1489708800
+
+2017-02-23 10:25:13,413 [9] INFO   Page captured
+
+2017-02-23 10:25:13,414 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:13,418 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:13,819 [9] INFO   Get INTC page for expiration date 1490313600
+
+2017-02-23 10:25:13,902 [9] INFO   Page captured
+
+2017-02-23 10:25:13,911 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:13,915 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:13,982 [9] INFO   Get INTC page for expiration date 1490918400
+
+2017-02-23 10:25:14,265 [9] INFO   Page captured
+
+2017-02-23 10:25:14,267 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:14,270 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:14,326 [9] INFO   Get INTC page for expiration date 1492732800
+
+2017-02-23 10:25:14,414 [9] INFO   Page captured
+
+2017-02-23 10:25:14,415 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:14,420 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:14,509 [9] INFO   Get INTC page for expiration date 1495152000
+
+2017-02-23 10:25:14,578 [9] INFO   Page captured
+
+2017-02-23 10:25:14,579 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:14,582 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:14,648 [9] INFO   Get INTC page for expiration date 1497571200
+
+2017-02-23 10:25:14,979 [9] INFO   Page captured
+
+2017-02-23 10:25:14,980 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:14,985 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,048 [9] INFO   Get INTC page for expiration date 1500595200
+
+2017-02-23 10:25:15,111 [9] INFO   Page captured
+
+2017-02-23 10:25:15,113 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,116 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,193 [9] INFO   Get INTC page for expiration date 1503014400
+
+2017-02-23 10:25:15,244 [9] INFO   Page captured
+
+2017-02-23 10:25:15,246 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,249 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,314 [9] INFO   Get INTC page for expiration date 1508457600
+
+2017-02-23 10:25:15,375 [9] INFO   Page captured
+
+2017-02-23 10:25:15,377 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,422 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,510 [9] INFO   Get INTC page for expiration date 1516320000
+
+2017-02-23 10:25:15,571 [9] INFO   Page captured
+
+2017-02-23 10:25:15,576 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,581 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,649 [9] INFO   Get INTC page for expiration date 1529020800
+
+2017-02-23 10:25:15,705 [9] INFO   Page captured
+
+2017-02-23 10:25:15,706 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,709 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,735 [9] INFO   Get INTC page for expiration date 1547769600
+
+2017-02-23 10:25:15,803 [9] INFO   Page captured
+
+2017-02-23 10:25:15,805 [9] INFO   Deserialize INTC
+
+2017-02-23 10:25:15,809 [9] INFO   INTC deserialized
+
+2017-02-23 10:25:15,860 [9] INFO   Get IWM page 
+
+2017-02-23 10:25:15,905 [9] INFO   Page captured
+
+2017-02-23 10:25:15,907 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:15,908 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:15,910 [9] INFO   Get IWM page for expiration date 1487894400
+
+2017-02-23 10:25:16,029 [9] INFO   Page captured
+
+2017-02-23 10:25:16,031 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:16,041 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:16,177 [9] INFO   Get IWM page for expiration date 1488499200
+
+2017-02-23 10:25:16,273 [9] INFO   Page captured
+
+2017-02-23 10:25:16,274 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:16,281 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:16,440 [9] INFO   Get IWM page for expiration date 1489104000
+
+2017-02-23 10:25:17,248 [9] INFO   Page captured
+
+2017-02-23 10:25:17,250 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:17,259 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:17,402 [9] INFO   Get IWM page for expiration date 1489708800
+
+2017-02-23 10:25:17,597 [9] INFO   Page captured
+
+2017-02-23 10:25:17,599 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:17,611 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:17,924 [9] INFO   Get IWM page for expiration date 1490313600
+
+2017-02-23 10:25:18,056 [9] INFO   Page captured
+
+2017-02-23 10:25:18,058 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:18,067 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:18,195 [9] INFO   Get IWM page for expiration date 1490918400
+
+2017-02-23 10:25:18,319 [9] INFO   Page captured
+
+2017-02-23 10:25:18,321 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:18,329 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:18,559 [9] INFO   Get IWM page for expiration date 1492732800
+
+2017-02-23 10:25:18,655 [9] INFO   Page captured
+
+2017-02-23 10:25:18,656 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:18,664 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:18,835 [9] INFO   Get IWM page for expiration date 1495152000
+
+2017-02-23 10:25:18,934 [9] INFO   Page captured
+
+2017-02-23 10:25:18,936 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:18,945 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:19,121 [9] INFO   Get IWM page for expiration date 1497571200
+
+2017-02-23 10:25:19,465 [9] INFO   Page captured
+
+2017-02-23 10:25:19,466 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:19,478 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:19,818 [9] INFO   Get IWM page for expiration date 1498780800
+
+2017-02-23 10:25:19,903 [9] INFO   Page captured
+
+2017-02-23 10:25:19,904 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:19,916 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:20,082 [9] INFO   Get IWM page for expiration date 1503014400
+
+2017-02-23 10:25:20,182 [9] INFO   Page captured
+
+2017-02-23 10:25:20,184 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:20,191 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:20,562 [9] INFO   Get IWM page for expiration date 1505433600
+
+2017-02-23 10:25:20,741 [9] INFO   Page captured
+
+2017-02-23 10:25:20,742 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:20,756 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:21,156 [9] INFO   Get IWM page for expiration date 1506643200
+
+2017-02-23 10:25:21,224 [9] INFO   Page captured
+
+2017-02-23 10:25:21,227 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:21,236 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:21,383 [9] INFO   Get IWM page for expiration date 1510876800
+
+2017-02-23 10:25:21,582 [9] INFO   Page captured
+
+2017-02-23 10:25:21,584 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:21,588 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:21,689 [9] INFO   Get IWM page for expiration date 1513296000
+
+2017-02-23 10:25:21,789 [9] INFO   Page captured
+
+2017-02-23 10:25:21,791 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:21,798 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:21,930 [9] INFO   Get IWM page for expiration date 1514505600
+
+2017-02-23 10:25:22,044 [9] INFO   Page captured
+
+2017-02-23 10:25:22,046 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:22,050 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:22,182 [9] INFO   Get IWM page for expiration date 1516320000
+
+2017-02-23 10:25:22,350 [9] INFO   Page captured
+
+2017-02-23 10:25:22,352 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:22,369 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:22,749 [9] INFO   Get IWM page for expiration date 1521158400
+
+2017-02-23 10:25:22,835 [9] INFO   Page captured
+
+2017-02-23 10:25:22,837 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:22,843 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:22,981 [9] INFO   Get IWM page for expiration date 1529020800
+
+2017-02-23 10:25:23,059 [9] INFO   Page captured
+
+2017-02-23 10:25:23,061 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:23,068 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:23,372 [9] INFO   Get IWM page for expiration date 1537488000
+
+2017-02-23 10:25:23,454 [9] INFO   Page captured
+
+2017-02-23 10:25:23,456 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:23,462 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:23,659 [9] INFO   Get IWM page for expiration date 1546214400
+
+2017-02-23 10:25:23,701 [9] INFO   Page captured
+
+2017-02-23 10:25:23,702 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:23,706 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:23,725 [9] INFO   Get IWM page for expiration date 1547769600
+
+2017-02-23 10:25:23,817 [9] INFO   Page captured
+
+2017-02-23 10:25:23,819 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:23,826 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:23,968 [9] INFO   Get IWM page for expiration date 1771632000
+
+2017-02-23 10:25:24,005 [9] INFO   Page captured
+
+2017-02-23 10:25:24,007 [9] INFO   Deserialize IWM
+
+2017-02-23 10:25:24,009 [9] INFO   IWM deserialized
+
+2017-02-23 10:25:24,010 [9] INFO   Get JNJ page 
+
+2017-02-23 10:25:24,045 [9] INFO   Page captured
+
+2017-02-23 10:25:24,046 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,047 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,049 [9] INFO   Get JNJ page for expiration date 1487894400
+
+2017-02-23 10:25:24,108 [9] INFO   Page captured
+
+2017-02-23 10:25:24,110 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,113 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,173 [9] INFO   Get JNJ page for expiration date 1488499200
+
+2017-02-23 10:25:24,234 [9] INFO   Page captured
+
+2017-02-23 10:25:24,237 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,240 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,301 [9] INFO   Get JNJ page for expiration date 1489104000
+
+2017-02-23 10:25:24,360 [9] INFO   Page captured
+
+2017-02-23 10:25:24,361 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,364 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,429 [9] INFO   Get JNJ page for expiration date 1489708800
+
+2017-02-23 10:25:24,490 [9] INFO   Page captured
+
+2017-02-23 10:25:24,491 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,495 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,550 [9] INFO   Get JNJ page for expiration date 1490313600
+
+2017-02-23 10:25:24,742 [9] INFO   Page captured
+
+2017-02-23 10:25:24,744 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,747 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,793 [9] INFO   Get JNJ page for expiration date 1490918400
+
+2017-02-23 10:25:24,856 [9] INFO   Page captured
+
+2017-02-23 10:25:24,857 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:24,860 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:24,907 [9] INFO   Get JNJ page for expiration date 1492732800
+
+2017-02-23 10:25:25,048 [9] INFO   Page captured
+
+2017-02-23 10:25:25,050 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,053 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,091 [9] INFO   Get JNJ page for expiration date 1495152000
+
+2017-02-23 10:25:25,132 [9] INFO   Page captured
+
+2017-02-23 10:25:25,133 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,135 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,150 [9] INFO   Get JNJ page for expiration date 1497571200
+
+2017-02-23 10:25:25,220 [9] INFO   Page captured
+
+2017-02-23 10:25:25,223 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,229 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,295 [9] INFO   Get JNJ page for expiration date 1500595200
+
+2017-02-23 10:25:25,358 [9] INFO   Page captured
+
+2017-02-23 10:25:25,359 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,363 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,399 [9] INFO   Get JNJ page for expiration date 1508457600
+
+2017-02-23 10:25:25,488 [9] INFO   Page captured
+
+2017-02-23 10:25:25,490 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,492 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,520 [9] INFO   Get JNJ page for expiration date 1516320000
+
+2017-02-23 10:25:25,710 [9] INFO   Page captured
+
+2017-02-23 10:25:25,711 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,715 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,791 [9] INFO   Get JNJ page for expiration date 1547769600
+
+2017-02-23 10:25:25,858 [9] INFO   Page captured
+
+2017-02-23 10:25:25,860 [9] INFO   Deserialize JNJ
+
+2017-02-23 10:25:25,864 [9] INFO   JNJ deserialized
+
+2017-02-23 10:25:25,930 [9] INFO   Get K page 
+
+2017-02-23 10:25:25,964 [9] INFO   Page captured
+
+2017-02-23 10:25:25,965 [9] INFO   Deserialize K
+
+2017-02-23 10:25:25,967 [9] INFO   K deserialized
+
+2017-02-23 10:25:25,968 [9] INFO   Get K page for expiration date 1489708800
+
+2017-02-23 10:25:26,036 [9] INFO   Page captured
+
+2017-02-23 10:25:26,037 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,040 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,100 [9] INFO   Get K page for expiration date 1492732800
+
+2017-02-23 10:25:26,179 [9] INFO   Page captured
+
+2017-02-23 10:25:26,182 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,185 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,250 [9] INFO   Get K page for expiration date 1497571200
+
+2017-02-23 10:25:26,315 [9] INFO   Page captured
+
+2017-02-23 10:25:26,320 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,329 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,373 [9] INFO   Get K page for expiration date 1500595200
+
+2017-02-23 10:25:26,487 [9] INFO   Page captured
+
+2017-02-23 10:25:26,489 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,492 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,537 [9] INFO   Get K page for expiration date 1505433600
+
+2017-02-23 10:25:26,592 [9] INFO   Page captured
+
+2017-02-23 10:25:26,593 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,596 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,631 [9] INFO   Get K page for expiration date 1516320000
+
+2017-02-23 10:25:26,743 [9] INFO   Page captured
+
+2017-02-23 10:25:26,744 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,747 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,807 [9] INFO   Get K page for expiration date 1547769600
+
+2017-02-23 10:25:26,866 [9] INFO   Page captured
+
+2017-02-23 10:25:26,868 [9] INFO   Deserialize K
+
+2017-02-23 10:25:26,870 [9] INFO   K deserialized
+
+2017-02-23 10:25:26,907 [9] INFO   Get KLAC page 
+
+2017-02-23 10:25:26,945 [9] INFO   Page captured
+
+2017-02-23 10:25:26,947 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:26,949 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:26,952 [9] INFO   Get KLAC page for expiration date 1489708800
+
+2017-02-23 10:25:27,007 [9] INFO   Page captured
+
+2017-02-23 10:25:27,010 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:27,014 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:27,066 [9] INFO   Get KLAC page for expiration date 1492732800
+
+2017-02-23 10:25:27,312 [9] INFO   Page captured
+
+2017-02-23 10:25:27,313 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:27,316 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:27,334 [9] INFO   Get KLAC page for expiration date 1497571200
+
+2017-02-23 10:25:27,400 [9] INFO   Page captured
+
+2017-02-23 10:25:27,403 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:27,410 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:27,446 [9] INFO   Get KLAC page for expiration date 1505433600
+
+2017-02-23 10:25:27,495 [9] INFO   Page captured
+
+2017-02-23 10:25:27,497 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:27,499 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:27,522 [9] INFO   Get KLAC page for expiration date 1516320000
+
+2017-02-23 10:25:27,586 [9] INFO   Page captured
+
+2017-02-23 10:25:27,588 [9] INFO   Deserialize KLAC
+
+2017-02-23 10:25:27,590 [9] INFO   KLAC deserialized
+
+2017-02-23 10:25:27,644 [9] INFO   Get KO page 
+
+2017-02-23 10:25:27,690 [9] INFO   Page captured
+
+2017-02-23 10:25:27,691 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:27,692 [9] INFO   KO deserialized
+
+2017-02-23 10:25:27,693 [9] INFO   Get KO page for expiration date 1487894400
+
+2017-02-23 10:25:27,792 [9] INFO   Page captured
+
+2017-02-23 10:25:27,794 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:27,797 [9] INFO   KO deserialized
+
+2017-02-23 10:25:27,837 [9] INFO   Get KO page for expiration date 1488499200
+
+2017-02-23 10:25:28,043 [9] INFO   Page captured
+
+2017-02-23 10:25:28,045 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,047 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,091 [9] INFO   Get KO page for expiration date 1489104000
+
+2017-02-23 10:25:28,161 [9] INFO   Page captured
+
+2017-02-23 10:25:28,162 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,165 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,201 [9] INFO   Get KO page for expiration date 1489708800
+
+2017-02-23 10:25:28,266 [9] INFO   Page captured
+
+2017-02-23 10:25:28,268 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,271 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,328 [9] INFO   Get KO page for expiration date 1490313600
+
+2017-02-23 10:25:28,379 [9] INFO   Page captured
+
+2017-02-23 10:25:28,388 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,392 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,424 [9] INFO   Get KO page for expiration date 1490918400
+
+2017-02-23 10:25:28,522 [9] INFO   Page captured
+
+2017-02-23 10:25:28,523 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,527 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,557 [9] INFO   Get KO page for expiration date 1492732800
+
+2017-02-23 10:25:28,816 [9] INFO   Page captured
+
+2017-02-23 10:25:28,818 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,821 [9] INFO   KO deserialized
+
+2017-02-23 10:25:28,867 [9] INFO   Get KO page for expiration date 1495152000
+
+2017-02-23 10:25:28,933 [9] INFO   Page captured
+
+2017-02-23 10:25:28,934 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:28,938 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,003 [9] INFO   Get KO page for expiration date 1497571200
+
+2017-02-23 10:25:29,073 [9] INFO   Page captured
+
+2017-02-23 10:25:29,075 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:29,080 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,137 [9] INFO   Get KO page for expiration date 1503014400
+
+2017-02-23 10:25:29,237 [9] INFO   Page captured
+
+2017-02-23 10:25:29,239 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:29,250 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,316 [9] INFO   Get KO page for expiration date 1516320000
+
+2017-02-23 10:25:29,380 [9] INFO   Page captured
+
+2017-02-23 10:25:29,382 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:29,387 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,444 [9] INFO   Get KO page for expiration date 1529020800
+
+2017-02-23 10:25:29,507 [9] INFO   Page captured
+
+2017-02-23 10:25:29,509 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:29,511 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,534 [9] INFO   Get KO page for expiration date 1547769600
+
+2017-02-23 10:25:29,584 [9] INFO   Page captured
+
+2017-02-23 10:25:29,585 [9] INFO   Deserialize KO
+
+2017-02-23 10:25:29,588 [9] INFO   KO deserialized
+
+2017-02-23 10:25:29,635 [9] INFO   Get MAR page 
+
+2017-02-23 10:25:29,670 [9] INFO   Page captured
+
+2017-02-23 10:25:29,671 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:29,673 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:29,674 [9] INFO   Get MAR page for expiration date 1487894400
+
+2017-02-23 10:25:29,740 [9] INFO   Page captured
+
+2017-02-23 10:25:29,741 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:29,746 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:29,835 [9] INFO   Get MAR page for expiration date 1488499200
+
+2017-02-23 10:25:29,903 [9] INFO   Page captured
+
+2017-02-23 10:25:29,905 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:29,908 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:29,976 [9] INFO   Get MAR page for expiration date 1489104000
+
+2017-02-23 10:25:30,031 [9] INFO   Page captured
+
+2017-02-23 10:25:30,033 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,037 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,085 [9] INFO   Get MAR page for expiration date 1489708800
+
+2017-02-23 10:25:30,150 [9] INFO   Page captured
+
+2017-02-23 10:25:30,151 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,155 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,278 [9] INFO   Get MAR page for expiration date 1490313600
+
+2017-02-23 10:25:30,345 [9] INFO   Page captured
+
+2017-02-23 10:25:30,365 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,374 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,462 [9] INFO   Get MAR page for expiration date 1490918400
+
+2017-02-23 10:25:30,523 [9] INFO   Page captured
+
+2017-02-23 10:25:30,528 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,535 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,607 [9] INFO   Get MAR page for expiration date 1492732800
+
+2017-02-23 10:25:30,681 [9] INFO   Page captured
+
+2017-02-23 10:25:30,683 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,686 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,757 [9] INFO   Get MAR page for expiration date 1495152000
+
+2017-02-23 10:25:30,858 [9] INFO   Page captured
+
+2017-02-23 10:25:30,864 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,871 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:30,903 [9] INFO   Get MAR page for expiration date 1500595200
+
+2017-02-23 10:25:30,977 [9] INFO   Page captured
+
+2017-02-23 10:25:30,979 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:30,981 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:31,019 [9] INFO   Get MAR page for expiration date 1508457600
+
+2017-02-23 10:25:31,055 [9] INFO   Page captured
+
+2017-02-23 10:25:31,059 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:31,064 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:31,128 [9] INFO   Get MAR page for expiration date 1516320000
+
+2017-02-23 10:25:31,218 [9] INFO   Page captured
+
+2017-02-23 10:25:31,219 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:31,230 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:31,418 [9] INFO   Get MAR page for expiration date 1547769600
+
+2017-02-23 10:25:31,481 [9] INFO   Page captured
+
+2017-02-23 10:25:31,483 [9] INFO   Deserialize MAR
+
+2017-02-23 10:25:31,486 [9] INFO   MAR deserialized
+
+2017-02-23 10:25:31,579 [9] INFO   Get MAT page 
+
+2017-02-23 10:25:31,632 [9] INFO   Page captured
+
+2017-02-23 10:25:31,635 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:31,641 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:31,643 [9] INFO   Get MAT page for expiration date 1487894400
+
+2017-02-23 10:25:31,703 [9] INFO   Page captured
+
+2017-02-23 10:25:31,705 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:31,708 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:31,806 [9] INFO   Get MAT page for expiration date 1488499200
+
+2017-02-23 10:25:31,863 [9] INFO   Page captured
+
+2017-02-23 10:25:31,865 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:31,868 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:31,909 [9] INFO   Get MAT page for expiration date 1489104000
+
+2017-02-23 10:25:31,958 [9] INFO   Page captured
+
+2017-02-23 10:25:31,960 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:31,963 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:31,998 [9] INFO   Get MAT page for expiration date 1489708800
+
+2017-02-23 10:25:32,053 [9] INFO   Page captured
+
+2017-02-23 10:25:32,054 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,061 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,119 [9] INFO   Get MAT page for expiration date 1490313600
+
+2017-02-23 10:25:32,170 [9] INFO   Page captured
+
+2017-02-23 10:25:32,173 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,176 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,218 [9] INFO   Get MAT page for expiration date 1490918400
+
+2017-02-23 10:25:32,266 [9] INFO   Page captured
+
+2017-02-23 10:25:32,267 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,273 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,326 [9] INFO   Get MAT page for expiration date 1492732800
+
+2017-02-23 10:25:32,415 [9] INFO   Page captured
+
+2017-02-23 10:25:32,417 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,421 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,484 [9] INFO   Get MAT page for expiration date 1500595200
+
+2017-02-23 10:25:32,555 [9] INFO   Page captured
+
+2017-02-23 10:25:32,557 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,560 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,619 [9] INFO   Get MAT page for expiration date 1508457600
+
+2017-02-23 10:25:32,655 [9] INFO   Page captured
+
+2017-02-23 10:25:32,656 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,658 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,677 [9] INFO   Get MAT page for expiration date 1516320000
+
+2017-02-23 10:25:32,741 [9] INFO   Page captured
+
+2017-02-23 10:25:32,742 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,744 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,793 [9] INFO   Get MAT page for expiration date 1547769600
+
+2017-02-23 10:25:32,849 [9] INFO   Page captured
+
+2017-02-23 10:25:32,852 [9] INFO   Deserialize MAT
+
+2017-02-23 10:25:32,856 [9] INFO   MAT deserialized
+
+2017-02-23 10:25:32,891 [9] INFO   Get MGM page 
+
+2017-02-23 10:25:32,927 [9] INFO   Page captured
+
+2017-02-23 10:25:32,929 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:32,930 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:32,931 [9] INFO   Get MGM page for expiration date 1487894400
+
+2017-02-23 10:25:33,002 [9] INFO   Page captured
+
+2017-02-23 10:25:33,003 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,007 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:33,091 [9] INFO   Get MGM page for expiration date 1488499200
+
+2017-02-23 10:25:33,154 [9] INFO   Page captured
+
+2017-02-23 10:25:33,156 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,159 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:33,201 [9] INFO   Get MGM page for expiration date 1489104000
+
+2017-02-23 10:25:33,267 [9] INFO   Page captured
+
+2017-02-23 10:25:33,270 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,273 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:33,325 [9] INFO   Get MGM page for expiration date 1489708800
+
+2017-02-23 10:25:33,400 [9] INFO   Page captured
+
+2017-02-23 10:25:33,402 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,407 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:33,512 [9] INFO   Get MGM page for expiration date 1490313600
+
+2017-02-23 10:25:33,584 [9] INFO   Page captured
+
+2017-02-23 10:25:33,585 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,589 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:33,658 [9] INFO   Get MGM page for expiration date 1490918400
+
+2017-02-23 10:25:33,715 [9] INFO   Page captured
+
+2017-02-23 10:25:33,717 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:33,720 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,105 [9] INFO   Get MGM page for expiration date 1492732800
+
+2017-02-23 10:25:34,167 [9] INFO   Page captured
+
+2017-02-23 10:25:34,168 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,171 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,221 [9] INFO   Get MGM page for expiration date 1495152000
+
+2017-02-23 10:25:34,270 [9] INFO   Page captured
+
+2017-02-23 10:25:34,277 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,280 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,366 [9] INFO   Get MGM page for expiration date 1497571200
+
+2017-02-23 10:25:34,436 [9] INFO   Page captured
+
+2017-02-23 10:25:34,439 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,444 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,525 [9] INFO   Get MGM page for expiration date 1505433600
+
+2017-02-23 10:25:34,583 [9] INFO   Page captured
+
+2017-02-23 10:25:34,585 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,587 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,637 [9] INFO   Get MGM page for expiration date 1516320000
+
+2017-02-23 10:25:34,695 [9] INFO   Page captured
+
+2017-02-23 10:25:34,697 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,702 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,761 [9] INFO   Get MGM page for expiration date 1547769600
+
+2017-02-23 10:25:34,912 [9] INFO   Page captured
+
+2017-02-23 10:25:34,914 [9] INFO   Deserialize MGM
+
+2017-02-23 10:25:34,916 [9] INFO   MGM deserialized
+
+2017-02-23 10:25:34,955 [9] INFO   Get MZZ page 
+
+2017-02-23 10:25:34,990 [9] INFO   Page captured
+
+2017-02-23 10:25:34,992 [9] INFO   Deserialize MZZ
+
+2017-02-23 10:25:34,993 [9] INFO   MZZ deserialized
+
+2017-02-23 10:25:34,994 [9] INFO   Get MZZ page for expiration date 1489708800
+
+2017-02-23 10:25:35,035 [9] INFO   Page captured
+
+2017-02-23 10:25:35,036 [9] INFO   Deserialize MZZ
+
+2017-02-23 10:25:35,038 [9] INFO   MZZ deserialized
+
+2017-02-23 10:25:35,073 [9] INFO   Get MZZ page for expiration date 1497571200
+
+2017-02-23 10:25:35,123 [9] INFO   Page captured
+
+2017-02-23 10:25:35,124 [9] INFO   Deserialize MZZ
+
+2017-02-23 10:25:35,126 [9] INFO   MZZ deserialized
+
+2017-02-23 10:25:35,148 [9] INFO   Get PEP page 
+
+2017-02-23 10:25:35,230 [9] INFO   Page captured
+
+2017-02-23 10:25:35,232 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,235 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:35,238 [9] INFO   Get PEP page for expiration date 1487894400
+
+2017-02-23 10:25:35,307 [9] INFO   Page captured
+
+2017-02-23 10:25:35,310 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,314 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:35,515 [9] INFO   Get PEP page for expiration date 1488499200
+
+2017-02-23 10:25:35,584 [9] INFO   Page captured
+
+2017-02-23 10:25:35,586 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,589 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:35,681 [9] INFO   Get PEP page for expiration date 1489104000
+
+2017-02-23 10:25:35,735 [9] INFO   Page captured
+
+2017-02-23 10:25:35,736 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,738 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:35,799 [9] INFO   Get PEP page for expiration date 1489708800
+
+2017-02-23 10:25:35,858 [9] INFO   Page captured
+
+2017-02-23 10:25:35,859 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,862 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:35,920 [9] INFO   Get PEP page for expiration date 1490313600
+
+2017-02-23 10:25:35,978 [9] INFO   Page captured
+
+2017-02-23 10:25:35,980 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:35,982 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,030 [9] INFO   Get PEP page for expiration date 1490918400
+
+2017-02-23 10:25:36,141 [9] INFO   Page captured
+
+2017-02-23 10:25:36,143 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,147 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,194 [9] INFO   Get PEP page for expiration date 1492732800
+
+2017-02-23 10:25:36,315 [9] INFO   Page captured
+
+2017-02-23 10:25:36,318 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,323 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,390 [9] INFO   Get PEP page for expiration date 1497571200
+
+2017-02-23 10:25:36,466 [9] INFO   Page captured
+
+2017-02-23 10:25:36,468 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,472 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,552 [9] INFO   Get PEP page for expiration date 1500595200
+
+2017-02-23 10:25:36,615 [9] INFO   Page captured
+
+2017-02-23 10:25:36,617 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,622 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,673 [9] INFO   Get PEP page for expiration date 1508457600
+
+2017-02-23 10:25:36,714 [9] INFO   Page captured
+
+2017-02-23 10:25:36,715 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,717 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,746 [9] INFO   Get PEP page for expiration date 1516320000
+
+2017-02-23 10:25:36,826 [9] INFO   Page captured
+
+2017-02-23 10:25:36,828 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,832 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:36,901 [9] INFO   Get PEP page for expiration date 1547769600
+
+2017-02-23 10:25:36,977 [9] INFO   Page captured
+
+2017-02-23 10:25:36,978 [9] INFO   Deserialize PEP
+
+2017-02-23 10:25:36,981 [9] INFO   PEP deserialized
+
+2017-02-23 10:25:37,048 [9] INFO   Get PG page 
+
+2017-02-23 10:25:37,081 [9] INFO   Page captured
+
+2017-02-23 10:25:37,082 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:37,084 [9] INFO   PG deserialized
+
+2017-02-23 10:25:37,085 [9] INFO   Get PG page for expiration date 1487894400
+
+2017-02-23 10:25:39,729 [9] INFO   Page captured
+
+2017-02-23 10:25:39,731 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:39,735 [9] INFO   PG deserialized
+
+2017-02-23 10:25:39,826 [9] INFO   Get PG page for expiration date 1488499200
+
+2017-02-23 10:25:39,949 [9] INFO   Page captured
+
+2017-02-23 10:25:39,950 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:39,954 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,032 [9] INFO   Get PG page for expiration date 1489104000
+
+2017-02-23 10:25:40,096 [9] INFO   Page captured
+
+2017-02-23 10:25:40,097 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,100 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,147 [9] INFO   Get PG page for expiration date 1489708800
+
+2017-02-23 10:25:40,216 [9] INFO   Page captured
+
+2017-02-23 10:25:40,218 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,223 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,323 [9] INFO   Get PG page for expiration date 1490313600
+
+2017-02-23 10:25:40,382 [9] INFO   Page captured
+
+2017-02-23 10:25:40,384 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,387 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,456 [9] INFO   Get PG page for expiration date 1490918400
+
+2017-02-23 10:25:40,519 [9] INFO   Page captured
+
+2017-02-23 10:25:40,521 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,525 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,582 [9] INFO   Get PG page for expiration date 1492732800
+
+2017-02-23 10:25:40,732 [9] INFO   Page captured
+
+2017-02-23 10:25:40,733 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,736 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,799 [9] INFO   Get PG page for expiration date 1495152000
+
+2017-02-23 10:25:40,856 [9] INFO   Page captured
+
+2017-02-23 10:25:40,860 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,864 [9] INFO   PG deserialized
+
+2017-02-23 10:25:40,891 [9] INFO   Get PG page for expiration date 1497571200
+
+2017-02-23 10:25:40,955 [9] INFO   Page captured
+
+2017-02-23 10:25:40,956 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:40,959 [9] INFO   PG deserialized
+
+2017-02-23 10:25:41,005 [9] INFO   Get PG page for expiration date 1500595200
+
+2017-02-23 10:25:41,065 [9] INFO   Page captured
+
+2017-02-23 10:25:41,067 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:41,073 [9] INFO   PG deserialized
+
+2017-02-23 10:25:41,120 [9] INFO   Get PG page for expiration date 1508457600
+
+2017-02-23 10:25:41,163 [9] INFO   Page captured
+
+2017-02-23 10:25:41,164 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:41,166 [9] INFO   PG deserialized
+
+2017-02-23 10:25:41,185 [9] INFO   Get PG page for expiration date 1516320000
+
+2017-02-23 10:25:41,286 [9] INFO   Page captured
+
+2017-02-23 10:25:41,289 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:41,293 [9] INFO   PG deserialized
+
+2017-02-23 10:25:41,381 [9] INFO   Get PG page for expiration date 1547769600
+
+2017-02-23 10:25:41,487 [9] INFO   Page captured
+
+2017-02-23 10:25:41,493 [9] INFO   Deserialize PG
+
+2017-02-23 10:25:41,496 [9] INFO   PG deserialized
+
+2017-02-23 10:25:41,555 [9] INFO   Get PIR page 
+
+2017-02-23 10:25:41,588 [9] INFO   Page captured
+
+2017-02-23 10:25:41,589 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,590 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,591 [9] INFO   Get PIR page for expiration date 1489708800
+
+2017-02-23 10:25:41,641 [9] INFO   Page captured
+
+2017-02-23 10:25:41,642 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,644 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,675 [9] INFO   Get PIR page for expiration date 1492732800
+
+2017-02-23 10:25:41,714 [9] INFO   Page captured
+
+2017-02-23 10:25:41,716 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,718 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,726 [9] INFO   Get PIR page for expiration date 1497571200
+
+2017-02-23 10:25:41,782 [9] INFO   Page captured
+
+2017-02-23 10:25:41,783 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,786 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,813 [9] INFO   Get PIR page for expiration date 1505433600
+
+2017-02-23 10:25:41,865 [9] INFO   Page captured
+
+2017-02-23 10:25:41,866 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,869 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,885 [9] INFO   Get PIR page for expiration date 1516320000
+
+2017-02-23 10:25:41,928 [9] INFO   Page captured
+
+2017-02-23 10:25:41,929 [9] INFO   Deserialize PIR
+
+2017-02-23 10:25:41,931 [9] INFO   PIR deserialized
+
+2017-02-23 10:25:41,946 [9] INFO   Get QID page 
+
+2017-02-23 10:25:41,990 [9] INFO   Page captured
+
+2017-02-23 10:25:41,992 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:41,993 [9] INFO   QID deserialized
+
+2017-02-23 10:25:41,994 [9] INFO   Get QID page for expiration date 1489708800
+
+2017-02-23 10:25:42,045 [9] INFO   Page captured
+
+2017-02-23 10:25:42,047 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,049 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,082 [9] INFO   Get QID page for expiration date 1492732800
+
+2017-02-23 10:25:42,358 [9] INFO   Page captured
+
+2017-02-23 10:25:42,360 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,363 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,415 [9] INFO   Get QID page for expiration date 1500595200
+
+2017-02-23 10:25:42,511 [9] INFO   Page captured
+
+2017-02-23 10:25:42,513 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,518 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,587 [9] INFO   Get QID page for expiration date 1508457600
+
+2017-02-23 10:25:42,625 [9] INFO   Page captured
+
+2017-02-23 10:25:42,626 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,628 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,636 [9] INFO   Get QID page for expiration date 1516320000
+
+2017-02-23 10:25:42,756 [9] INFO   Page captured
+
+2017-02-23 10:25:42,758 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,762 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,840 [9] INFO   Get QID page for expiration date 1547769600
+
+2017-02-23 10:25:42,880 [9] INFO   Page captured
+
+2017-02-23 10:25:42,881 [9] INFO   Deserialize QID
+
+2017-02-23 10:25:42,883 [9] INFO   QID deserialized
+
+2017-02-23 10:25:42,900 [9] INFO   Get QQQ page 
+
+2017-02-23 10:25:42,942 [9] INFO   Page captured
+
+2017-02-23 10:25:42,944 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:42,945 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:42,947 [9] INFO   Get QQQ page for expiration date 1487894400
+
+2017-02-23 10:25:43,042 [9] INFO   Page captured
+
+2017-02-23 10:25:43,043 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:43,051 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:43,201 [9] INFO   Get QQQ page for expiration date 1488499200
+
+2017-02-23 10:25:43,303 [9] INFO   Page captured
+
+2017-02-23 10:25:43,305 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:43,316 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:43,606 [9] INFO   Get QQQ page for expiration date 1489104000
+
+2017-02-23 10:25:43,722 [9] INFO   Page captured
+
+2017-02-23 10:25:43,724 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:43,738 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:43,916 [9] INFO   Get QQQ page for expiration date 1489708800
+
+2017-02-23 10:25:44,031 [9] INFO   Page captured
+
+2017-02-23 10:25:44,039 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:44,050 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:44,431 [9] INFO   Get QQQ page for expiration date 1490313600
+
+2017-02-23 10:25:44,503 [9] INFO   Page captured
+
+2017-02-23 10:25:44,506 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:44,513 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:44,625 [9] INFO   Get QQQ page for expiration date 1490918400
+
+2017-02-23 10:25:45,131 [9] INFO   Page captured
+
+2017-02-23 10:25:45,132 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:45,139 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:45,307 [9] INFO   Get QQQ page for expiration date 1492732800
+
+2017-02-23 10:25:45,400 [9] INFO   Page captured
+
+2017-02-23 10:25:45,402 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:45,408 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:45,550 [9] INFO   Get QQQ page for expiration date 1495152000
+
+2017-02-23 10:25:45,626 [9] INFO   Page captured
+
+2017-02-23 10:25:45,627 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:45,633 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:45,752 [9] INFO   Get QQQ page for expiration date 1497571200
+
+2017-02-23 10:25:45,853 [9] INFO   Page captured
+
+2017-02-23 10:25:45,854 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:45,863 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:46,077 [9] INFO   Get QQQ page for expiration date 1498780800
+
+2017-02-23 10:25:46,181 [9] INFO   Page captured
+
+2017-02-23 10:25:46,183 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:46,191 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:46,364 [9] INFO   Get QQQ page for expiration date 1505433600
+
+2017-02-23 10:25:46,463 [9] INFO   Page captured
+
+2017-02-23 10:25:46,464 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:46,471 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:46,643 [9] INFO   Get QQQ page for expiration date 1506643200
+
+2017-02-23 10:25:46,728 [9] INFO   Page captured
+
+2017-02-23 10:25:46,730 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:46,736 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:46,892 [9] INFO   Get QQQ page for expiration date 1513296000
+
+2017-02-23 10:25:46,946 [9] INFO   Page captured
+
+2017-02-23 10:25:46,947 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:46,950 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:46,968 [9] INFO   Get QQQ page for expiration date 1514505600
+
+2017-02-23 10:25:47,058 [9] INFO   Page captured
+
+2017-02-23 10:25:47,060 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:47,066 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:47,188 [9] INFO   Get QQQ page for expiration date 1516320000
+
+2017-02-23 10:25:47,283 [9] INFO   Page captured
+
+2017-02-23 10:25:47,284 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:47,289 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:47,407 [9] INFO   Get QQQ page for expiration date 1547769600
+
+2017-02-23 10:25:47,518 [9] INFO   Page captured
+
+2017-02-23 10:25:47,522 [9] INFO   Deserialize QQQ
+
+2017-02-23 10:25:47,529 [9] INFO   QQQ deserialized
+
+2017-02-23 10:25:47,663 [9] INFO   Get S page 
+
+2017-02-23 10:25:47,698 [9] INFO   Page captured
+
+2017-02-23 10:25:47,700 [9] INFO   Deserialize S
+
+2017-02-23 10:25:47,701 [9] INFO   S deserialized
+
+2017-02-23 10:25:47,703 [9] INFO   Get S page for expiration date 1487894400
+
+2017-02-23 10:25:47,760 [9] INFO   Page captured
+
+2017-02-23 10:25:47,762 [9] INFO   Deserialize S
+
+2017-02-23 10:25:47,764 [9] INFO   S deserialized
+
+2017-02-23 10:25:47,793 [9] INFO   Get S page for expiration date 1488499200
+
+2017-02-23 10:25:47,837 [9] INFO   Page captured
+
+2017-02-23 10:25:47,838 [9] INFO   Deserialize S
+
+2017-02-23 10:25:47,841 [9] INFO   S deserialized
+
+2017-02-23 10:25:47,869 [9] INFO   Get S page for expiration date 1489104000
+
+2017-02-23 10:25:47,912 [9] INFO   Page captured
+
+2017-02-23 10:25:47,913 [9] INFO   Deserialize S
+
+2017-02-23 10:25:47,915 [9] INFO   S deserialized
+
+2017-02-23 10:25:47,940 [9] INFO   Get S page for expiration date 1489708800
+
+2017-02-23 10:25:48,002 [9] INFO   Page captured
+
+2017-02-23 10:25:48,004 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,007 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,048 [9] INFO   Get S page for expiration date 1490313600
+
+2017-02-23 10:25:48,092 [9] INFO   Page captured
+
+2017-02-23 10:25:48,098 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,103 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,129 [9] INFO   Get S page for expiration date 1490918400
+
+2017-02-23 10:25:48,176 [9] INFO   Page captured
+
+2017-02-23 10:25:48,177 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,179 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,196 [9] INFO   Get S page for expiration date 1492732800
+
+2017-02-23 10:25:48,238 [9] INFO   Page captured
+
+2017-02-23 10:25:48,239 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,244 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,274 [9] INFO   Get S page for expiration date 1495152000
+
+2017-02-23 10:25:48,328 [9] INFO   Page captured
+
+2017-02-23 10:25:48,330 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,333 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,373 [9] INFO   Get S page for expiration date 1497571200
+
+2017-02-23 10:25:48,447 [9] INFO   Page captured
+
+2017-02-23 10:25:48,448 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,452 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,533 [9] INFO   Get S page for expiration date 1503014400
+
+2017-02-23 10:25:48,591 [9] INFO   Page captured
+
+2017-02-23 10:25:48,593 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,595 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,626 [9] INFO   Get S page for expiration date 1516320000
+
+2017-02-23 10:25:48,679 [9] INFO   Page captured
+
+2017-02-23 10:25:48,681 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,684 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,831 [9] INFO   Get S page for expiration date 1547769600
+
+2017-02-23 10:25:48,879 [9] INFO   Page captured
+
+2017-02-23 10:25:48,880 [9] INFO   Deserialize S
+
+2017-02-23 10:25:48,882 [9] INFO   S deserialized
+
+2017-02-23 10:25:48,906 [9] INFO   Get SBUX page 
+
+2017-02-23 10:25:48,942 [9] INFO   Page captured
+
+2017-02-23 10:25:48,943 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:48,944 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:48,946 [9] INFO   Get SBUX page for expiration date 1487894400
+
+2017-02-23 10:25:49,055 [9] INFO   Page captured
+
+2017-02-23 10:25:49,056 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,061 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,132 [9] INFO   Get SBUX page for expiration date 1488499200
+
+2017-02-23 10:25:49,200 [9] INFO   Page captured
+
+2017-02-23 10:25:49,202 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,205 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,295 [9] INFO   Get SBUX page for expiration date 1489104000
+
+2017-02-23 10:25:49,405 [9] INFO   Page captured
+
+2017-02-23 10:25:49,407 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,410 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,457 [9] INFO   Get SBUX page for expiration date 1489708800
+
+2017-02-23 10:25:49,529 [9] INFO   Page captured
+
+2017-02-23 10:25:49,536 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,541 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,592 [9] INFO   Get SBUX page for expiration date 1490313600
+
+2017-02-23 10:25:49,669 [9] INFO   Page captured
+
+2017-02-23 10:25:49,671 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,674 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,740 [9] INFO   Get SBUX page for expiration date 1490918400
+
+2017-02-23 10:25:49,809 [9] INFO   Page captured
+
+2017-02-23 10:25:49,810 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,813 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,859 [9] INFO   Get SBUX page for expiration date 1492732800
+
+2017-02-23 10:25:49,931 [9] INFO   Page captured
+
+2017-02-23 10:25:49,932 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:49,935 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:49,976 [9] INFO   Get SBUX page for expiration date 1495152000
+
+2017-02-23 10:25:50,021 [9] INFO   Page captured
+
+2017-02-23 10:25:50,022 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,024 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,033 [9] INFO   Get SBUX page for expiration date 1497571200
+
+2017-02-23 10:25:50,163 [9] INFO   Page captured
+
+2017-02-23 10:25:50,170 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,174 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,205 [9] INFO   Get SBUX page for expiration date 1500595200
+
+2017-02-23 10:25:50,264 [9] INFO   Page captured
+
+2017-02-23 10:25:50,266 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,270 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,318 [9] INFO   Get SBUX page for expiration date 1505433600
+
+2017-02-23 10:25:50,362 [9] INFO   Page captured
+
+2017-02-23 10:25:50,364 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,366 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,400 [9] INFO   Get SBUX page for expiration date 1508457600
+
+2017-02-23 10:25:50,446 [9] INFO   Page captured
+
+2017-02-23 10:25:50,447 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,449 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,470 [9] INFO   Get SBUX page for expiration date 1516320000
+
+2017-02-23 10:25:50,535 [9] INFO   Page captured
+
+2017-02-23 10:25:50,537 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,540 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,590 [9] INFO   Get SBUX page for expiration date 1529020800
+
+2017-02-23 10:25:50,638 [9] INFO   Page captured
+
+2017-02-23 10:25:50,639 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,641 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,659 [9] INFO   Get SBUX page for expiration date 1547769600
+
+2017-02-23 10:25:50,727 [9] INFO   Page captured
+
+2017-02-23 10:25:50,728 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,731 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,784 [9] INFO   Get SBUX page for expiration date 1773964800
+
+2017-02-23 10:25:50,895 [9] INFO   Page captured
+
+2017-02-23 10:25:50,896 [9] INFO   Deserialize SBUX
+
+2017-02-23 10:25:50,898 [9] INFO   SBUX deserialized
+
+2017-02-23 10:25:50,901 [9] INFO   Get SDS page 
+
+2017-02-23 10:25:50,955 [9] INFO   Page captured
+
+2017-02-23 10:25:50,957 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:50,958 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:50,959 [9] INFO   Get SDS page for expiration date 1487894400
+
+2017-02-23 10:25:51,006 [9] INFO   Page captured
+
+2017-02-23 10:25:51,007 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,009 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,039 [9] INFO   Get SDS page for expiration date 1488499200
+
+2017-02-23 10:25:51,091 [9] INFO   Page captured
+
+2017-02-23 10:25:51,093 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,095 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,119 [9] INFO   Get SDS page for expiration date 1489104000
+
+2017-02-23 10:25:51,159 [9] INFO   Page captured
+
+2017-02-23 10:25:51,161 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,163 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,176 [9] INFO   Get SDS page for expiration date 1489708800
+
+2017-02-23 10:25:51,232 [9] INFO   Page captured
+
+2017-02-23 10:25:51,240 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,244 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,337 [9] INFO   Get SDS page for expiration date 1490313600
+
+2017-02-23 10:25:51,378 [9] INFO   Page captured
+
+2017-02-23 10:25:51,379 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,381 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,411 [9] INFO   Get SDS page for expiration date 1490918400
+
+2017-02-23 10:25:51,464 [9] INFO   Page captured
+
+2017-02-23 10:25:51,465 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,468 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,486 [9] INFO   Get SDS page for expiration date 1492732800
+
+2017-02-23 10:25:51,527 [9] INFO   Page captured
+
+2017-02-23 10:25:51,529 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,536 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,553 [9] INFO   Get SDS page for expiration date 1497571200
+
+2017-02-23 10:25:51,617 [9] INFO   Page captured
+
+2017-02-23 10:25:51,619 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,622 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,671 [9] INFO   Get SDS page for expiration date 1505433600
+
+2017-02-23 10:25:51,717 [9] INFO   Page captured
+
+2017-02-23 10:25:51,719 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,722 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,752 [9] INFO   Get SDS page for expiration date 1516320000
+
+2017-02-23 10:25:51,822 [9] INFO   Page captured
+
+2017-02-23 10:25:51,824 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:51,827 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:51,879 [9] INFO   Get SDS page for expiration date 1547769600
+
+2017-02-23 10:25:52,450 [9] INFO   Page captured
+
+2017-02-23 10:25:52,452 [9] INFO   Deserialize SDS
+
+2017-02-23 10:25:52,455 [9] INFO   SDS deserialized
+
+2017-02-23 10:25:52,506 [9] INFO   Get SMN page 
+
+2017-02-23 10:25:52,546 [9] INFO   Page captured
+
+2017-02-23 10:25:52,547 [9] INFO   Deserialize SMN
+
+2017-02-23 10:25:52,549 [9] INFO   SMN deserialized
+
+2017-02-23 10:25:52,550 [9] INFO   Get SMN page for expiration date 1489708800
+
+2017-02-23 10:25:52,584 [9] INFO   Page captured
+
+2017-02-23 10:25:52,585 [9] INFO   Deserialize SMN
+
+2017-02-23 10:25:52,587 [9] INFO   SMN deserialized
+
+2017-02-23 10:25:52,595 [9] INFO   Get SMN page for expiration date 1492732800
+
+2017-02-23 10:25:52,638 [9] INFO   Page captured
+
+2017-02-23 10:25:52,640 [9] INFO   Deserialize SMN
+
+2017-02-23 10:25:52,641 [9] INFO   SMN deserialized
+
+2017-02-23 10:25:52,652 [9] INFO   Get SMN page for expiration date 1500595200
+
+2017-02-23 10:25:52,730 [9] INFO   Page captured
+
+2017-02-23 10:25:52,731 [9] INFO   Deserialize SMN
+
+2017-02-23 10:25:52,733 [9] INFO   SMN deserialized
+
+2017-02-23 10:25:52,738 [9] INFO   Get SPY page 
+
+2017-02-23 10:25:52,781 [9] INFO   Page captured
+
+2017-02-23 10:25:52,782 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:52,784 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:52,786 [9] INFO   Get SPY page for expiration date 1487894400
+
+2017-02-23 10:25:52,910 [9] INFO   Page captured
+
+2017-02-23 10:25:52,912 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:52,922 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:53,216 [9] INFO   Get SPY page for expiration date 1488326400
+
+2017-02-23 10:25:53,334 [9] INFO   Page captured
+
+2017-02-23 10:25:53,337 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:53,344 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:53,565 [9] INFO   Get SPY page for expiration date 1488499200
+
+2017-02-23 10:25:53,669 [9] INFO   Page captured
+
+2017-02-23 10:25:53,684 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:53,694 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:53,945 [9] INFO   Get SPY page for expiration date 1488931200
+
+2017-02-23 10:25:54,088 [9] INFO   Page captured
+
+2017-02-23 10:25:54,091 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:54,100 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:54,215 [9] INFO   Get SPY page for expiration date 1489104000
+
+2017-02-23 10:25:54,316 [9] INFO   Page captured
+
+2017-02-23 10:25:54,318 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:54,328 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:54,608 [9] INFO   Get SPY page for expiration date 1489536000
+
+2017-02-23 10:25:54,708 [9] INFO   Page captured
+
+2017-02-23 10:25:54,709 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:54,715 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:54,851 [9] INFO   Get SPY page for expiration date 1489708800
+
+2017-02-23 10:25:55,021 [9] INFO   Page captured
+
+2017-02-23 10:25:55,030 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:55,052 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:55,594 [9] INFO   Get SPY page for expiration date 1490140800
+
+2017-02-23 10:25:55,651 [9] INFO   Page captured
+
+2017-02-23 10:25:55,652 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:55,656 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:55,705 [9] INFO   Get SPY page for expiration date 1490313600
+
+2017-02-23 10:25:55,801 [9] INFO   Page captured
+
+2017-02-23 10:25:55,802 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:55,810 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:55,992 [9] INFO   Get SPY page for expiration date 1490745600
+
+2017-02-23 10:25:56,035 [9] INFO   Page captured
+
+2017-02-23 10:25:56,037 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:56,046 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:56,085 [9] INFO   Get SPY page for expiration date 1490918400
+
+2017-02-23 10:25:56,257 [9] INFO   Page captured
+
+2017-02-23 10:25:56,261 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:56,278 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:56,705 [9] INFO   Get SPY page for expiration date 1492732800
+
+2017-02-23 10:25:56,834 [9] INFO   Page captured
+
+2017-02-23 10:25:56,835 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:56,847 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:57,181 [9] INFO   Get SPY page for expiration date 1495152000
+
+2017-02-23 10:25:57,326 [9] INFO   Page captured
+
+2017-02-23 10:25:57,327 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:57,339 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:57,810 [9] INFO   Get SPY page for expiration date 1497571200
+
+2017-02-23 10:25:57,940 [9] INFO   Page captured
+
+2017-02-23 10:25:57,941 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:57,953 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:58,262 [9] INFO   Get SPY page for expiration date 1498780800
+
+2017-02-23 10:25:58,404 [9] INFO   Page captured
+
+2017-02-23 10:25:58,406 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:58,417 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:58,749 [9] INFO   Get SPY page for expiration date 1505433600
+
+2017-02-23 10:25:58,921 [9] INFO   Page captured
+
+2017-02-23 10:25:58,922 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:58,940 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:59,365 [9] INFO   Get SPY page for expiration date 1506643200
+
+2017-02-23 10:25:59,487 [9] INFO   Page captured
+
+2017-02-23 10:25:59,489 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:59,499 [9] INFO   SPY deserialized
+
+2017-02-23 10:25:59,643 [9] INFO   Get SPY page for expiration date 1513296000
+
+2017-02-23 10:25:59,783 [9] INFO   Page captured
+
+2017-02-23 10:25:59,784 [9] INFO   Deserialize SPY
+
+2017-02-23 10:25:59,793 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:00,056 [9] INFO   Get SPY page for expiration date 1514505600
+
+2017-02-23 10:26:00,165 [9] INFO   Page captured
+
+2017-02-23 10:26:00,171 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:00,180 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:00,597 [9] INFO   Get SPY page for expiration date 1516320000
+
+2017-02-23 10:26:00,740 [9] INFO   Page captured
+
+2017-02-23 10:26:00,743 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:00,753 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:01,078 [9] INFO   Get SPY page for expiration date 1521158400
+
+2017-02-23 10:26:01,186 [9] INFO   Page captured
+
+2017-02-23 10:26:01,188 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:01,198 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:01,708 [9] INFO   Get SPY page for expiration date 1529020800
+
+2017-02-23 10:26:01,842 [9] INFO   Page captured
+
+2017-02-23 10:26:01,844 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:01,852 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:02,073 [9] INFO   Get SPY page for expiration date 1537488000
+
+2017-02-23 10:26:02,213 [9] INFO   Page captured
+
+2017-02-23 10:26:02,217 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:02,225 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:02,382 [9] INFO   Get SPY page for expiration date 1545350400
+
+2017-02-23 10:26:02,723 [9] INFO   Page captured
+
+2017-02-23 10:26:02,725 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:02,734 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:02,961 [9] INFO   Get SPY page for expiration date 1547769600
+
+2017-02-23 10:26:03,063 [9] INFO   Page captured
+
+2017-02-23 10:26:03,064 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:03,070 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:03,201 [9] INFO   Get SPY page for expiration date 1576800000
+
+2017-02-23 10:26:03,342 [9] INFO   Page captured
+
+2017-02-23 10:26:03,345 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:03,352 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:03,458 [9] INFO   Get SPY page for expiration date 1594944000
+
+2017-02-23 10:26:03,751 [9] INFO   Page captured
+
+2017-02-23 10:26:03,753 [9] INFO   Deserialize SPY
+
+2017-02-23 10:26:03,756 [9] INFO   SPY deserialized
+
+2017-02-23 10:26:03,770 [9] INFO   Get SSO page 
+
+2017-02-23 10:26:03,809 [9] INFO   Page captured
+
+2017-02-23 10:26:03,812 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:03,814 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:03,816 [9] INFO   Get SSO page for expiration date 1487894400
+
+2017-02-23 10:26:03,907 [9] INFO   Page captured
+
+2017-02-23 10:26:03,908 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:03,912 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:03,995 [9] INFO   Get SSO page for expiration date 1488499200
+
+2017-02-23 10:26:04,131 [9] INFO   Page captured
+
+2017-02-23 10:26:04,132 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:04,136 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:04,200 [9] INFO   Get SSO page for expiration date 1489104000
+
+2017-02-23 10:26:04,417 [9] INFO   Page captured
+
+2017-02-23 10:26:04,419 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:04,422 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:04,485 [9] INFO   Get SSO page for expiration date 1489708800
+
+2017-02-23 10:26:04,591 [9] INFO   Page captured
+
+2017-02-23 10:26:04,593 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:04,604 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:04,761 [9] INFO   Get SSO page for expiration date 1490313600
+
+2017-02-23 10:26:04,868 [9] INFO   Page captured
+
+2017-02-23 10:26:04,869 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:04,873 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:04,941 [9] INFO   Get SSO page for expiration date 1490918400
+
+2017-02-23 10:26:05,006 [9] INFO   Page captured
+
+2017-02-23 10:26:05,007 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,010 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,048 [9] INFO   Get SSO page for expiration date 1492732800
+
+2017-02-23 10:26:05,090 [9] INFO   Page captured
+
+2017-02-23 10:26:05,092 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,095 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,106 [9] INFO   Get SSO page for expiration date 1497571200
+
+2017-02-23 10:26:05,179 [9] INFO   Page captured
+
+2017-02-23 10:26:05,180 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,185 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,383 [9] INFO   Get SSO page for expiration date 1505433600
+
+2017-02-23 10:26:05,446 [9] INFO   Page captured
+
+2017-02-23 10:26:05,448 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,452 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,499 [9] INFO   Get SSO page for expiration date 1516320000
+
+2017-02-23 10:26:05,596 [9] INFO   Page captured
+
+2017-02-23 10:26:05,598 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,605 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,718 [9] INFO   Get SSO page for expiration date 1547769600
+
+2017-02-23 10:26:05,780 [9] INFO   Page captured
+
+2017-02-23 10:26:05,781 [9] INFO   Deserialize SSO
+
+2017-02-23 10:26:05,785 [9] INFO   SSO deserialized
+
+2017-02-23 10:26:05,827 [9] INFO   Get SVXY page 
+
+2017-02-23 10:26:05,864 [9] INFO   Page captured
+
+2017-02-23 10:26:05,866 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:05,867 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:05,868 [9] INFO   Get SVXY page for expiration date 1487894400
+
+2017-02-23 10:26:05,993 [9] INFO   Page captured
+
+2017-02-23 10:26:05,996 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:06,006 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:06,263 [9] INFO   Get SVXY page for expiration date 1488499200
+
+2017-02-23 10:26:06,399 [9] INFO   Page captured
+
+2017-02-23 10:26:06,401 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:06,409 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:06,638 [9] INFO   Get SVXY page for expiration date 1489104000
+
+2017-02-23 10:26:06,757 [9] INFO   Page captured
+
+2017-02-23 10:26:06,758 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:06,764 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:06,982 [9] INFO   Get SVXY page for expiration date 1489708800
+
+2017-02-23 10:26:07,187 [9] INFO   Page captured
+
+2017-02-23 10:26:07,189 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:07,203 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:07,970 [9] INFO   Get SVXY page for expiration date 1490313600
+
+2017-02-23 10:26:08,051 [9] INFO   Page captured
+
+2017-02-23 10:26:08,057 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:08,063 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:08,171 [9] INFO   Get SVXY page for expiration date 1490918400
+
+2017-02-23 10:26:08,254 [9] INFO   Page captured
+
+2017-02-23 10:26:08,261 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:08,268 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:08,430 [9] INFO   Get SVXY page for expiration date 1492732800
+
+2017-02-23 10:26:08,493 [9] INFO   Page captured
+
+2017-02-23 10:26:08,496 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:08,500 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:08,576 [9] INFO   Get SVXY page for expiration date 1497571200
+
+2017-02-23 10:26:08,691 [9] INFO   Page captured
+
+2017-02-23 10:26:08,692 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:08,701 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:08,946 [9] INFO   Get SVXY page for expiration date 1505433600
+
+2017-02-23 10:26:09,025 [9] INFO   Page captured
+
+2017-02-23 10:26:09,026 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:09,034 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:09,262 [9] INFO   Get SVXY page for expiration date 1516320000
+
+2017-02-23 10:26:11,780 [9] INFO   Page captured
+
+2017-02-23 10:26:11,781 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:11,790 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:12,044 [9] INFO   Get SVXY page for expiration date 1547769600
+
+2017-02-23 10:26:12,124 [9] INFO   Page captured
+
+2017-02-23 10:26:12,126 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:12,134 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:12,352 [9] INFO   Get SVXY page for expiration date 1773964800
+
+2017-02-23 10:26:12,392 [9] INFO   Page captured
+
+2017-02-23 10:26:12,396 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:12,398 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:12,400 [9] INFO   Get SVXY page for expiration date 1781827200
+
+2017-02-23 10:26:12,439 [9] INFO   Page captured
+
+2017-02-23 10:26:12,440 [9] INFO   Deserialize SVXY
+
+2017-02-23 10:26:12,442 [9] INFO   SVXY deserialized
+
+2017-02-23 10:26:12,444 [9] INFO   Get SYF page 
+
+2017-02-23 10:26:12,477 [9] INFO   Page captured
+
+2017-02-23 10:26:12,478 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,480 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,482 [9] INFO   Get SYF page for expiration date 1487894400
+
+2017-02-23 10:26:12,547 [9] INFO   Page captured
+
+2017-02-23 10:26:12,549 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,552 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,603 [9] INFO   Get SYF page for expiration date 1488499200
+
+2017-02-23 10:26:12,662 [9] INFO   Page captured
+
+2017-02-23 10:26:12,663 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,665 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,684 [9] INFO   Get SYF page for expiration date 1489104000
+
+2017-02-23 10:26:12,727 [9] INFO   Page captured
+
+2017-02-23 10:26:12,729 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,730 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,749 [9] INFO   Get SYF page for expiration date 1489708800
+
+2017-02-23 10:26:12,816 [9] INFO   Page captured
+
+2017-02-23 10:26:12,818 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,821 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,887 [9] INFO   Get SYF page for expiration date 1490313600
+
+2017-02-23 10:26:12,935 [9] INFO   Page captured
+
+2017-02-23 10:26:12,937 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:12,939 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:12,957 [9] INFO   Get SYF page for expiration date 1490918400
+
+2017-02-23 10:26:12,998 [9] INFO   Page captured
+
+2017-02-23 10:26:12,999 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,001 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,020 [9] INFO   Get SYF page for expiration date 1492732800
+
+2017-02-23 10:26:13,063 [9] INFO   Page captured
+
+2017-02-23 10:26:13,065 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,066 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,075 [9] INFO   Get SYF page for expiration date 1497571200
+
+2017-02-23 10:26:13,141 [9] INFO   Page captured
+
+2017-02-23 10:26:13,143 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,146 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,217 [9] INFO   Get SYF page for expiration date 1505433600
+
+2017-02-23 10:26:13,287 [9] INFO   Page captured
+
+2017-02-23 10:26:13,288 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,292 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,341 [9] INFO   Get SYF page for expiration date 1516320000
+
+2017-02-23 10:26:13,453 [9] INFO   Page captured
+
+2017-02-23 10:26:13,454 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,457 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,544 [9] INFO   Get SYF page for expiration date 1547769600
+
+2017-02-23 10:26:13,600 [9] INFO   Page captured
+
+2017-02-23 10:26:13,605 [9] INFO   Deserialize SYF
+
+2017-02-23 10:26:13,609 [9] INFO   SYF deserialized
+
+2017-02-23 10:26:13,663 [9] INFO   Get T page 
+
+2017-02-23 10:26:13,702 [9] INFO   Page captured
+
+2017-02-23 10:26:13,703 [9] INFO   Deserialize T
+
+2017-02-23 10:26:13,705 [9] INFO   T deserialized
+
+2017-02-23 10:26:13,706 [9] INFO   Get T page for expiration date 1487894400
+
+2017-02-23 10:26:13,767 [9] INFO   Page captured
+
+2017-02-23 10:26:13,768 [9] INFO   Deserialize T
+
+2017-02-23 10:26:13,772 [9] INFO   T deserialized
+
+2017-02-23 10:26:13,833 [9] INFO   Get T page for expiration date 1488499200
+
+2017-02-23 10:26:14,178 [9] INFO   Page captured
+
+2017-02-23 10:26:14,179 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,181 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,223 [9] INFO   Get T page for expiration date 1489104000
+
+2017-02-23 10:26:14,283 [9] INFO   Page captured
+
+2017-02-23 10:26:14,285 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,288 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,330 [9] INFO   Get T page for expiration date 1489708800
+
+2017-02-23 10:26:14,387 [9] INFO   Page captured
+
+2017-02-23 10:26:14,388 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,392 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,457 [9] INFO   Get T page for expiration date 1490313600
+
+2017-02-23 10:26:14,510 [9] INFO   Page captured
+
+2017-02-23 10:26:14,512 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,515 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,560 [9] INFO   Get T page for expiration date 1490918400
+
+2017-02-23 10:26:14,610 [9] INFO   Page captured
+
+2017-02-23 10:26:14,612 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,614 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,646 [9] INFO   Get T page for expiration date 1492732800
+
+2017-02-23 10:26:14,712 [9] INFO   Page captured
+
+2017-02-23 10:26:14,714 [9] INFO   Deserialize T
+
+2017-02-23 10:26:14,718 [9] INFO   T deserialized
+
+2017-02-23 10:26:14,786 [9] INFO   Get T page for expiration date 1495152000
+
+2017-02-23 10:26:15,002 [9] INFO   Page captured
+
+2017-02-23 10:26:15,003 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,006 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,055 [9] INFO   Get T page for expiration date 1497571200
+
+2017-02-23 10:26:15,120 [9] INFO   Page captured
+
+2017-02-23 10:26:15,122 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,126 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,182 [9] INFO   Get T page for expiration date 1500595200
+
+2017-02-23 10:26:15,236 [9] INFO   Page captured
+
+2017-02-23 10:26:15,238 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,242 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,354 [9] INFO   Get T page for expiration date 1508457600
+
+2017-02-23 10:26:15,406 [9] INFO   Page captured
+
+2017-02-23 10:26:15,408 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,412 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,465 [9] INFO   Get T page for expiration date 1516320000
+
+2017-02-23 10:26:15,519 [9] INFO   Page captured
+
+2017-02-23 10:26:15,520 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,523 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,575 [9] INFO   Get T page for expiration date 1547769600
+
+2017-02-23 10:26:15,640 [9] INFO   Page captured
+
+2017-02-23 10:26:15,642 [9] INFO   Deserialize T
+
+2017-02-23 10:26:15,644 [9] INFO   T deserialized
+
+2017-02-23 10:26:15,678 [9] INFO   Get TSLA page 
+
+2017-02-23 10:26:15,714 [9] INFO   Page captured
+
+2017-02-23 10:26:15,715 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:15,717 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:15,718 [9] INFO   Get TSLA page for expiration date 1487894400
+
+2017-02-23 10:26:15,821 [9] INFO   Page captured
+
+2017-02-23 10:26:15,822 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:15,830 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:15,995 [9] INFO   Get TSLA page for expiration date 1488499200
+
+2017-02-23 10:26:16,084 [9] INFO   Page captured
+
+2017-02-23 10:26:16,085 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:16,092 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:16,269 [9] INFO   Get TSLA page for expiration date 1489104000
+
+2017-02-23 10:26:16,350 [9] INFO   Page captured
+
+2017-02-23 10:26:16,353 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:16,359 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:16,480 [9] INFO   Get TSLA page for expiration date 1489708800
+
+2017-02-23 10:26:16,590 [9] INFO   Page captured
+
+2017-02-23 10:26:16,592 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:16,602 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:16,810 [9] INFO   Get TSLA page for expiration date 1490313600
+
+2017-02-23 10:26:16,905 [9] INFO   Page captured
+
+2017-02-23 10:26:16,907 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:16,912 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:17,029 [9] INFO   Get TSLA page for expiration date 1490918400
+
+2017-02-23 10:26:17,116 [9] INFO   Page captured
+
+2017-02-23 10:26:17,117 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:17,123 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:17,267 [9] INFO   Get TSLA page for expiration date 1492732800
+
+2017-02-23 10:26:17,408 [9] INFO   Page captured
+
+2017-02-23 10:26:17,410 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:17,417 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:17,516 [9] INFO   Get TSLA page for expiration date 1497571200
+
+2017-02-23 10:26:17,602 [9] INFO   Page captured
+
+2017-02-23 10:26:17,605 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:17,610 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:17,701 [9] INFO   Get TSLA page for expiration date 1505433600
+
+2017-02-23 10:26:17,790 [9] INFO   Page captured
+
+2017-02-23 10:26:17,792 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:17,802 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:17,922 [9] INFO   Get TSLA page for expiration date 1510876800
+
+2017-02-23 10:26:18,011 [9] INFO   Page captured
+
+2017-02-23 10:26:18,015 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:18,026 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:18,144 [9] INFO   Get TSLA page for expiration date 1516320000
+
+2017-02-23 10:26:18,251 [9] INFO   Page captured
+
+2017-02-23 10:26:18,253 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:18,260 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:18,463 [9] INFO   Get TSLA page for expiration date 1547769600
+
+2017-02-23 10:26:18,574 [9] INFO   Page captured
+
+2017-02-23 10:26:18,575 [9] INFO   Deserialize TSLA
+
+2017-02-23 10:26:18,582 [9] INFO   TSLA deserialized
+
+2017-02-23 10:26:18,722 [9] INFO   Get TWM page 
+
+2017-02-23 10:26:18,757 [9] INFO   Page captured
+
+2017-02-23 10:26:18,758 [9] INFO   Deserialize TWM
+
+2017-02-23 10:26:18,760 [9] INFO   TWM deserialized
+
+2017-02-23 10:26:18,761 [9] INFO   Get TWM page for expiration date 1489708800
+
+2017-02-23 10:26:18,851 [9] INFO   Page captured
+
+2017-02-23 10:26:18,852 [9] INFO   Deserialize TWM
+
+2017-02-23 10:26:18,855 [9] INFO   TWM deserialized
+
+2017-02-23 10:26:18,886 [9] INFO   Get TWM page for expiration date 1492732800
+
+2017-02-23 10:26:18,956 [9] INFO   Page captured
+
+2017-02-23 10:26:18,957 [9] INFO   Deserialize TWM
+
+2017-02-23 10:26:18,961 [9] INFO   TWM deserialized
+
+2017-02-23 10:26:19,007 [9] INFO   Get TWM page for expiration date 1500595200
+
+2017-02-23 10:26:19,056 [9] INFO   Page captured
+
+2017-02-23 10:26:19,063 [9] INFO   Deserialize TWM
+
+2017-02-23 10:26:19,065 [9] INFO   TWM deserialized
+
+2017-02-23 10:26:19,088 [9] INFO   Get TZA page 
+
+2017-02-23 10:26:19,121 [9] INFO   Page captured
+
+2017-02-23 10:26:19,123 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:19,124 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:19,126 [9] INFO   Get TZA page for expiration date 1487894400
+
+2017-02-23 10:26:19,439 [9] INFO   Page captured
+
+2017-02-23 10:26:19,443 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:19,450 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:19,534 [9] INFO   Get TZA page for expiration date 1488499200
+
+2017-02-23 10:26:19,617 [9] INFO   Page captured
+
+2017-02-23 10:26:19,618 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:19,622 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:19,695 [9] INFO   Get TZA page for expiration date 1489104000
+
+2017-02-23 10:26:19,749 [9] INFO   Page captured
+
+2017-02-23 10:26:19,750 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:19,754 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:19,795 [9] INFO   Get TZA page for expiration date 1489708800
+
+2017-02-23 10:26:19,871 [9] INFO   Page captured
+
+2017-02-23 10:26:19,874 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:19,881 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:19,946 [9] INFO   Get TZA page for expiration date 1490313600
+
+2017-02-23 10:26:20,265 [9] INFO   Page captured
+
+2017-02-23 10:26:20,267 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,272 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,333 [9] INFO   Get TZA page for expiration date 1490918400
+
+2017-02-23 10:26:20,378 [9] INFO   Page captured
+
+2017-02-23 10:26:20,380 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,382 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,407 [9] INFO   Get TZA page for expiration date 1492732800
+
+2017-02-23 10:26:20,477 [9] INFO   Page captured
+
+2017-02-23 10:26:20,478 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,482 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,542 [9] INFO   Get TZA page for expiration date 1500595200
+
+2017-02-23 10:26:20,710 [9] INFO   Page captured
+
+2017-02-23 10:26:20,712 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,715 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,765 [9] INFO   Get TZA page for expiration date 1516320000
+
+2017-02-23 10:26:20,834 [9] INFO   Page captured
+
+2017-02-23 10:26:20,835 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,839 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,895 [9] INFO   Get TZA page for expiration date 1547769600
+
+2017-02-23 10:26:20,938 [9] INFO   Page captured
+
+2017-02-23 10:26:20,941 [9] INFO   Deserialize TZA
+
+2017-02-23 10:26:20,944 [9] INFO   TZA deserialized
+
+2017-02-23 10:26:20,961 [9] INFO   Get UAA page 
+
+2017-02-23 10:26:21,055 [9] INFO   Page captured
+
+2017-02-23 10:26:21,056 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:21,057 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:21,058 [9] INFO   Get UAA page for expiration date 1487894400
+
+2017-02-23 10:26:21,136 [9] INFO   Page captured
+
+2017-02-23 10:26:21,138 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:21,143 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:21,245 [9] INFO   Get UAA page for expiration date 1488499200
+
+2017-02-23 10:26:21,415 [9] INFO   Page captured
+
+2017-02-23 10:26:21,417 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:21,422 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:21,518 [9] INFO   Get UAA page for expiration date 1489104000
+
+2017-02-23 10:26:21,601 [9] INFO   Page captured
+
+2017-02-23 10:26:21,602 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:21,607 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:21,673 [9] INFO   Get UAA page for expiration date 1489708800
+
+2017-02-23 10:26:21,939 [9] INFO   Page captured
+
+2017-02-23 10:26:21,941 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:21,944 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:21,998 [9] INFO   Get UAA page for expiration date 1490313600
+
+2017-02-23 10:26:22,056 [9] INFO   Page captured
+
+2017-02-23 10:26:22,057 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,060 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,109 [9] INFO   Get UAA page for expiration date 1490918400
+
+2017-02-23 10:26:22,174 [9] INFO   Page captured
+
+2017-02-23 10:26:22,182 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,190 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,253 [9] INFO   Get UAA page for expiration date 1492732800
+
+2017-02-23 10:26:22,327 [9] INFO   Page captured
+
+2017-02-23 10:26:22,328 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,332 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,424 [9] INFO   Get UAA page for expiration date 1500595200
+
+2017-02-23 10:26:22,486 [9] INFO   Page captured
+
+2017-02-23 10:26:22,488 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,491 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,549 [9] INFO   Get UAA page for expiration date 1508457600
+
+2017-02-23 10:26:22,618 [9] INFO   Page captured
+
+2017-02-23 10:26:22,620 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,622 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,660 [9] INFO   Get UAA page for expiration date 1516320000
+
+2017-02-23 10:26:22,719 [9] INFO   Page captured
+
+2017-02-23 10:26:22,720 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,724 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,788 [9] INFO   Get UAA page for expiration date 1547769600
+
+2017-02-23 10:26:22,857 [9] INFO   Page captured
+
+2017-02-23 10:26:22,858 [9] INFO   Deserialize UAA
+
+2017-02-23 10:26:22,861 [9] INFO   UAA deserialized
+
+2017-02-23 10:26:22,901 [9] INFO   Get UNP page 
+
+2017-02-23 10:26:22,937 [9] INFO   Page captured
+
+2017-02-23 10:26:22,938 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:22,939 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:22,940 [9] INFO   Get UNP page for expiration date 1487894400
+
+2017-02-23 10:26:23,016 [9] INFO   Page captured
+
+2017-02-23 10:26:23,018 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,023 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,176 [9] INFO   Get UNP page for expiration date 1488499200
+
+2017-02-23 10:26:23,253 [9] INFO   Page captured
+
+2017-02-23 10:26:23,254 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,258 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,327 [9] INFO   Get UNP page for expiration date 1489104000
+
+2017-02-23 10:26:23,390 [9] INFO   Page captured
+
+2017-02-23 10:26:23,391 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,395 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,472 [9] INFO   Get UNP page for expiration date 1489708800
+
+2017-02-23 10:26:23,532 [9] INFO   Page captured
+
+2017-02-23 10:26:23,533 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,537 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,616 [9] INFO   Get UNP page for expiration date 1490313600
+
+2017-02-23 10:26:23,673 [9] INFO   Page captured
+
+2017-02-23 10:26:23,674 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,678 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,719 [9] INFO   Get UNP page for expiration date 1490918400
+
+2017-02-23 10:26:23,774 [9] INFO   Page captured
+
+2017-02-23 10:26:23,775 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,778 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,912 [9] INFO   Get UNP page for expiration date 1492732800
+
+2017-02-23 10:26:23,955 [9] INFO   Page captured
+
+2017-02-23 10:26:23,957 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:23,958 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:23,983 [9] INFO   Get UNP page for expiration date 1495152000
+
+2017-02-23 10:26:24,045 [9] INFO   Page captured
+
+2017-02-23 10:26:24,046 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:24,050 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:24,117 [9] INFO   Get UNP page for expiration date 1497571200
+
+2017-02-23 10:26:24,186 [9] INFO   Page captured
+
+2017-02-23 10:26:24,188 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:24,191 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:24,255 [9] INFO   Get UNP page for expiration date 1503014400
+
+2017-02-23 10:26:24,306 [9] INFO   Page captured
+
+2017-02-23 10:26:24,307 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:24,310 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:24,359 [9] INFO   Get UNP page for expiration date 1516320000
+
+2017-02-23 10:26:24,463 [9] INFO   Page captured
+
+2017-02-23 10:26:24,465 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:24,470 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:24,570 [9] INFO   Get UNP page for expiration date 1547769600
+
+2017-02-23 10:26:24,642 [9] INFO   Page captured
+
+2017-02-23 10:26:24,643 [9] INFO   Deserialize UNP
+
+2017-02-23 10:26:24,647 [9] INFO   UNP deserialized
+
+2017-02-23 10:26:24,735 [9] INFO   Get UVXY page 
+
+2017-02-23 10:26:24,768 [9] INFO   Page captured
+
+2017-02-23 10:26:24,770 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:24,771 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:24,772 [9] INFO   Get UVXY page for expiration date 1487894400
+
+2017-02-23 10:26:24,889 [9] INFO   Page captured
+
+2017-02-23 10:26:24,891 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:24,903 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:25,079 [9] INFO   Get UVXY page for expiration date 1488499200
+
+2017-02-23 10:26:25,183 [9] INFO   Page captured
+
+2017-02-23 10:26:25,184 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:25,191 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:25,353 [9] INFO   Get UVXY page for expiration date 1489104000
+
+2017-02-23 10:26:25,423 [9] INFO   Page captured
+
+2017-02-23 10:26:25,425 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:25,431 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:25,543 [9] INFO   Get UVXY page for expiration date 1489708800
+
+2017-02-23 10:26:25,690 [9] INFO   Page captured
+
+2017-02-23 10:26:25,691 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:25,701 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:25,885 [9] INFO   Get UVXY page for expiration date 1490313600
+
+2017-02-23 10:26:25,977 [9] INFO   Page captured
+
+2017-02-23 10:26:25,978 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:25,983 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:26,069 [9] INFO   Get UVXY page for expiration date 1490918400
+
+2017-02-23 10:26:26,148 [9] INFO   Page captured
+
+2017-02-23 10:26:26,150 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:26,155 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:26,290 [9] INFO   Get UVXY page for expiration date 1492732800
+
+2017-02-23 10:26:26,362 [9] INFO   Page captured
+
+2017-02-23 10:26:26,364 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:26,368 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:26,427 [9] INFO   Get UVXY page for expiration date 1497571200
+
+2017-02-23 10:26:26,650 [9] INFO   Page captured
+
+2017-02-23 10:26:26,651 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:26,657 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:26,795 [9] INFO   Get UVXY page for expiration date 1505433600
+
+2017-02-23 10:26:26,876 [9] INFO   Page captured
+
+2017-02-23 10:26:26,877 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:26,882 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:26,975 [9] INFO   Get UVXY page for expiration date 1516320000
+
+2017-02-23 10:26:27,245 [9] INFO   Page captured
+
+2017-02-23 10:26:27,247 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:27,256 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:27,487 [9] INFO   Get UVXY page for expiration date 1547769600
+
+2017-02-23 10:26:27,579 [9] INFO   Page captured
+
+2017-02-23 10:26:27,580 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:27,587 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:27,734 [9] INFO   Get UVXY page for expiration date 1579219200
+
+2017-02-23 10:26:27,841 [9] INFO   Page captured
+
+2017-02-23 10:26:27,843 [9] INFO   Deserialize UVXY
+
+2017-02-23 10:26:27,844 [9] INFO   UVXY deserialized
+
+2017-02-23 10:26:27,845 [9] INFO   Get V page 
+
+2017-02-23 10:26:27,901 [9] INFO   Page captured
+
+2017-02-23 10:26:27,902 [9] INFO   Deserialize V
+
+2017-02-23 10:26:27,903 [9] INFO   V deserialized
+
+2017-02-23 10:26:27,904 [9] INFO   Get V page for expiration date 1487894400
+
+2017-02-23 10:26:27,987 [9] INFO   Page captured
+
+2017-02-23 10:26:27,989 [9] INFO   Deserialize V
+
+2017-02-23 10:26:27,993 [9] INFO   V deserialized
+
+2017-02-23 10:26:28,082 [9] INFO   Get V page for expiration date 1488499200
+
+2017-02-23 10:26:28,234 [9] INFO   Page captured
+
+2017-02-23 10:26:28,235 [9] INFO   Deserialize V
+
+2017-02-23 10:26:28,243 [9] INFO   V deserialized
+
+2017-02-23 10:26:28,348 [9] INFO   Get V page for expiration date 1489104000
+
+2017-02-23 10:26:28,412 [9] INFO   Page captured
+
+2017-02-23 10:26:28,414 [9] INFO   Deserialize V
+
+2017-02-23 10:26:28,418 [9] INFO   V deserialized
+
+2017-02-23 10:26:28,516 [9] INFO   Get V page for expiration date 1489708800
+
+2017-02-23 10:26:28,651 [9] INFO   Page captured
+
+2017-02-23 10:26:28,652 [9] INFO   Deserialize V
+
+2017-02-23 10:26:28,657 [9] INFO   V deserialized
+
+2017-02-23 10:26:28,742 [9] INFO   Get V page for expiration date 1490313600
+
+2017-02-23 10:26:28,826 [9] INFO   Page captured
+
+2017-02-23 10:26:28,827 [9] INFO   Deserialize V
+
+2017-02-23 10:26:28,831 [9] INFO   V deserialized
+
+2017-02-23 10:26:28,889 [9] INFO   Get V page for expiration date 1490918400
+
+2017-02-23 10:26:28,962 [9] INFO   Page captured
+
+2017-02-23 10:26:28,964 [9] INFO   Deserialize V
+
+2017-02-23 10:26:28,967 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,029 [9] INFO   Get V page for expiration date 1492732800
+
+2017-02-23 10:26:29,076 [9] INFO   Page captured
+
+2017-02-23 10:26:29,077 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,079 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,101 [9] INFO   Get V page for expiration date 1497571200
+
+2017-02-23 10:26:29,179 [9] INFO   Page captured
+
+2017-02-23 10:26:29,181 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,185 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,276 [9] INFO   Get V page for expiration date 1505433600
+
+2017-02-23 10:26:29,338 [9] INFO   Page captured
+
+2017-02-23 10:26:29,341 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,344 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,385 [9] INFO   Get V page for expiration date 1516320000
+
+2017-02-23 10:26:29,473 [9] INFO   Page captured
+
+2017-02-23 10:26:29,475 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,480 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,556 [9] INFO   Get V page for expiration date 1529020800
+
+2017-02-23 10:26:29,620 [9] INFO   Page captured
+
+2017-02-23 10:26:29,626 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,634 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,661 [9] INFO   Get V page for expiration date 1547769600
+
+2017-02-23 10:26:29,741 [9] INFO   Page captured
+
+2017-02-23 10:26:29,743 [9] INFO   Deserialize V
+
+2017-02-23 10:26:29,747 [9] INFO   V deserialized
+
+2017-02-23 10:26:29,805 [9] INFO   Get VSAT page 
+
+2017-02-23 10:26:29,841 [9] INFO   Page captured
+
+2017-02-23 10:26:29,842 [9] INFO   Deserialize VSAT
+
+2017-02-23 10:26:29,843 [9] INFO   VSAT deserialized
+
+2017-02-23 10:26:29,844 [9] INFO   Get VSAT page for expiration date 1489708800
+
+2017-02-23 10:26:29,892 [9] INFO   Page captured
+
+2017-02-23 10:26:29,893 [9] INFO   Deserialize VSAT
+
+2017-02-23 10:26:29,895 [9] INFO   VSAT deserialized
+
+2017-02-23 10:26:29,926 [9] INFO   Get VSAT page for expiration date 1492732800
+
+2017-02-23 10:26:29,970 [9] INFO   Page captured
+
+2017-02-23 10:26:29,972 [9] INFO   Deserialize VSAT
+
+2017-02-23 10:26:29,973 [9] INFO   VSAT deserialized
+
+2017-02-23 10:26:29,979 [9] INFO   Get VSAT page for expiration date 1497571200
+
+2017-02-23 10:26:30,063 [9] INFO   Page captured
+
+2017-02-23 10:26:30,065 [9] INFO   Deserialize VSAT
+
+2017-02-23 10:26:30,067 [9] INFO   VSAT deserialized
+
+2017-02-23 10:26:30,099 [9] INFO   Get VSAT page for expiration date 1505433600
+
+2017-02-23 10:26:30,238 [9] INFO   Page captured
+
+2017-02-23 10:26:30,241 [9] INFO   Deserialize VSAT
+
+2017-02-23 10:26:30,248 [9] INFO   VSAT deserialized
+
+2017-02-23 10:26:30,276 [9] INFO   Get VXX page 
+
+2017-02-23 10:26:30,315 [9] INFO   Page captured
+
+2017-02-23 10:26:30,317 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:30,331 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:30,336 [9] INFO   Get VXX page for expiration date 1487894400
+
+2017-02-23 10:26:30,440 [9] INFO   Page captured
+
+2017-02-23 10:26:30,442 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:30,447 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:30,626 [9] INFO   Get VXX page for expiration date 1488499200
+
+2017-02-23 10:26:30,725 [9] INFO   Page captured
+
+2017-02-23 10:26:30,728 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:30,735 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:30,858 [9] INFO   Get VXX page for expiration date 1489104000
+
+2017-02-23 10:26:30,936 [9] INFO   Page captured
+
+2017-02-23 10:26:30,938 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:30,942 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:31,030 [9] INFO   Get VXX page for expiration date 1489708800
+
+2017-02-23 10:26:31,199 [9] INFO   Page captured
+
+2017-02-23 10:26:31,200 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:31,211 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:31,486 [9] INFO   Get VXX page for expiration date 1490313600
+
+2017-02-23 10:26:31,562 [9] INFO   Page captured
+
+2017-02-23 10:26:31,564 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:31,569 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:31,651 [9] INFO   Get VXX page for expiration date 1490918400
+
+2017-02-23 10:26:31,722 [9] INFO   Page captured
+
+2017-02-23 10:26:31,723 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:31,728 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:31,801 [9] INFO   Get VXX page for expiration date 1492732800
+
+2017-02-23 10:26:31,873 [9] INFO   Page captured
+
+2017-02-23 10:26:31,875 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:31,879 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:31,958 [9] INFO   Get VXX page for expiration date 1495152000
+
+2017-02-23 10:26:32,077 [9] INFO   Page captured
+
+2017-02-23 10:26:32,078 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:32,082 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:32,153 [9] INFO   Get VXX page for expiration date 1497571200
+
+2017-02-23 10:26:32,241 [9] INFO   Page captured
+
+2017-02-23 10:26:32,243 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:32,248 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:32,444 [9] INFO   Get VXX page for expiration date 1505433600
+
+2017-02-23 10:26:32,523 [9] INFO   Page captured
+
+2017-02-23 10:26:32,524 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:32,528 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:32,630 [9] INFO   Get VXX page for expiration date 1516320000
+
+2017-02-23 10:26:32,732 [9] INFO   Page captured
+
+2017-02-23 10:26:32,734 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:32,743 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:32,953 [9] INFO   Get VXX page for expiration date 1547769600
+
+2017-02-23 10:26:33,030 [9] INFO   Page captured
+
+2017-02-23 10:26:33,031 [9] INFO   Deserialize VXX
+
+2017-02-23 10:26:33,035 [9] INFO   VXX deserialized
+
+2017-02-23 10:26:33,125 [9] INFO   Get VZ page 
+
+2017-02-23 10:26:33,161 [9] INFO   Page captured
+
+2017-02-23 10:26:33,162 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,164 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,165 [9] INFO   Get VZ page for expiration date 1487894400
+
+2017-02-23 10:26:33,229 [9] INFO   Page captured
+
+2017-02-23 10:26:33,231 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,236 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,312 [9] INFO   Get VZ page for expiration date 1488499200
+
+2017-02-23 10:26:33,388 [9] INFO   Page captured
+
+2017-02-23 10:26:33,390 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,393 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,533 [9] INFO   Get VZ page for expiration date 1489104000
+
+2017-02-23 10:26:33,598 [9] INFO   Page captured
+
+2017-02-23 10:26:33,601 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,605 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,667 [9] INFO   Get VZ page for expiration date 1489708800
+
+2017-02-23 10:26:33,742 [9] INFO   Page captured
+
+2017-02-23 10:26:33,743 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,747 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,824 [9] INFO   Get VZ page for expiration date 1490313600
+
+2017-02-23 10:26:33,876 [9] INFO   Page captured
+
+2017-02-23 10:26:33,877 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,881 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:33,929 [9] INFO   Get VZ page for expiration date 1490918400
+
+2017-02-23 10:26:33,981 [9] INFO   Page captured
+
+2017-02-23 10:26:33,983 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:33,985 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,023 [9] INFO   Get VZ page for expiration date 1492732800
+
+2017-02-23 10:26:34,146 [9] INFO   Page captured
+
+2017-02-23 10:26:34,148 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,151 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,210 [9] INFO   Get VZ page for expiration date 1495152000
+
+2017-02-23 10:26:34,275 [9] INFO   Page captured
+
+2017-02-23 10:26:34,277 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,280 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,322 [9] INFO   Get VZ page for expiration date 1497571200
+
+2017-02-23 10:26:34,394 [9] INFO   Page captured
+
+2017-02-23 10:26:34,396 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,400 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,462 [9] INFO   Get VZ page for expiration date 1500595200
+
+2017-02-23 10:26:34,522 [9] INFO   Page captured
+
+2017-02-23 10:26:34,523 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,527 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,585 [9] INFO   Get VZ page for expiration date 1508457600
+
+2017-02-23 10:26:34,720 [9] INFO   Page captured
+
+2017-02-23 10:26:34,721 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,725 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,779 [9] INFO   Get VZ page for expiration date 1516320000
+
+2017-02-23 10:26:34,848 [9] INFO   Page captured
+
+2017-02-23 10:26:34,849 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,852 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:34,918 [9] INFO   Get VZ page for expiration date 1547769600
+
+2017-02-23 10:26:34,986 [9] INFO   Page captured
+
+2017-02-23 10:26:34,988 [9] INFO   Deserialize VZ
+
+2017-02-23 10:26:34,991 [9] INFO   VZ deserialized
+
+2017-02-23 10:26:35,053 [9] INFO   Get X page 
+
+2017-02-23 10:26:35,094 [9] INFO   Page captured
+
+2017-02-23 10:26:35,096 [9] INFO   Deserialize X
+
+2017-02-23 10:26:35,099 [9] INFO   X deserialized
+
+2017-02-23 10:26:35,102 [9] INFO   Get X page for expiration date 1487894400
+
+2017-02-23 10:26:35,183 [9] INFO   Page captured
+
+2017-02-23 10:26:35,184 [9] INFO   Deserialize X
+
+2017-02-23 10:26:35,191 [9] INFO   X deserialized
+
+2017-02-23 10:26:35,351 [9] INFO   Get X page for expiration date 1488499200
+
+2017-02-23 10:26:35,432 [9] INFO   Page captured
+
+2017-02-23 10:26:35,434 [9] INFO   Deserialize X
+
+2017-02-23 10:26:35,439 [9] INFO   X deserialized
+
+2017-02-23 10:26:35,574 [9] INFO   Get X page for expiration date 1489104000
+
+2017-02-23 10:26:35,649 [9] INFO   Page captured
+
+2017-02-23 10:26:35,650 [9] INFO   Deserialize X
+
+2017-02-23 10:26:35,656 [9] INFO   X deserialized
+
+2017-02-23 10:26:35,756 [9] INFO   Get X page for expiration date 1489708800
+
+2017-02-23 10:26:35,836 [9] INFO   Page captured
+
+2017-02-23 10:26:35,838 [9] INFO   Deserialize X
+
+2017-02-23 10:26:35,844 [9] INFO   X deserialized
+
+2017-02-23 10:26:35,966 [9] INFO   Get X page for expiration date 1490313600
+
+2017-02-23 10:26:36,044 [9] INFO   Page captured
+
+2017-02-23 10:26:36,046 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,051 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,155 [9] INFO   Get X page for expiration date 1490918400
+
+2017-02-23 10:26:36,366 [9] INFO   Page captured
+
+2017-02-23 10:26:36,368 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,373 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,454 [9] INFO   Get X page for expiration date 1492732800
+
+2017-02-23 10:26:36,547 [9] INFO   Page captured
+
+2017-02-23 10:26:36,549 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,555 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,667 [9] INFO   Get X page for expiration date 1495152000
+
+2017-02-23 10:26:36,709 [9] INFO   Page captured
+
+2017-02-23 10:26:36,711 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,713 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,743 [9] INFO   Get X page for expiration date 1500595200
+
+2017-02-23 10:26:36,805 [9] INFO   Page captured
+
+2017-02-23 10:26:36,807 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,821 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,908 [9] INFO   Get X page for expiration date 1508457600
+
+2017-02-23 10:26:36,960 [9] INFO   Page captured
+
+2017-02-23 10:26:36,963 [9] INFO   Deserialize X
+
+2017-02-23 10:26:36,966 [9] INFO   X deserialized
+
+2017-02-23 10:26:36,993 [9] INFO   Get X page for expiration date 1516320000
+
+2017-02-23 10:26:37,056 [9] INFO   Page captured
+
+2017-02-23 10:26:37,057 [9] INFO   Deserialize X
+
+2017-02-23 10:26:37,061 [9] INFO   X deserialized
+
+2017-02-23 10:26:37,113 [9] INFO   Get X page for expiration date 1547769600
+
+2017-02-23 10:26:37,221 [9] INFO   Page captured
+
+2017-02-23 10:26:37,224 [9] INFO   Deserialize X
+
+2017-02-23 10:26:37,228 [9] INFO   X deserialized
+
+2017-02-23 10:26:37,276 [9] INFO   Get XLF page 
+
+2017-02-23 10:26:37,308 [9] INFO   Page captured
+
+2017-02-23 10:26:37,310 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,311 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:37,313 [9] INFO   Get XLF page for expiration date 1487894400
+
+2017-02-23 10:26:37,384 [9] INFO   Page captured
+
+2017-02-23 10:26:37,388 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,391 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:37,442 [9] INFO   Get XLF page for expiration date 1488499200
+
+2017-02-23 10:26:37,507 [9] INFO   Page captured
+
+2017-02-23 10:26:37,509 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,511 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:37,552 [9] INFO   Get XLF page for expiration date 1489104000
+
+2017-02-23 10:26:37,616 [9] INFO   Page captured
+
+2017-02-23 10:26:37,618 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,622 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:37,671 [9] INFO   Get XLF page for expiration date 1489708800
+
+2017-02-23 10:26:37,751 [9] INFO   Page captured
+
+2017-02-23 10:26:37,753 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,758 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:37,822 [9] INFO   Get XLF page for expiration date 1490313600
+
+2017-02-23 10:26:37,873 [9] INFO   Page captured
+
+2017-02-23 10:26:37,875 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:37,878 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,020 [9] INFO   Get XLF page for expiration date 1490918400
+
+2017-02-23 10:26:38,071 [9] INFO   Page captured
+
+2017-02-23 10:26:38,073 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,076 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,161 [9] INFO   Get XLF page for expiration date 1492732800
+
+2017-02-23 10:26:38,219 [9] INFO   Page captured
+
+2017-02-23 10:26:38,221 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,227 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,306 [9] INFO   Get XLF page for expiration date 1495152000
+
+2017-02-23 10:26:38,352 [9] INFO   Page captured
+
+2017-02-23 10:26:38,355 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,359 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,393 [9] INFO   Get XLF page for expiration date 1497571200
+
+2017-02-23 10:26:38,459 [9] INFO   Page captured
+
+2017-02-23 10:26:38,461 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,466 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,538 [9] INFO   Get XLF page for expiration date 1498780800
+
+2017-02-23 10:26:38,594 [9] INFO   Page captured
+
+2017-02-23 10:26:38,597 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,600 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,661 [9] INFO   Get XLF page for expiration date 1505433600
+
+2017-02-23 10:26:38,759 [9] INFO   Page captured
+
+2017-02-23 10:26:38,761 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,765 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,838 [9] INFO   Get XLF page for expiration date 1506643200
+
+2017-02-23 10:26:38,895 [9] INFO   Page captured
+
+2017-02-23 10:26:38,896 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:38,899 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:38,929 [9] INFO   Get XLF page for expiration date 1513296000
+
+2017-02-23 10:26:39,005 [9] INFO   Page captured
+
+2017-02-23 10:26:39,006 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:39,007 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:39,017 [9] INFO   Get XLF page for expiration date 1514505600
+
+2017-02-23 10:26:39,070 [9] INFO   Page captured
+
+2017-02-23 10:26:39,072 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:39,074 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:39,101 [9] INFO   Get XLF page for expiration date 1516320000
+
+2017-02-23 10:26:39,181 [9] INFO   Page captured
+
+2017-02-23 10:26:39,183 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:39,187 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:39,307 [9] INFO   Get XLF page for expiration date 1547769600
+
+2017-02-23 10:26:39,372 [9] INFO   Page captured
+
+2017-02-23 10:26:39,373 [9] INFO   Deserialize XLF
+
+2017-02-23 10:26:39,377 [9] INFO   XLF deserialized
+
+2017-02-23 10:26:39,443 [9] INFO   Get XLV page 
+
+2017-02-23 10:26:39,482 [9] INFO   Page captured
+
+2017-02-23 10:26:39,488 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:39,489 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:39,504 [9] INFO   Get XLV page for expiration date 1487894400
+
+2017-02-23 10:26:39,601 [9] INFO   Page captured
+
+2017-02-23 10:26:39,603 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:39,607 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:39,687 [9] INFO   Get XLV page for expiration date 1488499200
+
+2017-02-23 10:26:39,765 [9] INFO   Page captured
+
+2017-02-23 10:26:39,766 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:39,769 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:39,826 [9] INFO   Get XLV page for expiration date 1489104000
+
+2017-02-23 10:26:40,036 [9] INFO   Page captured
+
+2017-02-23 10:26:40,038 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,041 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,091 [9] INFO   Get XLV page for expiration date 1489708800
+
+2017-02-23 10:26:40,208 [9] INFO   Page captured
+
+2017-02-23 10:26:40,209 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,214 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,333 [9] INFO   Get XLV page for expiration date 1490313600
+
+2017-02-23 10:26:40,385 [9] INFO   Page captured
+
+2017-02-23 10:26:40,386 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,389 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,439 [9] INFO   Get XLV page for expiration date 1490918400
+
+2017-02-23 10:26:40,499 [9] INFO   Page captured
+
+2017-02-23 10:26:40,502 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,506 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,587 [9] INFO   Get XLV page for expiration date 1492732800
+
+2017-02-23 10:26:40,637 [9] INFO   Page captured
+
+2017-02-23 10:26:40,639 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,641 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,668 [9] INFO   Get XLV page for expiration date 1497571200
+
+2017-02-23 10:26:40,748 [9] INFO   Page captured
+
+2017-02-23 10:26:40,750 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,754 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,827 [9] INFO   Get XLV page for expiration date 1505433600
+
+2017-02-23 10:26:40,888 [9] INFO   Page captured
+
+2017-02-23 10:26:40,889 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:40,892 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:40,952 [9] INFO   Get XLV page for expiration date 1516320000
+
+2017-02-23 10:26:41,036 [9] INFO   Page captured
+
+2017-02-23 10:26:41,037 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:41,042 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:41,132 [9] INFO   Get XLV page for expiration date 1547769600
+
+2017-02-23 10:26:41,208 [9] INFO   Page captured
+
+2017-02-23 10:26:41,210 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:41,214 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:41,325 [9] INFO   Get XLV page for expiration date 1773964800
+
+2017-02-23 10:26:41,364 [9] INFO   Page captured
+
+2017-02-23 10:26:41,367 [9] INFO   Deserialize XLV
+
+2017-02-23 10:26:41,372 [9] INFO   XLV deserialized
+
+2017-02-23 10:26:41,385 [9] INFO   Get XOP page 
+
+2017-02-23 10:26:41,427 [9] INFO   Page captured
+
+2017-02-23 10:26:41,429 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:41,430 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:41,432 [9] INFO   Get XOP page for expiration date 1487894400
+
+2017-02-23 10:26:41,519 [9] INFO   Page captured
+
+2017-02-23 10:26:41,520 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:41,524 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:41,594 [9] INFO   Get XOP page for expiration date 1488499200
+
+2017-02-23 10:26:41,656 [9] INFO   Page captured
+
+2017-02-23 10:26:41,657 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:41,661 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:41,720 [9] INFO   Get XOP page for expiration date 1489104000
+
+2017-02-23 10:26:41,783 [9] INFO   Page captured
+
+2017-02-23 10:26:41,785 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:41,788 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:41,835 [9] INFO   Get XOP page for expiration date 1489708800
+
+2017-02-23 10:26:41,911 [9] INFO   Page captured
+
+2017-02-23 10:26:41,913 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:41,918 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,064 [9] INFO   Get XOP page for expiration date 1490313600
+
+2017-02-23 10:26:42,133 [9] INFO   Page captured
+
+2017-02-23 10:26:42,135 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,138 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,204 [9] INFO   Get XOP page for expiration date 1490918400
+
+2017-02-23 10:26:42,276 [9] INFO   Page captured
+
+2017-02-23 10:26:42,278 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,282 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,324 [9] INFO   Get XOP page for expiration date 1492732800
+
+2017-02-23 10:26:42,383 [9] INFO   Page captured
+
+2017-02-23 10:26:42,385 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,388 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,445 [9] INFO   Get XOP page for expiration date 1495152000
+
+2017-02-23 10:26:42,507 [9] INFO   Page captured
+
+2017-02-23 10:26:42,508 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,511 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,547 [9] INFO   Get XOP page for expiration date 1497571200
+
+2017-02-23 10:26:42,619 [9] INFO   Page captured
+
+2017-02-23 10:26:42,621 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,626 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,723 [9] INFO   Get XOP page for expiration date 1505433600
+
+2017-02-23 10:26:42,782 [9] INFO   Page captured
+
+2017-02-23 10:26:42,783 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,786 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:42,841 [9] INFO   Get XOP page for expiration date 1516320000
+
+2017-02-23 10:26:42,924 [9] INFO   Page captured
+
+2017-02-23 10:26:42,925 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:42,932 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:43,069 [9] INFO   Get XOP page for expiration date 1547769600
+
+2017-02-23 10:26:43,127 [9] INFO   Page captured
+
+2017-02-23 10:26:43,128 [9] INFO   Deserialize XOP
+
+2017-02-23 10:26:43,132 [9] INFO   XOP deserialized
+
+2017-02-23 10:26:43,195 [9] INFO   End - RunOptionsCollection
+2017-02-23 10:26:43,196 [9] INFO   
+********************************************************************************
+
