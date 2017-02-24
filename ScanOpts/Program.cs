@@ -65,32 +65,37 @@ namespace Core
             IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
             IOCContainer.Instance.Get<ILogger>().InfoFormat("DIContainer initialized{0}", Environment.NewLine);
 
-            List<string> symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols();
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start timer...", Environment.NewLine);
+            Timer t1 = new Timer();
+            t1.Interval = (1000 * 60); // 1 minute
+            t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
+            t1.AutoReset = true;
+            t1.Start();
 
-            var crap = string.Join(",", symbols);
-            Timer timer = new Timer();
-
-            //OncePerDayTimer iodt = new OncePerDayTimer(TimeSpan., RunOptionsCollection(GetSymbols()));
-            
-            RunOptionsCollection(symbols);
+            //RunOptionsCollection(symbols);
 
             Console.ReadKey();
         }
 
-        private void timer_Tick(object sender, EventArgs e)
+        static void t1_Elapsed(object sender, ElapsedEventArgs e)
         {
-            bool _ran = false; //initial setting at start up
+            DateTime scheduledRun1 = DateTime.Today.AddHours(9).AddMinutes(30);  // runs today at 9:30m.
+            DateTime scheduledRun2 = DateTime.Today.AddHours(16).AddMinutes(00);  // runs today at 4:00pm.
 
-            if (DateTime.Now.Hour == 7 && _ran == false)
-            {
-                _ran = true;
-                RunOptionsCollection(IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols());
-            }
+            bool run = (DateTime.Now.Hour == scheduledRun1.Hour && DateTime.Now.Minute == scheduledRun1.Minute)
+                || (DateTime.Now.Hour == scheduledRun2.Hour && DateTime.Now.Minute == scheduledRun2.Minute);
 
-            if (DateTime.Now.Hour != 7 && _ran == true)
+            if (run)
             {
-                _ran = false;
+                RunOptionsCollection();
             }
+        }
+
+        private static void RunOptionsCollection()
+        {
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("RunOptionsCollection - GetSymbols");
+            List<string> symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols();
+            RunOptionsCollection(symbols);
         }
 
         private static void RunOptionsCollection(List<string> symbols)
@@ -130,7 +135,7 @@ namespace Core
                         if (String.IsNullOrEmpty(quote.Symbol))
                         {
                             quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
-                            //var result = JsonConvert.SerializeObject(quote);
+
                             newId = IOCContainer.Instance.Get<IQuoteORMService>().Add(quote);
                         }
 
