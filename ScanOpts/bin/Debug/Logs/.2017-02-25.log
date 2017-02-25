@@ -1,0 +1,130 @@
+2017-02-25 09:51:18,183 [8] INFO   
+********************************************************************************
+2017-02-25 09:51:18,238 [8] INFO   DIContainer initialized
+
+2017-02-25 09:51:18,239 [8] INFO   Start timer...
+2017-02-25 09:53:18,081 [8] INFO   
+********************************************************************************
+2017-02-25 09:53:18,109 [8] INFO   DIContainer initialized
+
+2017-02-25 09:53:18,109 [8] INFO   Start timer...
+2017-02-25 09:54:14,600 [8] INFO   
+********************************************************************************
+2017-02-25 09:54:14,640 [8] INFO   DIContainer initialized
+
+2017-02-25 09:54:14,641 [8] INFO   Start timer...
+2017-02-25 09:54:26,411 [8] INFO   RunOptionsCollection - GetSymbols
+2017-02-25 09:54:45,171 [8] INFO   Start - RunOptionsCollection
+2017-02-25 09:54:45,172 [8] INFO   Get AAPL page 
+
+2017-02-25 09:54:45,717 [8] INFO   Page captured
+
+2017-02-25 09:54:45,717 [8] INFO   Deserialize AAPL
+
+2017-02-25 09:54:45,877 [8] INFO   AAPL deserialized
+
+2017-02-25 09:54:45,877 [8] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-25 09:54:46,019 [8] INFO   Page captured
+
+2017-02-25 09:54:46,019 [8] INFO   Deserialize AAPL
+
+2017-02-25 09:54:46,050 [8] INFO   AAPL deserialized
+
+2017-02-25 09:59:49,352 [8] FATAL  Sucker blew up: System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Data.Entity.Utilities.DbProviderManifestExtensions.GetStoreTypeFromName(DbProviderManifest providerManifest, String name)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ConfigureColumn(EdmProperty column, EntityType table, DbProviderManifest providerManifest)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Configure(EdmProperty column, EntityType table, DbProviderManifest providerManifest, Boolean allowOverride, Boolean fillFromExistingConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.<>c__DisplayClass4.<Configure>b__3(Tuple`2 pm)
+   at System.Data.Entity.Utilities.IEnumerableExtensions.Each[T](IEnumerable`1 ts, Action`1 action)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Configure(IEnumerable`1 propertyMappings, DbProviderManifest providerManifest, Boolean allowOverride, Boolean fillFromExistingConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.ConfigurePropertyMappings(IList`1 propertyMappings, DbProviderManifest providerManifest, Boolean allowOverride)
+   at System.Data.Entity.ModelConfiguration.Configuration.ModelConfiguration.Configure(DbDatabaseMapping databaseMapping, DbProviderManifest providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at ORMService.CallPutORMService.AddMany(List`1 callputs) in c:\Projects\ScanOpts\ORMService\CallPutORMService.cs:line 25
+   at Core.Program.RunOptionsCollection(List`1 symbols) in c:\Projects\ScanOpts\ScanOpts\Program.cs:line 146
+2017-02-25 09:59:49,358 [8] INFO   End - RunOptionsCollection
+2017-02-25 09:59:49,359 [8] INFO   
+********************************************************************************
+
+2017-02-25 10:00:32,018 [10] INFO   
+********************************************************************************
+2017-02-25 10:00:32,043 [10] INFO   DIContainer initialized
+
+2017-02-25 10:00:32,044 [10] INFO   Start timer...
+2017-02-25 10:00:34,185 [10] INFO   RunOptionsCollection - GetSymbols
+2017-02-25 10:00:34,198 [10] INFO   Start - RunOptionsCollection
+2017-02-25 10:00:34,198 [10] INFO   Get AAPL page 
+
+2017-02-25 10:00:34,343 [10] INFO   Page captured
+
+2017-02-25 10:00:34,343 [10] INFO   Deserialize AAPL
+
+2017-02-25 10:00:34,490 [10] INFO   AAPL deserialized
+
+2017-02-25 10:00:34,491 [10] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-25 10:00:34,633 [10] INFO   Page captured
+
+2017-02-25 10:00:34,634 [10] INFO   Deserialize AAPL
+
+2017-02-25 10:00:34,665 [10] INFO   AAPL deserialized
+
+2017-02-25 10:04:50,109 [9] INFO   
+********************************************************************************
+2017-02-25 10:04:50,132 [9] INFO   DIContainer initialized
+
+2017-02-25 10:04:50,132 [9] INFO   Start timer...
+2017-02-25 10:04:52,285 [9] INFO   RunOptionsCollection - GetSymbols
+2017-02-25 10:04:52,298 [9] INFO   Start - RunOptionsCollection
+2017-02-25 10:04:52,299 [9] INFO   Get AAPL page 
+
+2017-02-25 10:04:52,484 [9] INFO   Page captured
+
+2017-02-25 10:04:52,484 [9] INFO   Deserialize AAPL
+
+2017-02-25 10:04:52,663 [9] INFO   AAPL deserialized
+
+2017-02-25 10:04:52,664 [9] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-25 10:04:52,824 [9] INFO   Page captured
+
+2017-02-25 10:04:52,824 [9] INFO   Deserialize AAPL
+
+2017-02-25 10:04:52,855 [9] INFO   AAPL deserialized
+
+2017-02-25 10:13:25,879 [9] INFO   
+********************************************************************************
+2017-02-25 10:13:25,906 [9] INFO   DIContainer initialized
+
+2017-02-25 10:13:25,907 [9] INFO   Start timer...
+2017-02-25 10:13:29,420 [9] INFO   RunOptionsCollection - GetSymbols
+2017-02-25 10:13:29,437 [9] INFO   Start - RunOptionsCollection
+2017-02-25 10:13:29,438 [9] INFO   Get AAPL page 
+
+2017-02-25 10:13:29,604 [9] INFO   Page captured
+
+2017-02-25 10:13:29,605 [9] INFO   Deserialize AAPL
+
+2017-02-25 10:13:29,750 [9] INFO   AAPL deserialized
+
+2017-02-25 10:13:29,751 [9] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-25 10:13:29,885 [9] INFO   Page captured
+
+2017-02-25 10:13:29,886 [9] INFO   Deserialize AAPL
+
+2017-02-25 10:13:29,916 [9] INFO   AAPL deserialized
+

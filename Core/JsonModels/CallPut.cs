@@ -29,6 +29,7 @@ namespace Core.JsonModels
         [Column(TypeName = "VARCHAR")]
         [StringLength(60)]
         public string StrikeLongFmt { get; set; }
+        [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
         public decimal PercentChangeRaw { get; set; }
         [Column(TypeName = "VARCHAR")]

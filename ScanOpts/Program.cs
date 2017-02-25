@@ -70,8 +70,8 @@ namespace Core
             t1.Interval = (1000 * 60); // 1 minute
             t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
             t1.AutoReset = true;
-            t1.Start();
-
+//            t1.Start();
+            RunOptionsCollection();
             //RunOptionsCollection(symbols);
 
             Console.ReadKey();

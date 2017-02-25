@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 
@@ -16,6 +17,7 @@ namespace Core.JsonModels
         [JsonProperty(PropertyName = "Id")]
         public int id { get; set; }
 
+        [Column(TypeName = "DATETIME")]
         [JsonProperty(PropertyName = "Date")]
         public DateTime Date { get; set; }
 

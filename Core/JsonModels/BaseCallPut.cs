@@ -14,6 +14,7 @@ namespace Core.JsonModels
         [Column(TypeName = "INT")]
         public int ExpirationDate { get; set; }
         public Strike strike { get; set; }
+        [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
         public PercentChange PercentChange { get; set; }
         public OpenInterest openInterest { get; set; }

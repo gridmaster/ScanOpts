@@ -11,6 +11,7 @@ namespace Core.JsonModels
         [Column(TypeName = "VARCHAR")]
         [StringLength(60)]
         public string Symbol { get; set; }
+        [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
         [Column(TypeName = "VARCHAR")]
         [StringLength(20)]
