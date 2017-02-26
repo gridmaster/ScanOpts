@@ -128,3 +128,53 @@
 
 2017-02-25 10:13:29,916 [9] INFO   AAPL deserialized
 
+2017-02-25 16:08:51,771 [10] INFO   
+********************************************************************************
+2017-02-25 16:08:51,799 [10] INFO   DIContainer initialized
+
+2017-02-25 16:08:51,800 [10] INFO   Start timer...
+2017-02-25 16:08:51,801 [10] INFO   RunOptionsCollection - GetSymbols
+2017-02-25 16:08:51,822 [10] INFO   Start - RunOptionsCollection
+2017-02-25 16:08:51,823 [10] INFO   Get AAPL page 
+
+2017-02-25 16:08:52,381 [10] INFO   Page captured
+
+2017-02-25 16:08:52,381 [10] INFO   Deserialize AAPL
+
+2017-02-25 16:08:52,550 [10] INFO   AAPL deserialized
+
+2017-02-25 16:08:52,550 [10] INFO   Get AAPL page for expiration date 1488499200
+
+2017-02-25 16:08:52,684 [10] INFO   Page captured
+
+2017-02-25 16:08:52,685 [10] INFO   Deserialize AAPL
+
+2017-02-25 16:08:52,718 [10] INFO   AAPL deserialized
+
+2017-02-25 16:09:32,028 [10] FATAL  Sucker blew up: System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Data.Entity.Utilities.DbProviderManifestExtensions.GetStoreTypeFromName(DbProviderManifest providerManifest, String name)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ConfigureColumn(EdmProperty column, EntityType table, DbProviderManifest providerManifest)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Configure(EdmProperty column, EntityType table, DbProviderManifest providerManifest, Boolean allowOverride, Boolean fillFromExistingConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.<>c__DisplayClass4.<Configure>b__3(Tuple`2 pm)
+   at System.Data.Entity.Utilities.IEnumerableExtensions.Each[T](IEnumerable`1 ts, Action`1 action)
+   at System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Configure(IEnumerable`1 propertyMappings, DbProviderManifest providerManifest, Boolean allowOverride, Boolean fillFromExistingConfiguration)
+   at System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.ConfigurePropertyMappings(IList`1 propertyMappings, DbProviderManifest providerManifest, Boolean allowOverride)
+   at System.Data.Entity.ModelConfiguration.Configuration.ModelConfiguration.Configure(DbDatabaseMapping databaseMapping, DbProviderManifest providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at ORMService.CallPutORMService.AddMany(List`1 callputs) in c:\Projects\ScanOpts\ORMService\CallPutORMService.cs:line 25
+   at Core.Program.RunOptionsCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\Program.cs:line 146
+2017-02-25 16:09:32,033 [10] INFO   End - RunOptionsCollection
+2017-02-25 16:09:32,034 [10] INFO   
+********************************************************************************
+

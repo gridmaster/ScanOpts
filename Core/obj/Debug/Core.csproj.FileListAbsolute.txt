@@ -8,18 +8,6 @@ C:\Projects\Log4NetWithDINinject-master\Core\bin\Debug\Core.pdb
 C:\Projects\Log4NetWithDINinject-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Projects\Log4NetWithDINinject-master\Core\obj\Debug\Core.dll
 C:\Projects\Log4NetWithDINinject-master\Core\obj\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.dll.config
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Projects\ScanOpts\Core\bin\Debug\Core.dll.config
 C:\Projects\ScanOpts\Core\bin\Debug\Core.dll
 C:\Projects\ScanOpts\Core\bin\Debug\Core.pdb
@@ -32,3 +20,14 @@ C:\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\ScanOpts\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Projects\ScanOpts\Core\obj\Debug\Core.dll
 C:\Projects\ScanOpts\Core\obj\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.dll.config
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.pdb

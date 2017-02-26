@@ -5,6 +5,7 @@ using Core.Interface;
 using Core.JsonModels;
 using ORMService.Contracts;
 using ORMService.Context;
+using DIContainer;
 
 namespace ORMService
 {
@@ -107,8 +108,7 @@ namespace ORMService
             }
             catch (Exception ex)
             {
-                var i = 0;
-                i++;
+                IOCContainer.Instance.Get<ILogger>().ErrorFormat("QuoteORMService - Add<{0}> - Add error: {1}{2}", entity.Symbol, ex.Message, Environment.NewLine);
             }
 
             return entity.Id;
