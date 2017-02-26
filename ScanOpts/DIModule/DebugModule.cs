@@ -1,6 +1,7 @@
 ﻿using Core.Interface;
 using Logger;
 using Ninject.Modules;
+using OptonService;
 using ORMService;
 
 namespace Core.DIModule
@@ -16,9 +17,7 @@ namespace Core.DIModule
             Bind<IOptionORMService>().To<OptionORMService>().InSingletonScope();
             Bind<ICallPutORMService>().To<CallPutORMService>().InSingletonScope();
             Bind<ISymbolORMService>().To<SymbolsORMService>().InSingletonScope();
-
-            //    Bind<IMyFakeService>().To<MyFakeService>().InSingletonScope();
-            //    Bind<IMyOtherService>().To<MyOtherService>().InSingletonScope();
+            Bind<IOptionService>().To<OptioinService>().InSingletonScope();
         }
     }
 }
