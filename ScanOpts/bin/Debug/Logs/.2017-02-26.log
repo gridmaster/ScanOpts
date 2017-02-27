@@ -1506,3 +1506,7 @@ QuoteORMService - Add<AAPL> - Add error: Sequence contains no matching element
 2017-02-26 17:35:02,474 [9] INFO   CallPutORMService - AddMany AAPL
 2017-02-26 17:35:02,474 [9] INFO   CallPutORMService - AddMany AAPL
 2017-02-26 17:35:02,475 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-02-26 17:50:05,910 [9] INFO   
+********************************************************************************
+2017-02-26 17:50:05,938 [9] INFO   DIContainer initialized
+2017-02-26 17:50:05,938 [9] INFO   Start timer...
