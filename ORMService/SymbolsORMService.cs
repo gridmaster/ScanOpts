@@ -9,6 +9,7 @@ namespace ORMService
         {
             List<string> symbols = new List<string> {
                 "AAPL",
+                "AMD",
                 "AMZN",
                 "BA",
                 "BABA",
@@ -32,7 +33,6 @@ namespace ORMService
                 "IWM",
                 "JNJ",
                 "K",
-                "KLAC",
                 "KO",
                 "MAR",
                 "MAT",
@@ -63,6 +63,7 @@ namespace ORMService
                 "VSAT",
                 "VXX",
                 "VZ",
+                "WMT",
                 "X",
                 "XLF",
                 "XLV",
