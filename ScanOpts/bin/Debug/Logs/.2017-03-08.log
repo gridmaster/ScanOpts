@@ -13569,3 +13569,260 @@
 2017-03-08 09:38:44,448 [482] INFO   
 ********************************************************************************
 
+2017-03-08 14:12:39,449 [9] INFO   
+********************************************************************************
+2017-03-08 14:14:33,914 [9] INFO   DIContainer initialized
+2017-03-08 14:14:39,309 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 14:14:39,419 [9] INFO   Start - RunHistoryCollection
+2017-03-08 14:14:39,420 [9] INFO   Get AAPL history page
+2017-03-08 14:15:12,993 [9] INFO   Page captured
+2017-03-08 14:15:13,718 [9] INFO   Deserialize AAPL
+2017-03-08 17:35:17,705 [9] INFO   
+********************************************************************************
+2017-03-08 17:35:20,634 [9] INFO   DIContainer initialized
+2017-03-08 17:35:21,907 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 17:35:21,969 [9] INFO   Start - RunHistoryCollection
+2017-03-08 17:35:21,971 [9] INFO   Get AAPL history page
+2017-03-08 17:35:28,902 [9] INFO   Page captured
+2017-03-08 17:35:30,445 [9] INFO   Deserialize AAPL
+2017-03-08 17:43:20,070 [8] INFO   
+********************************************************************************
+2017-03-08 17:43:40,554 [8] INFO   DIContainer initialized
+2017-03-08 17:43:41,222 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 17:43:41,239 [8] INFO   Start - RunHistoryCollection
+2017-03-08 17:43:41,240 [8] INFO   Get AAPL history page
+2017-03-08 17:43:44,962 [8] INFO   Page captured
+2017-03-08 17:43:46,379 [8] INFO   Deserialize AAPL
+2017-03-08 17:44:18,142 [8] INFO   AAPL deserialized
+2017-03-08 17:44:18,145 [8] INFO   Get AMD history page
+2017-03-08 17:45:07,294 [8] INFO   Page captured
+2017-03-08 17:45:08,793 [8] INFO   Deserialize AMD
+2017-03-08 17:46:00,694 [8] INFO   AMD deserialized
+2017-03-08 17:46:06,670 [8] INFO   End - RunOptionsCollection
+2017-03-08 17:46:07,368 [8] INFO   
+********************************************************************************
+
+2017-03-08 17:46:26,863 [8] INFO   RunOptionsCollection - GetSymbols
+2017-03-08 17:46:26,906 [8] INFO   Start - RunOptionsCollection
+2017-03-08 17:46:26,908 [8] INFO   Get AAPL page
+2017-03-08 17:46:27,044 [8] INFO   Page captured
+2017-03-08 17:46:27,045 [8] INFO   Deserialize AAPL
+2017-03-08 17:49:20,297 [9] INFO   
+********************************************************************************
+2017-03-08 17:49:27,350 [9] INFO   DIContainer initialized
+2017-03-08 17:49:27,985 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 17:49:28,001 [9] INFO   Start - RunHistoryCollection
+2017-03-08 17:49:28,003 [9] INFO   Get AAPL history page
+2017-03-08 17:50:31,175 [8] INFO   
+********************************************************************************
+2017-03-08 17:50:34,031 [8] INFO   DIContainer initialized
+2017-03-08 17:50:34,683 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 17:50:34,700 [8] INFO   Start - RunHistoryCollection
+2017-03-08 17:50:34,702 [8] INFO   Get AAPL history page
+2017-03-08 17:50:41,793 [8] INFO   Page captured
+2017-03-08 17:50:43,640 [8] INFO   Deserialize AAPL
+2017-03-08 17:57:49,237 [8] INFO   Deserialize AAPL
+2017-03-08 17:59:12,822 [8] INFO   
+********************************************************************************
+2017-03-08 17:59:15,220 [8] INFO   DIContainer initialized
+2017-03-08 17:59:15,926 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 17:59:15,942 [8] INFO   Start - RunHistoryCollection
+2017-03-08 17:59:15,943 [8] INFO   Get AAPL history page
+2017-03-08 17:59:18,450 [8] INFO   Page captured
+2017-03-08 17:59:51,852 [8] INFO   Deserialize AAPL
+2017-03-08 18:05:54,360 [9] INFO   
+********************************************************************************
+2017-03-08 18:06:25,026 [9] INFO   DIContainer initialized
+2017-03-08 18:06:25,484 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:06:25,509 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:06:25,510 [9] INFO   Get AAPL history page
+2017-03-08 18:06:27,901 [9] INFO   Page captured
+2017-03-08 18:06:33,654 [9] INFO   Deserialize AAPL
+2017-03-08 18:08:12,163 [9] INFO   AAPL deserialized
+2017-03-08 18:08:12,171 [9] INFO   End - RunOptionsCollection
+2017-03-08 18:08:12,172 [9] INFO   
+********************************************************************************
+
+2017-03-08 18:08:33,474 [9] INFO   RunOptionsCollection - GetSymbols
+2017-03-08 18:08:33,481 [9] INFO   Start - RunOptionsCollection
+2017-03-08 18:08:33,483 [9] INFO   Get AAPL page
+2017-03-08 18:08:33,577 [9] INFO   Page captured
+2017-03-08 18:08:33,578 [9] INFO   Deserialize AAPL
+2017-03-08 18:11:32,023 [9] INFO   End - RunOptionsCollection
+2017-03-08 18:11:32,601 [9] INFO   
+********************************************************************************
+
+2017-03-08 18:11:45,474 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:11:45,476 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:11:45,477 [9] INFO   Get AAPL history page
+2017-03-08 18:11:52,486 [9] INFO   Page captured
+2017-03-08 18:11:52,488 [9] INFO   Deserialize AAPL
+2017-03-08 18:13:58,064 [9] INFO   Page captured
+2017-03-08 18:18:45,115 [9] INFO   
+********************************************************************************
+2017-03-08 18:18:52,683 [9] INFO   DIContainer initialized
+2017-03-08 18:18:54,090 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:18:54,112 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:18:54,113 [9] INFO   Get AAPL history page
+2017-03-08 18:19:45,447 [9] INFO   
+********************************************************************************
+2017-03-08 18:19:48,394 [9] INFO   DIContainer initialized
+2017-03-08 18:19:48,878 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:19:48,897 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:19:48,898 [9] INFO   Get AAPL history page
+2017-03-08 18:19:51,788 [9] INFO   Page captured
+2017-03-08 18:19:58,570 [9] INFO   Deserialize AAPL
+2017-03-08 18:24:15,591 [9] INFO   
+********************************************************************************
+2017-03-08 18:24:18,048 [9] INFO   DIContainer initialized
+2017-03-08 18:24:18,710 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:24:18,726 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:24:18,727 [9] INFO   Get AAPL history page
+2017-03-08 18:24:20,926 [9] INFO   Page captured
+2017-03-08 18:24:33,698 [9] INFO   Deserialize AAPL
+2017-03-08 18:25:02,167 [9] INFO   AAPL deserialized
+2017-03-08 18:25:02,170 [9] INFO   End - RunOptionsCollection
+2017-03-08 18:25:02,171 [9] INFO   
+********************************************************************************
+
+2017-03-08 18:25:15,973 [9] INFO   RunOptionsCollection - GetSymbols
+2017-03-08 18:25:15,980 [9] INFO   Start - RunOptionsCollection
+2017-03-08 18:25:15,981 [9] INFO   Get AAPL page
+2017-03-08 18:25:16,141 [9] INFO   Page captured
+2017-03-08 18:25:16,142 [9] INFO   Deserialize AAPL
+2017-03-08 18:26:08,997 [9] INFO   End - RunOptionsCollection
+2017-03-08 18:26:09,000 [9] INFO   
+********************************************************************************
+
+2017-03-08 18:26:17,857 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:26:17,858 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:26:17,860 [9] INFO   Get AAPL history page
+2017-03-08 18:26:21,107 [9] INFO   Page captured
+2017-03-08 18:26:21,108 [9] INFO   Deserialize AAPL
+2017-03-08 18:31:16,232 [9] INFO   
+********************************************************************************
+2017-03-08 18:31:18,448 [9] INFO   DIContainer initialized
+2017-03-08 18:31:18,451 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:31:18,469 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:31:18,470 [9] INFO   Get AAPL history page
+2017-03-08 18:31:20,883 [9] INFO   Page captured
+2017-03-08 18:31:23,558 [9] INFO   Deserialize AAPL
+2017-03-08 18:33:00,572 [10] INFO   
+********************************************************************************
+2017-03-08 18:33:04,724 [10] INFO   DIContainer initialized
+2017-03-08 18:33:04,726 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:33:04,743 [10] INFO   Start - RunHistoryCollection
+2017-03-08 18:33:04,744 [10] INFO   Get AAPL history page
+2017-03-08 18:33:11,763 [10] INFO   Page captured
+2017-03-08 18:33:28,516 [10] INFO   Deserialize AAPL
+2017-03-08 18:37:37,196 [10] INFO   Page captured
+2017-03-08 18:37:43,825 [10] INFO   Deserialize AAPL
+2017-03-08 18:38:46,538 [10] INFO   AAPL deserialized
+2017-03-08 18:38:46,539 [10] INFO   End - RunOptionsCollection
+2017-03-08 18:38:46,540 [10] INFO   
+********************************************************************************
+
+2017-03-08 18:39:23,411 [9] INFO   
+********************************************************************************
+2017-03-08 18:39:27,186 [9] INFO   DIContainer initialized
+2017-03-08 18:39:27,189 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:39:27,207 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:39:27,208 [9] INFO   Get AAPL history page
+2017-03-08 18:39:31,306 [9] INFO   Page captured
+2017-03-08 18:39:33,021 [9] INFO   Deserialize AAPL
+2017-03-08 18:42:15,877 [9] INFO   
+********************************************************************************
+2017-03-08 18:42:18,689 [9] INFO   DIContainer initialized
+2017-03-08 18:42:18,691 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:42:18,709 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:42:18,710 [9] INFO   Get AAPL history page
+2017-03-08 18:42:23,038 [9] INFO   Page captured
+2017-03-08 18:42:25,574 [9] INFO   Deserialize AAPL
+2017-03-08 18:44:30,382 [9] FATAL  Sucker blew up: Newtonsoft.Json.JsonException: Invalid extension data attribute on 'Core.JsonModels.Dividends'. Member 'dividend' type must implement IDictionary<string, JToken>.
+   at Newtonsoft.Json.Serialization.DefaultContractResolver.<>c.<GetExtensionDataMemberForType>b__37_1(MemberInfo m)
+   at System.Linq.Enumerable.LastOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Newtonsoft.Json.Serialization.DefaultContractResolver.GetExtensionDataMemberForType(Type type)
+   at Newtonsoft.Json.Serialization.DefaultContractResolver.CreateObjectContract(Type objectType)
+   at Newtonsoft.Json.Serialization.DefaultContractResolver.CreateContract(Type objectType)
+   at Newtonsoft.Json.Serialization.DefaultContractResolver.ResolveContract(Type type)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SymbolHistoryService.HistoryService.RunHistoryCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\HistoryService.cs:line 38
+2017-03-08 18:44:30,413 [9] INFO   End - RunOptionsCollection
+2017-03-08 18:44:30,414 [9] INFO   
+********************************************************************************
+
+2017-03-08 18:44:41,940 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:44:41,941 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:44:41,942 [9] INFO   Get AAPL history page
+2017-03-08 18:44:47,046 [9] INFO   Page captured
+2017-03-08 18:44:47,669 [9] INFO   Deserialize AAPL
+2017-03-08 18:46:45,342 [8] INFO   
+********************************************************************************
+2017-03-08 18:46:48,139 [8] INFO   DIContainer initialized
+2017-03-08 18:46:48,142 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:46:48,159 [8] INFO   Start - RunHistoryCollection
+2017-03-08 18:46:48,161 [8] INFO   Get AAPL history page
+2017-03-08 18:46:50,908 [8] INFO   Page captured
+2017-03-08 18:46:52,157 [8] INFO   Deserialize AAPL
+2017-03-08 18:48:53,298 [10] INFO   
+********************************************************************************
+2017-03-08 18:48:56,327 [10] INFO   DIContainer initialized
+2017-03-08 18:48:56,330 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:48:56,346 [10] INFO   Start - RunHistoryCollection
+2017-03-08 18:48:56,347 [10] INFO   Get AAPL history page
+2017-03-08 18:48:58,834 [10] INFO   Page captured
+2017-03-08 18:49:00,573 [10] INFO   Deserialize AAPL
+2017-03-08 18:50:03,713 [9] INFO   
+********************************************************************************
+2017-03-08 18:50:06,401 [9] INFO   DIContainer initialized
+2017-03-08 18:50:06,404 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:50:06,422 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:50:06,423 [9] INFO   Get AAPL history page
+2017-03-08 18:50:08,343 [9] INFO   Page captured
+2017-03-08 18:50:11,332 [9] INFO   Deserialize AAPL
+2017-03-08 18:54:30,782 [9] INFO   
+********************************************************************************
+2017-03-08 18:54:35,283 [9] INFO   DIContainer initialized
+2017-03-08 18:54:35,286 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:54:35,303 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:54:35,304 [9] INFO   Get AAPL history page
+2017-03-08 18:54:37,409 [9] INFO   Page captured
+2017-03-08 18:54:38,945 [9] INFO   Deserialize AAPL
+2017-03-08 18:56:23,597 [9] INFO   
+********************************************************************************
+2017-03-08 18:56:27,072 [9] INFO   DIContainer initialized
+2017-03-08 18:56:27,075 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 18:56:27,091 [9] INFO   Start - RunHistoryCollection
+2017-03-08 18:56:27,092 [9] INFO   Get AAPL history page
+2017-03-08 18:56:28,830 [9] INFO   Page captured
+2017-03-08 18:56:30,627 [9] INFO   Deserialize AAPL
+2017-03-08 19:32:28,824 [10] INFO   
+********************************************************************************
+2017-03-08 19:32:30,714 [10] INFO   DIContainer initialized
+2017-03-08 19:32:30,717 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 19:32:30,737 [10] INFO   Start - RunHistoryCollection
+2017-03-08 19:32:30,739 [10] INFO   Get AAPL history page
+2017-03-08 19:32:32,737 [10] INFO   Page captured
+2017-03-08 19:32:34,676 [10] INFO   Deserialize AAPL

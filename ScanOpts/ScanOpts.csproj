@@ -55,6 +55,9 @@
       <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="HistoryService">
+      <HintPath>..\HistoryService\bin\Debug\HistoryService.dll</HintPath>
+    </Reference>
     <Reference Include="Logger">
       <HintPath>..\Logger\bin\Debug\Logger.dll</HintPath>
     </Reference>

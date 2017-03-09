@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace OptonService
 {
-    public class OptioinService : IOptionService
+    public class OptionService : IOptionService
     {
         public void RunOptionsCollection()
         {

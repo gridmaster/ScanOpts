@@ -46,3 +46,5 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\O
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\log4net.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.exe
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.pdb

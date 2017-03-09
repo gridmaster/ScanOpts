@@ -35,18 +35,22 @@ namespace Core
             IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
             IOCContainer.Instance.Get<ILogger>().Info("DIContainer initialized");
 
+            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
+            IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
-            Timer t1 = new Timer();
-            t1.Interval = (1000 * 60); // 1 minute
-            t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
-            t1.AutoReset = true;
-            t1.Start();
+            //Timer t1 = new Timer();
+            //t1.Interval = (1000 * 60); // 1 minute
+            //t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
+            //t1.AutoReset = true;
+            //t1.Start();
 
             Console.ReadKey();
         }
 
         static void t1_Elapsed(object sender, ElapsedEventArgs e)
         {
+            return;
+
             DateTime scheduledRun1 = DateTime.Today.AddHours(9).AddMinutes(30);  // runs today at 9:30m.
             DateTime scheduledRun2 = DateTime.Today.AddHours(16).AddMinutes(00);  // runs today at 4:00pm.
 

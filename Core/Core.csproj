@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\ICallPutORMService.cs" />
+    <Compile Include="Interface\IHistoryService.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IOptionService.cs" />
@@ -62,12 +63,22 @@
     <Compile Include="JsonModels\BaseData.cs" />
     <Compile Include="JsonModels\BaseRawFmt.cs" />
     <Compile Include="JsonModels\BaseRawFmtDate.cs" />
+    <Compile Include="JsonModels\BaseTradingPeriod.cs" />
     <Compile Include="JsonModels\CallPut.cs" />
+    <Compile Include="JsonModels\Chart.cs" />
     <Compile Include="JsonModels\Companies.cs" />
     <Compile Include="JsonModels\Company.cs" />
+    <Compile Include="JsonModels\CurrentTradingPeriod.cs" />
+    <Compile Include="JsonModels\Events.cs" />
+    <Compile Include="JsonModels\HistoryDetail\JsonResult.cs" />
+    <Compile Include="JsonModels\HistoryDetail\Quote.cs" />
+    <Compile Include="JsonModels\HistoryDetail\Result.cs" />
+    <Compile Include="JsonModels\HistoryResult.cs" />
+    <Compile Include="JsonModels\Indicators.cs" />
     <Compile Include="JsonModels\Industries.cs" />
     <Compile Include="JsonModels\Industry.cs" />
     <Compile Include="JsonModels\JsonResult.cs" />
+    <Compile Include="JsonModels\Meta.cs" />
     <Compile Include="JsonModels\Option.cs" />
     <Compile Include="JsonModels\OptionChain.cs" />
     <Compile Include="JsonModels\Options.cs" />
