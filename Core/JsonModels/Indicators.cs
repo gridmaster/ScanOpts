@@ -13,14 +13,14 @@ namespace Core.JsonModels
 
     public class UnAdjClose
     {
-        public List<decimal> unadjclose { get; set; }
+        public List<object> unadjclose { get; set; }
     }
 
     public class UnAdjQuote
     {
-        public List<decimal> unadjhigh { get; set; }
-        public List<decimal> unadjlow { get; set; }
-        public List<decimal> unadjclose { get; set; }
-        public List<decimal> unadjopen { get; set; }
+        public List<object> unadjhigh { get; set; }
+        public List<object> unadjlow { get; set; }
+        public List<object> unadjclose { get; set; }
+        public List<object> unadjopen { get; set; }
     }
 }
