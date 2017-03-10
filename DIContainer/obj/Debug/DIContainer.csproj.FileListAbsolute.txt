@@ -40,3 +40,5 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debu
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll.CodeAnalysisLog.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll.lastcodeanalysissucceeded

@@ -4,7 +4,7 @@ namespace Core.JsonModels
 {
     public class Indicators
     {
-        public List<HistoryDetail.Quote> quote { get; set; }
+        public List<HistoryDetail.Quote> quote {get;set;}
 
         public List<UnAdjClose> unadjclose { get; set; }
 

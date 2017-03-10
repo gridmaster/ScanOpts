@@ -13834,3 +13834,1250 @@
 2017-03-08 20:45:04,746 [9] INFO   Get AAPL history page
 2017-03-08 20:45:06,902 [9] INFO   Page captured
 2017-03-08 20:45:09,119 [9] INFO   Deserialize AAPL
+2017-03-08 22:07:47,093 [10] INFO   
+********************************************************************************
+2017-03-08 22:07:50,231 [10] INFO   DIContainer initialized
+2017-03-08 22:07:50,234 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 22:07:50,467 [10] INFO   Start - RunHistoryCollection
+2017-03-08 22:07:50,468 [10] INFO   Get AAPL history page
+2017-03-08 22:09:15,538 [9] INFO   
+********************************************************************************
+2017-03-08 22:09:18,622 [9] INFO   DIContainer initialized
+2017-03-08 22:09:18,625 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 22:09:18,645 [9] INFO   Start - RunHistoryCollection
+2017-03-08 22:09:18,646 [9] INFO   Get AAPL history page
+2017-03-08 22:09:27,119 [9] INFO   Page captured
+2017-03-08 22:11:48,169 [9] INFO   
+********************************************************************************
+2017-03-08 22:11:53,114 [9] INFO   DIContainer initialized
+2017-03-08 22:11:53,116 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 22:11:53,134 [9] INFO   Start - RunHistoryCollection
+2017-03-08 22:11:53,135 [9] INFO   Get AAPL history page
+2017-03-08 22:11:59,481 [9] INFO   Page captured
+2017-03-08 22:48:30,406 [9] INFO   
+********************************************************************************
+2017-03-08 22:48:40,558 [9] INFO   DIContainer initialized
+2017-03-08 22:48:40,560 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-08 22:48:40,596 [9] INFO   Start - RunHistoryCollection
+2017-03-08 22:48:40,598 [9] INFO   Get AAPL history page
+2017-03-08 22:49:23,003 [9] INFO   Page captured
+2017-03-08 22:50:48,162 [9] FATAL  Sucker blew up: Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Core.JsonModels.HistoryDetail.Quote' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path 'chart.result[0].indicators.quote', line 1, position 98811.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SymbolHistoryService.HistoryService.RunHistoryCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\HistoryService.cs:line 35
+2017-03-08 22:50:48,199 [9] INFO   End - RunOptionsCollection
+2017-03-08 22:50:48,200 [9] INFO   
+********************************************************************************
+
+2017-03-08 22:50:49,449 [9] INFO   RunOptionsCollection - GetSymbols
+2017-03-08 22:50:49,490 [9] INFO   Start - RunOptionsCollection
+2017-03-08 22:50:49,492 [9] INFO   Get AAPL page
+2017-03-08 22:50:49,604 [9] INFO   Page captured
+2017-03-08 22:50:49,606 [9] INFO   Deserialize AAPL
+2017-03-08 22:50:50,967 [9] INFO   AAPL deserialized
+2017-03-08 22:50:50,969 [9] INFO   Get AAPL page for expiration date 1489104000
+2017-03-08 22:50:51,118 [9] INFO   Page captured
+2017-03-08 22:50:51,120 [9] INFO   Deserialize AAPL
+2017-03-08 22:50:51,163 [9] INFO   AAPL deserialized
+2017-03-08 22:51:02,207 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,212 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,216 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,219 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,221 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,224 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,227 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,230 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,231 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,233 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,236 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,237 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,238 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,240 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,242 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,243 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,246 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,248 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,249 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,251 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,252 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,254 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,255 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,257 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,258 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,260 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,261 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,262 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,263 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,264 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,265 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,266 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,267 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,268 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,270 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,271 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,273 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,274 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,276 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,277 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,278 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,280 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,281 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,283 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,284 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,287 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,288 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,290 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,293 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,295 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,297 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,298 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,299 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,300 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,301 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,303 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,305 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,306 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,307 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,309 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,311 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,313 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,314 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,315 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,316 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,318 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,319 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,320 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,322 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,323 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,324 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,326 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,327 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,328 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,330 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,331 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,332 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,333 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,334 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,335 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,337 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,338 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,341 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,343 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,345 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,347 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,349 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,350 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,351 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,352 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:02,354 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:02,961 [9] INFO   Get AAPL page for expiration date 1489708800
+2017-03-08 22:51:03,083 [9] INFO   Page captured
+2017-03-08 22:51:03,085 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:03,093 [9] INFO   AAPL deserialized
+2017-03-08 22:51:03,095 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,098 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,099 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,101 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,102 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,103 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,104 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,105 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,107 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,109 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,110 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,111 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,113 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,114 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,115 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,116 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,117 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,118 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,120 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,121 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,121 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,123 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,125 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,126 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,127 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,129 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,130 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,131 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,133 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,134 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,135 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,136 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,138 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,139 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,140 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,142 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,144 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,145 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,146 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,148 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,149 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,150 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,151 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,152 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,153 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,154 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,156 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,157 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,159 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,160 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,163 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,164 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,165 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,166 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,167 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,168 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,169 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,170 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,171 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,173 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,175 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,176 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,177 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,179 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,180 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,182 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,183 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,184 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,185 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,186 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,187 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,189 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,190 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,192 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,194 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,195 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,196 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,197 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,198 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,199 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,200 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,201 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,202 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,203 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,204 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,205 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,207 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,209 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,210 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,211 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,212 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,213 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,214 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,215 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,217 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,218 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,219 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,220 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,221 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,223 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,224 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,225 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,227 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,229 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,231 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,233 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,235 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,237 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,239 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,242 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,244 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,246 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,247 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,249 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,250 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,251 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,252 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,254 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,257 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,259 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,265 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,267 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,277 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,279 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,280 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:03,281 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:04,558 [9] INFO   Get AAPL page for expiration date 1490313600
+2017-03-08 22:51:04,647 [9] INFO   Page captured
+2017-03-08 22:51:04,648 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:04,654 [9] INFO   AAPL deserialized
+2017-03-08 22:51:04,656 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,658 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,659 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,660 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,661 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,662 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,663 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,664 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,665 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,666 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,673 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,674 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,675 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,676 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,677 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,678 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,679 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,681 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,682 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,683 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,684 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,684 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,685 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,686 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,687 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,689 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,691 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,692 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,693 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,694 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,695 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,696 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,697 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,698 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,699 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,699 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,701 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,702 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,704 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,706 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,707 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,708 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,710 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,711 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,713 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,715 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,716 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,717 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,718 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,719 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,719 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,721 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,723 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,725 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,727 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,729 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,731 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,733 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,734 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,735 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,736 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,737 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,738 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,739 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,740 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,743 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,745 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,748 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,750 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,756 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,758 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,760 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,761 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,764 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,765 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,767 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:04,768 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:05,310 [9] INFO   Get AAPL page for expiration date 1490918400
+2017-03-08 22:51:05,447 [9] INFO   Page captured
+2017-03-08 22:51:05,448 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:05,453 [9] INFO   AAPL deserialized
+2017-03-08 22:51:05,454 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,455 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,456 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,458 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,459 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,460 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,461 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,462 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,463 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,464 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,465 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,466 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,467 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,468 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,469 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,471 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,472 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,473 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,474 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,475 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,476 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,476 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,477 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,478 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,479 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,480 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,481 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,482 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,483 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,484 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,485 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,487 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,488 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,490 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,491 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,493 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,494 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,496 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,498 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,499 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,500 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,501 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,502 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,503 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,505 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,506 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,508 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,509 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,510 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,511 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,512 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,513 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,514 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,515 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,516 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,518 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,519 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,522 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,523 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,524 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:05,525 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:05,909 [9] INFO   Get AAPL page for expiration date 1491523200
+2017-03-08 22:51:05,990 [9] INFO   Page captured
+2017-03-08 22:51:05,992 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:05,997 [9] INFO   AAPL deserialized
+2017-03-08 22:51:06,000 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,003 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,004 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,005 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,006 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,007 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,008 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,009 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,010 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,011 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,011 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,013 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,014 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,015 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,016 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,018 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,021 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,023 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,025 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,027 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,029 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,031 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,034 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,037 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,039 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,040 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,042 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,044 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,046 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,047 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,049 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,050 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,051 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,053 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,054 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,055 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,056 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,057 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,058 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,059 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,060 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,061 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,062 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,064 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,065 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,066 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,067 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,069 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,071 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,072 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,073 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,074 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,075 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,076 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,077 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,078 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,079 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,080 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,081 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,082 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,083 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:06,799 [9] INFO   Get AAPL page for expiration date 1492041600
+2017-03-08 22:51:06,878 [9] INFO   Page captured
+2017-03-08 22:51:06,880 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:06,884 [9] INFO   AAPL deserialized
+2017-03-08 22:51:06,885 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,886 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,887 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,888 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,889 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,891 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,892 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,893 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,894 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,895 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,896 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,897 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,898 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,899 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,901 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,903 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,904 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,905 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,906 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,908 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,909 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,909 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,911 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,912 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,913 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,914 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,915 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,916 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,917 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,918 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,920 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,921 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,922 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,923 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,924 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,925 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,926 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,927 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,928 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,929 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,930 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,931 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,933 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,934 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,935 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,937 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,938 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,939 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,940 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,941 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,948 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,950 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,952 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:06,953 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:07,308 [9] INFO   Get AAPL page for expiration date 1492732800
+2017-03-08 22:51:07,391 [9] INFO   Page captured
+2017-03-08 22:51:07,392 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:07,397 [9] INFO   AAPL deserialized
+2017-03-08 22:51:07,398 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,400 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,401 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,402 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,403 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,404 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,405 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,406 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,408 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,409 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,410 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,410 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,412 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,413 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,414 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,415 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,416 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,417 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,418 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,419 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,420 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,421 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,422 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,423 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,424 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,425 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,426 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,427 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,428 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,430 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,431 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,432 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,434 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,436 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,437 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,438 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,439 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,441 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,442 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,444 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,446 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,447 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,454 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,456 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,457 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,459 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,459 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,460 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,461 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,462 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,463 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,464 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,466 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,468 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,470 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,474 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,476 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,479 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,483 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,485 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,487 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,488 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,489 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,489 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,490 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,491 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,492 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,493 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,494 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,495 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:07,497 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:07,923 [9] INFO   Get AAPL page for expiration date 1495152000
+2017-03-08 22:51:07,991 [9] INFO   Page captured
+2017-03-08 22:51:07,995 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:07,999 [9] INFO   AAPL deserialized
+2017-03-08 22:51:08,000 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,001 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,002 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,003 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,004 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,006 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,007 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,008 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,008 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,009 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,011 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,012 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,013 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,015 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,016 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,017 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,018 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,019 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,020 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,021 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,022 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,023 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,024 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,025 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,026 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,027 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,028 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,029 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,030 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,031 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,033 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,034 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,037 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,038 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,040 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,042 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,044 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,047 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,051 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,052 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,053 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,055 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,056 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,058 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,060 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,061 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,063 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,064 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:08,729 [9] INFO   Get AAPL page for expiration date 1497571200
+2017-03-08 22:51:08,809 [9] INFO   Page captured
+2017-03-08 22:51:08,810 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:08,814 [9] INFO   AAPL deserialized
+2017-03-08 22:51:08,816 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,817 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,818 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,820 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,821 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,822 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,823 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,824 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,825 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,826 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,827 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,828 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,830 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,831 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,832 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,833 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,834 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,835 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,836 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,837 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,838 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,839 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,840 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,841 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,842 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,843 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,844 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,845 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,847 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,848 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,849 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,850 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,851 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,852 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,853 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,854 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,855 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,856 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,857 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,858 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,859 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,860 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,861 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,862 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,864 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,865 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,866 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,867 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,869 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,870 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,871 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,871 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,872 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,873 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,874 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,875 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,876 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,877 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,879 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,880 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,881 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,882 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,883 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,884 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,885 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,886 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,887 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:08,888 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:09,273 [9] INFO   Get AAPL page for expiration date 1500595200
+2017-03-08 22:51:09,366 [9] INFO   Page captured
+2017-03-08 22:51:09,368 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:09,372 [9] INFO   AAPL deserialized
+2017-03-08 22:51:09,373 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,374 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,376 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,377 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,378 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,380 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,381 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,382 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,383 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,384 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,384 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,386 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,387 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,388 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,389 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,390 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,391 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,392 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,393 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,394 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,397 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,398 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,399 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,400 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,401 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,402 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,403 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,404 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,405 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,406 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,407 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,408 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,409 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,410 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,411 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,418 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,420 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,421 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,422 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,423 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,424 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,425 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,425 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,426 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,428 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,430 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,431 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,432 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,433 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,434 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,436 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,437 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,438 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,439 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,439 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,440 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,441 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,442 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,443 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,445 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,446 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,448 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,449 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,450 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,451 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,453 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,454 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,455 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:09,868 [9] INFO   Get AAPL page for expiration date 1503014400
+2017-03-08 22:51:09,934 [9] INFO   Page captured
+2017-03-08 22:51:09,936 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:09,939 [9] INFO   AAPL deserialized
+2017-03-08 22:51:09,941 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,943 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,945 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,947 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,948 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,950 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,952 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,953 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,955 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,957 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,958 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,959 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,963 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,965 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,968 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,970 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,972 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,976 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,980 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,982 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,983 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,984 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,985 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,986 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,987 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,988 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,989 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,990 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,991 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,992 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,993 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,994 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,995 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,996 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,998 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:09,999 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,000 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,001 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:10,241 [9] INFO   Get AAPL page for expiration date 1508457600
+2017-03-08 22:51:10,508 [9] INFO   Page captured
+2017-03-08 22:51:10,509 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:10,514 [9] INFO   AAPL deserialized
+2017-03-08 22:51:10,515 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,516 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,517 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,518 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,519 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,520 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,521 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,522 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,523 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,524 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,525 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,527 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,528 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,529 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,530 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,531 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,533 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,534 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,535 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,536 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,537 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,538 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,539 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,540 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,542 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,543 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,544 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,545 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,546 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,553 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,555 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,556 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,557 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,558 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,559 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,560 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,562 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,563 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,565 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,567 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,569 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,571 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,573 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,574 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,576 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,578 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,580 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,582 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,584 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,588 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,592 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,595 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,597 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,599 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,602 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,605 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,607 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,609 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,610 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,611 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,612 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:10,613 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:10,992 [9] INFO   Get AAPL page for expiration date 1510876800
+2017-03-08 22:51:11,070 [9] INFO   Page captured
+2017-03-08 22:51:11,073 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:11,078 [9] INFO   AAPL deserialized
+2017-03-08 22:51:11,083 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,087 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,089 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,091 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,093 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,095 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,096 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,097 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,098 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,099 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,101 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,102 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,104 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,105 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,106 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,106 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,108 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,110 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,113 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,114 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,115 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,116 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,117 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,118 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,120 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,122 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,124 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,126 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,128 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,130 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,132 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,134 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,136 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,137 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,139 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,140 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,143 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,145 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,147 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,149 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,151 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,153 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,156 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,157 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,159 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,161 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,162 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,164 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,165 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,166 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,167 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,168 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,169 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,170 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,171 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,172 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,173 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,175 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,176 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,177 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,178 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,179 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,180 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,181 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:11,903 [9] INFO   Get AAPL page for expiration date 1513296000
+2017-03-08 22:51:11,958 [9] INFO   Page captured
+2017-03-08 22:51:11,960 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:11,963 [9] INFO   AAPL deserialized
+2017-03-08 22:51:11,964 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,966 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,967 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,968 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,969 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,970 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,971 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,972 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,973 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,974 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,975 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,976 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,977 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,978 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,979 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,980 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,981 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,982 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,983 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,984 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,985 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,985 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,986 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,987 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,988 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,989 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,990 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,991 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,992 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,993 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,994 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,995 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,996 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:11,997 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:12,209 [9] INFO   Get AAPL page for expiration date 1516320000
+2017-03-08 22:51:12,302 [9] INFO   Page captured
+2017-03-08 22:51:12,303 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:12,308 [9] INFO   AAPL deserialized
+2017-03-08 22:51:12,310 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,311 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,312 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,313 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,314 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,315 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,316 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,317 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,318 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,320 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,321 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,322 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,323 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,325 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,326 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,330 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,331 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,333 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,334 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,335 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,336 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,337 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,338 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,340 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,342 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,343 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,346 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,347 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,348 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,350 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,351 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,352 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,353 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,354 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,355 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,356 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,358 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,359 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,360 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,361 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,363 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,364 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,366 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,366 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,367 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,368 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,369 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,370 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,371 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,372 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,373 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,375 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,377 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,378 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,379 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,380 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,381 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,382 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,383 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,384 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,385 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,386 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,387 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,390 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,392 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,393 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,394 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,396 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,397 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,398 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,399 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,400 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:12,829 [9] INFO   Get AAPL page for expiration date 1529020800
+2017-03-08 22:51:12,893 [9] INFO   Page captured
+2017-03-08 22:51:12,895 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:12,900 [9] INFO   AAPL deserialized
+2017-03-08 22:51:12,902 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,903 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,905 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,906 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,907 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,908 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,909 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,910 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,911 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,912 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,913 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,914 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,915 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,916 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,917 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,920 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,924 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,927 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,930 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,933 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,938 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,939 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,941 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,942 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,942 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,944 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,945 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,946 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,947 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,948 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,949 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,950 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,951 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,952 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,953 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,954 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,955 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,956 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,957 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,959 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,960 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,961 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,962 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,964 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,965 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,965 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,966 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,967 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:12,968 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:13,257 [9] INFO   Get AAPL page for expiration date 1547769600
+2017-03-08 22:51:13,332 [9] INFO   Page captured
+2017-03-08 22:51:13,333 [9] INFO   Deserialize AAPL
+2017-03-08 22:51:13,338 [9] INFO   AAPL deserialized
+2017-03-08 22:51:13,343 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,346 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,348 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,351 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,353 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,354 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,356 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,358 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,360 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,361 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,362 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,364 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,365 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,366 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,367 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,369 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,371 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,372 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,374 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,375 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,376 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,377 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,378 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,379 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,381 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,382 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,383 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,384 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,386 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,387 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,389 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,390 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,392 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,399 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,400 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,402 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,403 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,405 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,406 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,407 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,408 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,409 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,410 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,411 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,412 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,413 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,414 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,415 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,416 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,417 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,418 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,419 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,421 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,422 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,423 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,424 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,425 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,426 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,427 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,428 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,429 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,430 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,431 [9] INFO   CallPutORMService - AddMany AAPL
+2017-03-08 22:51:13,432 [9] INFO   CallPutORMService - AddMany Saving Changes
+2017-03-08 22:51:13,828 [9] INFO   Get AMD page
+2017-03-08 22:51:13,863 [9] INFO   Page captured
+2017-03-08 22:51:13,864 [9] INFO   Deserialize AMD

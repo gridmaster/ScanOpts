@@ -4,10 +4,10 @@ namespace Core.JsonModels.HistoryDetail
 {
     public class Quote
     {
-        List<decimal> low { get; set; }
-        List<decimal> high { get; set; }
-        List<decimal> open { get; set; }
-        List<decimal> close { get; set; }
-        List<int> volume { get; set; }
+        public List<object> close { get; set; }
+        public List<object> high { get; set; }
+        public List<object> low { get; set; }
+        public List<object> open { get; set; }
+        public List<object> volume { get; set; }
     }
 }
