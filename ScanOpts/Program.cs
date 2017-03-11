@@ -33,6 +33,7 @@ namespace Core
             Console.WriteLine(String.Format("{0}{1} Initialize DIContainer{0}", Environment.NewLine, DateTime.Now));
             InitializeDiContainer();
             IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************", Environment.NewLine);
+
             IOCContainer.Instance.Get<ILogger>().Info("DIContainer initialized");
 
             IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();

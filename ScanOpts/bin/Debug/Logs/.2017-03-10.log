@@ -70,3 +70,33 @@
 2017-03-10 08:06:20,160 [11] INFO   AAPL deserialized
 2017-03-10 08:06:24,351 [11] INFO   Get AMD history page
 2017-03-10 08:06:24,949 [11] INFO   Page captured
+2017-03-10 18:27:37,658 [10] INFO   
+********************************************************************************
+2017-03-10 18:27:40,280 [10] INFO   DIContainer initialized
+2017-03-10 18:27:40,283 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-10 18:27:40,363 [10] INFO   Start - RunHistoryCollection
+2017-03-10 18:27:40,365 [10] INFO   Get AAPL history page
+2017-03-10 18:27:40,970 [10] INFO   Page captured
+2017-03-10 22:53:46,884 [9] INFO   
+********************************************************************************
+2017-03-10 22:53:56,372 [9] INFO   DIContainer initialized
+2017-03-10 22:53:57,320 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-10 22:53:57,391 [9] INFO   Start - RunHistoryCollection
+2017-03-10 22:53:57,392 [9] INFO   Get AAPL history page
+2017-03-10 22:54:00,879 [9] INFO   Page captured
+2017-03-10 22:58:59,436 [10] INFO   
+********************************************************************************
+2017-03-10 22:59:03,923 [10] INFO   DIContainer initialized
+2017-03-10 22:59:03,925 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-10 22:59:03,946 [10] INFO   Start - RunHistoryCollection
+2017-03-10 22:59:03,947 [10] INFO   Get AAPL history page
+2017-03-10 22:59:04,720 [10] INFO   Page captured
+2017-03-10 22:59:18,361 [10] FATAL  Sucker blew up: System.InvalidCastException: Specified cast is not valid.
+   at SymbolHistoryService.HistoryService.RunHistoryCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\HistoryService.cs:line 50
+2017-03-10 23:14:56,438 [8] INFO   
+********************************************************************************
+2017-03-10 23:15:00,621 [8] INFO   DIContainer initialized
+2017-03-10 23:15:00,623 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-10 23:15:00,714 [8] INFO   Start - RunHistoryCollection
+2017-03-10 23:15:00,715 [8] INFO   Get AAPL history page
+2017-03-10 23:15:01,403 [8] INFO   Page captured

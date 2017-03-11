@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\UnixTimeConverter.cs" />
     <Compile Include="Interface\ICallPutORMService.cs" />
     <Compile Include="Interface\IHistoryService.cs" />
     <Compile Include="Interface\ILogger.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="JsonModels\Events.cs" />
     <Compile Include="JsonModels\HistoryDetail\JsonResult.cs" />
     <Compile Include="JsonModels\HistoryDetail\Quote.cs" />
+    <Compile Include="JsonModels\HistoryDetail\Quotes.cs" />
     <Compile Include="JsonModels\HistoryDetail\Result.cs" />
     <Compile Include="JsonModels\HistoryResult.cs" />
     <Compile Include="JsonModels\Indicators.cs" />

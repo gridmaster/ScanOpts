@@ -1,0 +1,153 @@
+2017-03-11 07:51:24,666 [9] INFO   
+********************************************************************************
+2017-03-11 07:52:54,968 [9] INFO   
+********************************************************************************
+2017-03-11 07:53:01,162 [9] INFO   DIContainer initialized
+2017-03-11 07:53:01,165 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 07:53:01,197 [9] INFO   Start - RunHistoryCollection
+2017-03-11 07:53:01,198 [9] INFO   Get AAPL history page
+2017-03-11 07:53:02,067 [9] INFO   Page captured
+2017-03-11 07:53:16,931 [9] FATAL  Sucker blew up: System.InvalidCastException: Specified cast is not valid.
+   at SymbolHistoryService.HistoryService.RunHistoryCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\HistoryService.cs:line 51
+2017-03-11 07:53:16,933 [9] INFO   End - RunOptionsCollection
+2017-03-11 07:56:54,353 [9] INFO   
+********************************************************************************
+2017-03-11 07:56:56,029 [9] INFO   DIContainer initialized
+2017-03-11 07:56:56,031 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 07:56:56,159 [9] INFO   Start - RunHistoryCollection
+2017-03-11 07:56:56,160 [9] INFO   Get AAPL history page
+2017-03-11 07:56:56,838 [9] INFO   Page captured
+2017-03-11 07:58:32,768 [9] INFO   
+********************************************************************************
+2017-03-11 07:58:41,159 [9] INFO   DIContainer initialized
+2017-03-11 07:58:41,162 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 07:58:41,189 [9] INFO   Start - RunHistoryCollection
+2017-03-11 07:58:41,191 [9] INFO   Get AAPL history page
+2017-03-11 07:58:42,003 [9] INFO   Page captured
+2017-03-11 09:05:47,722 [9] INFO   
+********************************************************************************
+2017-03-11 09:05:49,460 [9] INFO   DIContainer initialized
+2017-03-11 09:05:49,463 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 09:05:49,495 [9] INFO   Start - RunHistoryCollection
+2017-03-11 09:05:49,497 [9] INFO   Get AAPL history page
+2017-03-11 09:05:50,211 [9] INFO   Page captured
+2017-03-11 09:05:50,596 [9] FATAL  Sucker blew up: System.InvalidCastException: Specified cast is not valid.
+   at SymbolHistoryService.HistoryService.RunHistoryCollection(List`1 symbols) in C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\HistoryService.cs:line 52
+2017-03-11 09:05:50,597 [9] INFO   End - RunOptionsCollection
+2017-03-11 09:05:50,598 [9] INFO   
+********************************************************************************
+
+2017-03-11 09:06:39,997 [9] INFO   
+********************************************************************************
+2017-03-11 09:06:42,354 [9] INFO   DIContainer initialized
+2017-03-11 09:06:42,356 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 09:06:42,377 [9] INFO   Start - RunHistoryCollection
+2017-03-11 09:06:42,378 [9] INFO   Get AAPL history page
+2017-03-11 09:06:42,970 [9] INFO   Page captured
+2017-03-11 09:11:55,742 [10] INFO   
+********************************************************************************
+2017-03-11 09:11:58,252 [10] INFO   DIContainer initialized
+2017-03-11 09:11:58,254 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 09:11:58,274 [10] INFO   Start - RunHistoryCollection
+2017-03-11 09:11:58,276 [10] INFO   Get AAPL history page
+2017-03-11 09:11:58,988 [10] INFO   Page captured
+2017-03-11 09:13:54,399 [11] INFO   
+********************************************************************************
+2017-03-11 09:13:56,479 [11] INFO   DIContainer initialized
+2017-03-11 09:13:56,481 [11] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 09:13:56,501 [11] INFO   Start - RunHistoryCollection
+2017-03-11 09:13:56,503 [11] INFO   Get AAPL history page
+2017-03-11 09:13:57,179 [11] INFO   Page captured
+2017-03-11 10:06:06,711 [9] INFO   
+********************************************************************************
+2017-03-11 10:06:09,303 [9] INFO   DIContainer initialized
+2017-03-11 10:06:09,306 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:06:09,327 [9] INFO   Start - RunHistoryCollection
+2017-03-11 10:06:09,328 [9] INFO   Get AAPL history page
+2017-03-11 10:06:10,067 [9] INFO   Page captured
+2017-03-11 10:09:29,244 [10] INFO   
+********************************************************************************
+2017-03-11 10:09:31,534 [10] INFO   DIContainer initialized
+2017-03-11 10:09:32,929 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:09:32,953 [10] INFO   Start - RunHistoryCollection
+2017-03-11 10:09:32,955 [10] INFO   Get AAPL history page
+2017-03-11 10:09:33,698 [10] INFO   Page captured
+2017-03-11 10:15:13,622 [9] INFO   
+********************************************************************************
+2017-03-11 10:15:16,234 [9] INFO   DIContainer initialized
+2017-03-11 10:15:16,236 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:15:16,256 [9] INFO   Start - RunHistoryCollection
+2017-03-11 10:15:16,258 [9] INFO   Get AAPL history page
+2017-03-11 10:15:16,964 [9] INFO   Page captured
+2017-03-11 10:24:02,084 [9] INFO   
+********************************************************************************
+2017-03-11 10:24:05,187 [9] INFO   DIContainer initialized
+2017-03-11 10:24:05,190 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:24:05,218 [9] INFO   Start - RunHistoryCollection
+2017-03-11 10:24:05,220 [9] INFO   Get AAPL history page
+2017-03-11 10:24:05,936 [9] INFO   Page captured
+2017-03-11 10:35:00,145 [9] INFO   
+********************************************************************************
+2017-03-11 10:35:02,552 [9] INFO   DIContainer initialized
+2017-03-11 10:35:02,555 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:35:02,581 [9] INFO   Start - RunHistoryCollection
+2017-03-11 10:35:02,583 [9] INFO   Get AAPL history page
+2017-03-11 10:35:03,364 [9] INFO   Page captured
+2017-03-11 10:40:03,273 [9] INFO   
+********************************************************************************
+2017-03-11 10:40:06,186 [9] INFO   DIContainer initialized
+2017-03-11 10:40:06,191 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:40:06,222 [9] INFO   Start - RunHistoryCollection
+2017-03-11 10:40:06,227 [9] INFO   Get AAPL history page
+2017-03-11 10:40:06,969 [9] INFO   Page captured
+2017-03-11 10:42:33,287 [9] INFO   Get AAPL history page
+2017-03-11 10:42:33,795 [9] INFO   Page captured
+2017-03-11 10:42:41,009 [9] INFO   AAPL deserialized
+2017-03-11 10:42:41,010 [9] INFO   Get AMD history page
+2017-03-11 10:42:41,349 [9] INFO   Page captured
+2017-03-11 10:44:19,626 [9] INFO   AMD deserialized
+2017-03-11 10:44:19,628 [9] INFO   Get AMZN history page
+2017-03-11 10:44:19,965 [9] INFO   Page captured
+2017-03-11 10:47:39,986 [10] INFO   
+********************************************************************************
+2017-03-11 10:47:41,911 [10] INFO   DIContainer initialized
+2017-03-11 10:47:41,914 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 10:47:41,937 [10] INFO   Start - RunHistoryCollection
+2017-03-11 10:47:41,938 [10] INFO   Get AAPL history page
+2017-03-11 10:47:42,712 [10] INFO   Page captured
+2017-03-11 10:48:12,551 [10] INFO   AAPL deserialized
+2017-03-11 10:48:12,561 [10] INFO   Get AMD history page
+2017-03-11 10:48:12,944 [10] INFO   Page captured
+2017-03-11 10:48:16,657 [10] INFO   AMD deserialized
+2017-03-11 10:48:16,658 [10] INFO   Get AMZN history page
+2017-03-11 10:48:17,096 [10] INFO   Page captured
+2017-03-11 10:48:19,259 [10] INFO   AMZN deserialized
+2017-03-11 10:48:19,260 [10] INFO   Get BA history page
+2017-03-11 10:48:19,664 [10] INFO   Page captured
+2017-03-11 10:48:23,232 [10] INFO   BA deserialized
+2017-03-11 10:48:23,233 [10] INFO   Get BABA history page
+2017-03-11 10:48:23,304 [10] INFO   Page captured
+2017-03-11 10:48:27,506 [10] INFO   BABA deserialized
+2017-03-11 10:48:27,508 [10] INFO   Get BAC history page
+2017-03-11 10:48:27,745 [10] INFO   Page captured
+2017-03-11 10:48:45,342 [10] INFO   BAC deserialized
+2017-03-11 10:48:45,346 [10] INFO   Get BMY history page
+2017-03-11 10:48:45,647 [10] INFO   Page captured
+2017-03-11 10:48:49,874 [10] INFO   BMY deserialized
+2017-03-11 10:48:49,876 [10] INFO   Get CAT history page
+2017-03-11 10:48:50,187 [10] INFO   Page captured
+2017-03-11 10:48:51,539 [10] INFO   CAT deserialized
+2017-03-11 10:48:51,541 [10] INFO   Get CRM history page
+2017-03-11 10:48:51,769 [10] INFO   Page captured
+2017-03-11 10:48:53,006 [10] INFO   CRM deserialized
+2017-03-11 10:48:53,009 [10] INFO   Get CSCO history page
+2017-03-11 10:48:53,202 [10] INFO   Page captured
+2017-03-11 10:48:54,910 [10] INFO   CSCO deserialized
+2017-03-11 10:48:54,912 [10] INFO   Get DB history page
+2017-03-11 10:48:55,064 [10] INFO   Page captured
+2017-03-11 10:48:56,248 [10] INFO   DB deserialized
+2017-03-11 10:48:56,250 [10] INFO   Get DIS history page
+2017-03-11 10:48:56,565 [10] INFO   Page captured
+2017-03-11 10:48:57,924 [10] INFO   DIS deserialized
+2017-03-11 10:48:57,926 [10] INFO   Get EEM history page
+2017-03-11 10:48:58,037 [10] INFO   Page captured
