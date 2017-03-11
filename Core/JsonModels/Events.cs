@@ -13,7 +13,7 @@ namespace Core.JsonModels
     public class Dividends
     {
         [JsonExtensionData]
-        IDictionary<string, JToken> dividend { get; set; }
+        public IDictionary<string, JToken> dividend { get; set; }
     }
 
     public class AmountDate
@@ -25,7 +25,7 @@ namespace Core.JsonModels
     public class Splits
     {
         [JsonExtensionData]
-        IDictionary<string, JToken> split { get; set; }
+        public IDictionary<string, JToken> split { get; set; }
     }
 
     public class SplitDetails

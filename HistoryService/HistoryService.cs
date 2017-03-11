@@ -66,20 +66,32 @@ namespace SymbolHistoryService
                         quotesList.Add(quote);
                     }
 
+                    foreach (var item in symbolHistory.Chart.Result[0].events.dividends.dividend)
+                    {
+                        var devDate = item.Value["date"];
+                        var divAmount = item.Value["amount"];
+                    }
+
+                    foreach (var item in symbolHistory.Chart.Result[0].events.splits.split)
+                    {
+                        var splitDate = item.Value["date"];
+                        var splitNumerator = item.Value["numerator"];
+                        var splitDenominator = item.Value["denominator"];
+                        var splitRatio = item.Value["splitRatio"];
+                   }
+
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
                 }
             }
             catch (Exception exc)
             {
-                IOCContainer.Instance.Get<ILogger>().Fatal("Sucker blew up: {0}", exc);
+                IOCContainer.Instance.Get<ILogger>().Fatal("RunHistoryCollection: {0}", exc);
             }
             finally
             {
-                IOCContainer.Instance.Get<ILogger>().Info("End - RunOptionsCollection");
-                //IOCContainer.Instance.Get<ILogger>().InfoFormat("We're done'...{0}", Environment.NewLine);
+                IOCContainer.Instance.Get<ILogger>().Info("End - RunQuoteHistoryCollection");
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
-
         }
 
         public static decimal ConvertStringToDecimal(string value)

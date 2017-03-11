@@ -151,3 +151,24 @@
 2017-03-11 10:48:57,924 [10] INFO   DIS deserialized
 2017-03-11 10:48:57,926 [10] INFO   Get EEM history page
 2017-03-11 10:48:58,037 [10] INFO   Page captured
+2017-03-11 12:26:48,312 [10] INFO   
+********************************************************************************
+2017-03-11 12:26:51,111 [10] INFO   DIContainer initialized
+2017-03-11 12:26:51,114 [10] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 12:26:51,137 [10] INFO   Start - RunHistoryCollection
+2017-03-11 12:26:51,139 [10] INFO   Get AAPL history page
+2017-03-11 12:26:51,918 [10] INFO   Page captured
+2017-03-11 12:33:49,254 [9] INFO   
+********************************************************************************
+2017-03-11 12:33:51,130 [9] INFO   DIContainer initialized
+2017-03-11 12:33:51,133 [9] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 12:33:51,159 [9] INFO   Start - RunHistoryCollection
+2017-03-11 12:33:51,160 [9] INFO   Get AAPL history page
+2017-03-11 12:33:51,847 [9] INFO   Page captured
+2017-03-11 12:48:34,642 [8] INFO   
+********************************************************************************
+2017-03-11 12:48:36,145 [8] INFO   DIContainer initialized
+2017-03-11 12:48:36,148 [8] INFO   RunHistoryCollection - GetSymbols
+2017-03-11 12:48:36,176 [8] INFO   Start - RunHistoryCollection
+2017-03-11 12:48:36,178 [8] INFO   Get AAPL history page
+2017-03-11 12:48:36,839 [8] INFO   Page captured
