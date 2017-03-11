@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Core.JsonModels.HistoryDetail
+namespace Core.JsonModels
 {
-    public class Quote
+    public class DailyQuote
     {
         public List<object> close { get; set; }
         public List<object> high { get; set; }

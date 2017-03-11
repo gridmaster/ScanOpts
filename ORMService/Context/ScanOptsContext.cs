@@ -8,5 +8,6 @@ namespace ORMService.Context
         public DbSet<Quote> Quotes { get; set; }
         public DbSet<Option> Option { get; set; }
         public DbSet<CallPut> CallPut { get; set; }
+        public DbSet<DailyQuotes> DailyQuotes { get; set; }
     }
 }

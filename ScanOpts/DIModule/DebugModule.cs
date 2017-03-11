@@ -20,6 +20,7 @@ namespace Core.DIModule
             Bind<ISymbolORMService>().To<SymbolsORMService>().InSingletonScope();
             Bind<IOptionService>().To<OptionService>().InSingletonScope();
             Bind<IHistoryService>().To<HistoryService>().InSingletonScope();
+            Bind<IDailyQuotesORMService>().To<DailyQuotesORMService>().InSingletonScope();
         }
     }
 }

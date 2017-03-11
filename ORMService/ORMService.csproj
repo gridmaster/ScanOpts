@@ -62,6 +62,7 @@
     <Compile Include="CallPutORMService.cs" />
     <Compile Include="Context\ScanOptsContext.cs" />
     <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="DailyQuotesORMService.cs" />
     <Compile Include="Models\OptionRepo.cs" />
     <Compile Include="Models\QuoteRepo.cs" />
     <Compile Include="OptionORMService.cs" />

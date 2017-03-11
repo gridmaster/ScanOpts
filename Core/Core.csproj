@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Business\UnixTimeConverter.cs" />
     <Compile Include="Interface\ICallPutORMService.cs" />
+    <Compile Include="Interface\IDailyQuotesORMService.cs" />
     <Compile Include="Interface\IHistoryService.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
@@ -71,10 +72,15 @@
     <Compile Include="JsonModels\Company.cs" />
     <Compile Include="JsonModels\CurrentTradingPeriod.cs" />
     <Compile Include="JsonModels\Events.cs" />
+    <Compile Include="JsonModels\Dividend.cs" />
+    <Compile Include="JsonModels\HistoryDetail\Dividends.cs" />
+    <Compile Include="JsonModels\EventsBase.cs" />
     <Compile Include="JsonModels\HistoryDetail\JsonResult.cs" />
-    <Compile Include="JsonModels\HistoryDetail\Quote.cs" />
-    <Compile Include="JsonModels\HistoryDetail\Quotes.cs" />
+    <Compile Include="JsonModels\DailyQuote.cs" />
+    <Compile Include="JsonModels\DailyQuotes.cs" />
     <Compile Include="JsonModels\HistoryDetail\Result.cs" />
+    <Compile Include="JsonModels\Split.cs" />
+    <Compile Include="JsonModels\HistoryDetail\Splits.cs" />
     <Compile Include="JsonModels\HistoryResult.cs" />
     <Compile Include="JsonModels\Indicators.cs" />
     <Compile Include="JsonModels\Industries.cs" />
