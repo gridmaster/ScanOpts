@@ -36,77 +36,57 @@ namespace SymbolHistoryService
                     IOCContainer.Instance.Get<ILogger>().Info("Page captured");
 
                     Core.JsonModels.HistoryDetail.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonModels.HistoryDetail.JsonResult>(sPage);
-                    List<DailyQuotes> quotesList = new List<DailyQuotes>();
 
-                    var timestamps = symbolHistory.Chart.Result[0].timestamp;
-                    string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
-                    string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
-                    DateTime date = DateTime.Now;
-
-                    for (i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
-                    {
-                        int holdInt = 0;
-
-                        DailyQuotes quote = new DailyQuotes();
-                        quote.Date = date;
-                        quote.Symbol = symbol;
-                        quote.Exchange = exchangeName;
-                        quote.instrumentType = instrumentType;
-                        quote.timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
-
-                        quote.open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
-                        quote.close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
-                        quote.high = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
-                        quote.low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
-                        quote.volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
-                        quote.unadjopen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
-                        quote.unadjclose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
-                        quote.unadjhigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
-                        quote.unadjlow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
-                        quotesList.Add(quote);
-                    }
+                    List<DailyQuotes> quotesList = IOCContainer.Instance.Get<IDailyQuotesORMService>().ExtractDailyQuotes(symbol, symbolHistory);
 
                     IOCContainer.Instance.Get<IDailyQuotesORMService>().AddMany(quotesList);
+                    
+                    IOCContainer.Instance.Get<IDailyQuotesORMService>().GetDividends(symbol, symbolHistory);
 
-                    if (symbolHistory.Chart.Result[0].events != null)
-                    {
-                        if (symbolHistory.Chart.Result[0].events.dividends != null)
-                        {
-                            Core.JsonModels.HistoryDetail.Dividends dividends = new Core.JsonModels.HistoryDetail.Dividends();
-                            dividends.dividends = new List<Dividend>();
+                    //var timestamps = symbolHistory.Chart.Result[0].timestamp;
+                    //string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
+                    //string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
+                    //DateTime date = DateTime.Now;
 
-                            foreach (var item in symbolHistory.Chart.Result[0].events.dividends.dividend)
-                            {
-                                Dividend dividend = new Dividend();
-                                dividend.date = date;
-                                dividend.symbol = symbol;
-                                dividend.exchange = exchangeName;
-                                dividend.dividendDate = (int)item.Value["date"];
-                                decimal amount = 0;
-                                decimal.TryParse(item.Value["amount"].ToString(), out amount);
-                                dividend.dividendAmount = amount;
-                                dividends.dividends.Add(dividend);
-                            }
-                        }
+                    //if (symbolHistory.Chart.Result[0].events != null)
+                    //{
+                    //    if (symbolHistory.Chart.Result[0].events.dividends != null)
+                    //    {
+                    //        Core.JsonModels.HistoryDetail.Dividends dividends = new Core.JsonModels.HistoryDetail.Dividends();
+                    //        dividends.dividends = new List<Dividend>();
 
-                        if (symbolHistory.Chart.Result[0].events.splits != null)
-                        {
-                            Core.JsonModels.HistoryDetail.Splits splits = new Core.JsonModels.HistoryDetail.Splits();
-                            Split split = new Split();
+                    //        foreach (var item in symbolHistory.Chart.Result[0].events.dividends.dividend)
+                    //        {
+                    //            Dividend dividend = new Dividend();
+                    //            dividend.date = date;
+                    //            dividend.symbol = symbol;
+                    //            dividend.exchange = exchangeName;
+                    //            dividend.dividendDate = (int)item.Value["date"];
+                    //            decimal amount = 0;
+                    //            decimal.TryParse(item.Value["amount"].ToString(), out amount);
+                    //            dividend.dividendAmount = amount;
+                    //            dividends.dividends.Add(dividend);
+                    //        }
+                    //    }
 
-                            foreach (var item in symbolHistory.Chart.Result[0].events.splits.split)
-                            {
-                                split.date = date;
-                                split.symbol = symbol;
-                                split.exchange = exchangeName;
-                                split.splitDate = (int)item.Value["date"];
-                                split.numerator = (int)item.Value["numerator"];
-                                split.denominator = (int)item.Value["denominator"];
-                                split.ratio = item.Value["splitRatio"].ToString();
-                                splits.Add(split);
-                            }
-                        }
-                    }
+                    //    if (symbolHistory.Chart.Result[0].events.splits != null)
+                    //    {
+                    //        Core.JsonModels.HistoryDetail.Splits splits = new Core.JsonModels.HistoryDetail.Splits();
+                    //        Split split = new Split();
+
+                    //        foreach (var item in symbolHistory.Chart.Result[0].events.splits.split)
+                    //        {
+                    //            split.date = date;
+                    //            split.symbol = symbol;
+                    //            split.exchange = exchangeName;
+                    //            split.splitDate = (int)item.Value["date"];
+                    //            split.numerator = (int)item.Value["numerator"];
+                    //            split.denominator = (int)item.Value["denominator"];
+                    //            split.ratio = item.Value["splitRatio"].ToString();
+                    //            splits.Add(split);
+                    //        }
+                    //    }
+                    //}
 
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
                 }
@@ -120,13 +100,6 @@ namespace SymbolHistoryService
                 IOCContainer.Instance.Get<ILogger>().Info("End - RunQuoteHistoryCollection");
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
-        }
-
-        public static decimal ConvertStringToDecimal(string value)
-        {
-            decimal holdDecimal = 0;
-            decimal.TryParse(value.ToString(), out holdDecimal);
-            return holdDecimal;
         }
     }
 }

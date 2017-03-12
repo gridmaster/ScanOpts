@@ -39,11 +39,11 @@ namespace Core
             IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
             IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
-            //Timer t1 = new Timer();
-            //t1.Interval = (1000 * 60); // 1 minute
-            //t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
-            //t1.AutoReset = true;
-            //t1.Start();
+            Timer t1 = new Timer();
+            t1.Interval = (1000 * 60); // 1 minute
+            t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
+            t1.AutoReset = true;
+            t1.Start();
 
             Console.ReadKey();
         }
