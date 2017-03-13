@@ -36,6 +36,8 @@ namespace Core
 
             IOCContainer.Instance.Get<ILogger>().Info("DIContainer initialized");
 
+            IOCContainer.Instance.Get<ISymbolService>().LoadSymbols();
+
             IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
             IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");

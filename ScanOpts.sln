@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptonsService", "OptonsServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoryService", "HistoryService\HistoryService.csproj", "{C108E9EF-436F-4B4C-B46F-6A2A5BD9710A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolService", "SymbolService\SymbolService.csproj", "{50E4E67A-976C-40C0-9640-AF7D9964D591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,14 @@ Global
 		{C108E9EF-436F-4B4C-B46F-6A2A5BD9710A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C108E9EF-436F-4B4C-B46F-6A2A5BD9710A}.Release|x86.ActiveCfg = Release|Any CPU
 		{C108E9EF-436F-4B4C-B46F-6A2A5BD9710A}.Release|x86.Build.0 = Release|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Debug|x86.Build.0 = Debug|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Release|x86.ActiveCfg = Release|Any CPU
+		{50E4E67A-976C-40C0-9640-AF7D9964D591}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

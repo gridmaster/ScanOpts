@@ -42,7 +42,7 @@ namespace ORMService
             }
         }
 
-        public List<DailyQuotes> ExtractDailyQuotes(string symbol, Core.JsonModels.HistoryDetail.JsonResult symbolHistory)
+        public List<DailyQuotes> ExtractDailyQuotes(string symbol, Core.JsonModels.ORMModels.JsonResult symbolHistory)
         {
             List<DailyQuotes> quotesList = new List<DailyQuotes>();
 
@@ -77,13 +77,13 @@ namespace ORMService
             return quotesList;
         }
 
-        public Core.JsonModels.HistoryDetail.Dividends GetDividends(string symbol, Core.JsonModels.HistoryDetail.JsonResult symbolHistory)
+        public Core.JsonModels.ORMModels.Dividends GetDividends(string symbol, Core.JsonModels.ORMModels.JsonResult symbolHistory)
         {
             var timestamps = symbolHistory.Chart.Result[0].timestamp;
             string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
-            Core.JsonModels.HistoryDetail.Dividends dividends = new Core.JsonModels.HistoryDetail.Dividends();
+            Core.JsonModels.ORMModels.Dividends dividends = new Core.JsonModels.ORMModels.Dividends();
             dividends.dividends = new List<Dividend>();
 
             if (symbolHistory.Chart.Result[0].events != null)

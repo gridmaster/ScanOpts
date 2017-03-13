@@ -29,5 +29,6 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newto
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Core\obj\Debug\Core.pdb

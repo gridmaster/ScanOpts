@@ -1,4 +1,5 @@
 ﻿using Core.Interface;
+using DailySymbolService;
 using Logger;
 using Ninject.Modules;
 using OptonService;
@@ -21,6 +22,7 @@ namespace Core.DIModule
             Bind<IOptionService>().To<OptionService>().InSingletonScope();
             Bind<IHistoryService>().To<HistoryService>().InSingletonScope();
             Bind<IDailyQuotesORMService>().To<DailyQuotesORMService>().InSingletonScope();
+            Bind<ISymbolService>().To<SymbolService>().InSingletonScope();
         }
     }
 }

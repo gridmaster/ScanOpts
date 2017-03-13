@@ -1,0 +1,92 @@
+http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download
+http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download
+href="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download"
+http://www.nasdaq.com/asp/symbolchangehistory.asp
+
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Basic+Industries
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Capital+Goods
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Consumer+Durable
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Consumer+Non-Durables
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Consumer+Services
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Energy
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Finance
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Health+Care
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Miscellaneous
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Public+Utilities
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Technology
+http://www.nasdaq.com/screening/companies-by-industry.aspx?industry=Transportation
+
+http://www.nasdaq.com/markets/barchart-sectors.aspx
+
+American Stock Exchange [AMEX]
+http://eoddata.com/stocklist/AMEX/A.htm
+Euronext Amsterdam [AMS]
+http://eoddata.com/stocklist/AMS/B.htm
+Australian Securities Exchange [ASX]
+http://eoddata.com/stocklist/ASX/1.htm
+Euronext Brussels [BRU]
+http://eoddata.com/stocklist/BRU/A.htm
+Chicago Board of Trade [CBOT]
+http://eoddata.com/stocklist/CBOT/A.htm
+Chicago Futures Exchange [CFE]
+http://eoddata.com/stocklist/CFE/Q.htm
+Chicago Merchantile Exchange [CME]
+http://eoddata.com/stocklist/CME/A.htm
+New York Commodity Exchange [COMEX]
+http://eoddata.com/stocklist/COMEX/A.htm
+EUREX Futures Exchange [EUREX]
+http://eoddata.com/stocklist/EUREX/A.htm
+Foreign Exchange [FOREX]
+http://eoddata.com/stocklist/FOREX/A.htm
+Hong Kong Stock Exchange [HKEX]
+http://eoddata.com/stocklist/HKEX/0.htm
+Global Indices [INDEX]
+http://eoddata.com/stocklist/INDEX/A.htm
+Kansas City Board of Trade [KCBT]
+http://eoddata.com/stocklist/KCBT/K.htm
+LIFFE Futures and Options [LIFFE]
+http://eoddata.com/stocklist/LIFFE/A.htm
+Euronext Lisbon [LIS]
+http://eoddata.com/stocklist/LIS/A.htm
+London Stock Exchange [LSE]
+http://eoddata.com/stocklist/LSE/0.htm
+Minneapolis Grain Exchange [MGEX]
+http://eoddata.com/stocklist/MGEX/A.htm
+Milan Stock Exchange [MLSE]
+http://eoddata.com/stocklist/MLSE/A.htm
+Madrid Stock Exchange [MSE]
+http://eoddata.com/stocklist/MSE/A.htm
+NASDAQ Stock Exchange [NASDAQ]
+http://eoddata.com/stocklist/NASDAQ/A.htm
+New York Board of Trade [NYBOT]
+http://eoddata.com/stocklist/NYBOT/A.htm
+New York Merchantile Exchange [NYMEX]
+http://eoddata.com/stocklist/NYMEX/B.htm
+New York Stock Exchange [NYSE]
+http://eoddata.com/stocklist/NYSE/A.htm
+New Zealand Exchange [NZX]
+http://eoddata.com/stocklist/NZX/A.htm
+ OTC Bulletin Board [OTCBB]
+http://eoddata.com/stocklist/OTCBB/A.htm
+Euronext Paris [PAR]
+http://eoddata.com/stocklist/PAR/A.htm
+Singapore Stock Exchange [SGX]
+http://eoddata.com/stocklist/SGX/1.htm
+Toronto Stock Exchange [TSX]
+http://eoddata.com/stocklist/TSX/A.htm
+Toronto Venture Exchange [TSXV]
+http://eoddata.com/stocklist/TSXV/A.htm
+Mutual Funds [USMF]
+http://eoddata.com/stocklist/USMF/A.htm
+Winnipeg Commodity Exchange [WCE]
+http://eoddata.com/stocklist/WCE/A.htm
+
+
+
+
+
+
+
+
+
+
