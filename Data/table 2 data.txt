@@ -1,0 +1,38 @@
+class="ro" onclick="location.href='/stockquote/NASDAQ/AAAP.htm';" style="color:red;"><td><A href="/stockquote/NASDAQ/AAAP.htm" title="Display Quote &amp; Chart for NASDAQ,AAAP">AAAP</A></td><td>Advanced Accele. Ads</td><td align=right>37.80</td><td align=right>36.87</td><td align=right>37.42</td><td align=right>111,600</td><td align="right">-0.53</td><td align="center"><IMG src="/images/dn.gif"></td><td align="left">1.40</td><td align="right"><a href="/stockquote/NASDAQ/AAAP.htm" title="Download Data for NASDAQ,AAAP"><img src="/images/dl.gif" width=14 height=14></a>&nbsp;<a href="/stockquote/NASDAQ/AAAP.htm" title="View Quote and Chart for NASDAQ,AAAP"><img src="/images/chart.gif" width=14 height=14></a></td></tr>
+
+<TR>
+   <TH>Code</TH>
+   <TH>Name</TH>
+   <TH style="text-align:right;">High</TH>
+   <TH style="text-align:right;">Low</TH>
+   <TH style="text-align:right;">Close</TH>
+   <TH style="text-align:right;">Volume</TH>
+   <TH style="text-align:center;" colspan=3>Change</TH>
+   <th width=40>&nbsp;</th>
+</tr>
+
+class="ro" onclick="location.href='/stockquote/NASDAQ/AAAP.htm';" style="color:red;">
+<td><A href="/stockquote/NASDAQ/AAAP.htm" title="Display Quote &amp; Chart for NASDAQ,AAAP">AAAP</A></td>
+<td>Advanced Accele. Ads</td>
+<td align=right>37.80</td>
+<td align=right>36.87</td>
+<td align=right>37.42</td>
+<td align=right>111,600</td>
+<td align="right">-0.53</td>
+<td align="center"><IMG src="/images/dn.gif"></td>
+<td align="left">1.40</td>
+<td align="right"><a href="/stockquote/NASDAQ/AAAP.htm" title="Download Data for NASDAQ,AAAP"><img src="/images/dl.gif" width=14 height=14></a>&nbsp;<a href="/stockquote/NASDAQ/AAAP.htm" title="View Quote and Chart for NASDAQ,AAAP"><img src="/images/chart.gif" width=14 height=14></a></td>
+</tr>
+
+class="ro" onclick="location.href='/stockquote/NASDAQ/ABAX.htm';" style="color:green;">
+<td><A href="/stockquote/NASDAQ/ABAX.htm" title="Display Quote &amp; Chart for NASDAQ,ABAX">ABAX</A></td>
+<td>Abaxis Inc</td>
+<td align=right>49.54</td>
+<td align=right>48.74</td>
+<td align=right>49.18</td>
+<td align=right>59,000</td>
+<td align="right">0.15</td>
+<td align="center"><IMG src="/images/up.gif"></td>
+<td align="left">0.31</td>
+<td align="right"><a href="/stockquote/NASDAQ/ABAX.htm" title="Download Data for NASDAQ,ABAX"><img src="/images/dl.gif" width=14 height=14></a>&nbsp;<a href="/stockquote/NASDAQ/ABAX.htm" title="View Quote and Chart for NASDAQ,ABAX"><img src="/images/chart.gif" width=14 height=14></a></td>
+</tr>
