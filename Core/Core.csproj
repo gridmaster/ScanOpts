@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
     <Compile Include="Interface\ICallPutORMService.cs" />
     <Compile Include="Interface\IDailyQuotesORMService.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="JsonModels\Sector.cs" />
     <Compile Include="JsonModels\Sectors.cs" />
     <Compile Include="ORMModels\Straddles.cs" />
+    <Compile Include="ORMModels\TempQuote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebPage.cs" />
   </ItemGroup>

@@ -1,5 +1,8 @@
 ﻿using Core;
 using Core.Interface;
+using Core.JsonModels;
+using Core.ORMModels;
+using Core.Business;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,9 +27,9 @@ namespace DailySymbolService
             string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
             string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
 
-            List<string> symbolss = GetSymbolLookup(symbols);
+            List<TempQuote> tempQuotes = GetSymbolLookup(symbols);
 
-
+            // cool javascript jquery solution
             //symbols.find('tr').each(function(i, el) {
             //    var $tds = $(this).find('td'),
             //productId = $tds.eq(0).text(),
@@ -60,7 +63,7 @@ namespace DailySymbolService
             return myPages;
         }
 
-        private List<string> GetSymbolLookup(string pages)
+        private List<TempQuote> GetSymbolLookup(string pages)
         {
             List<string> myPages = null;
             string work = "";
@@ -70,25 +73,35 @@ namespace DailySymbolService
             work = work.Replace("<tr ", "|");
             work = work.Substring(1);
             myPages = work.Split('|').ToList<string>();
+            List<TempQuote> tempquote = new List<TempQuote>();
+
 
             for (int i = 0; i < myPages.Count; i++)
             {
+                TempQuote dq = new TempQuote();
                 string symbol = myPages[i].Substring(myPages[i].IndexOf("<A href="));
                 symbol = symbol.Substring(symbol.IndexOf(">")+1);
                 myPages[i] = symbol;
-                symbol = symbol.Substring(0, symbol.IndexOf("<"));
+                dq.Symbol = symbol.Substring(0, symbol.IndexOf("<"));
 
                 string company = myPages[i].Substring(myPages[i].IndexOf("<td>") + 4);
-                company = company.Substring(company.IndexOf("<") - 1);
+                myPages[i] = company;
+                dq.CompanyName = company.Substring(0, company.IndexOf("<") - 1);
 
-                myPages[i] = myPages[i].Replace("class=\"ls\">", "");
-                myPages[i] = myPages[i].Replace("class=\"ld\"><a href=\"", "");
-                myPages[i] = myPages[i].Replace("</td>", "").Replace("</a>", "");
-                if (i > 0)
-                    myPages[i] = myPages[i].Substring(myPages[i].Length - 1);
+                myPages[i] = myPages[i].Substring(myPages[i].IndexOf("</td>") + 5);
+                myPages[i] = myPages[i].Replace("<td align=right>", "|");
+                myPages[i] = myPages[i].Substring(1);
+                var prices = myPages[i].Split('|');
+                dq.Date = DateTime.Now;
+                //name high low close volume
+                dq.high = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[0].Substring(0, prices[0].IndexOf("<")));
+                dq.low = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[1].Substring(0, prices[1].IndexOf("<")));
+                dq.close = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[2].Substring(0, prices[2].IndexOf("<")));
+                dq.volume = Core.Business.ConvertStringToNumeric.ConvertIntegerToNumber(prices[3].Substring(0, prices[3].IndexOf("<")).Replace(",", ""));
+                tempquote.Add(dq);
             }
 
-            return myPages;
+            return tempquote;
         }
     }
 }
