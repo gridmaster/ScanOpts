@@ -6,34 +6,34 @@ using Core.JsonModels;
 
 namespace ORMService.Models
 {
-    class QuoteRepo : IRepository<Quote>
+    class StatisticRepo : IRepository<Statistics>
     {
-        public void Add(Quote entity)
+        public void Add(Statistics entity)
         {            
             throw new NotImplementedException();
         }
 
-        public void Delete(Quote entity)
+        public void Delete(Statistics entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Quote> GetAll()
+        public IEnumerable<Statistics> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Quote> Query(Expression<Func<Quote, bool>> filter)
+        public IEnumerable<Statistics> Query(Expression<Func<Statistics, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public Option Single(Expression<Func<Quote, bool>> filter)
+        public Option Single(Expression<Func<Statistics, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        Quote IRepository<Quote>.Single(Expression<Func<Quote, bool>> filter)
+        Statistics IRepository<Statistics>.Single(Expression<Func<Statistics, bool>> filter)
         {
             throw new NotImplementedException();
         }

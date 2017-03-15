@@ -61,7 +61,7 @@
     <Compile Include="Interface\ISymbolService.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IOptionService.cs" />
-    <Compile Include="Interface\IQuoteORMService.cs" />
+    <Compile Include="Interface\IStatisticORMService.cs" />
     <Compile Include="Interface\ISymbolORMService.cs" />
     <Compile Include="ORMModels\BaseCallPut.cs" />
     <Compile Include="JsonModels\BaseData.cs" />
@@ -92,7 +92,7 @@
     <Compile Include="ORMModels\Option.cs" />
     <Compile Include="JsonOptions\OptionChain.cs" />
     <Compile Include="JsonOptions\Options.cs" />
-    <Compile Include="ORMModels\Quote.cs" />
+    <Compile Include="ORMModels\Statistics.cs" />
     <Compile Include="JsonOptions\Result.cs" />
     <Compile Include="JsonModels\Sector.cs" />
     <Compile Include="JsonModels\Sectors.cs" />

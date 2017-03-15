@@ -1,3 +1,4 @@
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
@@ -9,6 +10,5 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\De
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb

@@ -15,7 +15,7 @@ namespace Core.DIModule
             Bind<ILogger>().To<Log4NetLogger>().InSingletonScope()
                 .WithConstructorArgument("loglevel", LogLevelEnum.Debug);
 
-            Bind<IQuoteORMService>().To<QuoteORMService>().InSingletonScope();
+            Bind<IStatisticORMService>().To<StatisticORMService>().InSingletonScope();
             Bind<IOptionORMService>().To<OptionORMService>().InSingletonScope();
             Bind<ICallPutORMService>().To<CallPutORMService>().InSingletonScope();
             Bind<ISymbolORMService>().To<SymbolsORMService>().InSingletonScope();

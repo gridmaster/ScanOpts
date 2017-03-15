@@ -5,7 +5,7 @@ namespace ORMService.Context
 {
     public class ScanOptsContext : DbContext
     {
-        public DbSet<Quote> Quotes { get; set; }
+        public DbSet<Statistics> Statistics { get; set; }
         public DbSet<Option> Option { get; set; }
         public DbSet<CallPut> CallPut { get; set; }
         public DbSet<DailyQuotes> DailyQuotes { get; set; }

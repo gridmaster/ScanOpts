@@ -21,7 +21,7 @@ namespace OptonService
         public void RunOptionsCollection(List<string> symbols)
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
-            decimal date = 1487200000; //  1487289600;
+            decimal date = 1489708800; //  1487289600;
 
             try
             {
@@ -39,7 +39,7 @@ namespace OptonService
 
                     List<decimal> expireDates = optionChain.OptionChain.Result[0].ExpirationDates;
 
-                    Quote quote = new Quote();
+                    Statistics statistics = new Statistics();
                     int newId = 0;
 
                     foreach (decimal eDate in expireDates)
@@ -52,18 +52,18 @@ namespace OptonService
                         optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
                         IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
 
-                        if (String.IsNullOrEmpty(quote.Symbol))
+                        if (String.IsNullOrEmpty(statistics.Symbol))
                         {
-                            quote = IOCContainer.Instance.Get<IQuoteORMService>().ExtractAndSaveQuoteFromOptionChain(optionChain);
+                            statistics = IOCContainer.Instance.Get<IStatisticORMService>().ExtractAndSaveStatisticFromOptionChain(optionChain);
 
-                            newId = IOCContainer.Instance.Get<IQuoteORMService>().Add(quote);
+                            newId = IOCContainer.Instance.Get<IStatisticORMService>().Add(statistics);
                         }
 
                         if (newId == 0) return;
 
                         List<Straddles> wtf = optionChain.OptionChain.Result[0].Options[0].Straddles;
 
-                        List<CallPut> callputs = IOCContainer.Instance.Get<IOptionORMService>().ExtractCallsAndPutsFromOptionChain(quote.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
+                        List<CallPut> callputs = IOCContainer.Instance.Get<IOptionORMService>().ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
 
                         IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
                     }

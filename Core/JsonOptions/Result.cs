@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -12,7 +13,9 @@ namespace Core.JsonModels
         public List<decimal> ExpirationDates { get; set; }
         public List<decimal> Strikes { get; set; }
         public bool HasMiniOptions { get; set; }
-        public Quote Quote { get; set; }
+
+        [JsonProperty(PropertyName = "quote")]
+        public Statistics Statistics { get; set; }
         public Options Options { get; set; }
     }
 }

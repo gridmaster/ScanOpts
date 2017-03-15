@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Core.JsonModels
 {
-    public class Quote
+    public class Statistics
     {
         public int Id { get; set; }
 
