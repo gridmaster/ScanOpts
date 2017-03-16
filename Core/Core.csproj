@@ -97,7 +97,7 @@
     <Compile Include="JsonModels\Sector.cs" />
     <Compile Include="JsonModels\Sectors.cs" />
     <Compile Include="ORMModels\Straddles.cs" />
-    <Compile Include="ORMModels\TempQuote.cs" />
+    <Compile Include="ORMModels\Symbol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebPage.cs" />
   </ItemGroup>

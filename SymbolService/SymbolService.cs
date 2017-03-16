@@ -27,7 +27,7 @@ namespace DailySymbolService
             string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
             string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
 
-            List<TempQuote> tempQuotes = GetSymbolLookup(symbols);
+            List<Symbols> tempQuotes = GetSymbolLookup(symbols);
 
             // cool javascript jquery solution
             //symbols.find('tr').each(function(i, el) {
@@ -63,7 +63,7 @@ namespace DailySymbolService
             return myPages;
         }
 
-        private List<TempQuote> GetSymbolLookup(string pages)
+        private List<Symbols> GetSymbolLookup(string pages)
         {
             List<string> myPages = null;
             string work = "";
@@ -73,12 +73,12 @@ namespace DailySymbolService
             work = work.Replace("<tr ", "|");
             work = work.Substring(1);
             myPages = work.Split('|').ToList<string>();
-            List<TempQuote> tempquote = new List<TempQuote>();
+            List<Symbols> tempquote = new List<Symbols>();
 
 
             for (int i = 0; i < myPages.Count; i++)
             {
-                TempQuote dq = new TempQuote();
+                Symbols dq = new Symbols();
                 string symbol = myPages[i].Substring(myPages[i].IndexOf("<A href="));
                 symbol = symbol.Substring(symbol.IndexOf(">")+1);
                 myPages[i] = symbol;
@@ -94,10 +94,10 @@ namespace DailySymbolService
                 var prices = myPages[i].Split('|');
                 dq.Date = DateTime.Now;
                 //name high low close volume
-                dq.high = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[0].Substring(0, prices[0].IndexOf("<")));
-                dq.low = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[1].Substring(0, prices[1].IndexOf("<")));
-                dq.close = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[2].Substring(0, prices[2].IndexOf("<")));
-                dq.volume = Core.Business.ConvertStringToNumeric.ConvertIntegerToNumber(prices[3].Substring(0, prices[3].IndexOf("<")).Replace(",", ""));
+                //dq.high = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[0].Substring(0, prices[0].IndexOf("<")));
+                //dq.low = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[1].Substring(0, prices[1].IndexOf("<")));
+                //dq.close = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[2].Substring(0, prices[2].IndexOf("<")));
+                //dq.volume = Core.Business.ConvertStringToNumeric.ConvertIntegerToNumber(prices[3].Substring(0, prices[3].IndexOf("<")).Replace(",", ""));
                 tempquote.Add(dq);
             }
 
