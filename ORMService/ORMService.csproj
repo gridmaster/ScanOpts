@@ -67,6 +67,7 @@
     <Compile Include="Context\ScanOptsContext.cs" />
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="DailyQuotesORMService.cs" />
+    <Compile Include="ExchangeORMService.cs" />
     <Compile Include="Models\OptionRepo.cs" />
     <Compile Include="Models\StatisticRepo.cs" />
     <Compile Include="OptionORMService.cs" />

@@ -21,7 +21,6 @@ C:\Projects\ScanOpts\ScanOpts\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\ScanOpts\ScanOpts\bin\Debug\Ninject.xml
 C:\Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.pdb
 C:\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csprojResolveAssemblyReference.cache
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe.config
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.pdb
@@ -48,5 +47,6 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\O
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\log4net.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.exe
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.pdb

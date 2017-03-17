@@ -23,6 +23,7 @@ namespace Core.DIModule
             Bind<IHistoryService>().To<HistoryService>().InSingletonScope();
             Bind<IDailyQuotesORMService>().To<DailyQuotesORMService>().InSingletonScope();
             Bind<ISymbolService>().To<SymbolService>().InSingletonScope();
+            Bind<IExchangeORMService>().To<ExchangeORMService>().InSingletonScope();
         }
     }
 }

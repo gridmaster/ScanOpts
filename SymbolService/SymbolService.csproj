@@ -37,6 +37,9 @@
     <Reference Include="DIContainer">
       <HintPath>..\DIContainer\bin\Debug\DIContainer.dll</HintPath>
     </Reference>
+    <Reference Include="ORMService">
+      <HintPath>..\ORMService\bin\Debug\ORMService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />

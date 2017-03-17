@@ -1,15 +1,11 @@
 ﻿using Core;
 using Core.Interface;
-using Core.JsonModels;
 using Core.ORMModels;
-using Core.Business;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.UI.HtmlControls;
+using DIContainer;
+using ORMService;
 
 namespace DailySymbolService
 {
@@ -17,26 +13,64 @@ namespace DailySymbolService
     {
         public void LoadSymbols()
         {
-            var nasdaq = "http://eoddata.com/stocklist/NASDAQ/0.htm";
-            string sPage = WebPage.Get(String.Format(nasdaq));
-            string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
-            string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
+            LoadAllSymbolsFromAllExchanges();
+        }
 
-            List<string> symbolLookups = GetPagesLookup(pages);
+        public void LoadAllSymbolsFromAllExchanges()
+        {
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
+            List<string> exchanges = IOCContainer.Instance.Get<ExchangeORMService>().GetExchanges();
+            LoadAllSymbolsFromAllExchanges(exchanges);
+        }
 
-            string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
-            string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
+        public void LoadAllSymbolsFromAllExchanges(List<string> exchanges)
+        {
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
+            
+            List<Symbols> allQuotes = new List<Symbols>();
+            string exchangeSave = "";
+            string itemSave = "";
+            try
+            {
+                foreach (string exchange in exchanges)
+                {
+                    exchangeSave = exchange;
+                    string sPage = WebPage.Get(String.Format(exchange, "0"));
+                    string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+                    string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
 
-            List<Symbols> tempQuotes = GetSymbolLookup(symbols);
+                    List<string> symbolLookups = GetPagesLookup(pages);
 
-            // cool javascript jquery solution
-            //symbols.find('tr').each(function(i, el) {
-            //    var $tds = $(this).find('td'),
-            //productId = $tds.eq(0).text(),
-            //product = $tds.eq(1).text(),
-            //Quantity = $tds.eq(2).text();
-            //    // do something with productId, product, Quantity
-            //});
+                    string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                    string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
+
+                    //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
+                    List<Symbols> symbolList = new List<Symbols>();
+
+                    foreach (string item in symbolLookups)
+                    {
+                        itemSave = item;
+                        sPage = WebPage.Get(string.Format(exchange, item));
+                        sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+
+                        string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                        string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
+
+                        symbolList.AddRange(GetSymbolLookup(symbolz));
+                    }                    
+
+                    allQuotes.AddRange(symbolList);
+                }
+            }
+            catch (Exception ex)
+            {
+                IOCContainer.Instance.Get<ILogger>().Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
+            }
+            finally
+            {
+                IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
+                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+            }
         }
 
         private List<string> GetPagesLookup(string pages)
@@ -74,8 +108,7 @@ namespace DailySymbolService
             work = work.Substring(1);
             myPages = work.Split('|').ToList<string>();
             List<Symbols> tempquote = new List<Symbols>();
-
-
+            
             for (int i = 0; i < myPages.Count; i++)
             {
                 Symbols dq = new Symbols();
@@ -86,8 +119,10 @@ namespace DailySymbolService
 
                 string company = myPages[i].Substring(myPages[i].IndexOf("<td>") + 4);
                 myPages[i] = company;
-                dq.CompanyName = company.Substring(0, company.IndexOf("<") - 1);
-
+                if (company.IndexOf("<") > 0)
+                    dq.CompanyName = company.Substring(0, company.IndexOf("<") - 1);
+                else
+                    dq.CompanyName = "";
                 myPages[i] = myPages[i].Substring(myPages[i].IndexOf("</td>") + 5);
                 myPages[i] = myPages[i].Replace("<td align=right>", "|");
                 myPages[i] = myPages[i].Substring(1);
