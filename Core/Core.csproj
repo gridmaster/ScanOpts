@@ -90,6 +90,7 @@
     <Compile Include="JsonModels\Industry.cs" />
     <Compile Include="JsonOptions\JsonResult.cs" />
     <Compile Include="JsonQuote\Meta.cs" />
+    <Compile Include="ORMModels\Exchanges.cs" />
     <Compile Include="ORMModels\Option.cs" />
     <Compile Include="JsonOptions\OptionChain.cs" />
     <Compile Include="JsonOptions\Options.cs" />

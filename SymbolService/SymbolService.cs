@@ -23,11 +23,11 @@ namespace DailySymbolService
             LoadAllSymbolsFromAllExchanges(exchanges);
         }
 
-        public void LoadAllSymbolsFromAllExchanges(List<string> exchanges)
+        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges)
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
             
-            List<Symbols> allQuotes = new List<Symbols>();
+            List<Symbols> allSymbols = new List<Symbols>();
             string exchangeSave = "";
             string itemSave = "";
             try
@@ -57,9 +57,9 @@ namespace DailySymbolService
                         string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
 
                         symbolList.AddRange(GetSymbolLookup(symbolz));
-                    }                    
+                    }
 
-                    allQuotes.AddRange(symbolList);
+                    allSymbols.AddRange(symbolList);
                 }
             }
             catch (Exception ex)
@@ -71,6 +71,58 @@ namespace DailySymbolService
                 IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
+            return allSymbols;
+        }
+
+        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<Exchanges> exchanges)
+        {
+            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
+
+            List<Symbols> allSymbols = new List<Symbols>();
+            string exchangeSave = "";
+            string itemSave = "";
+            try
+            {
+                foreach (Exchanges exchange in exchanges)
+                {
+                    exchangeSave = exchange.Exchange;
+                    string sPage = WebPage.Get(String.Format(exchange.Exchange, "0"));
+                    string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+                    string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
+
+                    List<string> symbolLookups = GetPagesLookup(pages);
+
+                    string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                    string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
+
+                    //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
+                    List<Symbols> symbolList = new List<Symbols>();
+
+                    foreach (string item in symbolLookups)
+                    {
+                        itemSave = item;
+                        sPage = WebPage.Get(string.Format(exchange.Exchange, item));
+                        sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+
+                        string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                        string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
+
+                        symbolList.AddRange(GetSymbolLookup(symbolz));
+                    }
+
+                    allSymbols.AddRange(symbolList);
+                }
+            }
+            catch (Exception ex)
+            {
+                IOCContainer.Instance.Get<ILogger>().Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
+            }
+            finally
+            {
+                IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
+                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+            }
+            return allSymbols;
         }
 
         private List<string> GetPagesLookup(string pages)

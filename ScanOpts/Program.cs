@@ -36,7 +36,7 @@ namespace Core
 
             IOCContainer.Instance.Get<ILogger>().Info("DIContainer initialized");
 
-            IOCContainer.Instance.Get<ISymbolService>().LoadSymbols();
+            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 
             IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
             IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();

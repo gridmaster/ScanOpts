@@ -16,6 +16,14 @@ namespace Core.ORMModels
         [StringLength(400)]
         public string CompanyName { get; set; }
 
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(20)]
+        public string Exchange { get; set; }
+
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(300)]
+        public string FullExchangeName { get; set; }
+
         [DataType(DataType.DateTime)]
         [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }

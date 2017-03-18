@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Core.ORMModels;
+using System.Collections.Generic;
 
 namespace Core.Interface
 {
@@ -6,6 +7,6 @@ namespace Core.Interface
     {
         void LoadSymbols();
         void LoadAllSymbolsFromAllExchanges();
-        void LoadAllSymbolsFromAllExchanges(List<string> exchanges);
+        List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges);
     }
 }
