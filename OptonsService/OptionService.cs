@@ -23,7 +23,7 @@ namespace OptonService
         public void RunOptionsCollection(List<string> symbols)
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
-            decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800; //  1487289600;
+            decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800;
 
             try
             {
