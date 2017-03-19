@@ -1,12 +1,12 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
-namespace Core.JsonModels
+namespace Core.JsonQuote
 {
     public class Chart
     {
         [JsonProperty(PropertyName = "result")]
-        public List<ORMModels.Result> Result { get; set; }
+        public List<Result> Result { get; set; }
 
         [JsonProperty(PropertyName = "error")]
         public string Error { get; set; }

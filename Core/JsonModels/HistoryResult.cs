@@ -1,9 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Core.JsonQuote;
 
 namespace Core.JsonModels
 {
@@ -16,7 +12,7 @@ namespace Core.JsonModels
         public string timestamp { get; set; }
 
         [JsonProperty(PropertyName = "events")]
-        public Events events { get; set; }
+        public Core.JsonQuote.Events events { get; set; }
 
         [JsonProperty(PropertyName = "indicators")]
         public Indicators indicators { get; set; }

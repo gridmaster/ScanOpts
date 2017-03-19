@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Core.ORMModels;
 using ORMService.Contracts;
-using Core.JsonModels;
 
 namespace ORMService.Models
 {

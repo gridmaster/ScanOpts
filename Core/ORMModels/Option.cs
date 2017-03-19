@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Core.JsonModels
+namespace Core.ORMModels
 {
     public class Option
     {

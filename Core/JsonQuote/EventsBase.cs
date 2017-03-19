@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.JsonModels
+namespace Core.JsonQuote
 {
     public class EventsBase
     {

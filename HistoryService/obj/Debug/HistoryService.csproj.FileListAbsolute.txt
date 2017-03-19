@@ -16,3 +16,7 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\D
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.xml
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.xml

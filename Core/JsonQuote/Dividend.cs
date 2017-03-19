@@ -1,4 +1,4 @@
-﻿namespace Core.JsonModels
+﻿namespace Core.JsonQuote
 {
     public class Dividend : EventsBase
     {

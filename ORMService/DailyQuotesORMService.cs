@@ -1,9 +1,10 @@
-﻿using Core.Interface;
-using Core.JsonModels;
+﻿using System;
+using System.Collections.Generic;
+using Core.Interface;
+using Core.JsonQuote;
+using Core.ORMModels;
 using DIContainer;
 using ORMService.Context;
-using System;
-using System.Collections.Generic;
 
 namespace ORMService
 {
@@ -42,7 +43,7 @@ namespace ORMService
             }
         }
 
-        public List<DailyQuotes> ExtractDailyQuotes(string symbol, Core.JsonModels.ORMModels.JsonResult symbolHistory)
+        public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
         {
             List<DailyQuotes> quotesList = new List<DailyQuotes>();
 
@@ -77,13 +78,13 @@ namespace ORMService
             return quotesList;
         }
 
-        public Core.JsonModels.ORMModels.Dividends GetDividends(string symbol, Core.JsonModels.ORMModels.JsonResult symbolHistory)
+        public Dividends GetDividends(string symbol, JsonResult symbolHistory)
         {
             var timestamps = symbolHistory.Chart.Result[0].timestamp;
             string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
-            Core.JsonModels.ORMModels.Dividends dividends = new Core.JsonModels.ORMModels.Dividends();
+            Dividends dividends = new Dividends();
             dividends.dividends = new List<Dividend>();
 
             if (symbolHistory.Chart.Result[0].events != null)

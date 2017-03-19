@@ -4,6 +4,7 @@ using DIContainer;
 using ORMService.Context;
 using System;
 using System.Collections.Generic;
+using Core.ORMModels;
 
 namespace ORMService
 {

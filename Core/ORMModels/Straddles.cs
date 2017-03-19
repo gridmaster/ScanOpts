@@ -1,4 +1,6 @@
-﻿namespace Core.JsonModels
+﻿using Core.JsonQptions;
+
+namespace Core.ORMModels
 {
     public class Straddles
     {

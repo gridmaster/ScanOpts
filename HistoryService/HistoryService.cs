@@ -1,11 +1,11 @@
-﻿using Core;
-using Core.Interface;
-using Core.JsonModels;
-using DIContainer;
-using Newtonsoft.Json;
-using ORMService;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Core;
+using Core.Interface;
+using Core.ORMModels;
+using DIContainer;
+using ORMService;
 
 namespace SymbolHistoryService
 {
@@ -34,7 +34,7 @@ namespace SymbolHistoryService
 
                     IOCContainer.Instance.Get<ILogger>().Info("Page captured");
 
-                    Core.JsonModels.ORMModels.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonModels.ORMModels.JsonResult>(sPage);
+                    Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
 
                     List<DailyQuotes> quotesList = IOCContainer.Instance.Get<IDailyQuotesORMService>().ExtractDailyQuotes(symbol, symbolHistory);
 

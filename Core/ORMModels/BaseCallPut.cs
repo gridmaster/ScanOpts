@@ -1,8 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Core.JsonModels;
+using Core.JsonQptions;
 
-namespace Core.JsonModels
+namespace Core.ORMModels
 {
     public class BaseCallPut
     {

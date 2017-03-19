@@ -1,9 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
+using Core.JsonQptions;
+//using Core.ORMModels;
 
-namespace Core.JsonModels
+namespace Core.JsonOptions
 {
     public class Result
     {
@@ -15,7 +17,7 @@ namespace Core.JsonModels
         public bool HasMiniOptions { get; set; }
 
         [JsonProperty(PropertyName = "quote")]
-        public Statistics Statistics { get; set; }
+        public Core.ORMModels.Statistics Statistics { get; set; }
         public Options Options { get; set; }
     }
 }

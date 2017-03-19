@@ -1,5 +1,5 @@
-﻿using Core.JsonModels;
-using System.Data.Entity;
+﻿using System.Data.Entity;
+using Core.ORMModels;
 
 namespace ORMService.Context
 {

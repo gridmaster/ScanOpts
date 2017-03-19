@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Core.JsonModels.ORMModels
+namespace Core.JsonQuote
 {
     public class JsonResult
     {

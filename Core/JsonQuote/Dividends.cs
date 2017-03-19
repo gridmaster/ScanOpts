@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Core.JsonModels.ORMModels
+namespace Core.JsonQuote
 {
     public class Dividends
     {

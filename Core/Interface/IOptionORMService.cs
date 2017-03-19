@@ -1,4 +1,4 @@
-﻿using Core.JsonModels;
+﻿using Core.ORMModels;
 using System.Collections.Generic;
 
 namespace Core.Interface

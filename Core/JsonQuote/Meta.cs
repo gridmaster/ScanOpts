@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Core.JsonModels;
 
-namespace Core.JsonModels
+namespace Core.JsonQuote
 {
     public class Meta
     {

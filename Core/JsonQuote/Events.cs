@@ -2,15 +2,18 @@
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace Core.JsonModels
+namespace Core.JsonQuote
 {
     public class Events
     {
-        public Dividends dividends { get; set; }
-        public Splits splits { get; set; }
+        [JsonProperty(PropertyName = "dividends")]
+        public JsonDividends dividends { get; set; }
+
+        [JsonProperty(PropertyName = "splits")]
+        public JsonSplits splits { get; set; }
     }
 
-    public class Dividends
+    public class JsonDividends
     {
         [JsonExtensionData]
         public IDictionary<string, JToken> dividend { get; set; }
@@ -22,7 +25,7 @@ namespace Core.JsonModels
         public int date { get; set; }
     }
 
-    public class Splits
+    public class JsonSplits
     {
         [JsonExtensionData]
         public IDictionary<string, JToken> split { get; set; }

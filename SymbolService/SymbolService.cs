@@ -47,6 +47,8 @@ namespace DailySymbolService
                     //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
                     List<Symbols> symbolList = new List<Symbols>();
 
+                    string xchange = exchange.Replace("http://eoddata.com/stocklist/", "").Replace("/{0}.htm", "");
+
                     foreach (string item in symbolLookups)
                     {
                         itemSave = item;
@@ -56,7 +58,7 @@ namespace DailySymbolService
                         string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
                         string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
 
-                        symbolList.AddRange(GetSymbolLookup(symbolz));
+                        symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
                     }
 
                     allSymbols.AddRange(symbolList);
@@ -107,7 +109,7 @@ namespace DailySymbolService
                         string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
                         string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
 
-                        symbolList.AddRange(GetSymbolLookup(symbolz));
+                        symbolList.AddRange(GetSymbolLookup(symbolz, exchange.Exchange));
                     }
 
                     allSymbols.AddRange(symbolList);
@@ -149,7 +151,7 @@ namespace DailySymbolService
             return myPages;
         }
 
-        private List<Symbols> GetSymbolLookup(string pages)
+        private List<Symbols> GetSymbolLookup(string pages, string exchange)
         {
             List<string> myPages = null;
             string work = "";
@@ -164,6 +166,8 @@ namespace DailySymbolService
             for (int i = 0; i < myPages.Count; i++)
             {
                 Symbols dq = new Symbols();
+                dq.Exchange = exchange;
+                //dq.FullExchangeName = exchange.FullExchangeName;
                 string symbol = myPages[i].Substring(myPages[i].IndexOf("<A href="));
                 symbol = symbol.Substring(symbol.IndexOf(">")+1);
                 myPages[i] = symbol;
