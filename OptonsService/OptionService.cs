@@ -7,6 +7,7 @@ using Core.ORMModels;
 using DIContainer;
 using ORMService;
 using Core.JsonOptions;
+using Core.Business;
 
 namespace OptonService
 {
@@ -22,19 +23,22 @@ namespace OptonService
         public void RunOptionsCollection(List<string> symbols)
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
-            decimal date = 1489708800; //  1487289600;
+            decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800; //  1487289600;
 
             try
             {
                 foreach (string symbol in symbols)
                 {
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {0} page", symbol);
+
                     // this gets the options chain ... need the dates.
                     string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
                     string sPage = WebPage.Get(String.Format(uriString, symbol, date));
                     IOCContainer.Instance.Get<ILogger>().Info("Page captured");
 
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}", symbol);
+
+                    // dont look here to see if this is correctly populated. This is just to get the dates
                     JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
                     IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
 
@@ -62,25 +66,21 @@ namespace OptonService
 
                         if (newId == 0) return;
 
-                        List<Straddles> wtf = optionChain.OptionChain.Result[0].Options[0].Straddles;
-
                         List<CallPut> callputs = IOCContainer.Instance.Get<IOptionORMService>().ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
 
                         IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
                     }
                 }
             }
-            catch (Exception exc)
+            catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().Fatal("Sucker blew up: {0}", exc);
+                IOCContainer.Instance.Get<ILogger>().Fatal("RunOptionsCollection: {0}", ex);
             }
             finally
             {
                 IOCContainer.Instance.Get<ILogger>().Info("End - RunOptionsCollection");
-                //IOCContainer.Instance.Get<ILogger>().InfoFormat("We're done'...{0}", Environment.NewLine);
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
-
         }
     }
 }

@@ -122,3 +122,15 @@
 2017-03-19 17:29:57,642 [1] INFO   
 ********************************************************************************
 
+2017-03-19 17:35:55,178 [1] INFO   
+********************************************************************************
+2017-03-19 17:36:00,117 [1] INFO   DIContainer initialized
+2017-03-19 17:36:12,696 [1] INFO   RunOptionsCollection - GetSymbols
+2017-03-19 17:36:12,718 [1] INFO   Start - RunOptionsCollection
+2017-03-19 17:36:12,720 [1] INFO   Get AAPL page
+2017-03-19 17:36:14,176 [1] INFO   Page captured
+2017-03-19 17:36:14,177 [1] INFO   Deserialize AAPL
+2017-03-19 17:36:28,698 [1] INFO   AAPL deserialized
+2017-03-19 17:36:28,703 [1] INFO   Get AAPL page for expiration date 1490313600
+2017-03-19 17:36:28,869 [1] INFO   Page captured
+2017-03-19 17:36:28,870 [1] INFO   Deserialize AAPL

@@ -18,6 +18,7 @@ namespace Core.JsonOptions
 
         [JsonProperty(PropertyName = "quote")]
         public Core.ORMModels.Statistics Statistics { get; set; }
+
         public Options Options { get; set; }
     }
 }
