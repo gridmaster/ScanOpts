@@ -8,7 +8,7 @@ namespace Core.BulkLoad
 {
     public class BulkLoadSymbol : BaseBulkLoad, IDisposable
     {
-        private static readonly string[] ColumnNames = new string[] { "Symbol", "CompanyName", "Exchange", "FullExchangeName", "Date" };
+        private static readonly string[] ColumnNames = new string[] { "Symbol", "CompanyName", "Exchange", "FullExchangeName", "Date", "Select };
 
         public BulkLoadSymbol() : base(ColumnNames)
         {
@@ -19,7 +19,7 @@ namespace Core.BulkLoad
         {
             foreach (var value in dStats)
             {
-                var sValue = value.Symbol + "^" + value.CompanyName + "^" + value.Exchange + "^" + value.FullExchangeName +  "^" + value.Date;
+                var sValue = value.Symbol + "^" + value.CompanyName + "^" + value.Exchange + "^" + value.FullExchangeName +  "^" + value.Date + "^" + value.Select;
 
                 DataRow row = dt.NewRow();
 

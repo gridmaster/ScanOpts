@@ -60,7 +60,7 @@ namespace DailySymbolService
 
                         string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
                         string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
-
+                        
                         symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
                     }
 
@@ -218,11 +218,8 @@ namespace DailySymbolService
                 myPages[i] = myPages[i].Substring(1);
                 var prices = myPages[i].Split('|');
                 dq.Date = DateTime.Now;
-                //name high low close volume
-                //dq.high = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[0].Substring(0, prices[0].IndexOf("<")));
-                //dq.low = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[1].Substring(0, prices[1].IndexOf("<")));
-                //dq.close = Core.Business.ConvertStringToNumeric.ConvertDecimalToNumber(prices[2].Substring(0, prices[2].IndexOf("<")));
-                //dq.volume = Core.Business.ConvertStringToNumeric.ConvertIntegerToNumber(prices[3].Substring(0, prices[3].IndexOf("<")).Replace(",", ""));
+                dq.Select = false;
+
                 tempquote.Add(dq);
             }
 
