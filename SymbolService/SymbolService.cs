@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.BulkLoad;
 using Core.Interface;
 using Core.ORMModels;
 using System;
@@ -11,6 +12,8 @@ namespace DailySymbolService
 {
     public class SymbolService : ISymbolService
     {
+        private bool success;
+
         public void LoadSymbols()
         {
             LoadAllSymbolsFromAllExchanges();
@@ -26,7 +29,7 @@ namespace DailySymbolService
         public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges)
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
-            
+
             List<Symbols> allSymbols = new List<Symbols>();
             string exchangeSave = "";
             string itemSave = "";
@@ -70,6 +73,8 @@ namespace DailySymbolService
             }
             finally
             {
+                success = BulkLoadSymbols(allSymbols);
+
                 IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
@@ -125,6 +130,35 @@ namespace DailySymbolService
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
             return allSymbols;
+        }
+
+        private bool BulkLoadSymbols(List<Symbols> allSymbols)
+        {
+            bool success = false;
+            try
+            {
+                var dt = IOCContainer.Instance.Get<BulkLoadSymbol>().ConfigureDataTable();
+
+                dt = IOCContainer.Instance.Get<BulkLoadSymbol>().LoadDataTableWithSymbols(allSymbols, dt);
+
+                if (dt == null)
+                {
+                    IOCContainer.Instance.Get<ILogger>()
+                                .InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
+                }
+                else
+                {
+                    success = IOCContainer.Instance.Get<BulkLoadSymbol>().BulkCopy<Symbols>(dt, "ScanOptsContext");
+                    IOCContainer.Instance.Get<ILogger>()
+                                .InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
+                                            success ? "Success" : "Fail");
+                }
+            }
+            catch (Exception ex)
+            {
+                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Bulk Load Options Error: {1}", Environment.NewLine, ex.Message);
+            }
+            return success;
         }
 
         private List<string> GetPagesLookup(string pages)

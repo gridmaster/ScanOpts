@@ -9,5 +9,6 @@ namespace ORMService.Context
         public DbSet<Option> Option { get; set; }
         public DbSet<CallPut> CallPut { get; set; }
         public DbSet<DailyQuotes> DailyQuotes { get; set; }
+        public DbSet<Symbols> Symbols { get; set; }
     }
 }
