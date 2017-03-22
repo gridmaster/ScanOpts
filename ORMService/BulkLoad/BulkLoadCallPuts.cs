@@ -17,7 +17,7 @@ namespace ORMService.BulkLoad
 
         }
 
-        public DataTable LoadDataTableWithSectors(IEnumerable<CallPut> dStats, DataTable dt)
+        public DataTable LoadDataTableWithSectors(IEnumerable<CallPuts> dStats, DataTable dt)
         {
             //foreach (var value in dStats)
             //{

@@ -41,6 +41,7 @@ namespace Core.BulkLoad
 
                 bulkCopy.BulkCopyTimeout = 600; // in seconds 
                 bulkCopy.DestinationTableName = tableName;
+
                 try
                 {
                     bulkCopy.WriteToServer(dt);

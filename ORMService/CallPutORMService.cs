@@ -19,12 +19,12 @@ namespace ORMService
             }
         }
 
-        public void AddMany(List<CallPut> callputs)
+        public void AddMany(List<CallPuts> callputs)
         {
             using (var db = new ScanOptsContext())
             {
                 try {
-                    foreach (CallPut callput in callputs)
+                    foreach (CallPuts callput in callputs)
                     {
                         IOCContainer.Instance.Get<ILogger>().InfoFormat("CallPutORMService - AddMany {0}", callput.Symbol);
                         db.CallPut.Add(callput);

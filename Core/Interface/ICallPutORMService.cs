@@ -7,6 +7,6 @@ namespace Core.Interface
     {
         //void ExtractAndSaveBaseCallPuts(string symbol, List<Straddles> straddles);
 
-        void AddMany(List<CallPut> callputs);
+        void AddMany(List<CallPuts> callputs);
     }
 }

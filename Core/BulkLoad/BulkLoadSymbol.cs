@@ -8,7 +8,7 @@ namespace Core.BulkLoad
 {
     public class BulkLoadSymbol : BaseBulkLoad, IDisposable
     {
-        private static readonly string[] ColumnNames = new string[] { "Symbol", "CompanyName", "Exchange", "FullExchangeName", "Date", "Select };
+        private static readonly string[] ColumnNames = new string[] { "Symbol", "CompanyName", "Exchange", "FullExchangeName", "Date", "Select" };
 
         public BulkLoadSymbol() : base(ColumnNames)
         {

@@ -10,9 +10,9 @@ namespace ORMService
 {
     public class OptionORMService : IOptionORMService
     {
-        public List<CallPut> ExtractCallsAndPutsFromOptionChain(string symbol, int newId, List<Straddles> straddles)
+        public List<CallPuts> ExtractCallsAndPutsFromOptionChain(string symbol, int newId, List<Straddles> straddles)
         {
-            List<CallPut> callputs = new List<CallPut>();
+            List<CallPuts> callputs = new List<CallPuts>();
 
             try
             {
@@ -20,88 +20,98 @@ namespace ORMService
                 {
                     if (option.call != null)
                     {
-                        CallPut call = new CallPut
+                        CallPuts call = new CallPuts
                         {
+                            QuoteId = newId,
                             CallOrPut = "Call",
                             Symbol = symbol,
-                            LastTradeDateRaw = option.call.lastTradeDate.raw,
-                            LastTradeDateFmt = option.call.lastTradeDate.fmt,
-                            LastTradeDateLongFmt = option.call.lastTradeDate.longFmt,
-                            StrikeRaw = option.call.strike.raw,
-                            StrikeFmt = option.call.strike.fmt,
-                            StrikeLongFmt = option.call.strike.longFmt,
-                            AskRaw = option.call.Ask.raw,
-                            AskFmt = option.call.Ask.fmt,
-                            AskLongFmt = option.call.Ask.longFmt,
-                            BidRaw = option.call.bid.raw,
-                            BidFmt = option.call.bid.fmt,
-                            BidLongFmt = option.call.bid.longFmt,
-                            ChangeRaw = option.call.change.raw,
-                            ChangeFmt = option.call.change.fmt,
-                            ChangeLongFmt = option.call.change.longFmt,
-                            contractSize = option.call.contractSize,
-                            contractSymbol = option.call.contractSymbol,
-                            currency = option.call.currency,
-                            Date = DateTime.Now,
                             ExpirationRaw = option.call.expiration.raw,
-                            ExpirationFmt = option.call.expiration.fmt,
-                            ExpirationLongFmt = option.call.expiration.longFmt,
-                            ImpliedVolatilityRaw = option.call.impliedVolatility.raw,
-                            ImpliedVolatilityFmt = option.call.impliedVolatility.fmt,
-                            ImpliedVolatilityLongFmt = option.call.impliedVolatility.longFmt,
-                            inTheMoney = option.call.inTheMoney,
-                            lastPrice = option.call.lastPrice,
-                            OpenInterestRaw = option.call.openInterest.raw,
-                            OpenInterestFmt = option.call.openInterest.fmt,
-                            OpenInterestLongFmt = option.call.openInterest.longFmt,
+                            StrikeRaw = option.call.strike.raw,
+                            ExpirationFmt = option.call.expiration.fmt ?? "",
+                            ExpirationLongFmt = option.call.expiration.longFmt ?? "",
+                            StrikeFmt = option.call.strike.fmt ?? "",
+                            StrikeLongFmt = option.call.strike.longFmt ?? "",
+                            Date = DateTime.Now,
                             PercentChangeRaw = option.call.PercentChange.raw,
-                            PercentChangeFmt = option.call.PercentChange.fmt,
-                            PercentChangeLongFmt = option.call.PercentChange.longFmt,
-                            QuoteId = newId
+                            PercentChangeFmt = option.call.PercentChange.fmt ?? "",
+                            PercentChangeLongFmt = option.call.PercentChange.longFmt ?? "",
+                            OpenInterestRaw = option.call.openInterest.raw,
+                            OpenInterestFmt = option.call.openInterest.fmt ?? "",
+                            OpenInterestLongFmt = option.call.openInterest.longFmt ?? "",
+                            ChangeRaw = option.call.change.raw,
+                            ChangeFmt = option.call.change.fmt ?? "",
+                            ChangeLongFmt = option.call.change.longFmt ?? "",
+                            InTheMoney = option.call.inTheMoney,
+                            ImpliedVolatilityRaw = option.call.impliedVolatility.raw,
+                            ImpliedVolatilityFmt = option.call.impliedVolatility.fmt ?? "",
+                            ImpliedVolatilityLongFmt = option.call.impliedVolatility.longFmt ?? "",
+                            VolumeRaw = option.call.volume.raw,
+                            VolumeFmt = option.call.volume.fmt ?? "",
+                            VolumeLongFmt = option.call.volume.longFmt ?? "",
+                            ContractSymbol = option.call.contractSymbol ?? "",
+                            AskRaw = option.call.Ask.raw,
+                            AskFmt = option.call.Ask.fmt ?? "",
+                            AskLongFmt = option.call.Ask.longFmt ?? "",
+                            LastTradeDateRaw = option.call.lastTradeDate.raw,
+                            LastTradeDateFmt = option.call.lastTradeDate.fmt ?? "",
+                            LastTradeDateLongFmt = option.call.lastTradeDate.longFmt ?? "",
+                            ContractSize = option.call.contractSize ?? "",
+                            Currency = option.call.currency ?? "",
+                            BidRaw = option.call.bid.raw,
+                            BidFmt = option.call.bid.fmt ?? "",
+                            BidLongFmt = option.call.bid.longFmt ?? "",
+                            LastPriceRaw = option.call.lastPrice.raw,
+                            LastPriceFmt = option.call.lastPrice.fmt ?? "",
+                            LastPriceLongFmt = option.call.lastPrice.longFmt ?? ""
                         };
                         callputs.Add(call);
                     }
 
                     if (option.put != null)
                     {
-                        CallPut put = new CallPut
+                        CallPuts put = new CallPuts
                         {
+                            QuoteId = newId,
                             CallOrPut = "Put",
                             Symbol = symbol,
-                            LastTradeDateRaw = option.put.lastTradeDate.raw,
-                            LastTradeDateFmt = option.put.lastTradeDate.fmt ?? "",
-                            LastTradeDateLongFmt = option.put.lastTradeDate.longFmt ?? "",
-                            StrikeRaw = option.put.strike.raw,
-                            StrikeFmt = option.put.strike.fmt ?? "",
-                            StrikeLongFmt = option.put.strike.longFmt ?? "",
-                            AskRaw = option.put.Ask.raw,
-                            AskFmt = option.put.Ask.fmt ?? "",
-                            AskLongFmt = option.put.Ask.longFmt ?? "",
-                            BidRaw = option.put.bid.raw,
-                            BidFmt = option.put.bid.fmt ?? "",
-                            BidLongFmt = option.put.bid.longFmt ?? "",
-                            ChangeRaw = option.put.change.raw,
-                            ChangeFmt = option.put.change.fmt ?? "",
-                            ChangeLongFmt = option.put.change.longFmt ?? "",
-                            contractSize = option.put.contractSize,
-                            contractSymbol = option.put.contractSymbol,
-                            currency = option.put.currency,
-                            Date = DateTime.Now,
                             ExpirationRaw = option.put.expiration.raw,
+                            StrikeRaw = option.put.strike.raw,
                             ExpirationFmt = option.put.expiration.fmt ?? "",
                             ExpirationLongFmt = option.put.expiration.longFmt ?? "",
-                            ImpliedVolatilityRaw = option.put.impliedVolatility.raw,
-                            ImpliedVolatilityFmt = option.put.impliedVolatility.fmt ?? "",
-                            ImpliedVolatilityLongFmt = option.put.impliedVolatility.longFmt ?? "",
-                            inTheMoney = option.put.inTheMoney,
-                            lastPrice = option.put.lastPrice,
-                            OpenInterestRaw = option.put.openInterest.raw,
-                            OpenInterestFmt = option.put.openInterest.fmt ?? "",
-                            OpenInterestLongFmt = option.put.openInterest.longFmt ?? "",
+                            StrikeFmt = option.put.strike.fmt ?? "",
+                            StrikeLongFmt = option.put.strike.longFmt ?? "",
+                            Date = DateTime.Now,
                             PercentChangeRaw = option.put.PercentChange.raw,
                             PercentChangeFmt = option.put.PercentChange.fmt ?? "",
                             PercentChangeLongFmt = option.put.PercentChange.longFmt ?? "",
-                            QuoteId = newId
+                            OpenInterestRaw = option.put.openInterest.raw,
+                            OpenInterestFmt = option.put.openInterest.fmt ?? "",
+                            OpenInterestLongFmt = option.put.openInterest.longFmt ?? "",
+                            ChangeRaw = option.put.change.raw,
+                            ChangeFmt = option.put.change.fmt ?? "",
+                            ChangeLongFmt = option.put.change.longFmt ?? "",
+                            InTheMoney = option.put.inTheMoney,
+                            ImpliedVolatilityRaw = option.put.impliedVolatility.raw,
+                            ImpliedVolatilityFmt = option.put.impliedVolatility.fmt ?? "",
+                            ImpliedVolatilityLongFmt = option.put.impliedVolatility.longFmt ?? "",
+                            VolumeRaw = option.put.volume.raw,
+                            VolumeFmt = option.put.volume.fmt ?? "",
+                            VolumeLongFmt = option.put.volume.longFmt ?? "",
+                            ContractSymbol = option.put.contractSymbol ?? "",
+                            AskRaw = option.put.Ask.raw,
+                            AskFmt = option.put.Ask.fmt ?? "",
+                            AskLongFmt = option.put.Ask.longFmt ?? "",
+                            LastTradeDateRaw = option.put.lastTradeDate.raw,
+                            LastTradeDateFmt = option.put.lastTradeDate.fmt ?? "",
+                            LastTradeDateLongFmt = option.put.lastTradeDate.longFmt ?? "",
+                            ContractSize = option.put.contractSize ?? "",
+                            Currency = option.put.currency ?? "",
+                            BidRaw = option.put.bid.raw,
+                            BidFmt = option.put.bid.fmt ?? "",
+                            BidLongFmt = option.put.bid.longFmt ?? "",
+                            LastPriceRaw = option.put.lastPrice.raw,
+                            LastPriceFmt = option.put.lastPrice.fmt ?? "",
+                            LastPriceLongFmt = option.put.lastPrice.longFmt ?? ""
                         };
                         callputs.Add(put);
                     }

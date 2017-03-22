@@ -1,4 +1,8 @@
 ﻿using Core.Interface;
+using Core.ORMModels;
+using DIContainer;
+using ORMService.Context;
+using System;
 using System.Collections.Generic;
 
 namespace ORMService
@@ -72,6 +76,37 @@ namespace ORMService
             //"SDD",
             //"XIV",
             return symbols;
+        }
+
+        public void Add(Symbols entity)
+        {
+            using (var db = new ScanOptsContext())
+            {
+                db.Symbols.Add(entity);
+                db.SaveChanges();
+            }
+        }
+
+        public void AddMany(List<Symbols> symbols)
+        {
+            using (var db = new ScanOptsContext())
+            {
+                try
+                {
+                    foreach (Symbols symbol in symbols)
+                    {
+                        IOCContainer.Instance.Get<ILogger>().InfoFormat("SymbolsORMService - AddMany {0}", symbol.Symbol);
+                        db.Symbols.Add(symbol);
+                    }
+                    IOCContainer.Instance.Get<ILogger>().Info("SymbolsORMService - AddMany Saving Changes");
+
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    IOCContainer.Instance.Get<ILogger>().ErrorFormat("SymbolsORMService - AddMany error: {1}{2}", ex.Message, Environment.NewLine);
+                }
+            }
         }
     }
 }

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BulkLoad\BaseBulkLoad.cs" />
+    <Compile Include="BulkLoad\BulkLoadCallPuts.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
@@ -72,7 +73,7 @@
     <Compile Include="JsonOptions\BaseRawFmt.cs" />
     <Compile Include="JsonModels\BaseRawFmtDate.cs" />
     <Compile Include="JsonModels\BaseTradingPeriod.cs" />
-    <Compile Include="ORMModels\CallPut.cs" />
+    <Compile Include="ORMModels\CallPuts.cs" />
     <Compile Include="JsonQuote\Chart.cs" />
     <Compile Include="JsonModels\Companies.cs" />
     <Compile Include="JsonModels\Company.cs" />

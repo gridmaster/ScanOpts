@@ -8,6 +8,7 @@ using DIContainer;
 using ORMService;
 using Core.JsonOptions;
 using Core.Business;
+using Core.BulkLoad;
 
 namespace OptonService
 {
@@ -24,6 +25,7 @@ namespace OptonService
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
             decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800;
+            List<CallPuts> allCallPuts = new List<CallPuts>();
 
             try
             {
@@ -64,11 +66,13 @@ namespace OptonService
                             newId = IOCContainer.Instance.Get<IStatisticORMService>().Add(statistics);
                         }
 
-                        if (newId == 0) return;
+                        //if (newId == 0) return;
 
-                        List<CallPut> callputs = IOCContainer.Instance.Get<IOptionORMService>().ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
+                        List<CallPuts> callputs = IOCContainer.Instance.Get<IOptionORMService>()
+                            .ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
 
-                        IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
+                        allCallPuts.AddRange(callputs);
+                        //IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
                     }
                 }
             }
@@ -78,9 +82,40 @@ namespace OptonService
             }
             finally
             {
+                IOCContainer.Instance.Get<ILogger>().Info("RunOptionsCollection: BulkLoadCallPuts...");
+                BulkLoadCallPuts(allCallPuts);
                 IOCContainer.Instance.Get<ILogger>().Info("End - RunOptionsCollection");
                 IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
+        }
+
+        private bool BulkLoadCallPuts(List<CallPuts> allCallPuts)
+        {
+            bool success = false;
+            try
+            {
+                var dt = IOCContainer.Instance.Get<BulkLoadCallPuts>().ConfigureDataTable();
+
+                dt = IOCContainer.Instance.Get<BulkLoadCallPuts>().LoadDataTableWithSymbols(allCallPuts, dt);
+
+                if (dt == null)
+                {
+                    IOCContainer.Instance.Get<ILogger>()
+                                .InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
+                }
+                else
+                {
+                    success = IOCContainer.Instance.Get<BulkLoadCallPuts>().BulkCopy<CallPuts>(dt, "ScanOptsContext");
+                    IOCContainer.Instance.Get<ILogger>()
+                                .InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
+                                            success ? "Success" : "Fail");
+                }
+            }
+            catch (Exception ex)
+            {
+                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Bulk Load Options Error: {1}", Environment.NewLine, ex.Message);
+            }
+            return success;
         }
     }
 }

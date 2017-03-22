@@ -64,6 +64,8 @@ namespace DailySymbolService
                         symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
                     }
 
+                    //IOCContainer.Instance.Get<SymbolsORMService>().Add(symbolList[0]);
+
                     allSymbols.AddRange(symbolList);
                 }
             }
@@ -134,7 +136,7 @@ namespace DailySymbolService
 
         private bool BulkLoadSymbols(List<Symbols> allSymbols)
         {
-            bool success = false;
+             bool success = false;
             try
             {
                 var dt = IOCContainer.Instance.Get<BulkLoadSymbol>().ConfigureDataTable();

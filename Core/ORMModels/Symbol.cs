@@ -28,6 +28,8 @@ namespace Core.ORMModels
         [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
 
+        public bool Select { get; set; }
+
         //[Column(TypeName = "INT")]
         //public int? timestamp { get; set; }
 
