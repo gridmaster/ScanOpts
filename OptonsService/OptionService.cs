@@ -12,8 +12,20 @@ using Core.BulkLoad;
 
 namespace OptonService
 {
-    public class OptionService : IOptionService
+    public class OptionService : BaseService, IOptionService
     {
+
+        #region Constructors
+
+        public OptionService(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors
+
         public void RunOptionsCollection()
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("RunOptionsCollection - GetSymbols");

@@ -1,16 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Core;
 using Core.Interface;
 using Core.JsonOptions;
 using Core.ORMModels;
 using DIContainer;
 using ORMService.Context;
 
+
 namespace ORMService
 {
-    public class StatisticORMService : IStatisticORMService
+    public class StatisticORMService : BaseService, IStatisticORMService
     {
+        #region Constructors
+
+        public StatisticORMService(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors
 
         public Statistics ExtractAndSaveStatisticFromOptionChain(JsonResult optionChain)
         {

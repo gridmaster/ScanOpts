@@ -9,8 +9,20 @@ using ORMService;
 
 namespace SymbolHistoryService
 {
-    public class HistoryService : IHistoryService
+    public class HistoryService : BaseService, IHistoryService
     {
+
+        #region Constructors
+
+        public HistoryService(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors
+        
         public void RunHistoryCollection()
         {
             IOCContainer.Instance.Get<ILogger>().InfoFormat("RunHistoryCollection - GetSymbols");

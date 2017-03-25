@@ -19,11 +19,24 @@ namespace DIContainer
         private IKernel kernel = null;
         private static IOCContainer instance = null;
 
+        #region Properties
         public static IOCContainer Instance
         {
-            get { return instance ?? (instance = new IOCContainer()); }
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new IOCContainer();
+                }
+
+                return instance;
+            }
         }
 
+        public bool IsInitialized { get { return (kernel != null); } }
+
+        #endregion
+        
         public void Initialize(NinjectSettings settings, params INinjectModule[] modules)
         {
             if (IsInitialized)
@@ -47,14 +60,14 @@ namespace DIContainer
             return kernel.Get(type);
         }
 
-        public bool IsInitialized { get { return (kernel != null); } }
-
+        #region Private Methods
         private void VerifyInitialization()
         {
             if (!IsInitialized)
             {
-               throw new InvalidOperationException("The DI Container is not initialized");
+                throw new InvalidOperationException("The DI Container has not yet been initialized.");
             }
         }
+        #endregion
     }
 }

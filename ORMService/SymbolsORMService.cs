@@ -4,6 +4,9 @@ using DIContainer;
 using ORMService.Context;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace ORMService
 {
@@ -75,6 +78,75 @@ namespace ORMService
             };
             //"SDD",
             //"XIV",
+            return symbols;
+        }
+
+        public List<Symbols> GetFromDBSymbolsFromTheseExchanges(List<string> exchanges)
+        {
+            List<Symbols> symbols = new List<Symbols>();
+
+            #region not working
+            //using (var db = new ScanOptsContext())
+            //{
+            //    var ss = (db.Symbols.SqlQuery(
+            //        "Select * FROM dbo.Symbols where Symbol = '@p0'",
+            //        "VXX").FirstOrDefaultAsync()); //, "NASDAQ", "AMEX");
+
+
+            //    var wtf = db.Symbols;
+
+            //    var morewtf = wtf;
+
+            //    //symbols = context.Database.SqlQuery<string>(
+            //    //       "SELECT Name FROM dbo.Blogs").ToList()
+
+
+            //    //db.Symbols.SqlQuery()
+
+            //    var one = db.Symbols.SqlQuery("Select * FROM dbo.Symbols where Symbol = 'p0'", "VXX");
+            //    var symbs = from s in db.Symbols
+            //                where s.Exchange == "NYSE"
+            //                  || s.Exchange == "NASDAQ"
+            //                  || s.Exchange == "AMEX"
+            //                select s;
+            //}
+            #endregion not working
+
+            //using (var db = new ScanOptsContext())
+            //{
+            //    var wtf = db.Symbols.
+            //}
+            string constr = ConfigurationManager.ConnectionStrings["ScanOptsContext"].ToString();
+
+            using (SqlConnection conn = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Symbols WHERE [Select] = 1", conn))
+                {
+                    conn.Open();
+
+                    DateTime dt = DateTime.Now;
+                     
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Symbols s = new Symbols
+                            {
+                                Id = System.Convert.ToInt32(reader["Id"]),
+                                Symbol = reader["Symbol"].ToString(),
+                                CompanyName = reader["CompanyName"].ToString(),
+                                Exchange = reader["Exchange"].ToString(),
+                                FullExchangeName = reader["FullExchangeName"].ToString(),
+                                Date = System.Convert.ToDateTime(reader["Date"].ToString()),
+                                Select = reader["Select"].ToString() == "True" ? true : false
+                            };
+
+                            symbols.Add(s);
+                        }
+                    }
+                }
+            }
+
             return symbols;
         }
 

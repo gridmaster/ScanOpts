@@ -10,11 +10,31 @@ using ORMService;
 
 namespace DailySymbolService
 {
-    public class SymbolService : ISymbolService
+    public class SymbolService : BaseService, ISymbolService
     {
         private bool success;
 
-        public void LoadSymbols()
+        #region Constructors
+
+        public SymbolService(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors
+
+        public List<Symbols> GetFromDBSymbolsFromListOfExchanges(List<string> exchanges)
+        {
+            //List<Symbols> symbols = new List<Symbols>();
+
+            var symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetFromDBSymbolsFromTheseExchanges(null);
+
+            return symbols;
+        }
+        
+        public void LoadAllSymbolsFromWeb()
         {
             LoadAllSymbolsFromAllExchanges();
         }

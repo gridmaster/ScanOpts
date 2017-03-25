@@ -4,6 +4,8 @@ using Ninject;
 using Core.DIModule;
 using Core.Interface;
 using DIContainer;
+using System.Collections.Generic;
+using Core.ORMModels;
 
 namespace Core
 {
@@ -36,11 +38,13 @@ namespace Core
 
             IOCContainer.Instance.Get<ILogger>().Info("DIContainer initialized");
 
-            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
+            //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 
-            IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
+            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
+            
+            //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
 
-            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
+            //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
 
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
             Timer t1 = new Timer();

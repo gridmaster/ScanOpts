@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Core.ORMModels
 {
-    public class Symbols
+    public class Symbols : IEnumerable<Symbols>
     {
         public int Id { get; set; }
 
@@ -29,6 +31,28 @@ namespace Core.ORMModels
         public DateTime Date { get; set; }
 
         public bool Select { get; set; }
+
+        #region implement IEnumerable<Symbols>
+
+        List<Symbols> mylist = new List<Symbols>();
+
+        public Symbols this[int index]
+        {
+            get { return mylist[index]; }
+            set { mylist.Insert(index, value); }
+        }
+
+        public IEnumerator<Symbols> GetEnumerator()
+        {
+            return mylist.GetEnumerator();
+        }
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+
+        #endregion implement IEnumerable<Symbols>
 
         //[Column(TypeName = "INT")]
         //public int? timestamp { get; set; }

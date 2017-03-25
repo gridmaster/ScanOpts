@@ -5,11 +5,23 @@ using Core.Interface;
 using Core.ORMModels;
 using DIContainer;
 using ORMService.Context;
+using Core;
 
 namespace ORMService
 {
-    public class OptionORMService : IOptionORMService
+    public class OptionORMService : BaseService, IOptionORMService
     {
+        #region Constructors
+
+        public OptionORMService(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors
+
         public List<CallPuts> ExtractCallsAndPutsFromOptionChain(string symbol, int newId, List<Straddles> straddles)
         {
             List<CallPuts> callputs = new List<CallPuts>();
