@@ -30,7 +30,7 @@ namespace Core.ORMModels
         [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
 
-        public bool Select { get; set; }
+        public bool Selected { get; set; }
 
         #region implement IEnumerable<Symbols>
 

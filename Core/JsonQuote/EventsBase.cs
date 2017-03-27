@@ -4,8 +4,9 @@ namespace Core.JsonQuote
 {
     public class EventsBase
     {
-        public DateTime date { get; set; }
-        public string symbol { get; set; }
-        public string exchange { get; set; }
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public string Symbol { get; set; }
+        public string Exchange { get; set; }
     }
 }

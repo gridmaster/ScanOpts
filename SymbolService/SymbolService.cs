@@ -41,14 +41,14 @@ namespace DailySymbolService
 
         public void LoadAllSymbolsFromAllExchanges()
         {
-            IOCContainer.Instance.Get<ILogger>().InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
+            logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
             List<string> exchanges = IOCContainer.Instance.Get<ExchangeORMService>().GetExchanges();
             LoadAllSymbolsFromAllExchanges(exchanges);
         }
 
         public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges)
         {
-            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
+            logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
 
             List<Symbols> allSymbols = new List<Symbols>();
             string exchangeSave = "";
@@ -84,28 +84,26 @@ namespace DailySymbolService
                         symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
                     }
 
-                    //IOCContainer.Instance.Get<SymbolsORMService>().Add(symbolList[0]);
-
                     allSymbols.AddRange(symbolList);
                 }
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
+                logger.Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
             }
             finally
             {
                 success = BulkLoadSymbols(allSymbols);
 
-                IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                logger.Info("End - LoadAllSymbolsFromAllExchanges");
+                logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
             return allSymbols;
         }
 
         public List<Symbols> LoadAllSymbolsFromAllExchanges(List<Exchanges> exchanges)
         {
-            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
+            logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
 
             List<Symbols> allSymbols = new List<Symbols>();
             string exchangeSave = "";
@@ -144,19 +142,21 @@ namespace DailySymbolService
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
+                logger.Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
             }
             finally
             {
-                IOCContainer.Instance.Get<ILogger>().Info("End - LoadAllSymbolsFromAllExchanges");
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                success = BulkLoadSymbols(allSymbols);
+
+                logger.Info("End - LoadAllSymbolsFromAllExchanges");
+                logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
             return allSymbols;
         }
 
         private bool BulkLoadSymbols(List<Symbols> allSymbols)
         {
-             bool success = false;
+            bool success = false;
             try
             {
                 var dt = IOCContainer.Instance.Get<BulkLoadSymbol>().ConfigureDataTable();
@@ -165,20 +165,18 @@ namespace DailySymbolService
 
                 if (dt == null)
                 {
-                    IOCContainer.Instance.Get<ILogger>()
-                                .InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
+                    logger.InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
                 }
                 else
                 {
                     success = IOCContainer.Instance.Get<BulkLoadSymbol>().BulkCopy<Symbols>(dt, "ScanOptsContext");
-                    IOCContainer.Instance.Get<ILogger>()
-                                .InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
+                    logger.InfoFormat("{0}BulkLoadSymbols returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Bulk Load Options Error: {1}", Environment.NewLine, ex.Message);
+                logger.InfoFormat("{0}Bulk Load Symbols Error: {1}", Environment.NewLine, ex.Message);
             }
             return success;
         }
@@ -240,7 +238,7 @@ namespace DailySymbolService
                 myPages[i] = myPages[i].Substring(1);
                 var prices = myPages[i].Split('|');
                 dq.Date = DateTime.Now;
-                dq.Select = false;
+                dq.Selected = false;
 
                 tempquote.Add(dq);
             }

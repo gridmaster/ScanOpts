@@ -60,18 +60,18 @@ namespace ORMService
                 quote.Date = date;
                 quote.Symbol = symbol;
                 quote.Exchange = exchangeName;
-                quote.instrumentType = instrumentType;
-                quote.timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
+                quote.InstrumentType = instrumentType;
+                quote.Timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
 
-                quote.open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
-                quote.close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
-                quote.high = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
-                quote.low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
-                quote.volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
-                quote.unadjopen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
-                quote.unadjclose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
-                quote.unadjhigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
-                quote.unadjlow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
+                quote.Open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
+                quote.Close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
+                quote.High = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
+                quote.Low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
+                quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
+                quote.UnadjOpen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
+                quote.UnadjClose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
+                quote.UnadjHigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
+                quote.UnadjLow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
                 quotesList.Add(quote);
             }
 
@@ -89,18 +89,18 @@ namespace ORMService
 
             if (symbolHistory.Chart.Result[0].events != null)
             {
-                if (symbolHistory.Chart.Result[0].events.dividends != null)
+                if (symbolHistory.Chart.Result[0].events.Dividends != null)
                 {
-                    foreach (var item in symbolHistory.Chart.Result[0].events.dividends.dividend)
+                    foreach (var item in symbolHistory.Chart.Result[0].events.Dividends.Dividend)
                     {
                         Dividend dividend = new Dividend();
-                        dividend.date = date;
-                        dividend.symbol = symbol;
-                        dividend.exchange = exchangeName;
-                        dividend.dividendDate = (int)item.Value["date"];
+                        dividend.Date = date;
+                        dividend.Symbol = symbol;
+                        dividend.Exchange = exchangeName;
+                        dividend.DividendDate = (int)item.Value["date"];
                         decimal amount = 0;
                         decimal.TryParse(item.Value["amount"].ToString(), out amount);
-                        dividend.dividendAmount = amount;
+                        dividend.DividendAmount = amount;
                         dividends.dividends.Add(dividend);
                     }
                 }
@@ -108,6 +108,39 @@ namespace ORMService
             return dividends;
         }
 
+        public Splits GetSplits(string symbol, JsonResult symbolHistory)
+        {
+            var timestamps = symbolHistory.Chart.Result[0].timestamp;
+            string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
+            string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
+            DateTime date = DateTime.Now;
+            Splits splits = new Splits();
+            splits.splits = new List<Split>();
+
+            if (symbolHistory.Chart.Result[0].events != null)
+            {
+                if (symbolHistory.Chart.Result[0].events.Splits != null)
+                {
+                    foreach (var item in symbolHistory.Chart.Result[0].events.Splits.Split)
+                    {
+                        Split split = new Split();
+                        split.Date = date;
+                        split.Symbol = symbol;
+                        split.Exchange = exchangeName;
+                        split.SplitDate = (int)item.Value["date"];
+                        int Amount = 0;
+                        int.TryParse(item.Value["numerator"].ToString(), out Amount);
+                        split.Numerator = Amount;
+                        int.TryParse(item.Value["denominator"].ToString(), out Amount);
+                        split.Denominator = Amount;
+                        split.Ratio = item.Value["splitRatio"].ToString();
+
+                        splits.splits.Add(split);
+                    }
+                }
+            }
+            return splits;
+        }
         private static decimal ConvertStringToDecimal(string value)
         {
             decimal holdDecimal = 0;

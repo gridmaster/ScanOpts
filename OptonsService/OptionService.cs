@@ -28,14 +28,14 @@ namespace OptonService
 
         public void RunOptionsCollection()
         {
-            IOCContainer.Instance.Get<ILogger>().InfoFormat("RunOptionsCollection - GetSymbols");
+            logger.InfoFormat("RunOptionsCollection - GetSymbols");
             List<string> symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols();
             RunOptionsCollection(symbols);
         }
 
         public void RunOptionsCollection(List<string> symbols)
         {
-            IOCContainer.Instance.Get<ILogger>().InfoFormat("Start - RunOptionsCollection");
+            logger.InfoFormat("Start - RunOptionsCollection");
             decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800;
             List<CallPuts> allCallPuts = new List<CallPuts>();
 
@@ -43,18 +43,18 @@ namespace OptonService
             {
                 foreach (string symbol in symbols)
                 {
-                    IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {0} page", symbol);
+                    logger.InfoFormat("Get {0} page", symbol);
 
                     // this gets the options chain ... need the dates.
                     string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
                     string sPage = WebPage.Get(String.Format(uriString, symbol, date));
-                    IOCContainer.Instance.Get<ILogger>().Info("Page captured");
+                    //logger.Info("Page captured");
 
-                    IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}", symbol);
+                    //logger.InfoFormat("Deserialize {0}", symbol);
 
                     // dont look here to see if this is correctly populated. This is just to get the dates
                     JsonResult optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
-                    IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
+                    //logger.InfoFormat("{0} deserialized", symbol);
 
                     List<decimal> expireDates = optionChain.OptionChain.Result[0].ExpirationDates;
 
@@ -63,13 +63,13 @@ namespace OptonService
 
                     foreach (decimal eDate in expireDates)
                     {
-                        IOCContainer.Instance.Get<ILogger>().InfoFormat("Get {0} page for expiration date {1}", symbol, eDate);
+                        logger.InfoFormat("Get {0} page for expiration date {1}", symbol, eDate);
                         sPage = WebPage.Get(String.Format(uriString, symbol, eDate));
-                        IOCContainer.Instance.Get<ILogger>().Info("Page captured");
+                        //logger.Info("Page captured");
 
-                        IOCContainer.Instance.Get<ILogger>().InfoFormat("Deserialize {0}", symbol);
+                        //logger.InfoFormat("Deserialize {0}", symbol);
                         optionChain = JsonConvert.DeserializeObject<JsonResult>(sPage);
-                        IOCContainer.Instance.Get<ILogger>().InfoFormat("{0} deserialized", symbol);
+                        //logger.InfoFormat("{0} deserialized", symbol);
 
                         if (String.IsNullOrEmpty(statistics.Symbol))
                         {
@@ -90,14 +90,14 @@ namespace OptonService
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().Fatal("RunOptionsCollection: {0}", ex);
+                logger.Fatal("RunOptionsCollection: {0}", ex);
             }
             finally
             {
-                IOCContainer.Instance.Get<ILogger>().Info("RunOptionsCollection: BulkLoadCallPuts...");
+                logger.Info("RunOptionsCollection: BulkLoadCallPuts...");
                 BulkLoadCallPuts(allCallPuts);
-                IOCContainer.Instance.Get<ILogger>().Info("End - RunOptionsCollection");
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                logger.Info("End - RunOptionsCollection");
+                logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
         }
 
@@ -112,20 +112,18 @@ namespace OptonService
 
                 if (dt == null)
                 {
-                    IOCContainer.Instance.Get<ILogger>()
-                                .InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
+                    logger.InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
                 }
                 else
                 {
                     success = IOCContainer.Instance.Get<BulkLoadCallPuts>().BulkCopy<CallPuts>(dt, "ScanOptsContext");
-                    IOCContainer.Instance.Get<ILogger>()
-                                .InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
+                    logger.InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Bulk Load Options Error: {1}", Environment.NewLine, ex.Message);
+                logger.InfoFormat("{0}Bulk Load Options Error: {1}", Environment.NewLine, ex.Message);
             }
             return success;
         }

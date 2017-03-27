@@ -22,19 +22,19 @@ namespace Core.ORMModels
 
         [Column(TypeName = "VARCHAR")]
         [StringLength(40)]
-        public string instrumentType { get; set; }
+        public string InstrumentType { get; set; }
 
         [Column(TypeName = "INT")]
-        public int? timestamp { get; set; }
+        public int? Timestamp { get; set; }
 
-        public decimal? close { get; set; }
-        public decimal? high { get; set; }
-        public decimal? low { get; set; }
-        public decimal? open { get; set; }
-        public decimal? volume { get; set; }
-        public decimal? unadjhigh { get; set; }
-        public decimal? unadjlow { get; set; }
-        public decimal? unadjclose { get; set; }
-        public decimal? unadjopen { get; set; }
+        public decimal? Close { get; set; }
+        public decimal? High { get; set; }
+        public decimal? Low { get; set; }
+        public decimal? Open { get; set; }
+        public decimal? Volume { get; set; }
+        public decimal? UnadjHigh { get; set; }
+        public decimal? UnadjLow { get; set; }
+        public decimal? UnadjClose { get; set; }
+        public decimal? UnadjOpen { get; set; }
     }
 }

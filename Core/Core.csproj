@@ -59,6 +59,9 @@
     <Compile Include="BaseService.cs" />
     <Compile Include="BulkLoad\BaseBulkLoad.cs" />
     <Compile Include="BulkLoad\BulkLoadCallPuts.cs" />
+    <Compile Include="BulkLoad\BulkLoadDividends.cs" />
+    <Compile Include="BulkLoad\BulkLoadHistory.cs" />
+    <Compile Include="BulkLoad\BulkLoadSplits.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />

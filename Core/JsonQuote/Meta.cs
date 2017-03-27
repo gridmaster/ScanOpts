@@ -9,7 +9,7 @@ namespace Core.JsonQuote
         public string symbol { get; set; }
         public string exchangeName { get; set; }
         public string instrumentType { get; set; }
-        public int firstTradeDate { get; set; }
+        public int? firstTradeDate { get; set; }
         public int gmtoffset { get; set; }
         public string timezone { get; set; }
         public CurrentTradingPeriod currentTradingPeriod { get; set; }

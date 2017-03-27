@@ -38,3 +38,6 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.InitialCreate.resources
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.csproj.GenerateResource.Cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.ChangeColumnName.resources
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.DividendsAndSplits.resources
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.DividendsAndSplitsTables.resources

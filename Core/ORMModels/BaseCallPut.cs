@@ -15,23 +15,23 @@ namespace Core.ORMModels
         public string Symbol { get; set; }
         [Column(TypeName = "INT")]
         public int ExpirationDate { get; set; }
-        public Strike strike { get; set; }
+        public Strike Strike { get; set; }
         [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }
         public PercentChange PercentChange { get; set; }
-        public OpenInterest openInterest { get; set; }
-        public Change change { get; set; }
-        public bool inTheMoney { get; set; }
-        public ImpliedVolatility impliedVolatility { get; set; }
-        public Volume volume { get; set; }
-        public string contractSymbol { get; set; }
+        public OpenInterest OpenInterest { get; set; }
+        public Change Change { get; set; }
+        public bool InTheMoney { get; set; }
+        public ImpliedVolatility ImpliedVolatility { get; set; }
+        public Volume Volume { get; set; }
+        public string ContractSymbol { get; set; }
         public Ask Ask { get; set; }
-        public LastTradeDate lastTradeDate { get; set; }
-        public string contractSize { get; set; }
-        public string currency { get; set; }
-        public Expiration expiration { get; set; }
-        public Bid bid { get; set; }
-        public LastPrice lastPrice { get; set; }
+        public LastTradeDate LastTradeDate { get; set; }
+        public string ContractSize { get; set; }
+        public string Currency { get; set; }
+        public Expiration Expiration { get; set; }
+        public Bid Bid { get; set; }
+        public LastPrice LastPrice { get; set; }
     }
 
     #region Call Put Properties

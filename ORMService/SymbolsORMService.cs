@@ -112,15 +112,11 @@ namespace ORMService
             //}
             #endregion not working
 
-            //using (var db = new ScanOptsContext())
-            //{
-            //    var wtf = db.Symbols.
-            //}
             string constr = ConfigurationManager.ConnectionStrings["ScanOptsContext"].ToString();
 
             using (SqlConnection conn = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Symbols WHERE [Select] = 1", conn))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Symbols WHERE [Selected] = 1", conn))
                 {
                     conn.Open();
 
@@ -138,7 +134,7 @@ namespace ORMService
                                 Exchange = reader["Exchange"].ToString(),
                                 FullExchangeName = reader["FullExchangeName"].ToString(),
                                 Date = System.Convert.ToDateTime(reader["Date"].ToString()),
-                                Select = reader["Select"].ToString() == "True" ? true : false
+                                Selected = reader["Selected"].ToString() == "True" ? true : false
                             };
 
                             symbols.Add(s);

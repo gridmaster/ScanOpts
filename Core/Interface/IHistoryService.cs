@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Core.ORMModels;
+using System.Collections.Generic;
 
 namespace Core.Interface
 {
@@ -7,5 +8,7 @@ namespace Core.Interface
         void RunHistoryCollection();
 
         void RunHistoryCollection(List<string> symbols);
+
+        void RunHistoryCollection(List<Symbols> symbols);
     }
 }

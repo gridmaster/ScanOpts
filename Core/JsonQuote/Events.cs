@@ -7,35 +7,35 @@ namespace Core.JsonQuote
     public class Events
     {
         [JsonProperty(PropertyName = "dividends")]
-        public JsonDividends dividends { get; set; }
+        public JsonDividends Dividends { get; set; }
 
         [JsonProperty(PropertyName = "splits")]
-        public JsonSplits splits { get; set; }
+        public JsonSplits Splits { get; set; }
     }
 
     public class JsonDividends
     {
         [JsonExtensionData]
-        public IDictionary<string, JToken> dividend { get; set; }
+        public IDictionary<string, JToken> Dividend { get; set; }
     }
 
     public class AmountDate
     {
-        public decimal amount { get; set; }
-        public int date { get; set; }
+        public decimal Amount { get; set; }
+        public int Date { get; set; }
     }
 
     public class JsonSplits
     {
         [JsonExtensionData]
-        public IDictionary<string, JToken> split { get; set; }
+        public IDictionary<string, JToken> Split { get; set; }
     }
 
     public class SplitDetails
     {
-        public int date { get; set; }
-        public int numerator { get; set; }
-        public int denominator { get; set; }
-        public string splitRatio { get; set; }
+        public int Date { get; set; }
+        public int Numerator { get; set; }
+        public int Denominator { get; set; }
+        public string SplitRatio { get; set; }
     }
 }

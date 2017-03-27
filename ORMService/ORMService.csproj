@@ -72,6 +72,18 @@
     <Compile Include="Migrations\201703222326293_InitialCreate.Designer.cs">
       <DependentUpon>201703222326293_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703252015344_ChangeColumnName.cs" />
+    <Compile Include="Migrations\201703252015344_ChangeColumnName.Designer.cs">
+      <DependentUpon>201703252015344_ChangeColumnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703262042467_DividendsAndSplits.cs" />
+    <Compile Include="Migrations\201703262042467_DividendsAndSplits.Designer.cs">
+      <DependentUpon>201703262042467_DividendsAndSplits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703262048039_DividendsAndSplitsTables.cs" />
+    <Compile Include="Migrations\201703262048039_DividendsAndSplitsTables.Designer.cs">
+      <DependentUpon>201703262048039_DividendsAndSplitsTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\OptionRepo.cs" />
     <Compile Include="Models\StatisticRepo.cs" />
@@ -87,6 +99,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703222326293_InitialCreate.resx">
       <DependentUpon>201703222326293_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252015344_ChangeColumnName.resx">
+      <DependentUpon>201703252015344_ChangeColumnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703262042467_DividendsAndSplits.resx">
+      <DependentUpon>201703262042467_DividendsAndSplits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703262048039_DividendsAndSplitsTables.resx">
+      <DependentUpon>201703262048039_DividendsAndSplitsTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

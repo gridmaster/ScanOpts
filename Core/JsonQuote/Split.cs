@@ -2,9 +2,9 @@
 {
     public class Split : EventsBase
     {
-        public int splitDate { get; set; }
-        public int numerator { get; set; }
-        public int denominator { get; set; }
-        public string ratio { get; set; }
+        public int SplitDate { get; set; }
+        public int Numerator { get; set; }
+        public int Denominator { get; set; }
+        public string Ratio { get; set; }
     }
 }

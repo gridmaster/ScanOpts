@@ -8,5 +8,6 @@ namespace Core.Interface
         void AddMany(List<DailyQuotes> quotes);
         List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonQuote.JsonResult symbolHistory);
         Core.JsonQuote.Dividends GetDividends(string symbol, Core.JsonQuote.JsonResult symbolHistory);
+        Core.JsonQuote.Splits GetSplits(string symbol, Core.JsonQuote.JsonResult symbolHistory);
     }
 }
