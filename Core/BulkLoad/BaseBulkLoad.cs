@@ -1,20 +1,30 @@
-﻿using System;
+﻿using Core.Interface;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-//using SymbolService.Logs;
 
 namespace Core.BulkLoad
 {
     public class BaseBulkLoad
     {
-        private string[] ColumnNames;
+        #region Fields
+        protected readonly ILogger logger;
+        private readonly string[] ColumnNames;
+        #endregion
 
-        public BaseBulkLoad(string[] columnNames)
+        #region Constructors
+        public BaseBulkLoad(ILogger logger, string[] columnNames)
         {
-            ColumnNames = columnNames;
-        }
+            if (columnNames.Length == 0)
+                throw new ArgumentNullException("columnNames", "Bulk Load must have column names");
 
+            ColumnNames = columnNames;
+            this.logger = logger;
+        }
+        #endregion Constructors
+
+        #region Public Methods
         public DataTable ConfigureDataTable()
         {
             var dt = new DataTable();
@@ -49,7 +59,7 @@ namespace Core.BulkLoad
                 }
                 catch (Exception ex)
                 {
-                    //logger.Error(string.Format("BaseBulkLoad - BulkCopy<{0}> Bulk load error: {1}", tableName, ex.Message));
+                    logger.Error(string.Format("BaseBulkLoad - BulkCopy<{0}> Bulk load error: {1}", tableName, ex.Message));
                 }
 
                 bulkCopy.Close();
@@ -76,10 +86,11 @@ namespace Core.BulkLoad
                 }
                 catch (Exception ex)
                 {
-                    //Log.WriteLog(new LogEvent("BulkLoadSector - BulkCopy<" + tableName + ">", "Bulk load error: " + ex.Message));
+                    logger.Error(string.Format("BaseBulkLoad - BulkCopy<{0}> Bulk load error: {1}", tableName, ex.Message));
                 }
                 bulkCopy.Close();
             }
         }
+        #endregion Public Methods
     }
 }

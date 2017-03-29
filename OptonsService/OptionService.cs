@@ -4,7 +4,6 @@ using Newtonsoft.Json;
 using Core;
 using Core.Interface;
 using Core.ORMModels;
-using DIContainer;
 using ORMService;
 using Core.JsonOptions;
 using Core.Business;
@@ -14,22 +13,34 @@ namespace OptonService
 {
     public class OptionService : BaseService, IOptionService
     {
+        #region Private Methods
+        private SymbolsORMService symbolORMService = new SymbolsORMService();
+        private StatisticORMService statisticORMService = null;
+        private BulkLoadCallPuts bulkLoadCallPuts = null;
+        private OptionORMService optionORMService = null;
+        #endregion Private Methods
 
         #region Constructors
 
-        public OptionService(ILogger logger)
+        public OptionService(ILogger logger, SymbolsORMService symbolORMServic, StatisticORMService statisticORMService, OptionORMService optionORMService)
             : base(logger)
         {
             ThrowIfIsInitialized();
             IsInitialized = true;
+            this.symbolORMService = symbolORMService;
+            this.statisticORMService = new StatisticORMService(logger);
+            this.bulkLoadCallPuts = new BulkLoadCallPuts(logger);
+            this.optionORMService = new OptionORMService(logger);
         }
 
         #endregion Constructors
 
+        #region Public Methods
+
         public void RunOptionsCollection()
         {
             logger.InfoFormat("RunOptionsCollection - GetSymbols");
-            List<string> symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetSymbols();
+            List<string> symbols = symbolORMService.GetSymbols();
             RunOptionsCollection(symbols);
         }
 
@@ -73,18 +84,16 @@ namespace OptonService
 
                         if (String.IsNullOrEmpty(statistics.Symbol))
                         {
-                            statistics = IOCContainer.Instance.Get<IStatisticORMService>().ExtractAndSaveStatisticFromOptionChain(optionChain);
+                            statistics = statisticORMService.ExtractAndSaveStatisticFromOptionChain(optionChain);
 
-                            newId = IOCContainer.Instance.Get<IStatisticORMService>().Add(statistics);
+                            newId = statisticORMService.Add(statistics);
                         }
 
                         //if (newId == 0) return;
 
-                        List<CallPuts> callputs = IOCContainer.Instance.Get<IOptionORMService>()
-                            .ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
+                        List<CallPuts> callputs = optionORMService.ExtractCallsAndPutsFromOptionChain(statistics.Symbol, newId, optionChain.OptionChain.Result[0].Options[0].Straddles);
 
                         allCallPuts.AddRange(callputs);
-                        //IOCContainer.Instance.Get<ICallPutORMService>().AddMany(callputs);
                     }
                 }
             }
@@ -101,14 +110,18 @@ namespace OptonService
             }
         }
 
+        #endregion Public Methods
+
+        #region Private Methods
+
         private bool BulkLoadCallPuts(List<CallPuts> allCallPuts)
         {
             bool success = false;
             try
             {
-                var dt = IOCContainer.Instance.Get<BulkLoadCallPuts>().ConfigureDataTable();
+                var dt = bulkLoadCallPuts.ConfigureDataTable();
 
-                dt = IOCContainer.Instance.Get<BulkLoadCallPuts>().LoadDataTableWithSymbols(allCallPuts, dt);
+                dt = bulkLoadCallPuts.LoadDataTableWithSymbols(allCallPuts, dt);
 
                 if (dt == null)
                 {
@@ -116,7 +129,7 @@ namespace OptonService
                 }
                 else
                 {
-                    success = IOCContainer.Instance.Get<BulkLoadCallPuts>().BulkCopy<CallPuts>(dt, "ScanOptsContext");
+                    success = bulkLoadCallPuts.BulkCopy<CallPuts>(dt, "ScanOptsContext");
                     logger.InfoFormat("{0}BulkLoadOptions returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }
@@ -127,5 +140,7 @@ namespace OptonService
             }
             return success;
         }
+
+        #endregion Private Methods
     }
 }

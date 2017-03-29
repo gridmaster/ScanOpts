@@ -5,31 +5,39 @@ using Core.ORMModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DIContainer;
 using ORMService;
 
 namespace DailySymbolService
 {
     public class SymbolService : BaseService, ISymbolService
     {
+        #region Private properties
         private bool success;
+        private SymbolsORMService symbolORMService = new SymbolsORMService();
+        private ExchangeORMService exchangeORMService = new ExchangeORMService();
+        private BulkLoadSymbol bulkLoadSymbol = null;
+        #endregion Private properties
 
         #region Constructors
 
-        public SymbolService(ILogger logger)
+        public SymbolService(ILogger logger, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService, BulkLoadSymbol bulkLoadSymbol)
             : base(logger)
         {
             ThrowIfIsInitialized();
             IsInitialized = true;
+            this.symbolORMService = symbolORMService;
+            this.exchangeORMService = exchangeORMService;
+            this.bulkLoadSymbol = new BulkLoadSymbol(logger);
         }
 
         #endregion Constructors
 
+        #region Public Methods
         public List<Symbols> GetFromDBSymbolsFromListOfExchanges(List<string> exchanges)
         {
             //List<Symbols> symbols = new List<Symbols>();
 
-            var symbols = IOCContainer.Instance.Get<SymbolsORMService>().GetFromDBSymbolsFromTheseExchanges(null);
+            var symbols = symbolORMService.GetFromDBSymbolsFromTheseExchanges(null);
 
             return symbols;
         }
@@ -42,7 +50,7 @@ namespace DailySymbolService
         public void LoadAllSymbolsFromAllExchanges()
         {
             logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
-            List<string> exchanges = IOCContainer.Instance.Get<ExchangeORMService>().GetExchanges();
+            List<string> exchanges = exchangeORMService.GetExchanges();
             LoadAllSymbolsFromAllExchanges(exchanges);
         }
 
@@ -153,15 +161,17 @@ namespace DailySymbolService
             }
             return allSymbols;
         }
+        #endregion Public Methods
 
+        #region Private Methods
         private bool BulkLoadSymbols(List<Symbols> allSymbols)
         {
             bool success = false;
             try
             {
-                var dt = IOCContainer.Instance.Get<BulkLoadSymbol>().ConfigureDataTable();
+                var dt = bulkLoadSymbol.ConfigureDataTable();
 
-                dt = IOCContainer.Instance.Get<BulkLoadSymbol>().LoadDataTableWithSymbols(allSymbols, dt);
+                dt = bulkLoadSymbol.LoadDataTableWithSymbols(allSymbols, dt);
 
                 if (dt == null)
                 {
@@ -169,7 +179,7 @@ namespace DailySymbolService
                 }
                 else
                 {
-                    success = IOCContainer.Instance.Get<BulkLoadSymbol>().BulkCopy<Symbols>(dt, "ScanOptsContext");
+                    success = bulkLoadSymbol.BulkCopy<Symbols>(dt, "ScanOptsContext");
                     logger.InfoFormat("{0}BulkLoadSymbols returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }
@@ -245,5 +255,7 @@ namespace DailySymbolService
 
             return tempquote;
         }
+        #endregion Private Methods
+
     }
 }

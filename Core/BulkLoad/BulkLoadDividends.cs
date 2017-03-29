@@ -1,6 +1,6 @@
-﻿using Core.JsonQuote;
+﻿using Core.Interface;
+using Core.JsonQuote;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Runtime.InteropServices;
 
@@ -11,9 +11,8 @@ namespace Core.BulkLoad
 
         private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "DividendDate", "DividendAmount" };
 
-        public BulkLoadDividends() : base(ColumnNames)
+        public BulkLoadDividends(ILogger logger) : base(logger, ColumnNames)
         {
-
         }
 
         public DataTable LoadDataTableWithDividends(Dividends dStats, DataTable dt)

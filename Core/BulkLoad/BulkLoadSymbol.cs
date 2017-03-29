@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Runtime.InteropServices;
 using Core.ORMModels;
+using Core.Interface;
 
 namespace Core.BulkLoad
 {
@@ -10,9 +11,8 @@ namespace Core.BulkLoad
     {
         private static readonly string[] ColumnNames = new string[] { "Symbol", "CompanyName", "Exchange", "FullExchangeName", "Date", "Selected" };
 
-        public BulkLoadSymbol() : base(ColumnNames)
+        public BulkLoadSymbol(ILogger logger) : base(logger, ColumnNames)
         {
-
         }
 
         public DataTable LoadDataTableWithSymbols(IEnumerable<Symbols> dStats, DataTable dt)

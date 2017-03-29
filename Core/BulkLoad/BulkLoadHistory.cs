@@ -1,4 +1,5 @@
-﻿using Core.ORMModels;
+﻿using Core.Interface;
+using Core.ORMModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,9 +12,8 @@ namespace Core.BulkLoad
         
         private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume", "UnadjHigh", "UnadjLow", "UnadjClose", "UnadjOpen" };
 
-        public BulkLoadHistory() : base(ColumnNames)
+        public BulkLoadHistory(ILogger logger) : base(logger, ColumnNames)
         {
-
         }
 
         public DataTable LoadDataTableWithDailyHistory(IEnumerable<DailyQuotes> dStats, DataTable dt)
@@ -33,11 +33,6 @@ namespace Core.BulkLoad
             return dt;
         }
         
-        public DataTable LoadDataTableWithDailyHistory(object dailyHistoryList, DataTable dt)
-        {
-            throw new NotImplementedException();
-        }
-
         #region Implement IDisposable
         private IntPtr nativeResource = Marshal.AllocHGlobal(100);
         //More Info

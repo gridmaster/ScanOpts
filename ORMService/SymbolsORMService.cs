@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using Core.JsonOptions;
 
 namespace ORMService
 {
@@ -144,6 +145,11 @@ namespace ORMService
             }
 
             return symbols;
+        }
+
+        public Statistics ExtractAndSaveStatisticFromOptionChain(JsonResult optionChain)
+        {
+            throw new NotImplementedException();
         }
 
         public void Add(Symbols entity)

@@ -1,4 +1,5 @@
-﻿using Core.ORMModels;
+﻿using Core.Interface;
+using Core.ORMModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,9 +15,8 @@ namespace Core.BulkLoad
                 "VolumeLongFmt", "ContractSymbol", "AskRaw", "AskFmt", "AskLongFmt", "LastTradeDateRaw", "LastTradeDateFmt", "LastTradeDateLongFmt", "ContractSize",
                 "Currency", "BidRaw", "BidFmt", "BidLongFmt", "LastPriceRaw", "LastPriceFmt", "LastPriceLongFmt"};
 
-        public BulkLoadCallPuts() : base(ColumnNames)
+        public BulkLoadCallPuts(ILogger logger) : base(logger, ColumnNames)
         {
-
         }
 
         public DataTable LoadDataTableWithSymbols(IEnumerable<CallPuts> dStats, DataTable dt)

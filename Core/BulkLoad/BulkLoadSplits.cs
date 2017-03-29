@@ -1,4 +1,5 @@
-﻿using Core.JsonQuote;
+﻿using Core.Interface;
+using Core.JsonQuote;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,9 +12,8 @@ namespace Core.BulkLoad
 
         private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "SplitDate", "Numerator", "Denominator", "Ratio" };
 
-        public BulkLoadSplits() : base(ColumnNames)
+        public BulkLoadSplits(ILogger logger) : base(logger, ColumnNames)
         {
-
         }
 
         public DataTable LoadDataTableWithDividends(Splits dStats, DataTable dt)
