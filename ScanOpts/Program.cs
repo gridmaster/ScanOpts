@@ -42,9 +42,9 @@ namespace Core
 
             List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
-            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
-            
-            //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection();
+            //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+
+            IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 
             //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
 

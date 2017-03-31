@@ -44,21 +44,37 @@ namespace OptonService
             RunOptionsCollection(symbols);
         }
 
+        public void RunOptionsCollection(List<Symbols> symbols)
+        {
+            List<string> syms = new List<string>();
+
+            for (int i = 0; i < symbols.Count; i++)
+            {
+                syms.Add(symbols[i].Symbol);
+            }
+            RunOptionsCollection(syms);
+        }
+
+
         public void RunOptionsCollection(List<string> symbols)
         {
             logger.InfoFormat("Start - RunOptionsCollection");
             decimal date = UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-1)); // 1489708800;
-            List<CallPuts> allCallPuts = new List<CallPuts>();
-
+            //var symbol = null;
             try
             {
-                foreach (string symbol in symbols)
+                foreach (string sym in symbols)
                 {
-                    logger.InfoFormat("Get {0} page", symbol);
+                    List<CallPuts> allCallPuts = new List<CallPuts>();
+                    logger.InfoFormat("Get {0} page", sym);
+                    //var wtf = "";
+                    //if (sym != "ABR-A") { continue; }
+                     //   wtf = sym;
 
                     // this gets the options chain ... need the dates.
                     string uriString = "https://query2.finance.yahoo.com/v7/finance/options/{0}?formatted=true&crumb=bE4Li32tCWR&lang=en-US&region=US&straddle=true&date={1}&corsDomain=";
-                    string sPage = WebPage.Get(String.Format(uriString, symbol, date));
+                    string sPage = WebPage.Get(String.Format(uriString, sym, date));
+                    if( sPage.Contains("The remote server returned an error: (404)")) { logger.InfoFormat("{0} returned an error: {1}", sym, sPage); continue; }
                     //logger.Info("Page captured");
 
                     //logger.InfoFormat("Deserialize {0}", symbol);
@@ -74,8 +90,8 @@ namespace OptonService
 
                     foreach (decimal eDate in expireDates)
                     {
-                        logger.InfoFormat("Get {0} page for expiration date {1}", symbol, eDate);
-                        sPage = WebPage.Get(String.Format(uriString, symbol, eDate));
+                        logger.InfoFormat("Get {0} page for expiration date {1}", sym, eDate);
+                        sPage = WebPage.Get(String.Format(uriString, sym, eDate));
                         //logger.Info("Page captured");
 
                         //logger.InfoFormat("Deserialize {0}", symbol);
@@ -95,6 +111,7 @@ namespace OptonService
 
                         allCallPuts.AddRange(callputs);
                     }
+                    BulkLoadCallPuts(allCallPuts);
                 }
             }
             catch (Exception ex)
@@ -104,7 +121,7 @@ namespace OptonService
             finally
             {
                 logger.Info("RunOptionsCollection: BulkLoadCallPuts...");
-                BulkLoadCallPuts(allCallPuts);
+//                BulkLoadCallPuts(allCallPuts);
                 logger.Info("End - RunOptionsCollection");
                 logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
