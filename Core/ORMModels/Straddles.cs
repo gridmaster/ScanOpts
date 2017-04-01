@@ -1,4 +1,4 @@
-﻿using Core.JsonQptions;
+﻿using Core.JsonOptions;
 
 namespace Core.ORMModels
 {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Core.JsonModels;
-using Core.JsonQptions;
+using Core.JsonOptions;
 
 namespace Core.ORMModels
 {

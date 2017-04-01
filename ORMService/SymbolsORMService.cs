@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Threading.Tasks;
 using Core.JsonOptions;
 
 namespace ORMService
@@ -85,33 +84,6 @@ namespace ORMService
         public List<Symbols> GetFromDBSymbolsFromTheseExchanges(List<string> exchanges)
         {
             List<Symbols> symbols = new List<Symbols>();
-
-            #region not working
-            //using (var db = new ScanOptsContext())
-            //{
-            //    var ss = (db.Symbols.SqlQuery(
-            //        "Select * FROM dbo.Symbols where Symbol = '@p0'",
-            //        "VXX").FirstOrDefaultAsync()); //, "NASDAQ", "AMEX");
-
-
-            //    var wtf = db.Symbols;
-
-            //    var morewtf = wtf;
-
-            //    //symbols = context.Database.SqlQuery<string>(
-            //    //       "SELECT Name FROM dbo.Blogs").ToList()
-
-
-            //    //db.Symbols.SqlQuery()
-
-            //    var one = db.Symbols.SqlQuery("Select * FROM dbo.Symbols where Symbol = 'p0'", "VXX");
-            //    var symbs = from s in db.Symbols
-            //                where s.Exchange == "NYSE"
-            //                  || s.Exchange == "NASDAQ"
-            //                  || s.Exchange == "AMEX"
-            //                select s;
-            //}
-            #endregion not working
 
             string constr = ConfigurationManager.ConnectionStrings["ScanOptsContext"].ToString();
 
