@@ -22,7 +22,7 @@ namespace OptonService
 
         #region Constructors
 
-        public OptionService(ILogger logger, SymbolsORMService symbolORMServic, StatisticORMService statisticORMService, OptionORMService optionORMService)
+        public OptionService(ILogger logger, SymbolsORMService symbolORMService, StatisticORMService statisticORMService, OptionORMService optionORMService)
             : base(logger)
         {
             ThrowIfIsInitialized();

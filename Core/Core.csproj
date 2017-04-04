@@ -76,6 +76,7 @@
     <Compile Include="Interface\IStatisticORMService.cs" />
     <Compile Include="Interface\ISymbolORMService.cs" />
     <Compile Include="JsonBase\BaseRawFmtLongFmt.cs" />
+    <Compile Include="JsonKeyStatistics\BaseObject.cs" />
     <Compile Include="JsonOptions\BaseRawFmt.cs" />
     <Compile Include="JsonQuoteSummary\Holder2.cs" />
     <Compile Include="JsonQuoteSummary\Holders.cs" />

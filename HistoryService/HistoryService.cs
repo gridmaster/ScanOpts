@@ -14,7 +14,6 @@ namespace SymbolHistoryService
     {
         #region Private properties
         private DailyQuotesORMService dailyQuotesORMService = null;
-        private BulkLoadCallPuts bulkLoadCallPuts = null;
         private BulkLoadHistory bulkLoadHistory = null;
         private SymbolsORMService symbolsORMService = null;
         private BulkLoadDividends bulkLoadDividends = null;
@@ -23,7 +22,7 @@ namespace SymbolHistoryService
 
         #region Constructors
 
-        public HistoryService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolsORMService, BulkLoadHistory ulkLoadHistory, BulkLoadDividends bulkLoadDividends, BulkLoadSplits bulkLoadSplits)
+        public HistoryService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolsORMService, BulkLoadHistory bulkLoadHistory, BulkLoadDividends bulkLoadDividends, BulkLoadSplits bulkLoadSplits)
             : base(logger)
         {
             ThrowIfIsInitialized();

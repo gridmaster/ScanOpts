@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using Core.ORMModels;
 using Core.JsonQuoteSummary;
 using Newtonsoft.Json;
+using Core.JsonKeyStatistics;
 
 namespace Core
 {
@@ -42,11 +43,15 @@ namespace Core
 
             /*********************************************************************************/
 
-            string url = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLCE?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com";
-            string sPage = WebPage.Get(url);
-            RootObject quoteSummary = JsonConvert.DeserializeObject<RootObject>(sPage);
+            //string url = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLCE?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com";
+            //string sPage = WebPage.Get(url);
+            //RootObject quoteSummary = JsonConvert.DeserializeObject<RootObject>(sPage);
 
-            var wtf = quoteSummary;
+            string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
+            string sPage = WebPage.Get(url);
+            BaseObject bo = JsonConvert.DeserializeObject<BaseObject>(sPage);
+
+            //var wtf = quoteSummary;
 
             /*********************************************************************************/
 
