@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BollingerBandsService.cs" />
     <Compile Include="InsidersService.cs" />
     <Compile Include="KeyStatisticsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
