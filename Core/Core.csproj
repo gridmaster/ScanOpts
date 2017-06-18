@@ -61,6 +61,7 @@
     <Compile Include="BulkLoad\BulkLoadCallPuts.cs" />
     <Compile Include="BulkLoad\BulkLoadDividends.cs" />
     <Compile Include="BulkLoad\BulkLoadHistory.cs" />
+    <Compile Include="BulkLoad\BulkLoadHolders.cs" />
     <Compile Include="BulkLoad\BulkLoadSplits.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="JsonOptions\JsonResult.cs" />
     <Compile Include="JsonQuote\Meta.cs" />
     <Compile Include="ORMModels\Exchanges.cs" />
+    <Compile Include="ORMModels\Insiders.cs" />
     <Compile Include="ORMModels\Option.cs" />
     <Compile Include="JsonOptions\OptionChain.cs" />
     <Compile Include="JsonOptions\Options.cs" />

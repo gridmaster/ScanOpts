@@ -1,18 +1,18 @@
-﻿using Core;
-using Core.BulkLoad;
-using Core.Interface;
-using Core.ORMModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ORMService;
-using Core.JsonQuoteSummary;
+using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Core.Business;
+using Core;
+using Core.Interface;
+using Core.ORMModels;
+using Core.JsonKeyStatistics;
+using ORMService;
 
 namespace Services
 {
-    public class InsidersService : BaseService
+    public class KeyStatisticsService : BaseService
     {
         #region Private properties
         private bool success;
@@ -23,28 +23,28 @@ namespace Services
 
         #region Constructors
 
-        public InsidersService(ILogger logger, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) // , BulkLoadInsiders bulkLoadInsiders)
+        public KeyStatisticsService(ILogger logger, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) // , BulkLoadInsiders bulkLoadKeyStatistics)
             : base(logger)
         {
             ThrowIfIsInitialized();
             IsInitialized = true;
             this.symbolORMService = symbolORMService;
             this.exchangeORMService = exchangeORMService;
-            //this.bulkLoadInsiders = new BulkLoadInsiders(logger);
+            //this.bulkLoadKeyStatistics = new BulkLoadKeyStatistics(logger);
         }
 
         #endregion Constructors
 
         #region Public Methods
 
-        public void RunInsidersCollection()
+        public void RunKeyStatisticsCollection()
         {
-            logger.InfoFormat("RunOptionsCollection - GetSymbols");
+            logger.InfoFormat("RunKeyStatisticsCollection - GetSymbols");
             List<string> symbols = symbolORMService.GetSymbols();
-            RunInsidersCollection(symbols);
+            RunKeyStatisticsCollection(symbols);
         }
 
-        public void RunInsidersCollection(List<Symbols> symbols)
+        public void RunKeyStatisticsCollection(List<Symbols> symbols)
         {
             List<string> syms = new List<string>();
 
@@ -52,14 +52,14 @@ namespace Services
             {
                 syms.Add(symbols[i].Symbol);
             }
-            RunInsidersCollection(syms);
+            RunKeyStatisticsCollection(syms);
         }
-        
-        public void RunInsidersCollection(List<string> symbols)
-        {
-            logger.InfoFormat("Start - RunInsidersCollection");
 
-            string url = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/{0}?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com";
+        public void RunKeyStatisticsCollection(List<string> symbols)
+        {
+            logger.InfoFormat("Start - RunKeyStatisticsCollection");
+
+            string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/{0}?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
 
             try
             {
@@ -69,35 +69,35 @@ namespace Services
                     logger.InfoFormat("Get {0} page", sym);
 
                     string sPage = WebPage.Get(string.Format(url, sym));
-                    RootObject quoteSummary = JsonConvert.DeserializeObject<RootObject>(sPage);
+                    BaseObject.RootObject quoteSummary = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
 
                     int newId = 0;
 
-                    //BulkLoadInsiders(allCallPuts);
+                    //BulkLoadKeyStatistics(allCallPuts);
                 }
             }
             catch (Exception ex)
             {
-                logger.Fatal("RunInsidersCollection: {0}", ex);
+                logger.Fatal("RunKeyStatisticsCollection: {0}", ex);
             }
             finally
             {
-                logger.Info("End - RunInsidersCollection");
+                logger.Info("End - RunKeyStatisticsCollection");
                 logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
         }
 
-        public void LoadInsidersInfo()
+        public void LoadKeyStatisticsInfo()
         {
-            string url = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/{0}?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com";
+            string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
             string sPage = WebPage.Get(url);
-            RootObject quoteSummary = JsonConvert.DeserializeObject<RootObject>(sPage);
+            BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
         }
 
         #endregion Public Methods
 
         #region Private Methods
-        private bool BulkLoadInsiders(List<Symbols> allSymbols)
+        private bool BulkLoadKeyStatistics(List<Symbols> allSymbols)
         {
             bool success = false;
             try
@@ -108,18 +108,18 @@ namespace Services
 
                 //if (dt == null)
                 //{
-                //    logger.InfoFormat("{0}No data returned on LoadDataTableWithSymbols", Environment.NewLine);
+                //    logger.InfoFormat("{0}BulkLoadKeyStatistics: No data returned on LoadDataTableWithSymbols", Environment.NewLine);
                 //}
                 //else
                 //{
                 //    success = bulkLoadSymbol.BulkCopy<Symbols>(dt, "ScanOptsContext");
-                //    logger.InfoFormat("{0}BulkLoadSymbols returned with: {1}", Environment.NewLine,
+                //    logger.InfoFormat("{0}BulkLoadKeyStatistics returned with: {1}", Environment.NewLine,
                 //                            success ? "Success" : "Fail");
                 //}
             }
             catch (Exception ex)
             {
-                logger.InfoFormat("{0}Bulk Load Symbols Error: {1}", Environment.NewLine, ex.Message);
+                logger.InfoFormat("{0}BulkLoadKeyStatistics: Bulk Load Symbols Error: {1}", Environment.NewLine, ex.Message);
             }
             return success;
         }

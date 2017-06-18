@@ -43,19 +43,21 @@ namespace Core
 
             /*********************************************************************************/
 
+            // holders
             //string url = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLCE?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com";
             //string sPage = WebPage.Get(url);
             //RootObject quoteSummary = JsonConvert.DeserializeObject<RootObject>(sPage);
 
-            string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
-            string sPage = WebPage.Get(url);
-            BaseObject bo = JsonConvert.DeserializeObject<BaseObject>(sPage);
+            //// key statistics
+            //string url1 = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
+            //string sPage1 = WebPage.Get(url1);
+            //BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage1);
 
             //var wtf = quoteSummary;
 
             /*********************************************************************************/
 
-            //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
+            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 
             List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
@@ -63,7 +65,7 @@ namespace Core
 
             IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 
-            //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
+            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
 
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
             Timer t1 = new Timer();
