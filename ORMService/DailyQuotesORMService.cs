@@ -52,6 +52,14 @@ namespace ORMService
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
 
+            //var currentQuote = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)timestamps[timestamps.Count-1]);
+
+            double currentClose = (double)symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose[timestamps.Count - 1];
+
+            if (currentClose < 10)
+                return quotesList;
+
+
             for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
             {
                 int holdInt = 0;
@@ -73,8 +81,7 @@ namespace ORMService
                 quote.UnadjHigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
                 quote.UnadjLow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
                 quotesList.Add(quote);
-
-                var wtf = DateTime.FromFileTimeUtc((long) quote.Timestamp);
+            
             }
 
             return quotesList;

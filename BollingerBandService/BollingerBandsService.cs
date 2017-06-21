@@ -83,6 +83,8 @@ namespace BollingerBandService
                     Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
                     List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
 
+                    if (quotesList.Count < 1) continue;
+
                     DailyQuotes dq = quotesList[quotesList.Count-1];
 
 
