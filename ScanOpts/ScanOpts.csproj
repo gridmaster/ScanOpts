@@ -52,6 +52,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BollingerBandService">
+      <HintPath>..\BollingerBandService\bin\Debug\BollingerBandService.dll</HintPath>
+    </Reference>
     <Reference Include="Core">
       <HintPath>..\Core\bin\Debug\Core.dll</HintPath>
     </Reference>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Timers;
 using Ninject;
-using Core.DIModule;
 using Core.Interface;
 using DIContainer;
 using System.Collections.Generic;
@@ -9,6 +8,7 @@ using Core.ORMModels;
 using Core.JsonQuoteSummary;
 using Newtonsoft.Json;
 using Core.JsonKeyStatistics;
+using ScanOpts.DIModule;
 
 namespace Core
 {
@@ -56,6 +56,8 @@ namespace Core
             //var wtf = quoteSummary;
 
             /*********************************************************************************/
+
+            IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck();
 
             IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 

@@ -5,31 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Core;
+using Core.Business;
 using Core.Interface;
 using Core.ORMModels;
 using Core.JsonKeyStatistics;
 using ORMService;
 
-namespace Services
+namespace BollingerBandService
 {
-    public class BollingerBandsService : BaseService
+    public class BollingerBandsService : BaseService, IBollingerBandService
     {
         #region Private properties
         private bool success;
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
+        private DailyQuotesORMService dailyQuotesORMService = null;
+
         //private BulkLoadInsiders bulkLoadInsiders = null;
         #endregion Private properties
 
         #region Constructors
 
-        public BollingerBandsService(ILogger logger, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) // , BulkLoadInsiders bulkLoadInsiders)
+        public BollingerBandsService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) // , BulkLoadInsiders bulkLoadInsiders)
             : base(logger)
         {
             ThrowIfIsInitialized();
             IsInitialized = true;
             this.symbolORMService = symbolORMService;
             this.exchangeORMService = exchangeORMService;
+            this.dailyQuotesORMService = dailyQuotesORMService;
             //this.bulkLoadInsiders = new BulkLoadInsiders(logger);
         }
 
@@ -59,7 +63,10 @@ namespace Services
         {
             logger.InfoFormat("Start - RunKeyStatisticsCollection");
 
-            string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1=-252356400&period2=1488949200&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+            string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+
+            var endDate = DateTime.Now.ToUnixTime();
+            var startDate = DateTime.Now.AddDays(-200).ToUnixTime();
 
             try
             {
@@ -68,12 +75,16 @@ namespace Services
                     List<CallPuts> allCallPuts = new List<CallPuts>();
                     logger.InfoFormat("Get {0} page", symbol);
 
-                    string sPage = WebPage.Get(String.Format(uriString, symbol));
+                    string sPage = WebPage.Get(String.Format(uriString, symbol, startDate, endDate));
 
                     if (sPage.Contains("(404) Not Found")) continue;
                     if (sPage.Contains("(400) Bad Request")) continue;
 
-                    BaseObject.RootObject quoteSummary = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
+                    Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
+                    List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
+
+                    DailyQuotes dq = quotesList[quotesList.Count-1];
+
 
                     int newId = 0;
 

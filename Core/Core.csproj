@@ -66,11 +66,13 @@
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
+    <Compile Include="Interface\IBollingerBandService.cs" />
     <Compile Include="Interface\ICallPutORMService.cs" />
     <Compile Include="Interface\IDailyQuotesORMService.cs" />
     <Compile Include="Interface\IExchangeORMService.cs" />
     <Compile Include="Interface\IHistoryService.cs" />
     <Compile Include="Interface\ILogger.cs" />
+    <Compile Include="Interface\IServices.cs" />
     <Compile Include="Interface\ISymbolService.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IOptionService.cs" />

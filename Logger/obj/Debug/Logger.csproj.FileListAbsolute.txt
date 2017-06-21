@@ -38,3 +38,14 @@ C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\New
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.pdb
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Logger.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Logger.pdb
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Core.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\log4net.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Core.pdb
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\log4net.xml
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\Logger\obj\Debug\Logger.pdb

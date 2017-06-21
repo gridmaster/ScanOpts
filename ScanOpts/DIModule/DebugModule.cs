@@ -1,4 +1,5 @@
-﻿using Core.Interface;
+﻿using BollingerBandService;
+using Core.Interface;
 using DailySymbolService;
 using Logger;
 using Ninject.Modules;
@@ -6,7 +7,7 @@ using OptonService;
 using ORMService;
 using SymbolHistoryService;
 
-namespace Core.DIModule
+namespace ScanOpts.DIModule
 {
     class DebugModule : NinjectModule
     {
@@ -24,6 +25,7 @@ namespace Core.DIModule
             Bind<IDailyQuotesORMService>().To<DailyQuotesORMService>().InSingletonScope();
             Bind<ISymbolService>().To<SymbolService>().InSingletonScope();
             Bind<IExchangeORMService>().To<ExchangeORMService>().InSingletonScope();
+            Bind<IBollingerBandService>().To<BollingerBandsService>().InSingletonScope();
         }
     }
 }
