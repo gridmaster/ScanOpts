@@ -76,6 +76,20 @@ namespace ORMService
             return exchanges;
         }
 
+        public List<string> GetUSExchanges()
+        {
+            List<string> exchanges = new List<string> {
+                //New York Stock Exchange[NYSE]
+                "http://eoddata.com/stocklist/NYSE/{0}.htm",
+                 //NASDAQ Stock Exchange[NASDAQ]
+                "http://eoddata.com/stocklist/NASDAQ/{0}.htm",
+                // American Stock Exchange [AMEX]
+                "http://eoddata.com/stocklist/AMEX/{0}.htm"
+            };
+            return exchanges;
+        }
+
+
         public List<Exchanges> GetSomeExchanges()
         {
             DateTime date = DateTime.Now;

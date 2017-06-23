@@ -13,6 +13,7 @@ namespace DailySymbolService
     {
         #region Private properties
         private bool success;
+        private List<Symbols> symbols;
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
         private BulkLoadSymbol bulkLoadSymbol = null;
@@ -47,14 +48,21 @@ namespace DailySymbolService
             LoadAllSymbolsFromAllExchanges();
         }
 
+        public void LoadAllSymbolsFromUSExchangesNoSave()
+        {
+            logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
+            List<string> exchanges = exchangeORMService.GetUSExchanges();
+            symbols = LoadAllSymbolsFromAllExchanges(exchanges, false);
+        }
+
         public void LoadAllSymbolsFromAllExchanges()
         {
             logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
             List<string> exchanges = exchangeORMService.GetExchanges();
-            LoadAllSymbolsFromAllExchanges(exchanges);
+            symbols = LoadAllSymbolsFromAllExchanges(exchanges);
         }
 
-        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges)
+        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges, bool save = true)
         {
             logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
 
@@ -101,7 +109,10 @@ namespace DailySymbolService
             }
             finally
             {
-                success = BulkLoadSymbols(allSymbols);
+                if (save)
+                {
+                    success = BulkLoadSymbols(allSymbols);
+                }
 
                 logger.Info("End - LoadAllSymbolsFromAllExchanges");
                 logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
@@ -161,6 +172,12 @@ namespace DailySymbolService
             }
             return allSymbols;
         }
+
+        public List<Symbols> GetSymbols()
+        {
+            return symbols;
+        }
+
         #endregion Public Methods
 
         #region Private Methods

@@ -83,10 +83,7 @@ namespace BollingerBandService
                     Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
                     List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
 
-                    if (quotesList.Count < 1) continue;
-
-                    DailyQuotes dq = quotesList[quotesList.Count-1];
-
+                    if(SkipThisSymbol(quotesList)) continue;
 
                     int newId = 0;
 
@@ -112,5 +109,19 @@ namespace BollingerBandService
         }
 
         #endregion Public Methods
+
+        #region Private Methods
+
+        private bool SkipThisSymbol(List<DailyQuotes> quotes)
+        {
+            if (quotes.Count < 1) return true;
+
+            DailyQuotes dq = quotes[quotes.Count - 1];
+            if (dq.Close < 3) return true;
+
+            return false;
+        }
+
+        #endregion Private Methods
     }
 }

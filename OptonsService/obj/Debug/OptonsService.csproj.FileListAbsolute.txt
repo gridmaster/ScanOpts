@@ -42,3 +42,25 @@ C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsServic
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojResolveAssemblyReference.cache
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Core.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Logger.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\log4net.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.dll
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Core.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Logger.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.pdb
+C:\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.xml
+C:\Projects\ScanOpts\OptonsService\bin\Debug\log4net.xml
+C:\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.xml
+C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojResolveAssemblyReference.cache
+C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
+C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb

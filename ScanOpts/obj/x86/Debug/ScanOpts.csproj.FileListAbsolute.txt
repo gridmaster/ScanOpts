@@ -81,3 +81,11 @@ C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\log4net.xml
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\BollingerBandService.dll
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.dll
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\OptonsService.dll
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.dll
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\BollingerBandService.pdb
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.pdb
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\OptonsService.pdb
+C:\Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.pdb

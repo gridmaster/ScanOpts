@@ -10,6 +10,8 @@ namespace Core.Interface
         //Task<List<Symbols>> GetFromDBSymbolsFromTheseExchanges(List<string> exchanges);
         void LoadAllSymbolsFromWeb();
         void LoadAllSymbolsFromAllExchanges();
-        List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges);
+        void LoadAllSymbolsFromUSExchangesNoSave();
+        List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges, bool save = true);
+        List<Symbols> GetSymbols();
     }
 }

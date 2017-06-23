@@ -56,18 +56,22 @@ namespace Core
             //var wtf = quoteSummary;
 
             /*********************************************************************************/
+            
+            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-            IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck();
+            var symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
 
-            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
+            IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
 
-            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
+            //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
+
+            //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
             //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
-            IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
+            //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 
-            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
+            //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
 
             IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
             Timer t1 = new Timer();

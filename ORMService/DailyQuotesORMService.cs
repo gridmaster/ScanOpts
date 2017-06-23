@@ -56,8 +56,8 @@ namespace ORMService
 
             double currentClose = (double)symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose[timestamps.Count - 1];
 
-            if (currentClose < 10)
-                return quotesList;
+            //if (currentClose < 10)
+              //  return quotesList;
 
 
             for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)

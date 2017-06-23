@@ -34,3 +34,21 @@ C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolServic
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Core.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.xml
+C:\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
+C:\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
+C:\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.dll
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
+C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
