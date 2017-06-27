@@ -132,18 +132,19 @@ namespace BollingerBandService
         {
             bool result = false;
             decimal adjClose = 0;
-            List<BollingerBands> bolband;
+            BollingerBandsList bolbands = new BollingerBandsList();
+            bolbands.BollingerBands = new List<BollingerBand>();
 
             for (int i = 0; i < 20; i++)
             {
-                adjClose += quotesList[i];
+                adjClose += quotesList[i].UnadjClose.Value;
             }
-            
-            bolBand.Add(LoadBollingerBand(symbol, quotesList));
 
-            for (int i = 0; i < quotesList.Count; i++)
+            bolbands.BollingerBands.Add(LoadBollingerBand(quotesList[20]));
+
+            for (int i = 20; i < quotesList.Count; i++)
             {
-                adjClose += quotesList[i];
+                adjClose += quotesList[i].UnadjClose.Value;
                 if (i > 19) // once we have at lest 20
                 { 
 
@@ -154,28 +155,25 @@ namespace BollingerBandService
             return result;
         }
 
-        private BollingerBands LoadBollingerBand(string symbol, List<DailyQuotes> quotesList)
+        private BollingerBand LoadBollingerBand(DailyQuotes quotesList)
         {
-            var bb = new BollingerBands {
-                Symbol = symbol,
-
-            }
+            var bb = new BollingerBand
+            {
+                Symbol = quotesList.Symbol,
+                Close = quotesList.Close.Value,
+                Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList.Timestamp.Value),
+                // Exchange = quotesList.Exchange,
+                High = quotesList.High.Value,
+                //Id = quotesList.Id,
+                //InstrumentType
+                Low = quotesList.Low.Value,
+                Open = quotesList.Open.Value
+                //Timestamp
+                //Volume
+            };
+            return bb;
         }
 
         #endregion Private Methods
-    }
-
-    public class BollingerBands
-    {
-        public string Symbol { get; set; }
-        public DateTime Date { get; set; }
-        public decimal Open { get; set; }
-        public decimal High { get; set; }
-        public decimal Low { get; set; }
-        public decimal Close { get; set; }
-        public decimal SMA20 { get; set; }
-        public decimal UpperBand { get; set; }
-        public decimal LowerBand { get; set; }
-        public decimal BandRatio { get; set; }
     }
 }
