@@ -89,3 +89,5 @@ C:\Projects\ScanOpts\ScanOpts\bin\Debug\BollingerBandService.pdb
 C:\Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.pdb
 C:\Projects\ScanOpts\ScanOpts\bin\Debug\OptonsService.pdb
 C:\Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.pdb
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\MathNet.Numerics.dll
+C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\MathNet.Numerics.xml
