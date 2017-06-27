@@ -17,6 +17,7 @@ namespace BollingerBandService
     {
         #region Private properties
         private bool success;
+        private List<string> symbolList;
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
         private DailyQuotesORMService dailyQuotesORMService = null;
@@ -61,7 +62,7 @@ namespace BollingerBandService
 
         public void RunBollingerBandsCheck(List<string> symbols)
         {
-            logger.InfoFormat("Start - RunKeyStatisticsCollection");
+            logger.InfoFormat("Start - RunBollingerBandsCheck");
 
             string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
 
@@ -85,6 +86,11 @@ namespace BollingerBandService
 
                     if(SkipThisSymbol(quotesList)) continue;
 
+                    if (ThisIsAGoodCandidate(symbol, quotesList))
+                    {
+                        symbolList.Add(symbol);
+                    }
+
                     int newId = 0;
 
                     //BulkLoadKeyStatistics(allCallPuts);
@@ -96,7 +102,7 @@ namespace BollingerBandService
             }
             finally
             {
-                logger.Info("End - RunKeyStatisticsCollection");
+                logger.Info("End - RunBollingerBandsCheck");
                 logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             }
         }
@@ -122,6 +128,54 @@ namespace BollingerBandService
             return false;
         }
 
+        private bool ThisIsAGoodCandidate(string symbol, List<DailyQuotes> quotesList)
+        {
+            bool result = false;
+            decimal adjClose = 0;
+            List<BollingerBands> bolband;
+
+            for (int i = 0; i < 20; i++)
+            {
+                adjClose += quotesList[i];
+            }
+            
+            bolBand.Add(LoadBollingerBand(symbol, quotesList));
+
+            for (int i = 0; i < quotesList.Count; i++)
+            {
+                adjClose += quotesList[i];
+                if (i > 19) // once we have at lest 20
+                { 
+
+                }
+
+            }
+
+            return result;
+        }
+
+        private BollingerBands LoadBollingerBand(string symbol, List<DailyQuotes> quotesList)
+        {
+            var bb = new BollingerBands {
+                Symbol = symbol,
+
+            }
+        }
+
         #endregion Private Methods
+    }
+
+    public class BollingerBands
+    {
+        public string Symbol { get; set; }
+        public DateTime Date { get; set; }
+        public decimal Open { get; set; }
+        public decimal High { get; set; }
+        public decimal Low { get; set; }
+        public decimal Close { get; set; }
+        public decimal SMA20 { get; set; }
+        public decimal UpperBand { get; set; }
+        public decimal LowerBand { get; set; }
+        public decimal BandRatio { get; set; }
     }
 }
