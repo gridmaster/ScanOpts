@@ -31,15 +31,6 @@ C:\Projects\ScanOpts\DIContainer\bin\Debug\Ninject.xml
 C:\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
 C:\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
 C:\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\log4net.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\Ninject.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\log4net.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\log4net.dll
@@ -49,3 +40,12 @@ C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\log4net.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\Ninject.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\log4net.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\bin\Debug\Ninject.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb

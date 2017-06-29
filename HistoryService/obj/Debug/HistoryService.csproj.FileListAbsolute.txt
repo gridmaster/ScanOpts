@@ -1,25 +1,3 @@
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csprojResolveAssemblyReference.cache
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Core.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\DIContainer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\ORMService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\DIContainer.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\ORMService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.xml
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Core.dll
@@ -64,3 +42,25 @@ C:\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.xml
 C:\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csprojResolveAssemblyReference.cache
 C:\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
 C:\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\HistoryService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\DIContainer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\ORMService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\DIContainer.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Logger.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\ORMService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\Ninject.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\log4net.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb

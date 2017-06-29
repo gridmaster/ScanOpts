@@ -1,25 +1,3 @@
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Core.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Logger.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Logger.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojResolveAssemblyReference.cache
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\log4net.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\log4net.xml
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Core.dll
@@ -64,3 +42,25 @@ C:\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.xml
 C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojResolveAssemblyReference.cache
 C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
 C:\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\OptonsService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\DIContainer.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\ORMService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Ninject.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Logger.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\log4net.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\Logger.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\OptonsService\bin\Debug\log4net.xml
