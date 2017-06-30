@@ -173,21 +173,19 @@ namespace BollingerBandService
         private bool CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
         {
             bool result = false;
-            double adjClose = 0, x2adjClose = 0;
             List<BollingerBand> bolbands = new List<BollingerBand>();
-
-            Array close = new Array[quotesList.Count];
+            double doubleOut = 0;
+            int intOut = 0;
+            List<double> current20 = new List<double>();
 
             for (int i = 0; i < 20; i++)
             {
-                double doubleOut = 0;
-                //double.TryParse(numz[i].ToString(), out doubleOut);
-
                 BollingerBand bb = new BollingerBand();
 
                 bb.Symbol = quotesList[i].Symbol;
                 double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
                 bb.Close = doubleOut;
+                current20.Add(doubleOut);
                 bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value);
                 double.TryParse(quotesList[i].High.ToString(), out doubleOut);
                 bb.High = doubleOut;
@@ -195,58 +193,66 @@ namespace BollingerBandService
                 bb.Low = doubleOut;
                 double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
                 bb.Open = doubleOut;
+                int.TryParse(quotesList[i].Volume.ToString(), out intOut);
+                bb.Volume = intOut;
 
                 bolbands.Add(bb);
             };
-            bolbands[19].SMA20 = bolbands.Sum<BollingerBand>(s => s.Close) / 20;
+            bolbands[19].SMA20 = current20.Sum() / 20;
 
-            double sd = CalculateStandardDeviation(bolbands);
+            double sd = CalculateStandardDeviation(bolbands, bolbands[19].SMA20);
             bolbands[19].StandardDeviation = sd;
             bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
             bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
             bolbands[19].BandRatio = (1 - (bolbands[19].LowerBand/bolbands[19].UpperBand))*100;
 
-            for(   int i = 20; i < quotesList.Count(); i++)
+            for( int c = 0, i = 20; i < quotesList.Count(); i++)
             {
-                double doubleOut = 0;
-                double.TryParse(quotesList[i].ToString(), out doubleOut);
+                BollingerBand bb = new BollingerBand();
 
-                BollingerBand bb = new BollingerBand
+                bb.Symbol = quotesList[i].Symbol;
+                double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
+                bb.Close = doubleOut;
+
+                if (i%20 == 0)
                 {
-                    Symbol = "FAKE", // quotesList[20].Symbol,
-                    Close = doubleOut, // quotesList[20].Close.Value,
-                    Date = DateTime.Now, // UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value),
-                    High = doubleOut, //quotesList[20].High.Value,
-                    Low = doubleOut, //quotesList[20].Low.Value,
-                    Open = doubleOut //, //quotesList[20].Open.Value,
-                    //SMA20 = adjClose / 20
-                };
-                bb.SMA20 = adjClose / 20;
+                    c = 0;
+                }
+                current20[c++] = doubleOut;
+                
+                bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[i].Timestamp.Value);
+                double.TryParse(quotesList[i].High.ToString(), out doubleOut);
+                bb.High = doubleOut;
+                double.TryParse(quotesList[i].Low.ToString(), out doubleOut);
+                bb.Low = doubleOut;
+                double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
+                bb.Open = doubleOut;
+
+                double.TryParse(quotesList[i - 20].UnadjClose.ToString(), out doubleOut);
+
+                bb.SMA20 = current20.Sum() / 20;
                 bolbands.Add(bb);
-
-
-
-                sd = CalculateStandardDeviation(bolbands);
-                bolbands[19].StandardDeviation = sd;
-                bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
-                bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
+                
+                sd = CalculateStandardDeviation(bolbands, bb.SMA20);
+                bolbands[i].StandardDeviation = sd;
+                bolbands[i].UpperBand = bolbands[i].SMA20 + (sd * 2);
+                bolbands[i].LowerBand = bolbands[i].SMA20 - (sd * 2);
+                bolbands[i].BandRatio = (1 - (bolbands[i].LowerBand / bolbands[i].UpperBand)) * 100;
             }
 
 
             return result;
         }
 
-        private double CalculateStandardDeviation(List<BollingerBand> bolbands)
+        private double CalculateStandardDeviation(List<BollingerBand> bolbands, double mean)
         {
             List<double> closeLessMean = new List<double>();
             List<double> closeLessMeanX2 = new List<double>();
 
-            double mean = bolbands.Sum<BollingerBand>(s => s.Close)/20;
-
-            for(int i = 0; i<20; i++)
+            for(int c = 0, i = bolbands.Count-20; i< bolbands.Count; i++)
             {
                 closeLessMean.Add(bolbands[i].Close - mean);
-                closeLessMeanX2.Add(Math.Pow(closeLessMean[i], 2));
+                closeLessMeanX2.Add(Math.Pow(closeLessMean[c++], 2));
             }
 
             double StdDeveation = closeLessMeanX2.Sum()/20;

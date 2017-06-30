@@ -15,5 +15,6 @@ namespace Core.ORMModels
         public double UpperBand { get; set; }
         public double LowerBand { get; set; }
         public double BandRatio { get; set; }
+        public int Volume { get; set; }
     }
 }
