@@ -178,10 +178,6 @@ namespace BollingerBandService
 
             Array close = new Array[quotesList.Count];
 
-            //string numb = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
-
-            //var numz = numb.Split(',');
-
             for (int i = 0; i < 20; i++)
             {
                 double doubleOut = 0;
@@ -200,18 +196,15 @@ namespace BollingerBandService
                 double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
                 bb.Open = doubleOut;
 
-                //SMA20 = adjClose / 20
                 bolbands.Add(bb);
             };
-            //bb.SMA20 = adjClose / 20;
-            //bolbands.Add(bb);
-            //}
             bolbands[19].SMA20 = bolbands.Sum<BollingerBand>(s => s.Close) / 20;
 
             double sd = CalculateStandardDeviation(bolbands);
             bolbands[19].StandardDeviation = sd;
             bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
             bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
+            bolbands[19].BandRatio = (1 - (bolbands[19].LowerBand/bolbands[19].UpperBand))*100;
 
             for(   int i = 20; i < quotesList.Count(); i++)
             {
