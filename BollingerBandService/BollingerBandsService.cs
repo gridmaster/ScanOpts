@@ -10,6 +10,7 @@ using Core;
 using Core.Business;
 using Core.Interface;
 using Core.ORMModels;
+using Core.BulkLoad;
 using Core.JsonKeyStatistics;
 using ORMService;
 
@@ -23,13 +24,12 @@ namespace BollingerBandService
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
         private DailyQuotesORMService dailyQuotesORMService = null;
-
-        //private BulkLoadInsiders bulkLoadInsiders = null;
+        private BulkLoadBollingerBands bulkLoadBollingerBands = null;
         #endregion Private properties
 
         #region Constructors
 
-        public BollingerBandsService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) // , BulkLoadInsiders bulkLoadInsiders)
+        public BollingerBandsService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService, BulkLoadBollingerBands bulkLoadBollingerBands)
             : base(logger)
         {
             ThrowIfIsInitialized();
@@ -37,7 +37,7 @@ namespace BollingerBandService
             this.symbolORMService = symbolORMService;
             this.exchangeORMService = exchangeORMService;
             this.dailyQuotesORMService = dailyQuotesORMService;
-            //this.bulkLoadInsiders = new BulkLoadInsiders(logger);
+            this.bulkLoadBollingerBands = bulkLoadBollingerBands;
         }
 
         #endregion Constructors
@@ -88,17 +88,12 @@ namespace BollingerBandService
 
                     if(SkipThisSymbol(quotesList)) continue;
 
-                    if (ThisIsAGoodCandidate(symbol, quotesList))
-                    {
-                        symbolList.Add(symbol);
-                    }
-
-                        var wtf= CalculateBollingerBands(symbol, quotesList);
+                    var bollingerBands= CalculateBollingerBands(symbol, quotesList);
                
 
                     int newId = 0;
-
-                    //BulkLoadKeyStatistics(allCallPuts);
+                   
+                    var result = BulkLoadBollingerBands(bollingerBands);
                 }
             }
             catch (Exception ex)
@@ -112,12 +107,12 @@ namespace BollingerBandService
             }
         }
 
-        public void LoadKeyStatisticsInfo()
-        {
-            string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
-            string sPage = WebPage.Get(url);
-            BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
-        }
+        //public void LoadKeyStatisticsInfo()
+        //{
+        //    string url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/CAT?formatted=true&crumb=0xiMyBSKbKe&lang=en-US&region=US&modules=defaultKeyStatistics%2CfinancialData%2CcalendarEvents&corsDomain=finance.yahoo.com";
+        //    string sPage = WebPage.Get(url);
+        //    BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
+        //}
 
         #endregion Public Methods
 
@@ -133,46 +128,8 @@ namespace BollingerBandService
             return false;
         }
 
-        private bool ThisIsAGoodCandidate(string symbol, List<DailyQuotes> quotesList)
+        private List<BollingerBand> CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
         {
-            bool result = false;
-            //double adjClose = 0, x2adjClose = 0;
-            //List<BollingerBand> bolbands = new List<BollingerBand>();
-
-            //List<ClosingPrices> closingPrice = new List<ClosingPrices>();
-
-            //return quotesList[quotesList.Count - 1].UnadjClose > 2;
-
-            //string nums = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
-
-            //var numb = nums.Split(',');
-
-            //for (int i = 0; i < 20; i++)
-            //{
-            //    double doubleOut = 0;
-            //    double.TryParse(numb[i].ToString(), out doubleOut);
-
-            //    BollingerBand bb = new BollingerBand
-            //    {
-            //        Symbol = "FAKE", // quotesList[20].Symbol,
-            //        Close = doubleOut, // quotesList[20].Close.Value,
-            //        Date = DateTime.Now, // UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value),
-            //        High = doubleOut, //quotesList[20].High.Value,
-            //        Low = doubleOut, //quotesList[20].Low.Value,
-            //        Open = doubleOut, //quotesList[20].Open.Value,
-            //        SMA20 = adjClose / 20
-            //    };
-            //    bolbands.Add(bb);
-            //}
-
-            //double sd = CalculateStandardDeviation(bolbands);
-
-            return result;
-        }
-
-        private bool CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
-        {
-            bool result = false;
             List<BollingerBand> bolbands = new List<BollingerBand>();
             double doubleOut = 0;
             int intOut = 0;
@@ -240,8 +197,7 @@ namespace BollingerBandService
                 bolbands[i].BandRatio = (1 - (bolbands[i].LowerBand / bolbands[i].UpperBand)) * 100;
             }
 
-
-            return result;
+            return bolbands;
         }
 
         private double CalculateStandardDeviation(List<BollingerBand> bolbands, double mean)
@@ -276,6 +232,33 @@ namespace BollingerBandService
                 ////Volume
             };
             return bb;
+        }
+
+        private bool BulkLoadBollingerBands(List<BollingerBand> bollband)
+        {
+            bool success = false;
+            try
+            {
+                var dt = bulkLoadBollingerBands.ConfigureDataTable();
+
+                dt = bulkLoadBollingerBands.LoadDataTableWithDailyHistory(bollband, dt);
+
+                if (dt == null)
+                {
+                    logger.InfoFormat("{0}No data returned on BulkLoadHistory", Environment.NewLine);
+                }
+                else
+                {
+                    success = bulkLoadBollingerBands.BulkCopy<BollingerBand>(dt, "ScanOptsContext");
+                    logger.InfoFormat("{0}BulkLoadBollingerBands returned with: {1}", Environment.NewLine,
+                                            success ? "Success" : "Fail");
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.InfoFormat("{0}Bulk Load Bollinger Bands Error: {1}", Environment.NewLine, ex.Message);
+            }
+            return success;
         }
 
         public class ClosingPrices

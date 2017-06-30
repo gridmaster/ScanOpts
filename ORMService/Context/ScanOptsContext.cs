@@ -13,5 +13,7 @@ namespace ORMService.Context
         public DbSet<Symbols> Symbols { get; set; }
         public DbSet<Dividend> Dividends { get; set; }
         public DbSet<Split> Splits { get; set; }
+        public DbSet<BollingerBand> BollingerBands { get; set; }
+
     }
 }
