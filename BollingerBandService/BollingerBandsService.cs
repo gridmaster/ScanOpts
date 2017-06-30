@@ -93,6 +93,9 @@ namespace BollingerBandService
                         symbolList.Add(symbol);
                     }
 
+                        var wtf= CalculateBollingerBands(symbol, quotesList);
+               
+
                     int newId = 0;
 
                     //BulkLoadKeyStatistics(allCallPuts);
@@ -133,36 +136,36 @@ namespace BollingerBandService
         private bool ThisIsAGoodCandidate(string symbol, List<DailyQuotes> quotesList)
         {
             bool result = false;
-            double adjClose = 0, x2adjClose = 0;
-            List<BollingerBand> bolbands = new List<BollingerBand>();
+            //double adjClose = 0, x2adjClose = 0;
+            //List<BollingerBand> bolbands = new List<BollingerBand>();
 
-            List<ClosingPrices> closingPrice = new List<ClosingPrices>();
+            //List<ClosingPrices> closingPrice = new List<ClosingPrices>();
 
-            return quotesList[quotesList.Count - 1].UnadjClose > 2;
+            //return quotesList[quotesList.Count - 1].UnadjClose > 2;
 
-            string nums = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
+            //string nums = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
 
-            var numb = nums.Split(',');
+            //var numb = nums.Split(',');
 
-            for (int i = 0; i < 20; i++)
-            {
-                double doubleOut = 0;
-                double.TryParse(numb[i].ToString(), out doubleOut);
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    double doubleOut = 0;
+            //    double.TryParse(numb[i].ToString(), out doubleOut);
 
-                BollingerBand bb = new BollingerBand
-                {
-                    Symbol = "FAKE", // quotesList[20].Symbol,
-                    Close = doubleOut, // quotesList[20].Close.Value,
-                    Date = DateTime.Now, // UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value),
-                    High = doubleOut, //quotesList[20].High.Value,
-                    Low = doubleOut, //quotesList[20].Low.Value,
-                    Open = doubleOut, //quotesList[20].Open.Value,
-                    SMA20 = adjClose / 20
-                };
-                bolbands.Add(bb);
-            }
+            //    BollingerBand bb = new BollingerBand
+            //    {
+            //        Symbol = "FAKE", // quotesList[20].Symbol,
+            //        Close = doubleOut, // quotesList[20].Close.Value,
+            //        Date = DateTime.Now, // UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value),
+            //        High = doubleOut, //quotesList[20].High.Value,
+            //        Low = doubleOut, //quotesList[20].Low.Value,
+            //        Open = doubleOut, //quotesList[20].Open.Value,
+            //        SMA20 = adjClose / 20
+            //    };
+            //    bolbands.Add(bb);
+            //}
 
-            double sd = CalculateStandardDeviation(bolbands);
+            //double sd = CalculateStandardDeviation(bolbands);
 
             return result;
         }
@@ -173,14 +176,47 @@ namespace BollingerBandService
             double adjClose = 0, x2adjClose = 0;
             List<BollingerBand> bolbands = new List<BollingerBand>();
 
-            string numb = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
+            Array close = new Array[quotesList.Count];
 
-            var numz = numb.Split(',');
+            //string numb = "90.7, 92.9, 92.98, 91.8, 92.66, 92.68, 92.3, 92.77, 92.54, 92.95, 93.2, 91.07, 89.83, 89.74, 90.4, 90.74, 88.02, 88.09, 88.84, 90.78, 90.54, 91.39, 90.65";
+
+            //var numz = numb.Split(',');
 
             for (int i = 0; i < 20; i++)
             {
                 double doubleOut = 0;
-                double.TryParse(numz[i].ToString(), out doubleOut);
+                //double.TryParse(numz[i].ToString(), out doubleOut);
+
+                BollingerBand bb = new BollingerBand();
+
+                bb.Symbol = quotesList[i].Symbol;
+                double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
+                bb.Close = doubleOut;
+                bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value);
+                double.TryParse(quotesList[i].High.ToString(), out doubleOut);
+                bb.High = doubleOut;
+                double.TryParse(quotesList[i].Low.ToString(), out doubleOut);
+                bb.Low = doubleOut;
+                double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
+                bb.Open = doubleOut;
+
+                //SMA20 = adjClose / 20
+                bolbands.Add(bb);
+            };
+            //bb.SMA20 = adjClose / 20;
+            //bolbands.Add(bb);
+            //}
+            bolbands[19].SMA20 = bolbands.Sum<BollingerBand>(s => s.Close) / 20;
+
+            double sd = CalculateStandardDeviation(bolbands);
+            bolbands[19].StandardDeviation = sd;
+            bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
+            bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
+
+            for(   int i = 20; i < quotesList.Count(); i++)
+            {
+                double doubleOut = 0;
+                double.TryParse(quotesList[i].ToString(), out doubleOut);
 
                 BollingerBand bb = new BollingerBand
                 {
@@ -194,16 +230,13 @@ namespace BollingerBandService
                 };
                 bb.SMA20 = adjClose / 20;
                 bolbands.Add(bb);
-            }
 
-            double sd = CalculateStandardDeviation(bolbands);
-            bolbands[19].StandardDeviation = sd;
-            bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
-            bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
 
-            for(int i = 20; i < numz.Count; i++)
-            {
 
+                sd = CalculateStandardDeviation(bolbands);
+                bolbands[19].StandardDeviation = sd;
+                bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
+                bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
             }
 
 

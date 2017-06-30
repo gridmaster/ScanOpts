@@ -11,6 +11,7 @@ namespace Core.ORMModels
         public double Low { get; set; }
         public double Close { get; set; }
         public double SMA20 { get; set; }
+        public double StandardDeviation { get; set; }
         public double UpperBand { get; set; }
         public double LowerBand { get; set; }
         public double BandRatio { get; set; }
