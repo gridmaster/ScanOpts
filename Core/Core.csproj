@@ -103,7 +103,6 @@
     <Compile Include="JsonBase\BaseRawFmt.cs" />
     <Compile Include="JsonModels\BaseRawFmtDate.cs" />
     <Compile Include="JsonModels\BaseTradingPeriod.cs" />
-    <Compile Include="ORMModels\BollingerBand.cs" />
     <Compile Include="ORMModels\BollingerBands.cs" />
     <Compile Include="ORMModels\CallPuts.cs" />
     <Compile Include="JsonQuote\Chart.cs" />

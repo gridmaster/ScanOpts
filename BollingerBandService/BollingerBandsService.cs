@@ -77,13 +77,17 @@ namespace BollingerBandService
                 {
                     List<CallPuts> allCallPuts = new List<CallPuts>();
                     logger.InfoFormat("Get {0} page", symbol);
-
+                    //if (symbol != "LENS")
+                    //{
+                    //    continue;
+                    //}
                     string sPage = WebPage.Get(String.Format(uriString, symbol, startDate, endDate));
 
                     if (sPage.Contains("(404) Not Found")) continue;
                     if (sPage.Contains("(400) Bad Request")) continue;
 
                     Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
+                    if (symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose == null) continue;
                     List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
 
                     if(SkipThisSymbol(quotesList)) continue;
@@ -120,7 +124,7 @@ namespace BollingerBandService
 
         private bool SkipThisSymbol(List<DailyQuotes> quotes)
         {
-            if (quotes.Count < 1) return true;
+            if (quotes.Count < 80) return true;
 
             DailyQuotes dq = quotes[quotes.Count - 1];
             if (dq.Close < 3) return true;
@@ -128,22 +132,22 @@ namespace BollingerBandService
             return false;
         }
 
-        private List<BollingerBand> CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
+        private List<BollingerBands> CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
         {
-            List<BollingerBand> bolbands = new List<BollingerBand>();
+            List<BollingerBands> bolbands = new List<BollingerBands>();
             double doubleOut = 0;
             int intOut = 0;
             List<double> current20 = new List<double>();
 
             for (int i = 0; i < 20; i++)
             {
-                BollingerBand bb = new BollingerBand();
+                BollingerBands bb = new BollingerBands();
 
                 bb.Symbol = quotesList[i].Symbol;
                 double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
                 bb.Close = doubleOut;
                 current20.Add(doubleOut);
-                bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[20].Timestamp.Value);
+                bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[i].Timestamp.Value);
                 double.TryParse(quotesList[i].High.ToString(), out doubleOut);
                 bb.High = doubleOut;
                 double.TryParse(quotesList[i].Low.ToString(), out doubleOut);
@@ -165,7 +169,7 @@ namespace BollingerBandService
 
             for( int c = 0, i = 20; i < quotesList.Count(); i++)
             {
-                BollingerBand bb = new BollingerBand();
+                BollingerBands bb = new BollingerBands();
 
                 bb.Symbol = quotesList[i].Symbol;
                 double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
@@ -184,8 +188,10 @@ namespace BollingerBandService
                 bb.Low = doubleOut;
                 double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
                 bb.Open = doubleOut;
-
                 double.TryParse(quotesList[i - 20].UnadjClose.ToString(), out doubleOut);
+
+                int.TryParse(quotesList[i].Volume.ToString(), out intOut);
+                bb.Volume = intOut;
 
                 bb.SMA20 = current20.Sum() / 20;
                 bolbands.Add(bb);
@@ -200,7 +206,7 @@ namespace BollingerBandService
             return bolbands;
         }
 
-        private double CalculateStandardDeviation(List<BollingerBand> bolbands, double mean)
+        private double CalculateStandardDeviation(List<BollingerBands> bolbands, double mean)
         {
             List<double> closeLessMean = new List<double>();
             List<double> closeLessMeanX2 = new List<double>();
@@ -215,9 +221,9 @@ namespace BollingerBandService
             return Math.Sqrt(StdDeveation);
         }
 
-        private BollingerBand LoadBollingerBand(DailyQuotes quotesList)
+        private BollingerBands LoadBollingerBand(DailyQuotes quotesList)
         {
-            var bb = new BollingerBand
+            var bb = new BollingerBands
             {
                 //Symbol = quotesList.Symbol,
                 //Close = quotesList.Close.Value,
@@ -234,7 +240,7 @@ namespace BollingerBandService
             return bb;
         }
 
-        private bool BulkLoadBollingerBands(List<BollingerBand> bollband)
+        private bool BulkLoadBollingerBands(List<BollingerBands> bollband)
         {
             bool success = false;
             try
@@ -249,7 +255,7 @@ namespace BollingerBandService
                 }
                 else
                 {
-                    success = bulkLoadBollingerBands.BulkCopy<BollingerBand>(dt, "ScanOptsContext");
+                    success = bulkLoadBollingerBands.BulkCopy<BollingerBands>(dt, "ScanOptsContext");
                     logger.InfoFormat("{0}BulkLoadBollingerBands returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }

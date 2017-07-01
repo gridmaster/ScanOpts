@@ -15,7 +15,7 @@ namespace Core.BulkLoad
         {
         }
 
-        public DataTable LoadDataTableWithDailyHistory(IEnumerable<BollingerBand> dStats, DataTable dt)
+        public DataTable LoadDataTableWithDailyHistory(IEnumerable<BollingerBands> dStats, DataTable dt)
         {
             foreach (var value in dStats)
             {
