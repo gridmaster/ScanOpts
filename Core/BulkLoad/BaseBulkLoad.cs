@@ -91,6 +91,24 @@ namespace Core.BulkLoad
                 bulkCopy.Close();
             }
         }
+
+        public void TruncateTable(string tableName)
+        {
+            string connString = ConfigurationManager.ConnectionStrings["ScanOptsContext"].ConnectionString;
+            string query = "TRUNCATE TABLE " + tableName;
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                try {
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Connection.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch(Exception ex)
+                {
+                    logger.Error(string.Format("BaseBulkLoad - TruncateTable {0} error: {1}", tableName, ex.Message)); 
+                }
+            }
+        }
         #endregion Public Methods
     }
 }

@@ -1,24 +1,19 @@
-Declare @firstDate DateTime;
-Declare @secondDate DateTime;
+Declare @firstDate varchar(10);
 
+--SELECT Top 1 convert(varchar(10), [Date], 126) AS 'Date'
+--FROM [ScanOpts].[dbo].[BollingerBands]
+--WHERE Symbol = 'A'
+--ORDER BY [Date] DESC
 
-DECLARE Cur1 CURSOR FOR
-SELECT convert(varchar(10), [Date], 126) AS 'Date'
+--SET @firstDate = (SELECT convert(varchar(10), SYSDATETIME(), 126))
+--SET @firstDate = convert(varchar(10), (DATEADD(day, -4, SYSDATETIME())), 126)
+--SELECT @firstDate
+
+SET @firstDate = (SELECT Top 1 convert(varchar(10), [Date], 126) AS 'Date'
 FROM [ScanOpts].[dbo].[BollingerBands]
 WHERE Symbol = 'A'
-AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -150, SYSDATETIME()), 126)
-ORDER BY 1 --DESC
-
-SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
-FROM [ScanOpts].[dbo].[BollingerBands]
-WHERE Symbol = 'A'
-AND convert(varchar(10), [Date], 126) > @firstDate
-
-
-OPEN Cur1
-FETCH NEXT FROM Cur1 INTO @firstDate;
-WHILE @@FETCH_STATUS = 0
-BEGIN
+ORDER BY [Date] DESC)
+--SELECT @firstDate
 
 	SELECT [Id] 
 		  ,[Symbol]
@@ -65,10 +60,5 @@ BEGIN
 	  AND [Volume] > 10000
 	  AND Symbol in (SELECT Symbol FROM #Table1)
 	  ORDER BY [StandardDeviation] desc
-  
-	  FETCH NEXT FROM Cur1 INTO @firstDate;
-	  DROP TABLE #Table1
-  END
-  CLOSE Cur1;
-  DEALLOCATE Cur1;
-  
+	  
+DROP TABLE #Table1

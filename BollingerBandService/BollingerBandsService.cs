@@ -71,6 +71,8 @@ namespace BollingerBandService
             var endDate = DateTime.Now.ToUnixTime();
             var startDate = DateTime.Now.AddDays(-200).ToUnixTime();
 
+            bulkLoadBollingerBands.TruncateTable("BollingerBands");
+
             try
             {
                 foreach (string symbol in symbols)
