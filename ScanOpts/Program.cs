@@ -32,8 +32,8 @@ namespace Core
 
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Start: {0}", DateTime.Now);
+            var start = DateTime.Now;
+            Console.WriteLine("Start: {0}", start);
 
             Console.WriteLine(String.Format("{0}{1} Initialize DIContainer{0}", Environment.NewLine, DateTime.Now));
             InitializeDiContainer();
@@ -73,12 +73,16 @@ namespace Core
 
             //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();
 
-            IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
-            Timer t1 = new Timer();
-            t1.Interval = (1000 * 60); // 1 minute
-            t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
-            t1.AutoReset = true;
+            //IOCContainer.Instance.Get<ILogger>().Info("Start timer...");
+            //Timer t1 = new Timer();
+            //t1.Interval = (1000 * 60); // 1 minute
+            //t1.Elapsed += new ElapsedEventHandler(t1_Elapsed);
+            //t1.AutoReset = true;
             //t1.Start();
+
+            var end = DateTime.Now;
+            Console.WriteLine("Start: {0}", start);
+            Console.WriteLine("End: {0}", end);
 
             Console.ReadKey();
         }
