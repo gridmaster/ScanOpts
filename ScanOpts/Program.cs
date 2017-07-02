@@ -59,7 +59,7 @@ namespace Core
             
             IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-            var symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
 
             IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
 

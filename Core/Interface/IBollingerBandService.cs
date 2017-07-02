@@ -10,5 +10,7 @@ namespace Core.Interface
         void RunBollingerBandsCheck(List<Symbols> symbols);
 
         void RunBollingerBandsCheck(List<string> symbols);
+
+        List<BollingerBands> CalculateBollingerBands(List<DailyQuotes> quotesList);
     }
 }

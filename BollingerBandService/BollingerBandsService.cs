@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MathNet.Numerics.Statistics;
 using Newtonsoft.Json;
 using Core;
 using Core.Business;
 using Core.Interface;
 using Core.ORMModels;
 using Core.BulkLoad;
-using Core.JsonKeyStatistics;
 using ORMService;
 
 namespace BollingerBandService
@@ -68,8 +63,9 @@ namespace BollingerBandService
 
             string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
 
+            // dates run from oldest to newest
             var endDate = DateTime.Now.ToUnixTime();
-            var startDate = DateTime.Now.AddDays(-200).ToUnixTime();
+            var startDate = DateTime.Now.AddDays(-150).ToUnixTime();
 
             bulkLoadBollingerBands.TruncateTable("BollingerBands");
 
@@ -77,7 +73,6 @@ namespace BollingerBandService
             {
                 foreach (string symbol in symbols)
                 {
-                    List<CallPuts> allCallPuts = new List<CallPuts>();
                     logger.InfoFormat("Get {0} page", symbol);
                     //if (symbol != "LENS")
                     //{
@@ -94,10 +89,7 @@ namespace BollingerBandService
 
                     if(SkipThisSymbol(quotesList)) continue;
 
-                    var bollingerBands= CalculateBollingerBands(symbol, quotesList);
-               
-
-                    int newId = 0;
+                    var bollingerBands= CalculateBollingerBands(quotesList);
                    
                     var result = BulkLoadBollingerBands(bollingerBands);
                 }
@@ -120,21 +112,8 @@ namespace BollingerBandService
         //    BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
         //}
 
-        #endregion Public Methods
 
-        #region Private Methods
-
-        private bool SkipThisSymbol(List<DailyQuotes> quotes)
-        {
-            if (quotes.Count < 80) return true;
-
-            DailyQuotes dq = quotes[quotes.Count - 1];
-            if (dq.Close < 3) return true;
-
-            return false;
-        }
-
-        private List<BollingerBands> CalculateBollingerBands(string symbol, List<DailyQuotes> quotesList)
+        public List<BollingerBands> CalculateBollingerBands(List<DailyQuotes> quotesList)
         {
             List<BollingerBands> bolbands = new List<BollingerBands>();
             double doubleOut = 0;
@@ -208,6 +187,20 @@ namespace BollingerBandService
             return bolbands;
         }
 
+        #endregion Public Methods
+
+        #region Private Methods
+
+        private bool SkipThisSymbol(List<DailyQuotes> quotes)
+        {
+            if (quotes.Count < 80) return true;
+
+            DailyQuotes dq = quotes[quotes.Count - 1];
+            if (dq.Close < 3) return true;
+
+            return false;
+        }
+
         private double CalculateStandardDeviation(List<BollingerBands> bolbands, double mean)
         {
             List<double> closeLessMean = new List<double>();
@@ -221,25 +214,6 @@ namespace BollingerBandService
 
             double StdDeveation = closeLessMeanX2.Sum()/20;
             return Math.Sqrt(StdDeveation);
-        }
-
-        private BollingerBands LoadBollingerBand(DailyQuotes quotesList)
-        {
-            var bb = new BollingerBands
-            {
-                //Symbol = quotesList.Symbol,
-                //Close = quotesList.Close.Value,
-                //Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList.Timestamp.Value),
-                //// Exchange = quotesList.Exchange,
-                //High = quotesList.High.Value,
-                ////Id = quotesList.Id,
-                ////InstrumentType
-                //Low = quotesList.Low.Value,
-                //Open = quotesList.Open.Value
-                ////Timestamp
-                ////Volume
-            };
-            return bb;
         }
 
         private bool BulkLoadBollingerBands(List<BollingerBands> bollband)
