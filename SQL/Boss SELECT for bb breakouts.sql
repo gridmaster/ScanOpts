@@ -1,12 +1,15 @@
 Declare @firstDate DateTime;
 Declare @secondDate DateTime;
-
+Declare @lowSDVA decimal(6,2)
+Declare @highSDVA decimal(6,2)
+SET @lowSDVA = .28
+SET @highSDVA = .30
 
 DECLARE Cur1 CURSOR FOR
 SELECT convert(varchar(10), [Date], 126) AS 'Date'
 FROM [ScanOpts].[dbo].[BollingerBands]
 WHERE Symbol = 'A'
-AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -150, SYSDATETIME()), 126)
+AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -120, SYSDATETIME()), 126)
 ORDER BY 1 --DESC
 
 SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
@@ -37,9 +40,9 @@ BEGIN
 	  INTO #Table1
 	  FROM [ScanOpts].[dbo].[BollingerBands]
 	  WHERE convert(varchar(10), [Date], 126) = @firstDate
-	  AND ([Low] > [SMA20] or [Low] = [SMA20])
+	  AND ([Close] > [SMA20]) --or [Low] = [SMA20])
 	  AND [Close] < [UpperBand]
-	  AND StandardDeviation < 0.30
+	  AND StandardDeviation < @lowSDVA
 	    
 	  SELECT [Id] 
 		  ,[Symbol]
@@ -61,7 +64,7 @@ BEGIN
 													WHERE Symbol = 'A'
 													AND convert(varchar(10), [Date], 126) > @firstDate)
 	  AND [Close] > [UpperBand]
-	  AND [StandardDeviation] > .40
+	  AND [StandardDeviation] > @highSDVA
 	  AND [Volume] > 10000
 	  AND Symbol in (SELECT Symbol FROM #Table1)
 	  ORDER BY [StandardDeviation] desc
