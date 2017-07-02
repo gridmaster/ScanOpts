@@ -1,21 +1,21 @@
---CREATE TABLE [dbo].[TempBollingerBands](
---	[Id] [int] IDENTITY(1,1) NOT NULL,
---	[Symbol] [varchar](60) NULL,
---	[Date] [datetime] NOT NULL,
---	[Open] [decimal](18, 2) NULL,
---	[High] [decimal](18, 2) NULL,
---	[Low] [decimal](18, 2) NULL,
---	[Close] [decimal](18, 2) NULL,
---	[SMA20] [decimal](18, 2) NULL,
---	[StandardDeviation] [decimal](18, 2) NULL,
---	[UpperBand] [decimal](18, 2) NULL,
---	[LowerBand] [decimal](18, 2) NULL,
---	[BandRatio] [decimal](18, 2) NULL,
---	[Volume] [decimal](18, 2) NULL,
---	[Timestamp] [int] NULL
---)
---GO
- 
+CREATE TABLE [dbo].[TempBollingerBands](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Symbol] [varchar](60) NULL,
+	[Date] [datetime] NOT NULL,
+	[Open] [decimal](18, 2) NULL,
+	[High] [decimal](18, 2) NULL,
+	[Low] [decimal](18, 2) NULL,
+	[Close] [decimal](18, 2) NULL,
+	[SMA20] [decimal](18, 2) NULL,
+	[StandardDeviation] [decimal](18, 2) NULL,
+	[UpperBand] [decimal](18, 2) NULL,
+	[LowerBand] [decimal](18, 2) NULL,
+	[BandRatio] [decimal](18, 2) NULL,
+	[Volume] [decimal](18, 2) NULL,
+	[Timestamp] [int] NULL
+)
+GO
+
 Declare @firstDate DateTime;
 Declare @secondDate DateTime;
 Declare @lowSDVA decimal(6,2)
@@ -63,9 +63,9 @@ BEGIN
 	  AND StandardDeviation < @lowSDVA
 	    
 	  --SET IDENTITY_INSERT [dbo].[TempBollingerBands].[Id] ON;  
-	 -- INSERT INTO [dbo].[TempBollingerBands]
-	  SELECT [Id] 
-		   ,[Symbol]
+	  INSERT INTO [dbo].[TempBollingerBands]
+	  SELECT --[Id] 
+		   [Symbol]
 		  ,[Date]
 		  ,[Open]
 		  ,[High]
@@ -95,5 +95,5 @@ BEGIN
   CLOSE Cur1;
   DEALLOCATE Cur1;
   
-  --SELECT * FROM [dbo].[TempBollingerBands]
-  --DROP TABLE [dbo].[TempBollingerBands]
+  SELECT * FROM [dbo].[TempBollingerBands]
+  DROP TABLE [dbo].[TempBollingerBands]
