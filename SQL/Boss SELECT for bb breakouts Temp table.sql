@@ -16,6 +16,7 @@ CREATE TABLE [dbo].[TempBollingerBands](
 )
 GO
 
+
 Declare @firstDate DateTime;
 Declare @secondDate DateTime;
 Declare @lowSDVA decimal(6,2)
@@ -30,10 +31,10 @@ WHERE Symbol = 'A'
 AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -120, SYSDATETIME()), 126)
 ORDER BY 1 --DESC
 
-SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
-FROM [ScanOpts].[dbo].[BollingerBands]
-WHERE Symbol = 'A'
-AND convert(varchar(10), [Date], 126) > @firstDate
+--SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
+--FROM [ScanOpts].[dbo].[BollingerBands]
+--WHERE Symbol = 'A'
+--AND convert(varchar(10), [Date], 126) > @firstDate
 
 
 OPEN Cur1
@@ -60,12 +61,11 @@ BEGIN
 	  WHERE convert(varchar(10), [Date], 126) = @firstDate
 	  AND ([Close] > [SMA20]) --or [Low] = [SMA20])
 	  AND [Close] < [UpperBand]
-	  AND StandardDeviation < @lowSDVA
+	  AND StandardDeviation < @lowSDVA	    
 	    
-	  --SET IDENTITY_INSERT [dbo].[TempBollingerBands].[Id] ON;  
-	  INSERT INTO [dbo].[TempBollingerBands]
-	  SELECT --[Id] 
-		   [Symbol]
+	    
+	  SELECT [Id] 
+		  ,[Symbol]
 		  ,[Date]
 		  ,[Open]
 		  ,[High]
@@ -95,5 +95,3 @@ BEGIN
   CLOSE Cur1;
   DEALLOCATE Cur1;
   
-  SELECT * FROM [dbo].[TempBollingerBands]
-  DROP TABLE [dbo].[TempBollingerBands]
