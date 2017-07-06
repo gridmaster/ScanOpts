@@ -21,14 +21,16 @@ Declare @firstDate DateTime;
 Declare @secondDate DateTime;
 Declare @lowSDVA decimal(6,2)
 Declare @highSDVA decimal(6,2)
+DECLARE @movement decimal(6,2)
 SET @lowSDVA = .28
 SET @highSDVA = .30
+SET @movement = 1.30
 
 DECLARE Cur1 CURSOR FOR
 SELECT convert(varchar(10), [Date], 126) AS 'Date'
 FROM [ScanOpts].[dbo].[BollingerBands]
 WHERE Symbol = 'A'
-AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -120, SYSDATETIME()), 126)
+AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -10, SYSDATETIME()), 126)
 ORDER BY 1 --DESC
 
 --SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
@@ -63,31 +65,22 @@ BEGIN
 	  AND [Close] < [UpperBand]
 	  AND StandardDeviation < @lowSDVA	    
 	    
-	    
-	  SELECT [Id] 
-		  ,[Symbol]
-		  ,[Date]
-		  ,[Open]
-		  ,[High]
-		  ,[Low]
-		  ,[Close]
-		  ,[SMA20]
-		  ,[StandardDeviation]
-		  ,[UpperBand]
-		  ,[LowerBand]
-		  ,[BandRatio]
-		  ,[Volume]
-		  ,[Timestamp]
-	  FROM [ScanOpts].[dbo].[BollingerBands] b
-	  WHERE convert(varchar(10), [Date], 126) = (SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
+	  SET @secondDate = (SELECT TOP 1 convert(varchar(10), [Date], 126) AS 'Date'
 													FROM [ScanOpts].[dbo].[BollingerBands]
 													WHERE Symbol = 'A'
 													AND convert(varchar(10), [Date], 126) > @firstDate)
-	  AND [Close] > [UpperBand]
-	  AND [StandardDeviation] > @highSDVA
-	  AND [Volume] > 10000
-	  AND Symbol in (SELECT Symbol FROM #Table1)
-	  ORDER BY [StandardDeviation] desc
+	  SELECT @firstDate	  
+	  SELECT @secondDate
+	  
+	  SELECT b.[StandardDeviation], t.[StandardDeviation], b.[StandardDeviation] / t.[StandardDeviation] AS 'Movement', *
+	  FROM [ScanOpts].[dbo].[BollingerBands] b
+	  JOIN #Table1 t on t.Symbol = b.Symbol AND b.[Date] = @firstDate
+	  WHERE convert(varchar(10), b.[Date], 126) = @secondDate
+	  AND t.[Close] > t.[UpperBand]
+	  AND b.[StandardDeviation] / t.[StandardDeviation] > @movement
+	  AND t.[Volume] > 10000
+	  --AND t.Symbol in (SELECT Symbol FROM #Table1)
+	  --ORDER BY [StandardDeviation] desc
   
 	  FETCH NEXT FROM Cur1 INTO @firstDate;
 	  DROP TABLE #Table1

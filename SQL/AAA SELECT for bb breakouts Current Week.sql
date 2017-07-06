@@ -6,9 +6,9 @@ Declare @highSDVA decimal(6,2)
 DECLARE @movement decimal(6,2)
 SET @lowSDVA = .28
 SET @highSDVA = .30
-SET @movement = 1.20
+SET @movement = 1.30
 
-SELECT TOP 2 convert(varchar(10), [Date], 126) AS 'Date'
+SELECT TOP 4 convert(varchar(10), [Date], 126) AS 'Date'
 INTO #dates
 FROM [ScanOpts].[dbo].[BollingerBands]
 WHERE Symbol = 'A'
@@ -16,9 +16,10 @@ AND convert(varchar(10), [Date], 126) > convert(varchar(10), DATEADD(day, -130, 
 ORDER BY 1 DESC
 
 SET @firstDate = (SELECT TOP 1 [Date] FROM #dates ORDER BY [Date])
-SET @secondDate = (SELECT TOP 1 [Date] FROM #dates ORDER BY [Date] DESC)
---SELECT @firstDate
---SELECT @secondDate
+DELETE #dates WHERE [Date] = @firstDate
+SET @secondDate = (SELECT TOP 1 [Date] FROM #dates ORDER BY [Date])
+SELECT @firstDate
+SELECT @secondDate
 
 DROP TABLE #dates
 

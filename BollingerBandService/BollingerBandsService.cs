@@ -62,10 +62,11 @@ namespace BollingerBandService
             logger.InfoFormat("Start - RunBollingerBandsCheck");
 
             string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+            //string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1wk&events=div%7Csplit&corsDomain=finance.yahoo.com";
 
             // dates run from oldest to newest
             var endDate = DateTime.Now.ToUnixTime();
-            var startDate = DateTime.Now.AddDays(-150).ToUnixTime();
+            var startDate = DateTime.Now.AddMonths(-12).ToUnixTime();
 
             bulkLoadBollingerBands.TruncateTable("BollingerBands");
 
@@ -74,7 +75,7 @@ namespace BollingerBandService
                 foreach (string symbol in symbols)
                 {
                     logger.InfoFormat("Get {0} page", symbol);
-                    //if (symbol != "LENS")
+                    //if (symbol != "COL")
                     //{
                     //    continue;
                     //}
@@ -82,8 +83,15 @@ namespace BollingerBandService
 
                     if (sPage.Contains("(404) Not Found")) continue;
                     if (sPage.Contains("(400) Bad Request")) continue;
-
-                    Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
+                    Core.JsonQuote.JsonResult symbolHistory = new Core.JsonQuote.JsonResult();
+                    try {
+                        symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
+                    }
+                    catch(Exception ex)
+                    {
+                        logger.Fatal("RunKeyStatisticsCollection: {0}", ex);
+                        logger.InfoFormat("Page: {0}", sPage);
+                    }
                     if (symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose == null) continue;
                     List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
 

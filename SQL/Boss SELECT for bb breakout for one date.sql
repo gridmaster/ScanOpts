@@ -1,23 +1,16 @@
 Declare @firstDate varchar(10);
 
---SELECT Top 1 convert(varchar(10), [Date], 126) AS 'Date'
---FROM [ScanOpts].[dbo].[BollingerBands]
---WHERE Symbol = 'A'
---ORDER BY [Date] DESC
-
---SET @firstDate = (SELECT convert(varchar(10), SYSDATETIME(), 126))
---SET @firstDate = convert(varchar(10), (DATEADD(day, -4, SYSDATETIME())), 126)
---SELECT @firstDate
 Declare @lowSDVA decimal(6,2)
 Declare @highSDVA decimal(6,2)
-SET @lowSDVA = .25
-SET @highSDVA = .25
+Declare @gainPercent decimal(6,2)
+SET @lowSDVA = .30
+SET @highSDVA = .40
+SET @gainPercent = .130
 
 SET @firstDate = (SELECT Top 1 convert(varchar(10), [Date], 126) AS 'Date'
 FROM [ScanOpts].[dbo].[BollingerBands]
 WHERE Symbol = 'A'
 ORDER BY [Date] DESC)
---SELECT @firstDate
 
 	SELECT [Id] 
 		  ,[Symbol]
@@ -39,7 +32,9 @@ ORDER BY [Date] DESC)
 	 -- AND ([Low] > [SMA20] or [Low] = [SMA20])
 	  AND [Close] > [SMA20]
 	  AND [Close] < [UpperBand]
-	  AND StandardDeviation < @lowSDVA
+	  --AND StandardDeviation < @lowSDVA
+	    
+	  SET @lowSDVA = (	SELECT TOP 1 [StandardDeviation] FROM #Table1)
 	    
 	  SELECT [Id] 
 		  ,[Symbol]
@@ -50,6 +45,8 @@ ORDER BY [Date] DESC)
 		  ,[Close]
 		  ,[SMA20]
 		  ,[StandardDeviation]
+  		  ,@lowSDVA AS 'Low'
+		  ,@gainPercent AS 'WTF'
 		  ,[UpperBand]
 		  ,[LowerBand]
 		  ,[BandRatio]
@@ -61,7 +58,7 @@ ORDER BY [Date] DESC)
 													WHERE Symbol = 'A'
 													AND convert(varchar(10), [Date], 126) > @firstDate)
 	  AND [Close] > [UpperBand]
-	  AND [StandardDeviation] > @highSDVA
+	  AND [StandardDeviation] / @lowSDVA > @gainPercent
 	  AND [Volume] > 10000
 	  AND Symbol in (SELECT Symbol FROM #Table1)
 	  ORDER BY [StandardDeviation] desc

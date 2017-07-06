@@ -12,6 +12,9 @@ SELECT [Id]
       ,[BandRatio]
       ,[Volume]
       ,[Timestamp]
-  FROM [ScanOpts].[dbo].[BollingerBands]
-  WHERE Symbol = 'A'
-  ORDER BY Date desc
+--INTO SaveBBsWeeks
+  FROM [ScanOpts].[dbo].[SaveBBsWeeks]
+ WHERE Symbol = 'AMZN'
+ --ORDER by Date DESC
+ 
+ 
