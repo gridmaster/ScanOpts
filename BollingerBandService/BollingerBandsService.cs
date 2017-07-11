@@ -66,7 +66,7 @@ namespace BollingerBandService
 
             // dates run from oldest to newest
             var endDate = DateTime.Now.ToUnixTime();
-            var startDate = DateTime.Now.AddMonths(-12).ToUnixTime();
+            var startDate = DateTime.Now.AddMonths(-18).ToUnixTime();
 
             bulkLoadBollingerBands.TruncateTable("BollingerBands");
 
@@ -75,7 +75,7 @@ namespace BollingerBandService
                 foreach (string symbol in symbols)
                 {
                     logger.InfoFormat("Get {0} page", symbol);
-                    //if (symbol != "COL")
+                    //if (symbol != "ABEOW")
                     //{
                     //    continue;
                     //}
@@ -83,6 +83,7 @@ namespace BollingerBandService
 
                     if (sPage.Contains("(404) Not Found")) continue;
                     if (sPage.Contains("(400) Bad Request")) continue;
+                    if (sPage.Contains("(502) Bad Gateway.")) continue;
                     Core.JsonQuote.JsonResult symbolHistory = new Core.JsonQuote.JsonResult();
                     try {
                         symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
@@ -201,7 +202,7 @@ namespace BollingerBandService
 
         private bool SkipThisSymbol(List<DailyQuotes> quotes)
         {
-            if (quotes.Count < 80) return true;
+            if (quotes.Count < 30) return true;
 
             DailyQuotes dq = quotes[quotes.Count - 1];
             if (dq.Close < 3) return true;
