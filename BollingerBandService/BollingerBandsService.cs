@@ -60,13 +60,22 @@ namespace BollingerBandService
         public void RunBollingerBandsCheck(List<string> symbols)
         {
             logger.InfoFormat("Start - RunBollingerBandsCheck");
+            bool runDaily = false;
+            string uriString = string.Empty;
+            var endDate = DateTime.Now.ToUnixTime();
+            var startDate = endDate;
 
-            string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
-            //string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1wk&events=div%7Csplit&corsDomain=finance.yahoo.com";
+            if (runDaily)
+            {
+                uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+                startDate = DateTime.Now.AddMonths(-18).ToUnixTime();
+            }
+            else { 
+                uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1wk&events=div%7Csplit&corsDomain=finance.yahoo.com";
+                startDate = DateTime.Now.AddMonths(-36).ToUnixTime();
+            }
 
             // dates run from oldest to newest
-            var endDate = DateTime.Now.ToUnixTime();
-            var startDate = DateTime.Now.AddMonths(-18).ToUnixTime();
 
             bulkLoadBollingerBands.TruncateTable("BollingerBands");
 

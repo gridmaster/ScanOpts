@@ -7,7 +7,7 @@ DECLARE @movement decimal(6,2)
 SET @lowSDVA = .28
 SET @highSDVA = .30
 SET @movement = 1.20
-
+ 
 SELECT TOP 2 convert(varchar(10), [Date], 126) AS 'Date'
 INTO #dates
 FROM [ScanOpts].[dbo].[BollingerBands]
@@ -43,7 +43,7 @@ DROP TABLE #dates
 	  AND [Close] < [UpperBand]
 	  AND StandardDeviation < @lowSDVA	    
 	  
-	  SELECT b.[StandardDeviation], t.[StandardDeviation], b.[StandardDeviation] / t.[StandardDeviation] AS 'Movement', t.*, b.*
+	  SELECT b.Symbol, b.Date, b.[StandardDeviation], t.[StandardDeviation], b.[StandardDeviation] / t.[StandardDeviation] AS 'Movement', t.*, b.*
 	  FROM [ScanOpts].[dbo].[BollingerBands] b
 	  JOIN #Table1 t on t.Symbol = b.Symbol 
 	  WHERE convert(varchar(10), b.[Date], 126) = @secondDate

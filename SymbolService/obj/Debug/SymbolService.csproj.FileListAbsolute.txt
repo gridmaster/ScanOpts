@@ -16,24 +16,6 @@ C:\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
 C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.dll
 C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
 C:\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.xml
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
-C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
@@ -52,3 +34,21 @@ C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolServic
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
 C:\Users\jim.ballard\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Core.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\ORMService.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.xml
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
+C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
