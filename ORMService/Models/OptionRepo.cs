@@ -7,7 +7,7 @@ using Core.ORMModels;
 
 namespace ORMService.Models
 {
-    public class OptionRepo : IRepository<Option>
+    public class OptionRepo //: IRepository<Option>
     {
         public void Add(Option entity)
         {

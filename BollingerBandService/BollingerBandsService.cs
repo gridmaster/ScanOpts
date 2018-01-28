@@ -20,7 +20,12 @@ namespace BollingerBandService
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
         private DailyQuotesORMService dailyQuotesORMService = null;
         private BulkLoadBollingerBands bulkLoadBollingerBands = null;
+        private bool _runDaily = true;
         #endregion Private properties
+
+        #region Public properties
+
+        #endregion Public properties
 
         #region Constructors
 
@@ -60,19 +65,19 @@ namespace BollingerBandService
         public void RunBollingerBandsCheck(List<string> symbols)
         {
             logger.InfoFormat("Start - RunBollingerBandsCheck");
-            bool runDaily = false;
+  
             string uriString = string.Empty;
             var endDate = DateTime.Now.ToUnixTime();
             var startDate = endDate;
 
-            if (runDaily)
+            if (_runDaily)
             {
                 uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
-                startDate = DateTime.Now.AddMonths(-18).ToUnixTime();
+                startDate = DateTime.Now.AddMonths(-36).ToUnixTime();
             }
             else { 
                 uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1wk&events=div%7Csplit&corsDomain=finance.yahoo.com";
-                startDate = DateTime.Now.AddMonths(-36).ToUnixTime();
+                startDate = DateTime.Now.AddYears(-10).ToUnixTime();
             }
 
             // dates run from oldest to newest
@@ -99,7 +104,7 @@ namespace BollingerBandService
                     }
                     catch(Exception ex)
                     {
-                        logger.Fatal("RunKeyStatisticsCollection: {0}", ex);
+                        logger.Fatal("RunBollingerBandsCheck: {0}", ex);
                         logger.InfoFormat("Page: {0}", sPage);
                     }
                     if (symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose == null) continue;
@@ -107,9 +112,11 @@ namespace BollingerBandService
 
                     if(SkipThisSymbol(quotesList)) continue;
 
-                    var bollingerBands= CalculateBollingerBands(quotesList);
-                   
-                    var result = BulkLoadBollingerBands(bollingerBands);
+                    var bollingerBands = CalculateBollingerBands(quotesList);
+                    
+                    var result = false;
+                    if ( bollingerBands != null)
+                        result = BulkLoadBollingerBands(bollingerBands);
                 }
             }
             catch (Exception ex)
@@ -130,69 +137,119 @@ namespace BollingerBandService
         //    BaseObject.RootObject bo = JsonConvert.DeserializeObject<BaseObject.RootObject>(sPage);
         //}
 
+        public void RunDaily(bool value)
+        {
+            _runDaily = value;
+        }
 
         public List<BollingerBands> CalculateBollingerBands(List<DailyQuotes> quotesList)
         {
             List<BollingerBands> bolbands = new List<BollingerBands>();
-            double doubleOut = 0;
+            //double doubleOut = 0;
+            decimal decimalOut = 0;
             int intOut = 0;
-            List<double> current20 = new List<double>();
+            List<decimal> current20 = new List<decimal>();
+            List<decimal> current50 = new List<decimal>();
+            List<decimal> current200 = new List<decimal>();
 
             for (int i = 0; i < 20; i++)
             {
                 BollingerBands bb = new BollingerBands();
 
                 bb.Symbol = quotesList[i].Symbol;
-                double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
-                bb.Close = doubleOut;
-                current20.Add(doubleOut);
+                decimal.TryParse(quotesList[i].Close.ToString(), out decimalOut);
+                bb.Close = decimalOut;
+                current20.Add(decimalOut);
+                current50.Add(decimalOut);
+                current200.Add(decimalOut);
                 bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[i].Timestamp.Value);
-                double.TryParse(quotesList[i].High.ToString(), out doubleOut);
-                bb.High = doubleOut;
-                double.TryParse(quotesList[i].Low.ToString(), out doubleOut);
-                bb.Low = doubleOut;
-                double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
-                bb.Open = doubleOut;
+                decimal.TryParse(quotesList[i].High.ToString(), out decimalOut);
+                bb.High = decimalOut;
+                decimal.TryParse(quotesList[i].Low.ToString(), out decimalOut);
+                bb.Low = decimalOut;
+                decimal.TryParse(quotesList[i].Open.ToString(), out decimalOut);
+                bb.Open = decimalOut;
                 int.TryParse(quotesList[i].Volume.ToString(), out intOut);
                 bb.Volume = intOut;
+                if(intOut == 0) return null;
 
                 bolbands.Add(bb);
             };
             bolbands[19].SMA20 = current20.Sum() / 20;
+            bolbands[19].SMA50 = 0;
+            bolbands[19].SMA200 = 0;
 
-            double sd = CalculateStandardDeviation(bolbands, bolbands[19].SMA20);
+            decimal sd = CalculateStandardDeviation(bolbands, bolbands[19].SMA20);
             bolbands[19].StandardDeviation = sd;
             bolbands[19].UpperBand = bolbands[19].SMA20 + (sd * 2);
             bolbands[19].LowerBand = bolbands[19].SMA20 - (sd * 2);
             bolbands[19].BandRatio = (1 - (bolbands[19].LowerBand/bolbands[19].UpperBand))*100;
 
-            for( int c = 0, i = 20; i < quotesList.Count(); i++)
+            for(int i=20; i<50; i++)
+            {
+                current50.Add(0);
+                current200.Add(0);
+            }
+            for (int i = 50; i < 200; i++)
+            {
+                 current200.Add(0);
+            }
+
+            for (int c20 = 0, c50 = 20, c200 = 20, i = 20; i < quotesList.Count(); i++)
             {
                 BollingerBands bb = new BollingerBands();
 
                 bb.Symbol = quotesList[i].Symbol;
-                double.TryParse(quotesList[i].Close.ToString(), out doubleOut);
-                bb.Close = doubleOut;
+                decimal.TryParse(quotesList[i].Close.ToString(), out decimalOut);
+                bb.Close = decimalOut;
+
+                if (decimalOut == 0)
+                {
+                    var wtf = decimalOut;
+                    wtf++;
+                }
 
                 if (i%20 == 0)
                 {
-                    c = 0;
+                    c20 = 0;
                 }
-                current20[c++] = doubleOut;
-                
+                if (i % 50 == 0)
+                {
+                    c50 = 0;
+                }
+                if (i % 200 == 0)
+                {
+                    c200 = 0;
+                }
+
+                if (i>28)
+                {
+                    var wtf = decimalOut;
+                    wtf++;
+                }
+
+                current20[c20++] = decimalOut;
+                current50[c50++] = decimalOut;
+                current200[c200++] = decimalOut;
+
                 bb.Date = UnixTimeConverter.UnixTimeStampToDateTime(quotesList[i].Timestamp.Value);
-                double.TryParse(quotesList[i].High.ToString(), out doubleOut);
-                bb.High = doubleOut;
-                double.TryParse(quotesList[i].Low.ToString(), out doubleOut);
-                bb.Low = doubleOut;
-                double.TryParse(quotesList[i].Open.ToString(), out doubleOut);
-                bb.Open = doubleOut;
-                double.TryParse(quotesList[i - 20].UnadjClose.ToString(), out doubleOut);
+                decimal.TryParse(quotesList[i].High.ToString(), out decimalOut);
+                bb.High = decimalOut;
+                decimal.TryParse(quotesList[i].Low.ToString(), out decimalOut);
+                bb.Low = decimalOut;
+                decimal.TryParse(quotesList[i].Open.ToString(), out decimalOut);
+                bb.Open = decimalOut;
+                decimal.TryParse(quotesList[i - 20].UnadjClose.ToString(), out decimalOut);
 
                 int.TryParse(quotesList[i].Volume.ToString(), out intOut);
                 bb.Volume = intOut;
+                if (intOut == 0) return null;
 
                 bb.SMA20 = current20.Sum() / 20;
+                if (i > 48)
+                    bb.SMA50 = current50.Sum() / 50;
+                if (i > 198)
+                    bb.SMA200 = current200.Sum() / 200;
                 bolbands.Add(bb);
                 
                 sd = CalculateStandardDeviation(bolbands, bb.SMA20);
@@ -219,19 +276,25 @@ namespace BollingerBandService
             return false;
         }
 
-        private double CalculateStandardDeviation(List<BollingerBands> bolbands, double mean)
+        private decimal CalculateStandardDeviation(List<BollingerBands> bolbands, decimal mean)
         {
-            List<double> closeLessMean = new List<double>();
-            List<double> closeLessMeanX2 = new List<double>();
+            List<decimal> closeLessMean = new List<decimal>();
+            List<decimal> closeLessMeanX2 = new List<decimal>();
+            decimal decimalCast;
+            double doubleCast;
 
-            for(int c = 0, i = bolbands.Count-20; i< bolbands.Count; i++)
+            for (int c = 0, i = bolbands.Count-20; i< bolbands.Count; i++)
             {
                 closeLessMean.Add(bolbands[i].Close - mean);
-                closeLessMeanX2.Add(Math.Pow(closeLessMean[c++], 2));
+                doubleCast = (double)closeLessMean[c++];
+                decimalCast = (decimal)Math.Pow(doubleCast, 2);
+                closeLessMeanX2.Add(decimalCast);
             }
 
-            double StdDeveation = closeLessMeanX2.Sum()/20;
-            return Math.Sqrt(StdDeveation);
+            double StdDeveation = (double)closeLessMeanX2.Sum()/20;
+            doubleCast = Math.Sqrt(StdDeveation);
+
+            return (decimal)doubleCast;
         }
 
         private bool BulkLoadBollingerBands(List<BollingerBands> bollband)

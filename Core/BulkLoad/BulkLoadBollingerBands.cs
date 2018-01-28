@@ -9,7 +9,7 @@ namespace Core.BulkLoad
 {
     public class BulkLoadBollingerBands : BaseBulkLoad, IDisposable
     {
-        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Open", "High", "Low", "Close", "SMA20", "StandardDeviation", "UpperBand", "LowerBand", "BandRatio", "Volume" };
+        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Open", "High", "Low", "Close", "SMA20", "SMA50", "SMA200", "StandardDeviation", "UpperBand", "LowerBand", "BandRatio", "Volume" };
 
         public BulkLoadBollingerBands(ILogger logger) : base(logger, ColumnNames)
         {
@@ -19,7 +19,8 @@ namespace Core.BulkLoad
         {
             foreach (var value in dStats)
             {
-                var sValue = value.Symbol + "^" + value.Date + "^" + value.Open + "^" + value.High + "^" + value.Low + "^" + value.Close + "^" + value.SMA20
+                var sValue = value.Symbol + "^" + value.Date + "^" + value.Open + "^" + value.High + "^" + value.Low + "^" + value.Close
+                    + "^" + value.SMA20 + "^" + value.SMA50 + "^" + value.SMA200
                     + "^" + value.StandardDeviation + "^" + value.UpperBand + "^" + value.LowerBand + "^" + value.BandRatio + "^" + value.Volume;
 
                 DataRow row = dt.NewRow();

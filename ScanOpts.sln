@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Express 14 for Windows Desktop
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanOpts", "ScanOpts\ScanOpts.csproj", "{A63BE4CE-8587-4FAC-B4CC-B1D30FD477F3}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -40,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{F2164640-A33D-48C4-B3A3-F19F3FA3554E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BollingerBandService", "BollingerBandService\BollingerBandService.csproj", "{91AB1F97-D8F9-49E6-8018-4B56E0D6DDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticsService", "AnalyticsService\AnalyticsService.csproj", "{878FFB1D-12AE-4054-88D8-4E8F06162326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,14 @@ Global
 		{91AB1F97-D8F9-49E6-8018-4B56E0D6DDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91AB1F97-D8F9-49E6-8018-4B56E0D6DDCA}.Release|x86.ActiveCfg = Release|Any CPU
 		{91AB1F97-D8F9-49E6-8018-4B56E0D6DDCA}.Release|x86.Build.0 = Release|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Debug|x86.Build.0 = Debug|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|x86.ActiveCfg = Release|Any CPU
+		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -65,13 +65,17 @@
     <Compile Include="BulkLoad\BulkLoadHolders.cs" />
     <Compile Include="BulkLoad\BulkLoadSplits.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
+    <Compile Include="BusinessModels\SlopeAndBBResults.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
+    <Compile Include="Interface\IAnalyticsORMService.cs" />
+    <Compile Include="Interface\IAnalyticsService.cs" />
     <Compile Include="Interface\IBollingerBandService.cs" />
     <Compile Include="Interface\ICallPutORMService.cs" />
     <Compile Include="Interface\IDailyQuotesORMService.cs" />
     <Compile Include="Interface\IExchangeORMService.cs" />
     <Compile Include="Interface\IHistoryService.cs" />
+    <Compile Include="Interface\IBollingerBandORMService.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IServices.cs" />
     <Compile Include="Interface\ISymbolService.cs" />

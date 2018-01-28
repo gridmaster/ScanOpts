@@ -57,11 +57,17 @@ namespace Core
 
             /*********************************************************************************/
             
-            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
+            
+           // IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+          //  List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
 
-            IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
+            //IOCContainer.Instance.Get<IBollingerBandService>().RunDaily(false);
+            //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
+
+
+            var bfd = IOCContainer.Instance.Get<IBollingerBandORMService>().GetSymbolData("NVDA");
+
 
             //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 

@@ -26,6 +26,7 @@ namespace ScanOpts.DIModule
             Bind<ISymbolService>().To<SymbolService>().InSingletonScope();
             Bind<IExchangeORMService>().To<ExchangeORMService>().InSingletonScope();
             Bind<IBollingerBandService>().To<BollingerBandsService>().InSingletonScope();
+            Bind<IBollingerBandORMService>().To<BollingerBandORMService>().InSingletonScope();
         }
     }
 }

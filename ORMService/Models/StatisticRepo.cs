@@ -6,7 +6,7 @@ using ORMService.Contracts;
 
 namespace ORMService.Models
 {
-    class StatisticRepo : IRepository<Statistics>
+    class StatisticRepo //: IRepository<Statistics>
     {
         public void Add(Statistics entity)
         {            
@@ -33,9 +33,9 @@ namespace ORMService.Models
             throw new NotImplementedException();
         }
 
-        Statistics IRepository<Statistics>.Single(Expression<Func<Statistics, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
+        //Statistics IRepository<Statistics>.Single(Expression<Func<Statistics, bool>> filter)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

@@ -4,8 +4,8 @@ Declare @secondDate DateTime;
 Declare @lowSDVA decimal(6,2)
 Declare @highSDVA decimal(6,2)
 DECLARE @movement decimal(6,2)
-SET @lowSDVA = .28
-SET @highSDVA = .30
+SET @lowSDVA = .30
+SET @highSDVA = .40
 SET @movement = 1.20
  
 SELECT TOP 2 convert(varchar(10), [Date], 126) AS 'Date'

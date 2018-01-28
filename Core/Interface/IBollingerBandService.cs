@@ -5,6 +5,8 @@ namespace Core.Interface
 {
     public interface IBollingerBandService
     {
+        void RunDaily(bool value);
+
         void RunBollingerBandsCheck();
 
         void RunBollingerBandsCheck(List<Symbols> symbols);
