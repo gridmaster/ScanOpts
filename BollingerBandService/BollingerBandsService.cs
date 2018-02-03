@@ -77,7 +77,7 @@ namespace BollingerBandService
             }
             else { 
                 uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={1}&period2={2}&interval=1wk&events=div%7Csplit&corsDomain=finance.yahoo.com";
-                startDate = DateTime.Now.AddYears(-10).ToUnixTime();
+                startDate = DateTime.Now.AddYears(-12).ToUnixTime();
             }
 
             // dates run from oldest to newest
@@ -106,7 +106,9 @@ namespace BollingerBandService
                     {
                         logger.Fatal("RunBollingerBandsCheck: {0}", ex);
                         logger.InfoFormat("Page: {0}", sPage);
+                        continue;
                     }
+
                     if (symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose == null) continue;
                     List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
 

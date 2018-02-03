@@ -67,7 +67,7 @@ namespace Core
             //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
 
 
-            var bfd = IOCContainer.Instance.Get<IBollingerBandORMService>().GetSymbolData("NVDA");
+            //var bfd = IOCContainer.Instance.Get<IBollingerBandORMService>().GetSymbolData("NVDA");
 
             List<SlopeAndBBCounts> wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising50SMATrends(symbols);
 

@@ -62,7 +62,7 @@ namespace DataAnalyticsService
             {
                 foreach (string symbol in symbols)
                 {
-                    if (symbol != "SBS") continue;
+                    if (symbol != "CCCL") continue;
 
                     logger.InfoFormat("Processing symbol {0}", symbol);
                     IEnumerable<BollingerBands> eBollingerBands = bollingerBandORMService.GetSymbolData(symbol);
@@ -84,14 +84,6 @@ namespace DataAnalyticsService
                     int CountUpperBand = 0;
                     int CountLowerBand = 0;
                     int CountBandRatio = 0;
-                    //decimal RatioClose = 0;
-                    //decimal Ratio20 = 0;
-                    //decimal Ratio50 = 0;
-                    //decimal Ratio200 = 0;
-                    //decimal RatioStandardDeviation = 0;
-                    //decimal RatioUpperBand = 0;
-                    //decimal RatioLowerBand = 0;
-                    //decimal RatioBandRatio = 0;
 
                     sbbResults = new List<SlopeAndBBCounts>();
 
@@ -159,15 +151,6 @@ namespace DataAnalyticsService
                         if (sbbr.SlopeLowerBand <= 0) CountLowerBand = 0;
                         if (sbbr.SlopeBandRatio <= 0) CountBandRatio = 0;
 
-                        //if (sbbr.RatioClose < 0) RatioClose = 0;
-                        //if (sbbr.Ratio20 < 0) Ratio20 = 0;
-                        //if (sbbr.Ratio50 < 0) Ratio50 = 0;
-                        //if (sbbr.Ratio200 < 0) Ratio200 = 0;
-                        //if (sbbr.RatioStandardDeviation < 0) RatioStandardDeviation = 0;
-                        //if (sbbr.RatioUpperBand < 0) RatioUpperBand = 0;
-                        //if (sbbr.RatioLowerBand < 0) RatioLowerBand = 0;
-                        //if (sbbr.RatioBandRatio < 0) RatioBandRatio = 0;
-
                         if (start > 18)
                         {
                             lastSMA20 = item.SMA20;
@@ -182,6 +165,9 @@ namespace DataAnalyticsService
                             lastSMA200 = item.SMA200;
                         lastClose = sbbr.Close;
                     }
+
+                    //if (sbbResults.Count > 0)
+                    //    start = start;
 
                     BulkLoadSlopeAndBBCounts(sbbResults);
                 }

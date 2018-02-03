@@ -29,10 +29,10 @@ namespace ORMService
             IEnumerable<BollingerBands> symbols = unitOfWork.BollingerBandsRepository.Get(s => s.Symbol == symbol);
             //BollingerBands wtf = unitOfWork.BollingerBandsRepository.GetByID(2422667);
 
-            foreach (var sym in symbols)
-            {
-                i++;
-            }
+            //foreach (var sym in symbols)
+            //{
+            //    i++;
+            //}
 
             return symbols;
         }
