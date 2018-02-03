@@ -14,6 +14,6 @@ namespace ORMService.Context
         public DbSet<Dividend> Dividends { get; set; }
         public DbSet<Split> Splits { get; set; }
         public DbSet<BollingerBands> BollingerBands { get; set; }
-
+        //public DbSet<StandardDeviations> StandardDeviationCounts { get; set; }
     }
 }

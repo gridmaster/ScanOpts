@@ -9,6 +9,7 @@ using Core.JsonQuoteSummary;
 using Newtonsoft.Json;
 using Core.JsonKeyStatistics;
 using ScanOpts.DIModule;
+using Core.BusinessModels;
 
 namespace Core
 {
@@ -58,9 +59,9 @@ namespace Core
             /*********************************************************************************/
             
             
-           // IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
+            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-          //  List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
 
             //IOCContainer.Instance.Get<IBollingerBandService>().RunDaily(false);
             //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
@@ -68,6 +69,7 @@ namespace Core
 
             var bfd = IOCContainer.Instance.Get<IBollingerBandORMService>().GetSymbolData("NVDA");
 
+            List<SlopeAndBBCounts> wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising50SMATrends(symbols);
 
             //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 

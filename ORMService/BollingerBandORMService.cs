@@ -1,11 +1,7 @@
 ﻿using Core;
 using Core.Interface;
 using Core.ORMModels;
-using ORMService.Context;
-using ORMService.Contracts;
-using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 
 namespace ORMService
 {

@@ -33,6 +33,9 @@
     <Reference Include="Core">
       <HintPath>..\Core\bin\Debug\Core.dll</HintPath>
     </Reference>
+    <Reference Include="ORMService">
+      <HintPath>..\ORMService\bin\Debug\ORMService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

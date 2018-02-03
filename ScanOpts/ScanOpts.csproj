@@ -52,6 +52,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AnalyticsService">
+      <HintPath>..\AnalyticsService\bin\Debug\AnalyticsService.dll</HintPath>
+    </Reference>
     <Reference Include="BollingerBandService">
       <HintPath>..\BollingerBandService\bin\Debug\BollingerBandService.dll</HintPath>
     </Reference>
@@ -118,9 +121,9 @@
     <Compile Include="BulkLoad\BulkLoadCompany.cs" />
     <Compile Include="BulkLoad\BulkLoadIndustry.cs" />
     <Compile Include="BulkLoad\BulkLoadSector.cs" />
-    <Compile Include="DIModule\DebugModule.cs" />
-    <Compile Include="DIModule\DesignTimeModule.cs" />
-    <Compile Include="DIModule\ProductionModule.cs" />
+    <Compile Include="BulkLoad\DIModule\DebugModule.cs" />
+    <Compile Include="BulkLoad\DIModule\DesignTimeModule.cs" />
+    <Compile Include="BulkLoad\DIModule\ProductionModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\OncePerDayTimer.cs" />

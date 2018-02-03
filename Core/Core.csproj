@@ -63,9 +63,10 @@
     <Compile Include="BulkLoad\BulkLoadDividends.cs" />
     <Compile Include="BulkLoad\BulkLoadHistory.cs" />
     <Compile Include="BulkLoad\BulkLoadHolders.cs" />
+    <Compile Include="BulkLoad\BulkLoadSlopeCounts.cs" />
     <Compile Include="BulkLoad\BulkLoadSplits.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
-    <Compile Include="BusinessModels\SlopeAndBBResults.cs" />
+    <Compile Include="BusinessModels\SlopeAndBBCounts.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
     <Compile Include="Interface\IAnalyticsORMService.cs" />

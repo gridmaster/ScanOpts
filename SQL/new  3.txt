@@ -1,0 +1,14 @@
+    public abstract class Repository<C, T> : BaseService, 
+        IRepository<T> where T : class where C : DbContext, new()
+    {
+
+        #region Constructors
+
+        public Repository(ILogger logger)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+        }
+
+        #endregion Constructors

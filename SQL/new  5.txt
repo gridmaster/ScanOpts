@@ -1,0 +1,21 @@
+Id 
+SymbolId 
+Symbol 
+Close 
+DateTime Date 
+SlopeClose 
+Slope20 
+Slope50 
+Slope200 
+SlopeStandardDeviation 
+SlopeUpperBand 
+SlopeLowerBand 
+SlopeBandRatio 
+RatioClose 
+Ratio20 
+Ratio50 
+Ratio200 
+RatioStandardDeviation 
+RatioUpperBand 
+RatioLowerBand 
+RatioBandRatio 
