@@ -12,6 +12,7 @@ namespace Core.Interface
         void LoadAllSymbolsFromAllExchanges();
         void LoadAllSymbolsFromUSExchangesNoSave();
         List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges, bool save = true);
+        List<string> LoadAllSymbolsFromAllExchanges(List<string> exchanges);
         List<Symbols> GetSymbols();
     }
 }

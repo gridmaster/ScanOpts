@@ -12,7 +12,6 @@ namespace DataAnalyticsService
     public class AnalyticsService : BaseService, IAnalyticsService
     {
         #region Private properties
-
         private BollingerBandORMService bollingerBandORMService = null;
         private BulkLoadSlopeCounts bulkLoadSlopeCounts = null;
         #endregion Private properties

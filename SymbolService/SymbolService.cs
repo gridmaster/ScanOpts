@@ -14,9 +14,12 @@ namespace DailySymbolService
         #region Private properties
         private bool success;
         private List<Symbols> symbols;
+        private List<string> symbolStringList;
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
         private BulkLoadSymbol bulkLoadSymbol = null;
+
+        private string[] alphabet = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z" };
         #endregion Private properties
 
         #region Constructors
@@ -52,21 +55,21 @@ namespace DailySymbolService
         {
             logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
             List<string> exchanges = exchangeORMService.GetUSExchanges();
-            symbols = LoadAllSymbolsFromAllExchanges(exchanges, false);
+            symbolStringList = LoadAllSymbolsFromAllExchanges(exchanges);
         }
 
         public void LoadAllSymbolsFromAllExchanges()
         {
             logger.InfoFormat("LoadAllSymbolsFromAllExchanges - GetSymbols");
             List<string> exchanges = exchangeORMService.GetExchanges();
-            symbols = LoadAllSymbolsFromAllExchanges(exchanges);
+            symbols = LoadAllSymbolsFromAllExchanges(exchanges, true);
         }
 
-        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges, bool save = true)
+        public List<string> LoadAllSymbolsFromAllExchanges(List<string> exchanges)
         {
             logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
 
-            List<Symbols> allSymbols = new List<Symbols>();
+            List<string> allSymbols = new List<string>();
             string exchangeSave = "";
             string itemSave = "";
             try
@@ -75,31 +78,18 @@ namespace DailySymbolService
                 {
                     exchangeSave = exchange;
 
-                    string sPage = WebPage.Get(String.Format(exchange, "A"));
+                    foreach (string letter in alphabet)
+                    {
+                        string sPage = WebPage.Get(String.Format(exchange, letter));
 
-                    //sPage = sPage.Substring(sPage.IndexOf("cph1_bsa1_divSymbols"));
-                    //int startIndex = sPage.IndexOf("</tr") + "</tr>".Length;
-                    //sPage = sPage.Substring(startIndex, sPage.Length - startIndex);
+                        string[] splitPages = GetRowsOfSymbolData(sPage);
 
-                    //sPage = sPage.Trim().Replace("\r", string.Empty);
-                    //sPage = sPage.Trim().Replace("\n", string.Empty);
-                    //sPage = sPage.Replace(Environment.NewLine, string.Empty);
+                        string pages = string.Empty;
 
-                    //string pages = sPage.Substring(0, sPage.IndexOf("</table>"));
+                        List<string> symbolLookups = GetPagesLookup(splitPages);
 
-                    //pages = pages.Substring(pages.IndexOf("<tr"), pages.Length - 2);
-
-                    //string tempPages = pages;
-                    //tempPages = tempPages.Replace("</tr>", "~");
-                    //string[] splitPages = tempPages.Split('~');
-
-                    string[] splitPages = GetRowsOfSymbolData(sPage);
-
-                    //Code, Name, High, Low, Close, Volume, Change
-
-                    string pages = string.Empty;
- 
-                    List<string> symbolLookups = GetPagesLookup(splitPages);
+                        allSymbols.AddRange(symbolLookups);
+                    }
 
                     string sub1 = string.Empty;
                     string sub3 = string.Empty;
@@ -109,19 +99,19 @@ namespace DailySymbolService
 
                     string xchange = exchange.Replace("http://eoddata.com/stocklist/", "").Replace("/{0}.htm", "");
 
-                    foreach (string item in symbolLookups)
-                    {
-                        itemSave = item;
-                        sPage = WebPage.Get(string.Format(exchange, item));
-                        sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+                    //foreach (string item in symbolLookups)
+                    //{
+                    //    itemSave = item;
+                    //    sPage = WebPage.Get(string.Format(exchange, item));
+                    //    sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
 
-                        string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
-                        string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
+                    //    string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                    //    string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
                         
-                        symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
-                    }
+                    //    symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
+                    //}
 
-                    allSymbols.AddRange(symbolList);
+                    //allSymbols.AddRange(symbolList);
                 }
             }
             catch (Exception ex)
@@ -130,10 +120,10 @@ namespace DailySymbolService
             }
             finally
             {
-                if (save)
-                {
-                    success = BulkLoadSymbols(allSymbols);
-                }
+                //if (save)
+                //{
+                //    success = BulkLoadSymbols(allSymbols);
+                //}
 
                 logger.Info("End - LoadAllSymbolsFromAllExchanges");
                 logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
@@ -141,7 +131,7 @@ namespace DailySymbolService
             return allSymbols;
         }
 
-        public List<Symbols> LoadAllSymbolsFromAllExchanges_save(List<string> exchanges, bool save = true)
+        public List<Symbols> LoadAllSymbolsFromAllExchanges(List<string> exchanges, bool save = true)
         {
             logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
 
