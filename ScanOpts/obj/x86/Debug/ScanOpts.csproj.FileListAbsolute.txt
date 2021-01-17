@@ -128,3 +128,40 @@ C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ScanOpts\bin\Debug\S
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ScanOpts\bin\Debug\StandardDeviationService.pdb
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\AnalyticsService.dll
 C:\Users\Jim\Documents\Visual Studio 2015\Projects\ScanOpts\ScanOpts\bin\Debug\AnalyticsService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe.config
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.exe
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ScanOpts.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\AnalyticsService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\BollingerBandService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Core.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\DIContainer.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Logger.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Ninject.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\OptonsService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\System.Data.SqlServerCe.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\log4net.dll
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\AnalyticsService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\BollingerBandService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Core.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Core.dll.config
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\DIContainer.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\HistoryService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Logger.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\OptonsService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\ORMService.dll.config
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\SymbolService.pdb
+C:\Projects\Market Projects\ScanOpts\ScanOpts\bin\Debug\log4net.xml
+C:\Projects\Market Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csprojAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csproj.CoreCompileInputs.cache
+C:\Projects\Market Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.exe
+C:\Projects\Market Projects\ScanOpts\ScanOpts\obj\x86\Debug\ScanOpts.pdb

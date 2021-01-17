@@ -69,13 +69,13 @@ namespace Core
 
             //var bfd = IOCContainer.Instance.Get<IBollingerBandORMService>().GetSymbolData("NVDA");
 
-            List<SlopeAndBBCounts> wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising50SMATrends(symbols);
+            //List<SlopeAndBBCounts> wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising50SMATrends(symbols);
 
             //IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromAllExchanges();
 
             //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
-            //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 

@@ -58,3 +58,14 @@ C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\DIContainer\bin\Debu
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojResolveAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.dll
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\DIContainer.pdb
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\log4net.dll
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\Ninject.dll
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\log4net.xml
+C:\Projects\Market Projects\ScanOpts\DIContainer\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csproj.CoreCompileInputs.cache
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb

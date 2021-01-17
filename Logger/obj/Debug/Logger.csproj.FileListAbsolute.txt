@@ -60,3 +60,17 @@ C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\Logger\bin\Debug\New
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\Logger\obj\Debug\Logger.dll
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\Logger\obj\Debug\Logger.pdb
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Logger.dll
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Logger.pdb
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Core.dll
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\log4net.dll
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Core.pdb
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Core.dll.config
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\log4net.xml
+C:\Projects\Market Projects\ScanOpts\Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Market Projects\ScanOpts\Logger\obj\Debug\Logger.csprojAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
+C:\Projects\Market Projects\ScanOpts\Logger\obj\Debug\Logger.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\Logger\obj\Debug\Logger.dll
+C:\Projects\Market Projects\ScanOpts\Logger\obj\Debug\Logger.pdb

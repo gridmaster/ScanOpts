@@ -80,7 +80,7 @@ namespace ORMService
         {
             List<string> exchanges = new List<string> {
                 //New York Stock Exchange[NYSE]
-                "http://eoddata.com/stocklist/NYSE/{0}.htm",
+                "https://www.findata.co.nz/markets/NYSE/symbols/{0}.htm",
                  //NASDAQ Stock Exchange[NASDAQ]
                 "http://eoddata.com/stocklist/NASDAQ/{0}.htm",
                 // American Stock Exchange [AMEX]

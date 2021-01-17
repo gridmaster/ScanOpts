@@ -94,3 +94,30 @@ C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ORMService\obj\Debug
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ORMService\obj\Debug\ORMService.csproj.GenerateResource.Cache
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ORMService\obj\Debug\ORMService.dll
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\ORMService\obj\Debug\ORMService.pdb
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\ORMService.dll.config
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\ORMService.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\ORMService.pdb
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Core.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\DIContainer.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\EntityFramework.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Ninject.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Core.pdb
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Core.dll.config
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\DIContainer.pdb
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\EntityFramework.xml
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Ninject.pdb
+C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.csprojAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.InitialCreate.resources
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.ChangeColumnName.resources
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.DividendsAndSplits.resources
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.DividendsAndSplitsTables.resources
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.csproj.GenerateResource.cache
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.csproj.CoreCompileInputs.cache
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.dll
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.pdb

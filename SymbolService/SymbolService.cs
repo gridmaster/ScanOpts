@@ -74,14 +74,35 @@ namespace DailySymbolService
                 foreach (string exchange in exchanges)
                 {
                     exchangeSave = exchange;
-                    string sPage = WebPage.Get(String.Format(exchange, "0"));
-                    string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
-                    string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
 
-                    List<string> symbolLookups = GetPagesLookup(pages);
+                    string sPage = WebPage.Get(String.Format(exchange, "A"));
 
-                    string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
-                    string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
+                    //sPage = sPage.Substring(sPage.IndexOf("cph1_bsa1_divSymbols"));
+                    //int startIndex = sPage.IndexOf("</tr") + "</tr>".Length;
+                    //sPage = sPage.Substring(startIndex, sPage.Length - startIndex);
+
+                    //sPage = sPage.Trim().Replace("\r", string.Empty);
+                    //sPage = sPage.Trim().Replace("\n", string.Empty);
+                    //sPage = sPage.Replace(Environment.NewLine, string.Empty);
+
+                    //string pages = sPage.Substring(0, sPage.IndexOf("</table>"));
+
+                    //pages = pages.Substring(pages.IndexOf("<tr"), pages.Length - 2);
+
+                    //string tempPages = pages;
+                    //tempPages = tempPages.Replace("</tr>", "~");
+                    //string[] splitPages = tempPages.Split('~');
+
+                    string[] splitPages = GetRowsOfSymbolData(sPage);
+
+                    //Code, Name, High, Low, Close, Volume, Change
+
+                    string pages = string.Empty;
+ 
+                    List<string> symbolLookups = GetPagesLookup(splitPages);
+
+                    string sub1 = string.Empty;
+                    string sub3 = string.Empty;
 
                     //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
                     List<Symbols> symbolList = new List<Symbols>();
@@ -120,6 +141,65 @@ namespace DailySymbolService
             return allSymbols;
         }
 
+        public List<Symbols> LoadAllSymbolsFromAllExchanges_save(List<string> exchanges, bool save = true)
+        {
+            logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
+
+            List<Symbols> allSymbols = new List<Symbols>();
+            string exchangeSave = "";
+            string itemSave = "";
+            try
+            {
+                foreach (string exchange in exchanges)
+                {
+                    exchangeSave = exchange;
+                    string sPage = WebPage.Get(String.Format(exchange, "0"));
+                    string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+                    string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
+
+                    List<string> symbolLookups = GetPagesLookup_save(pages);
+
+                    string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                    string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
+
+                    //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
+                    List<Symbols> symbolList = new List<Symbols>();
+
+                    string xchange = exchange.Replace("http://eoddata.com/stocklist/", "").Replace("/{0}.htm", "");
+
+                    foreach (string item in symbolLookups)
+                    {
+                        itemSave = item;
+                        sPage = WebPage.Get(string.Format(exchange, item));
+                        sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
+
+                        string sub2 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
+                        string symbolz = sub2.Substring(0, sub2.IndexOf("</table>") + "</table>".Length);
+
+                        symbolList.AddRange(GetSymbolLookup(symbolz, xchange));
+                    }
+
+                    allSymbols.AddRange(symbolList);
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Fatal("LoadAllSymbolsFromAllExchanges: {0}", ex);
+            }
+            finally
+            {
+                if (save)
+                {
+                    success = BulkLoadSymbols(allSymbols);
+                }
+
+                logger.Info("End - LoadAllSymbolsFromAllExchanges");
+                logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+            }
+            return allSymbols;
+        }
+
+
         public List<Symbols> LoadAllSymbolsFromAllExchanges(List<Exchanges> exchanges)
         {
             logger.InfoFormat("Start - LoadAllSymbolsFromAllExchanges");
@@ -136,7 +216,7 @@ namespace DailySymbolService
                     string sub1 = sPage.Substring(sPage.IndexOf("<table class=\"lett\""));
                     string pages = sub1.Substring(0, sub1.IndexOf("</table>") + "</table>".Length);
 
-                    List<string> symbolLookups = GetPagesLookup(pages);
+                    List<string> symbolLookups = GetPagesLookup_save(pages);
 
                     string sub3 = sub1.Substring(sub1.IndexOf("<table class=\"quotes\">"));
                     string symbols = sub3.Substring(0, sub3.IndexOf("</table>") + "</table>".Length);
@@ -208,7 +288,145 @@ namespace DailySymbolService
             return success;
         }
 
-        private List<string> GetPagesLookup(string pages)
+        private string[] GetRowsOfSymbolData(string sPage)
+        {
+            sPage = sPage.Substring(sPage.IndexOf("cph1_bsa1_divSymbols"));
+            int startIndex = sPage.IndexOf("</tr") + "</tr>".Length;
+            sPage = sPage.Substring(startIndex, sPage.Length - startIndex);
+
+            sPage = sPage.Trim().Replace("\r", string.Empty);
+            sPage = sPage.Trim().Replace("\n", string.Empty);
+            sPage = sPage.Replace(Environment.NewLine, string.Empty);
+
+            string pages = sPage.Substring(0, sPage.IndexOf("</table>"));
+
+            //pages = pages.Substring(pages.IndexOf("<tr"), pages.Length - 2);
+
+            string tempPages = pages;
+            tempPages = tempPages.Replace("</tr>", "~");
+            return tempPages.Split('~');
+        }
+
+        private List<string> GetPagesLookup(string[] pages)
+        {
+            List<string> myPages = new List<string>();
+            string work = "";
+
+            try
+            {
+                for(int i = 0; i < pages.Length; i++)
+                {
+                    string page = pages[i];
+
+                    if (string.IsNullOrEmpty(page)) continue;
+                    // extract symbol
+                    int startNdx = page.IndexOf("<td>");
+                    work = page.Substring(startNdx, page.Length - startNdx);
+                    startNdx = work.IndexOf("hideInfo();\">") + "hideInfo();\">".Length;
+                    int endNdx = work.IndexOf("</td>");
+                    string symbol = work.Substring(startNdx, endNdx - startNdx);
+                    symbol = symbol.Substring(0, symbol.IndexOf("<"));
+
+                    //Code, Name, High, Low, Close, Volume, Change
+                    // extract closing price
+                    // skip next td block - Name
+                    work = work.Substring(4, work.Length - 4);
+                    startNdx = work.IndexOf("<td>");
+                    endNdx = work.Length - startNdx;
+                    work = work.Substring(work.IndexOf("<td>") + "<td>".Length);
+
+                    startNdx = work.IndexOf("<td") + "<td".Length;
+                    endNdx = work.Length - startNdx;
+                    work = work.Substring(startNdx, endNdx);
+
+                    // skip next 2 td blocks - High, Low
+                    for (int indx = 0; indx < 2; indx++)
+                    {
+                        startNdx = work.IndexOf("<td") + "<td".Length;
+                        endNdx = work.Length - startNdx;
+                        work = work.Substring(startNdx, endNdx);
+                    }
+
+                    // extract Close
+                    startNdx = work.IndexOf(">") + ">".Length;
+                    endNdx = work.IndexOf("<") - startNdx;
+                    string closingPrice = work.Substring(startNdx, endNdx);
+
+                    // clean up work string
+                    startNdx = work.IndexOf("<td") + "<td".Length;
+                    endNdx = work.Length - startNdx;
+                    work = work.Substring(work.IndexOf("<td"));
+
+                    // check if > 9.99
+                    decimal result = 0;
+                    bool tryParseResult = decimal.TryParse(closingPrice, out result);
+
+                    if (tryParseResult)
+                    {
+                        if (result < 10)
+                            continue;
+                    }
+                    else
+                    {
+                        // something went wrong
+                        continue;
+                    }
+
+                    // extract volumn
+                    startNdx = work.IndexOf(">") + ">".Length;
+                    endNdx = work.IndexOf("</") - startNdx;
+                    string closingVolumn = work.Substring(startNdx, endNdx);
+
+                    // check if > 9.99
+                    result = 0;
+                    tryParseResult = decimal.TryParse(closingVolumn, out result);
+
+                    if (tryParseResult)
+                    {
+                        if (result < 1000000)
+                            continue;
+                    }
+                    else
+                    {
+                        // something went wrong
+                        continue;
+                    }
+
+                    myPages.Add(symbol);
+
+                    if (myPages.Contains("AZUL"))
+                    {
+                        string wtf = "AXUL";
+                    }
+
+                }
+            }
+            catch(Exception ex)
+            {
+                int i = 22;
+                i++;
+            }
+            //work = pages.Substring(pages.IndexOf("<tr>") + "<tr>".Length);
+            //work = work.Substring(0, work.IndexOf("</tr>"));
+
+            //work = work.Replace("<td ", "|");
+            //work = work.Substring(1);
+            //myPages = work.Split('|').ToList<string>();
+
+            //for (int i = 0; i < myPages.Count; i++)
+            //{
+            //    myPages[i] = myPages[i].Replace("class=\"ls\">", "");
+            //    myPages[i] = myPages[i].Replace("class=\"ld\"><a href=\"", "");
+            //    myPages[i] = myPages[i].Replace("</td>", "").Replace("</a>", "");
+            //    if (i > 0)
+            //        myPages[i] = myPages[i].Substring(myPages[i].Length - 1);
+            //}
+
+            return myPages;
+        }
+
+    
+        private List<string> GetPagesLookup_save(string pages)
         {
             List<string> myPages = null;
             string work = "";

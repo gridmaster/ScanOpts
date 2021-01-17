@@ -70,3 +70,25 @@ C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\SymbolService\bin\De
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojResolveAssemblyReference.cache
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
 C:\Users\Jim\Documents\Visual Studio 2012\Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\SymbolService.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Core.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\ORMService.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Ninject.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Core.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Core.dll.config
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\DIContainer.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\ORMService.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\ORMService.dll.config
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.xml
+C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojAssemblyReference.cache
+C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csproj.CoreCompileInputs.cache
+C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll
+C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.pdb
