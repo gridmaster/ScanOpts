@@ -61,7 +61,8 @@ namespace Core
             
             IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-            List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+            //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+            List<string> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbolStringList();
 
             //IOCContainer.Instance.Get<IBollingerBandService>().RunDaily(false);
             //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);

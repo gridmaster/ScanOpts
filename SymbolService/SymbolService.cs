@@ -91,13 +91,13 @@ namespace DailySymbolService
                         allSymbols.AddRange(symbolLookups);
                     }
 
-                    string sub1 = string.Empty;
-                    string sub3 = string.Empty;
+                    //string sub1 = string.Empty;
+                    //string sub3 = string.Empty;
 
-                    //nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
-                    List<Symbols> symbolList = new List<Symbols>();
+                    ////nasdaq = "http://eoddata.com/stocklist/NASDAQ/{0}.htm";
+                    //List<Symbols> symbolList = new List<Symbols>();
 
-                    string xchange = exchange.Replace("http://eoddata.com/stocklist/", "").Replace("/{0}.htm", "");
+                    //string xchange = exchange.Replace("http://eoddata.com/stocklist/", "").Replace("/{0}.htm", "");
 
                     //foreach (string item in symbolLookups)
                     //{
@@ -246,6 +246,11 @@ namespace DailySymbolService
         public List<Symbols> GetSymbols()
         {
             return symbols;
+        }
+
+        public List<string> GetSymbolStringList()
+        {
+            return symbolStringList;
         }
 
         #endregion Public Methods

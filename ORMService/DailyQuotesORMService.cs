@@ -54,7 +54,7 @@ namespace ORMService
 
             //var currentQuote = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)timestamps[timestamps.Count-1]);
 
-            double currentClose = (double)symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose[timestamps.Count - 1];
+           // double currentClose = (double)symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose[timestamps.Count - 1];
 
             //if (currentClose < 10)
               //  return quotesList;

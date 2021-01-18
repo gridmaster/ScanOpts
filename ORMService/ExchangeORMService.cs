@@ -82,9 +82,9 @@ namespace ORMService
                 //New York Stock Exchange[NYSE]
                 "https://www.findata.co.nz/markets/NYSE/symbols/{0}.htm",
                  //NASDAQ Stock Exchange[NASDAQ]
-                "http://eoddata.com/stocklist/NASDAQ/{0}.htm",
+                "https://www.findata.co.nz/markets/NASDAQ/symbols/{0}.htm",
                 // American Stock Exchange [AMEX]
-                "http://eoddata.com/stocklist/AMEX/{0}.htm"
+                "https://www.findata.co.nz/markets/AMEX/symbols/{0}.htm"
             };
             return exchanges;
         }
