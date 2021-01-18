@@ -70,9 +70,10 @@ namespace SymbolHistoryService
 
                     logger.InfoFormat("Get {0} history page", symbol);
                     // this gets the history
-                    string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1=-252356400&period2=1488949200&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+                    //string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1=-252356400&period2=1488949200&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+                    string uriString = "https://query1.finance.yahoo.com/v8/finance/chart/{0}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1=1579381939&period2=1611004339&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
                     string sPage = WebPage.Get(String.Format(uriString, symbol));
-
+                    
                     if (sPage.Contains("(404) Not Found")) continue;
                     if (sPage.Contains("(400) Bad Request")) continue;
                     //logger.Info("Page captured");

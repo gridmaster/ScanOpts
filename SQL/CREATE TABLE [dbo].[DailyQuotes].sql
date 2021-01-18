@@ -1,7 +1,7 @@
 USE [ScanOpts]
 GO
 
-/****** Object:  Table [dbo].[Quotes]    Script Date: 1/18/2021 9:06:15 AM ******/
+/****** Object:  Table [dbo].[DailyQuotes]    Script Date: 1/18/2021 4:19:29 PM ******/
 SET ANSI_NULLS ON
 GO
 
