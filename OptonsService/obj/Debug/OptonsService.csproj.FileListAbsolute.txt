@@ -89,3 +89,4 @@ C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.cspro
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.pdb
+C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojAssemblyReference.cache
