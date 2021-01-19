@@ -67,6 +67,7 @@
     <Compile Include="BulkLoad\BulkLoadSlopeCounts.cs" />
     <Compile Include="BulkLoad\BulkLoadSplits.cs" />
     <Compile Include="BulkLoad\BulkLoadSymbol.cs" />
+    <Compile Include="BusinessModels\SlopeAnd60sCounts.cs" />
     <Compile Include="BusinessModels\SlopeAndBBCounts.cs" />
     <Compile Include="Business\ConvertStringToNumeric.cs" />
     <Compile Include="Business\UnixTimeConverter.cs" />
