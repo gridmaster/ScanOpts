@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity.Core.EntityClient;
+using System.Linq;
 using Core.Interface;
 using Core.JsonQuote;
 using Core.ORMModels;
@@ -41,6 +44,62 @@ namespace ORMService
                     IOCContainer.Instance.Get<ILogger>().ErrorFormat("DailyQuotesORMService - AddMany error: {1}{2}", ex.Message, Environment.NewLine);
                 }
             }
+        }
+
+        public List<string> GetSymbols()
+        {
+            string sqlString = "SELECT DISTINCT Symbol FROM[ScanOpts].[dbo].[DailyQuotes] ORDER BY Symbol ASC";
+
+            using (var db = new ScanOptsContext())
+            {
+                var symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
+            }
+            //var result = EFContext.TestAddresses.Select(m => m.Name).Distinct();
+
+            //using (var db = new ScanOptsContext())
+            //{
+            //    //var wtf = db.DailyQuotes.SqlQuery(sqlString);
+            //    //var wtf = db.DailyQuotes.Find(sqlString);
+
+            //    //var wtf = db.DailyQuotes.Distinct().ToArray<string>();
+
+            //    //using (var ctx = new ScanOptsContext())
+            //    //{
+            //    //    string symbol = ctx.DailyQuotes.SqlQuery("Select Symbol from DailyQuotes where Symbol='CAT'").FirstOrDefault<string>();
+            //    //}
+
+            //    using (var con = new EntityConnection("name=DailyQuotes"))
+            //    {
+            //        con.Open();
+            //        EntityCommand cmd = con.CreateCommand();
+            //        cmd.CommandText = "SELECT DISTINCT Symbol FROM[ScanOpts].[dbo].[DailyQuotes] ORDER BY Symbol ASC";
+
+            //        List<string> symbolz = new List<string>();
+
+            //        using (EntityDataReader rdr = cmd.ExecuteReader(CommandBehavior.SequentialAccess | CommandBehavior.CloseConnection))
+            //        {
+            //            while (rdr.Read())
+            //            {
+            //                symbolz.Add(rdr.GetString(0));
+            //            }
+            //        }
+            //    }
+
+
+            //    //var bfd = db.DailyQuotes
+            //    //    .SqlQuery("Select Symbol from DailyQuotes").AsEnumerable<string>();
+
+            //    //using (var context = new DailyQuotes())
+            //    //{
+            //    //    var symbols = context.Symbol
+            //    //        .FromSqlRaw(sqlString)
+            //    //        .ToList();
+            //    //}
+
+            //    IOCContainer.Instance.Get<ILogger>().Info("DailyQuotesORMService - Get Symbols");                
+            //}
+
+            return null;
         }
 
         public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
@@ -88,8 +147,13 @@ namespace ORMService
                     quote.UnadjClose = 0;
                     quote.UnadjHigh = 0;
                     quote.UnadjLow = 0;
-
                 }
+
+                quote.SMA60Close = 0;
+                quote.SMA60High = 0;
+                quote.SMA60Low = 0;
+                quote.SMA60Volume = 0;
+
                 quotesList.Add(quote);
             
             }

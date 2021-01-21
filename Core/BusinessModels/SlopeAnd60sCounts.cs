@@ -15,10 +15,6 @@ namespace Core.BusinessModels
         [Column(TypeName = "INT")]
         public int SymbolId { get; set; }
 
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(60)]
-        public string Symbol { get; set; }
-
         [DataType(DataType.DateTime)]
         [Column(TypeName = "DATETIME")]
         public DateTime Date { get; set; }

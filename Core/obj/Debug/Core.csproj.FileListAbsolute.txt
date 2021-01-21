@@ -73,7 +73,6 @@ C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\EntityFramework.SqlServer.xm
 C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Ninject.xml
-C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.dll

@@ -36,5 +36,10 @@ namespace Core.ORMModels
         public decimal? UnadjLow { get; set; }
         public decimal? UnadjClose { get; set; }
         public decimal? UnadjOpen { get; set; }
+
+        public decimal? SMA60Volume { get; set; }
+        public decimal? SMA60High { get; set; }
+        public decimal? SMA60Low { get; set; }
+        public decimal? SMA60Close { get; set; }
     }
 }

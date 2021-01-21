@@ -10,7 +10,8 @@ namespace Core.BulkLoad
     public class BulkLoadHistory : BaseBulkLoad, IDisposable
     {
         
-        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume", "UnadjHigh", "UnadjLow", "UnadjClose", "UnadjOpen" };
+        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume",
+            "UnadjHigh", "UnadjLow", "UnadjClose", "UnadjOpen", "SMA60High", "SMA60Low", "SMA60Close", "SMA60Volume" };
 
         public BulkLoadHistory(ILogger logger) : base(logger, ColumnNames)
         {
@@ -21,7 +22,8 @@ namespace Core.BulkLoad
             foreach (var value in dStats)
             {
                 var sValue = value.Symbol + "^" + value.Date + "^" + value.Exchange + "^" + value.InstrumentType + "^" + value.Timestamp + "^" + value.Close + "^" + value.High 
-                    + "^" + value.Low + "^" + value.Open + "^" + value.Volume + "^" + value.UnadjHigh + "^" + value.UnadjLow + "^" + value.UnadjClose + "^" + value.UnadjOpen;
+                    + "^" + value.Low + "^" + value.Open + "^" + value.Volume + "^" + value.UnadjHigh + "^" + value.UnadjLow + "^" + value.UnadjClose + "^" + value.UnadjOpen
+                    + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close + "^" + value.SMA60Volume;
 
                 DataRow row = dt.NewRow();
 

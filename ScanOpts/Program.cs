@@ -78,6 +78,8 @@ namespace Core
 
             IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
+            List<string> symbols2 = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
+
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 
             //IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection();

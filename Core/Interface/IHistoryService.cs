@@ -5,6 +5,8 @@ namespace Core.Interface
 {
     public interface IHistoryService
     {
+        List<string> GetSymbols();
+
         void RunHistoryCollection();
 
         void RunHistoryCollection(List<string> symbols);

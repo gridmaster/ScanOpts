@@ -15,7 +15,6 @@ C:\Projects\Market Projects\ScanOpts\AnalyticsService\bin\Debug\EntityFramework.
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\bin\Debug\DIContainer.pdb
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\bin\Debug\Ninject.xml
-C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.dll

@@ -38,6 +38,13 @@ namespace SymbolHistoryService
 
         #region Public methods
 
+        public List<string> GetSymbols()
+        {
+            List<string> quotesList = dailyQuotesORMService.GetSymbols();
+
+            return quotesList;
+        }
+
         public void RunHistoryCollection()
         {
             logger.InfoFormat("RunHistoryCollection - GetSymbols");

@@ -1,7 +1,7 @@
 USE [ScanOpts]
 GO
 
-/****** Object:  Table [dbo].[DailyQuotes]    Script Date: 1/18/2021 4:19:29 PM ******/
+/****** Object:  Table [dbo].[DailyQuotes]    Script Date: 1/21/2021 8:22:48 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -24,6 +24,10 @@ CREATE TABLE [dbo].[DailyQuotes](
 	[UnadjLow] [decimal](18, 2) NULL,
 	[UnadjClose] [decimal](18, 2) NULL,
 	[UnadjOpen] [decimal](18, 2) NULL,
+	[SMA60High] [decimal](18, 2) NULL,
+	[SMA60Low] [decimal](18, 2) NULL,
+	[SMA60Close] [decimal](18, 2) NULL,
+	[SMA60Volume] [decimal](18, 2) NULL,
  CONSTRAINT [PK_dbo.DailyQuotes] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
