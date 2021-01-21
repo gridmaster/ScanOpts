@@ -48,58 +48,20 @@ namespace ORMService
 
         public List<string> GetSymbols()
         {
-            string sqlString = "SELECT DISTINCT Symbol FROM[ScanOpts].[dbo].[DailyQuotes] ORDER BY Symbol ASC";
+            List<string> result = new List<string>();
 
             using (var db = new ScanOptsContext())
             {
                 var symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
+
+                var wtf = symbols.ToList().OrderBy(s => s);
+
+                result = wtf.ToList();
+
+
             }
-            //var result = EFContext.TestAddresses.Select(m => m.Name).Distinct();
 
-            //using (var db = new ScanOptsContext())
-            //{
-            //    //var wtf = db.DailyQuotes.SqlQuery(sqlString);
-            //    //var wtf = db.DailyQuotes.Find(sqlString);
-
-            //    //var wtf = db.DailyQuotes.Distinct().ToArray<string>();
-
-            //    //using (var ctx = new ScanOptsContext())
-            //    //{
-            //    //    string symbol = ctx.DailyQuotes.SqlQuery("Select Symbol from DailyQuotes where Symbol='CAT'").FirstOrDefault<string>();
-            //    //}
-
-            //    using (var con = new EntityConnection("name=DailyQuotes"))
-            //    {
-            //        con.Open();
-            //        EntityCommand cmd = con.CreateCommand();
-            //        cmd.CommandText = "SELECT DISTINCT Symbol FROM[ScanOpts].[dbo].[DailyQuotes] ORDER BY Symbol ASC";
-
-            //        List<string> symbolz = new List<string>();
-
-            //        using (EntityDataReader rdr = cmd.ExecuteReader(CommandBehavior.SequentialAccess | CommandBehavior.CloseConnection))
-            //        {
-            //            while (rdr.Read())
-            //            {
-            //                symbolz.Add(rdr.GetString(0));
-            //            }
-            //        }
-            //    }
-
-
-            //    //var bfd = db.DailyQuotes
-            //    //    .SqlQuery("Select Symbol from DailyQuotes").AsEnumerable<string>();
-
-            //    //using (var context = new DailyQuotes())
-            //    //{
-            //    //    var symbols = context.Symbol
-            //    //        .FromSqlRaw(sqlString)
-            //    //        .ToList();
-            //    //}
-
-            //    IOCContainer.Instance.Get<ILogger>().Info("DailyQuotesORMService - Get Symbols");                
-            //}
-
-            return null;
+            return result;
         }
 
         public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
