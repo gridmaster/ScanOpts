@@ -31,7 +31,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -95,6 +95,9 @@
     </Reference>
     <Reference Include="ORMService">
       <HintPath>..\ORMService\bin\Debug\ORMService.dll</HintPath>
+    </Reference>
+    <Reference Include="SMA60CycleService">
+      <HintPath>..\SMA60CycleService\bin\Debug\SMA60CycleService.dll</HintPath>
     </Reference>
     <Reference Include="SymbolService">
       <HintPath>..\SymbolService\bin\Debug\SymbolService.dll</HintPath>

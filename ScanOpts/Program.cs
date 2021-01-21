@@ -76,9 +76,11 @@ namespace Core
 
             //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
-            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+           //// IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
-            List<string> symbols2 = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
+            List<string> symbolz = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
+
+            List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbolz);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 

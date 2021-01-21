@@ -54,16 +54,24 @@ namespace ORMService
             {
                 IQueryable<string> symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
 
-                result = symbols.ToList().OrderBy(s => s).ToList();
-
-                //var orderedList = symbols.ToList().OrderBy(s => s).ToList();
-
-                //result = orderedList.ToList();                
+                result = symbols.ToList().OrderBy(s => s).ToList();                
             }
 
             return result;
         }
 
+        public List<DailyQuotes> GetSymbolDailyData(string symbol)
+        {
+            List<DailyQuotes> result = new List<DailyQuotes>();
+
+            using (var db = new ScanOptsContext())
+            {
+                result = db.DailyQuotes.Where(a => a.Symbol == symbol).ToList();
+            }
+
+            return result;
+        }
+        
         public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
         {
             List<DailyQuotes> quotesList = new List<DailyQuotes>();

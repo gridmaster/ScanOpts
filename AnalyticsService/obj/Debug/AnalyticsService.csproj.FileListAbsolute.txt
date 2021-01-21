@@ -19,3 +19,4 @@ C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.dll
 C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.pdb
+C:\Projects\Market Projects\ScanOpts\AnalyticsService\obj\Debug\AnalyticsService.csprojAssemblyReference.cache

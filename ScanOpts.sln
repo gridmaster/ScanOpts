@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 14 for Windows Desktop
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanOpts", "ScanOpts\ScanOpts.csproj", "{A63BE4CE-8587-4FAC-B4CC-B1D30FD477F3}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BollingerBandService", "BollingerBandService\BollingerBandService.csproj", "{91AB1F97-D8F9-49E6-8018-4B56E0D6DDCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticsService", "AnalyticsService\AnalyticsService.csproj", "{878FFB1D-12AE-4054-88D8-4E8F06162326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMA60CycleService", "SMA60CycleService\SMA60CycleService.csproj", "{8D143125-CA55-4997-BD81-9F4EC8ADA007}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -140,8 +142,19 @@ Global
 		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|Any CPU.Build.0 = Release|Any CPU
 		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|x86.ActiveCfg = Release|Any CPU
 		{878FFB1D-12AE-4054-88D8-4E8F06162326}.Release|x86.Build.0 = Release|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Debug|x86.Build.0 = Debug|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Release|x86.ActiveCfg = Release|Any CPU
+		{8D143125-CA55-4997-BD81-9F4EC8ADA007}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {540E010E-9C64-4040-BCBE-C5D1B7FF1015}
 	EndGlobalSection
 EndGlobal

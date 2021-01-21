@@ -1,5 +1,6 @@
 ﻿using Core;
 using Core.Interface;
+using Core.ORMModels;
 using ORMService;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,11 @@ namespace SMA60CycleService
 
         #endregion Public properties
 
-        public SMA60CyclesService(ILogger logger) : base(logger)
-        {
-        }
 
         #region Constructors
+        //public SMA60CyclesService(ILogger logger) : base(logger)
+        //{
+        //}
 
         public SMA60CyclesService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService) //, BulkLoadBollingerBands bulkLoadBollingerBands)
             : base(logger)
@@ -39,8 +40,35 @@ namespace SMA60CycleService
             this.exchangeORMService = exchangeORMService;
             this.dailyQuotesORMService = dailyQuotesORMService;
         }
-
         #endregion Constructors
 
+        #region Public Methods
+        
+        public List<DailyQuotes> GenerateSMA60s()
+        {
+            List<DailyQuotes> result = new List<DailyQuotes>();
+
+            List<string> symbols = dailyQuotesORMService.GetSymbols();
+
+            result = GenerateSMA60s(symbols);
+
+            return result;
+        }
+
+        public List<DailyQuotes> GenerateSMA60s(List<string> symbols)
+        {
+            List<DailyQuotes> result = new List<DailyQuotes>();
+
+            foreach(string symbol in symbols)
+            {
+                List<DailyQuotes> quotes = (List<DailyQuotes>)dailyQuotesORMService.GetSymbolDailyData(symbol);
+
+
+            }
+
+            return result;
+        }
+
+        #endregion Public Methods
     }
 }

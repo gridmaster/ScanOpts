@@ -107,8 +107,8 @@ C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\Ninject.xml
 C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\log4net.xml
 C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\EntityFramework.xml
-C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb
+C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csprojAssemblyReference.cache

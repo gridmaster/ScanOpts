@@ -81,6 +81,7 @@
     <Compile Include="Interface\IBollingerBandORMService.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\IServices.cs" />
+    <Compile Include="Interface\ISMA60CycleService.cs" />
     <Compile Include="Interface\ISymbolService.cs" />
     <Compile Include="Interface\IOptionORMService.cs" />
     <Compile Include="Interface\IOptionService.cs" />
