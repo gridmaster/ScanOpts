@@ -52,13 +52,13 @@ namespace ORMService
 
             using (var db = new ScanOptsContext())
             {
-                var symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
+                IQueryable<string> symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
 
-                var wtf = symbols.ToList().OrderBy(s => s);
+                result = symbols.ToList().OrderBy(s => s).ToList();
 
-                result = wtf.ToList();
+                //var orderedList = symbols.ToList().OrderBy(s => s).ToList();
 
-
+                //result = orderedList.ToList();                
             }
 
             return result;
