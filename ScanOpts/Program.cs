@@ -80,6 +80,8 @@ namespace Core
 
             List<string> symbolz = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
 
+            IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbolz);
+
             List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbolz);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);

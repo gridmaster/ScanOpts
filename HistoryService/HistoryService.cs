@@ -64,6 +64,33 @@ namespace SymbolHistoryService
             RunHistoryCollection(syms);
         }
 
+        public string GetFullExchangeName()
+        {
+            logger.InfoFormat("GetFullExchangeName - GetSymbols");
+            List<string> symbols = symbolsORMService.GetSymbols();
+            return GetFullExchangeName(symbols);
+        }
+
+        public string GetFullExchangeName(List<string> symbols)
+        {
+            string uriString = "https://query2.finance.yahoo.com/v7/finance/quote?formatted=true&crumb=qJcTEExdoWL&lang=en-US&region=US&symbols={0}&fields=messageBoardId%2ClongName%2CshortName%2CmarketCap%2CunderlyingSymbol%2CunderlyingExchangeSymbol%2CheadSymbolAsString%2CregularMarketPrice%2CregularMarketChange%2CregularMarketChangePercent%2CregularMarketVolume%2Cuuid%2CregularMarketOpen%2CfiftyTwoWeekLow%2CfiftyTwoWeekHigh%2CtoCurrency%2CfromCurrency%2CtoExchange%2CfromExchange&corsDomain=finance.yahoo.com";
+            foreach (string symbol in symbols) {
+                string sPage = WebPage.Get(String.Format(uriString, symbol));
+
+                if (sPage.Contains("(404) Not Found")) continue;
+                if (sPage.Contains("(400) Bad Request")) continue;
+
+                dynamic DynamicData = JsonConvert.DeserializeObject(sPage);
+
+                dynamic stuff = JsonConvert.DeserializeObject(sPage);
+
+                string name = sPage.Substring(sPage.IndexOf("fullExchangeName\":\""));
+                //string address = stuff.result.fullExchangeName;
+            }
+
+            return "";
+        }
+
         public void RunHistoryCollection(List<string> symbols)
         {
             logger.InfoFormat("Start - RunHistoryCollection");
@@ -284,6 +311,7 @@ namespace SymbolHistoryService
             }
             return success;
         }
+
         #endregion Private Bulk save Methods
     }
 }

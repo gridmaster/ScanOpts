@@ -78,6 +78,9 @@ namespace ORMService
 
             var timestamps = symbolHistory.Chart.Result[0].timestamp;
             string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
+
+            //string exchangeName = GetFullExchangeName(symbol);
+
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
 

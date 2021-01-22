@@ -12,5 +12,9 @@ namespace Core.Interface
         void RunHistoryCollection(List<string> symbols);
 
         void RunHistoryCollection(List<Symbols> symbols);
+
+        string GetFullExchangeName();
+
+        string GetFullExchangeName(List<string> symbol);
     }
 }
