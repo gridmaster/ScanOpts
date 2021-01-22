@@ -60,6 +60,46 @@ namespace ORMService
             return result;
         }
 
+        //public DailyQuotes UpdateExchange(string symbol, string exchange)
+        //{
+        //    DailyQuotes result = new DailyQuotes();
+
+        //    using (var db = new ScanOptsContext())
+        //    {
+        //        result = db.DailyQuotes.Where(q => q.Symbol == symbol).FirstOrDefault<DailyQuotes>();
+
+        //        result.Exchange = exchange;
+
+        //        db.SaveChanges();
+        //    }
+
+        //    return result;
+        //}
+
+        public bool UpdateExchange(string symbol, string exchange)
+        {
+            bool result = false;
+
+            try
+            {
+                using (var db = new ScanOptsContext())
+                {
+                    List<DailyQuotes> quotes = db.DailyQuotes.Where(q => q.Symbol == symbol).ToList();
+                    quotes.ForEach(q => q.Exchange = exchange);
+
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                //logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+                var what = ex.Message;
+            }     
+           
+
+            return result;
+        }
+
         public List<DailyQuotes> GetSymbolDailyData(string symbol)
         {
             List<DailyQuotes> result = new List<DailyQuotes>();
@@ -79,18 +119,8 @@ namespace ORMService
             var timestamps = symbolHistory.Chart.Result[0].timestamp;
             string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
 
-            //string exchangeName = GetFullExchangeName(symbol);
-
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
-
-            //var currentQuote = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)timestamps[timestamps.Count-1]);
-
-           // double currentClose = (double)symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose[timestamps.Count - 1];
-
-            //if (currentClose < 10)
-              //  return quotesList;
-
 
             for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
             {
