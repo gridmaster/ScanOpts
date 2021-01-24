@@ -31,13 +31,13 @@ namespace Core.ORMModels
         public decimal? High { get; set; }
         public decimal? Low { get; set; }
         public decimal? Open { get; set; }
-        public decimal? Volume { get; set; }
+        public int? Volume { get; set; }
         public decimal? UnadjHigh { get; set; }
         public decimal? UnadjLow { get; set; }
         public decimal? UnadjClose { get; set; }
         public decimal? UnadjOpen { get; set; }
 
-        public decimal? SMA60Volume { get; set; }
+        public int? SMA60Volume { get; set; }
         public decimal? SMA60High { get; set; }
         public decimal? SMA60Low { get; set; }
         public decimal? SMA60Close { get; set; }

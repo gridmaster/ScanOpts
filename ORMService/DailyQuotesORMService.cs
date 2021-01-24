@@ -96,6 +96,69 @@ namespace ORMService
                 var what = ex.Message;
             }     
            
+            return result;
+        }
+
+        public bool UpdateDailyQuotes(List<DailyQuotes> dailyQuotes)
+        {
+            bool result = false;
+
+            try
+            {
+                using (var db = new ScanOptsContext())
+                {
+                    string symbol = dailyQuotes.FirstOrDefault().Symbol;
+
+                    List<DailyQuotes> quotes = db.DailyQuotes.Where(q => q.Symbol == symbol).ToList();
+
+                    foreach(DailyQuotes dq in dailyQuotes)
+                    {
+                        var thisquote = quotes.Find(q => q.Timestamp == dq.Timestamp);
+
+                        thisquote.SMA60High = dq.SMA60High;
+                        thisquote.SMA60Low = dq.SMA60Low;
+                        thisquote.SMA60Close = dq.SMA60Close;
+                        thisquote.SMA60Volume = dq.SMA60Volume;
+
+                        db.SaveChanges();
+                    }
+
+                    //quotes.ForEach(q => q.Timestamp = 132546654);
+
+                    //db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                //logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+                var what = ex.Message;
+            }
+
+            return result;
+        }
+
+        public DailyQuotes GetDailyQuote(string symbol, int timestamp)
+        {
+            DailyQuotes result = new DailyQuotes();
+
+            try
+            {
+                using (var db = new ScanOptsContext())
+                {
+                    //quotes = db.DailyQuotes.Where(q => q.Symbol == symbol).Where(q => q.Timestamp == timestamp);
+                    IQueryable<DailyQuotes> quotes = db.DailyQuotes.Where(q => q.Symbol == symbol && q.Timestamp == timestamp);
+
+                    //IQueryable<string> symbols = db.DailyQuotes.Select(s => s.Symbol).Distinct();
+
+                    result = quotes.ToList().OrderBy(s => s.Timestamp).FirstOrDefault();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                //logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+                var what = ex.Message;
+            }
 
             return result;
         }
@@ -137,7 +200,7 @@ namespace ORMService
                 quote.Close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
                 quote.High = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
                 quote.Low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
-                quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
+                quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToInteger(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
                 if (symbolHistory.Chart.Result[0].indicators.unadjquote != null)
                 {
                     quote.UnadjOpen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
@@ -227,11 +290,20 @@ namespace ORMService
             }
             return splits;
         }
+
         private static decimal ConvertStringToDecimal(string value)
         {
             decimal holdDecimal = 0;
             decimal.TryParse(value.ToString(), out holdDecimal);
             return holdDecimal;
         }
+
+        private static int ConvertStringToInteger(string value)
+        {
+            int holdInt = 0;
+            int.TryParse(value.ToString(), out holdInt);
+            return holdInt;
+        }
+
     }
 }

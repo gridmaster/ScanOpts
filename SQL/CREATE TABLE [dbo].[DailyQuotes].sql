@@ -10,7 +10,7 @@ GO
 
 CREATE TABLE [dbo].[DailyQuotes](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Symbol] [varchar](60) NULL,
+	[Symbol] [varchar](60) NOT NULL,
 	[Date] [datetime] NOT NULL,
 	[Exchange] [varchar](20) NULL,
 	[InstrumentType] [varchar](20) NULL,
@@ -19,7 +19,7 @@ CREATE TABLE [dbo].[DailyQuotes](
 	[High] [decimal](18, 2) NULL,
 	[Low] [decimal](18, 2) NULL,
 	[Open] [decimal](18, 2) NULL,
-	[Volume] [decimal](18, 2) NULL,
+	[Volume] [int] NULL,
 	[UnadjHigh] [decimal](18, 2) NULL,
 	[UnadjLow] [decimal](18, 2) NULL,
 	[UnadjClose] [decimal](18, 2) NULL,
@@ -27,7 +27,7 @@ CREATE TABLE [dbo].[DailyQuotes](
 	[SMA60High] [decimal](18, 2) NULL,
 	[SMA60Low] [decimal](18, 2) NULL,
 	[SMA60Close] [decimal](18, 2) NULL,
-	[SMA60Volume] [decimal](18, 2) NULL,
+	[SMA60Volume] [int] NULL,
  CONSTRAINT [PK_dbo.DailyQuotes] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

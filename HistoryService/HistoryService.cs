@@ -40,8 +40,12 @@ namespace SymbolHistoryService
 
         public List<string> GetSymbols()
         {
+            logger.Info("Start - GetSymbols");
+
             List<string> quotesList = dailyQuotesORMService.GetSymbols();
 
+            logger.Info("End - GetSymbols");
+            logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
             return quotesList;
         }
 
@@ -50,6 +54,10 @@ namespace SymbolHistoryService
             logger.InfoFormat("RunHistoryCollection - GetSymbols");
             List<string> symbols = symbolsORMService.GetSymbols();
             RunHistoryCollection(symbols);
+
+            logger.Info("End - RunHistoryCollection");
+            logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+
         }
 
         public void RunHistoryCollection(List<Symbols> symbols)
@@ -66,13 +74,15 @@ namespace SymbolHistoryService
 
         public string GetFullExchangeName()
         {
-            logger.InfoFormat("GetFullExchangeName - GetSymbols");
+            // logger.InfoFormat("GetFullExchangeName - GetSymbols");
             List<string> symbols = symbolsORMService.GetSymbols();
             return GetFullExchangeName(symbols);
         }
 
         public string GetFullExchangeName(List<string> symbols)
         {
+            logger.InfoFormat("GetFullExchangeName - GetSymbols");
+
             string result = string.Empty;
             string uriString = "https://query2.finance.yahoo.com/v7/finance/quote?formatted=true&crumb=qJcTEExdoWL&lang=en-US&region=US&symbols={0}&fields=messageBoardId%2ClongName%2CshortName%2CmarketCap%2CunderlyingSymbol%2CunderlyingExchangeSymbol%2CheadSymbolAsString%2CregularMarketPrice%2CregularMarketChange%2CregularMarketChangePercent%2CregularMarketVolume%2Cuuid%2CregularMarketOpen%2CfiftyTwoWeekLow%2CfiftyTwoWeekHigh%2CtoCurrency%2CfromCurrency%2CtoExchange%2CfromExchange&corsDomain=finance.yahoo.com";
 
@@ -96,6 +106,9 @@ namespace SymbolHistoryService
             {
                 logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
             }
+
+            logger.Info("End - GetFullExchangeName");
+            logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
 
             return result;
         }
