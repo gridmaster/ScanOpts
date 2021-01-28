@@ -3,29 +3,28 @@ using Core.Interface;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core.BulkLoad
 {
-    public class BulkLoad60s : BaseBulkLoad, IDisposable
+    public class BulkLoad60SMASlopes : BaseBulkLoad, IDisposable
     {
-        private static readonly string[] ColumnNames = new string[] { "SymbolId", "Symbol", "Date", "High", "Low", "Close", "Volume",
-            "SMA60High", "SMA60Low", "SMA60Close", "Slope60High", "Slope60Low", "Slope60Close", "Ratio60High", "Ratio60Low", "Ratio60Close"};
 
-        public BulkLoad60s(ILogger logger) : base(logger, ColumnNames)
+        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume",
+            "SMA60High", "SMA60Low", "SMA60Close", "SMA60Volume", "Slope60High", "Slope60Low", "Slope60Close", "Slope60Volume", "Ratio60High", "Ratio60Low", "Ratio60Close"};
+
+        public BulkLoad60SMASlopes(ILogger logger) : base(logger, ColumnNames)
         {
         }
 
-        public DataTable LoadDataTableWithDailyHistory(IEnumerable<SlopeAnd60sCounts> dStats, DataTable dt)
+        public DataTable LoadDataTableWith60CycleSlopes(IEnumerable<SlopeAnd60sCounts> dStats, DataTable dt)
         {
             foreach (var value in dStats)
             {
-                var sValue = value.SymbolId + "^" + value.Symbol + "^" + value.Date + "^" + value.High + "^" +
-                    value.Low + "^" + value.Close + "^" + value.Volume + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close
-                    + value.Slope60High + "^" + value.Slope60Low + "^" + value.Slope60Close + value.Ratio60High + "^" + value.Ratio60Low + "^" + value.Ratio60Close;
+                var sValue = value.Symbol + "^" + value.Date + "^" + value.Exchange + "^" + value.InstrumentType + "^" + value.Timestamp + "^" + value.Close + "^" + value.High
+                    + "^" + value.Low + "^" + value.Open + "^" + value.Volume + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close + "^" + value.SMA60Volume
+                    + "^" + value.Slope60High + "^" + value.Slope60Low + "^" + value.Slope60Close + "^" + value.Slope60Volume + value.Ratio60High + "^" + value.Ratio60Low + "^" + value.Ratio60Close;
+
                 DataRow row = dt.NewRow();
 
                 row.ItemArray = sValue.Split('^');
@@ -50,7 +49,7 @@ namespace Core.BulkLoad
         // NOTE: Leave out the finalizer altogether if this class doesn't 
         // own unmanaged resources itself, but leave the other methods
         // exactly as they are. 
-        ~BulkLoad60s()
+        ~BulkLoad60SMASlopes()
         {
             // Finalizer calls Dispose(false)
             Dispose(false);

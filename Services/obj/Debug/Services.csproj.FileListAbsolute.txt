@@ -19,4 +19,3 @@ C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csproj.CoreComp
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.dll
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.pdb
-C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csprojAssemblyReference.cache

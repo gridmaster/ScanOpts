@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="BaseService.cs" />
     <Compile Include="BulkLoad\BaseBulkLoad.cs" />
-    <Compile Include="BulkLoad\BulkLoad60s.cs" />
+    <Compile Include="BulkLoad\BulkLoad60SMASlopes.cs" />
     <Compile Include="BulkLoad\BulkLoadBollingerBands.cs" />
     <Compile Include="BulkLoad\BulkLoadCallPuts.cs" />
     <Compile Include="BulkLoad\BulkLoadDividends.cs" />

@@ -76,3 +76,4 @@ namespace Core.BulkLoad
         #endregion Implement IDisposable
     }
 }
+

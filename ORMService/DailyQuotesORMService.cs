@@ -99,6 +99,29 @@ namespace ORMService
             return result;
         }
 
+        public List<DailyQuotes> GetDailyQuotes(string symbol)
+        {
+            List<DailyQuotes> dailyQuotes = new List<DailyQuotes>();
+
+            try
+            {
+                using (var db = new ScanOptsContext())
+                {
+                    dailyQuotes = db.DailyQuotes.Where(q => q.Symbol == symbol).ToList();
+
+                    //db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                //logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+                var what = ex.Message;
+            }
+
+            return dailyQuotes;
+        }
+
+
         public bool UpdateDailyQuotes(List<DailyQuotes> dailyQuotes)
         {
             bool result = false;
@@ -122,10 +145,6 @@ namespace ORMService
 
                         db.SaveChanges();
                     }
-
-                    //quotes.ForEach(q => q.Timestamp = 132546654);
-
-                    //db.SaveChanges();
                 }
             }
             catch (Exception ex)

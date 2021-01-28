@@ -1,14 +1,14 @@
 USE [ScanOpts]
 GO
 
-/****** Object:  Table [dbo].[DailyQuotes]    Script Date: 1/24/2021 1:28:51 PM ******/
+/****** Object:  Table [dbo].[DailyQuotes]    Script Date: 1/28/2021 10:21:57 AM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[DailyQuotes](
+CREATE TABLE [dbo].[SlopeAnd60sCounts](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Symbol] [varchar](60) NOT NULL,
 	[Date] [datetime] NOT NULL,
@@ -20,10 +20,6 @@ CREATE TABLE [dbo].[DailyQuotes](
 	[Low] [decimal](18, 2) NULL,
 	[Open] [decimal](18, 2) NULL,
 	[Volume] [int] NULL,
-	[UnadjHigh] [decimal](18, 2) NULL,
-	[UnadjLow] [decimal](18, 2) NULL,
-	[UnadjClose] [decimal](18, 2) NULL,
-	[UnadjOpen] [decimal](18, 2) NULL,
 	[SMA60High] [decimal](18, 2) NULL,
 	[SMA60Low] [decimal](18, 2) NULL,
 	[SMA60Close] [decimal](18, 2) NULL,
@@ -32,7 +28,10 @@ CREATE TABLE [dbo].[DailyQuotes](
 	[Slope60Low] [decimal](18, 2) NULL,
 	[Slope60Close] [decimal](18, 2) NULL,
 	[Slope60Volume] [int] NULL,
- CONSTRAINT [PK_dbo.DailyQuotes] PRIMARY KEY CLUSTERED 
+	[Ratio60High] [decimal](18, 2) NULL,
+	[Ratio60Low] [decimal](18, 2) NULL,
+	[Ratio60Close] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_dbo.SlopeAnd60sCounts] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]

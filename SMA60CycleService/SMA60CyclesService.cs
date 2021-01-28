@@ -24,8 +24,7 @@ namespace SMA60CycleService
         #region Public properties
 
         #endregion Public properties
-
-
+        
         #region Constructors
         //public SMA60CyclesService(ILogger logger) : base(logger)
         //{
@@ -43,7 +42,6 @@ namespace SMA60CycleService
         #endregion Constructors
 
         #region Public Methods
-        
         public List<DailyQuotes> GenerateSMA60s()
         {
             List<DailyQuotes> result = new List<DailyQuotes>();
@@ -90,8 +88,6 @@ namespace SMA60CycleService
                             if(dq.SMA60Close > 0)
                                 result.Add(dq);
 
-                            //dailyQuotesORMService.UpdateDailyQuotes(result);
-
                             SMA60High.RemoveAt(0);
                             SMA60Low.RemoveAt(0);
                             SMA60Close.RemoveAt(0);
@@ -102,13 +98,15 @@ namespace SMA60CycleService
                             //logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
                             var what = ex.Message;
                         }
-
                     }
                 }
+
                 if (result.Count > 0)
                 {
                     dailyQuotesORMService.UpdateDailyQuotes(result);
                 }
+
+                // clean up before next symbol
                 result.Clear();
                 SMA60High.Clear();
                 SMA60Low.Clear();
@@ -119,7 +117,6 @@ namespace SMA60CycleService
 
             return result;
         }
-
         #endregion Public Methods
     }
 }

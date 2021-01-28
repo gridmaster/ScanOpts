@@ -120,7 +120,7 @@ namespace ORMService
             }
             catch (Exception ex)
             {
-                IOCContainer.Instance.Get<ILogger>().ErrorFormat("StatisticORMService - Add<{0}> - Add error: {1}{2}", entity.Symbol, ex.Message, Environment.NewLine);
+                IOCContainer.Instance.Get<ILogger>().ErrorFormat("StatisticORMService - Add<{0}> - Add error: {1} - {2}", entity.Symbol, ex.Message, Environment.NewLine);
             }
 
             return entity.Id;

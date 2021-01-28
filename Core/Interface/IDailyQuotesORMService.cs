@@ -11,5 +11,6 @@ namespace Core.Interface
         Core.JsonQuote.Dividends GetDividends(string symbol, Core.JsonQuote.JsonResult symbolHistory);
         Core.JsonQuote.Splits GetSplits(string symbol, Core.JsonQuote.JsonResult symbolHistory);
         bool UpdateDailyQuotes(List<DailyQuotes> dailyQuotes);
+        List<DailyQuotes> GetDailyQuotes(string symbol);
     }
 }
