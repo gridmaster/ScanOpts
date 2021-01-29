@@ -55,6 +55,8 @@ namespace SMA60CycleService
 
         public List<DailyQuotes> GenerateSMA60s(List<string> symbols)
         {
+            logger.Info("Start - GenerateSMA60s");
+
             List<DailyQuotes> result = new List<DailyQuotes>();
 
             List<decimal?> SMA60High = new List<decimal?>();
@@ -67,7 +69,10 @@ namespace SMA60CycleService
             {
                 var quotes = dailyQuotesORMService.GetSymbolDailyData(symbol).OrderBy(s => s.Timestamp);
 
+                logger.InfoFormat("{0} - Processing symbol {1}", DateTime.Now, symbol);
+
                 foreach (DailyQuotes quote in quotes) {
+
                     SMA60High.Add(quote.High);
                     SMA60Low.Add(quote.Low);
                     SMA60Close.Add(quote.Close);
@@ -114,6 +119,8 @@ namespace SMA60CycleService
                 SMA60Volume.Clear();
                 iNdx = 0;
             }
+
+            logger.Info("End - GenerateSMA60s");
 
             return result;
         }
