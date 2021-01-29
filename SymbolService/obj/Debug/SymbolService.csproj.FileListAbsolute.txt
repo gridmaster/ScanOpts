@@ -87,7 +87,6 @@ C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\Ninject.xml
 C:\Projects\Market Projects\ScanOpts\SymbolService\bin\Debug\EntityFramework.xml
-C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\SymbolService\obj\Debug\SymbolService.dll

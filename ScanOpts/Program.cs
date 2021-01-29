@@ -79,12 +79,12 @@ namespace Core
             ////IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
             List<string> symbolz = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
-
-            var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbolz);
-
+                        
             ////IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbolz);
 
-            ////List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbolz);
+            List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbolz);
+
+            var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbolz);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 

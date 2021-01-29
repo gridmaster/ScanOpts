@@ -10,7 +10,7 @@ namespace Core.BulkLoad
     public class BulkLoad60SMASlopes : BaseBulkLoad, IDisposable
     {
 
-        private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume",
+        private static readonly string[] ColumnNames = new string[] { "SymbolId", "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume",
             "SMA60High", "SMA60Low", "SMA60Close", "SMA60Volume", "Slope60High", "Slope60Low", "Slope60Close", "Slope60Volume", "Ratio60High", "Ratio60Low", "Ratio60Close"};
 
         public BulkLoad60SMASlopes(ILogger logger) : base(logger, ColumnNames)
@@ -21,7 +21,7 @@ namespace Core.BulkLoad
         {
             foreach (var value in dStats)
             {
-                var sValue = value.Symbol + "^" + value.Date + "^" + value.Exchange + "^" + value.InstrumentType + "^" + value.Timestamp + "^" + value.Close + "^" + value.High
+                var sValue = value.SymbolId + "^" + value.Symbol + "^" + value.Date + "^" + value.Exchange + "^" + value.InstrumentType + "^" + value.Timestamp + "^" + value.Close + "^" + value.High
                     + "^" + value.Low + "^" + value.Open + "^" + value.Volume + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close + "^" + value.SMA60Volume
                     + "^" + value.Slope60High + "^" + value.Slope60Low + "^" + value.Slope60Close + "^" + value.Slope60Volume + value.Ratio60High + "^" + value.Ratio60Low + "^" + value.Ratio60Close;
 

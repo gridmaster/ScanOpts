@@ -1,5 +1,4 @@
 C:\Projects\Market Projects\ScanOpts\SMA60CycleService\obj\Debug\SMA60CycleService.csproj.CoreCompileInputs.cache
-C:\Projects\Market Projects\ScanOpts\SMA60CycleService\obj\Debug\SMA60CycleService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\SMA60CycleService\bin\Debug\SMA60CycleService.dll
 C:\Projects\Market Projects\ScanOpts\SMA60CycleService\bin\Debug\SMA60CycleService.pdb
 C:\Projects\Market Projects\ScanOpts\SMA60CycleService\bin\Debug\Core.dll

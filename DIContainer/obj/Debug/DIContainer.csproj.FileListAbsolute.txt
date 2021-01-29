@@ -68,3 +68,4 @@ C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csproj.Co
 C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.dll
 C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.pdb
+C:\Projects\Market Projects\ScanOpts\DIContainer\obj\Debug\DIContainer.csprojAssemblyReference.cache

@@ -10,6 +10,7 @@ GO
 
 CREATE TABLE [dbo].[SlopeAnd60sCounts](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[SymbolId] [int] NOT NULL,
 	[Symbol] [varchar](60) NOT NULL,
 	[Date] [datetime] NOT NULL,
 	[Exchange] [varchar](20) NULL,

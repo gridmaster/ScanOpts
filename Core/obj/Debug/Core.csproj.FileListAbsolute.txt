@@ -77,3 +77,4 @@ C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Core.dll.config
 C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Core.dll
 C:\Projects\Market Projects\ScanOpts\Core\bin\Debug\Core.pdb
 C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.csproj.CopyComplete
+C:\Projects\Market Projects\ScanOpts\Core\obj\Debug\Core.csprojAssemblyReference.cache

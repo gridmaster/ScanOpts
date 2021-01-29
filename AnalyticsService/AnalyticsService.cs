@@ -26,7 +26,7 @@ namespace DataAnalyticsService
 
         #region Constructors
 
-        public AnalyticsService(ILogger logger, IDailyQuotesORMService dailyQuotesORMService, BollingerBandORMService bollingerBandORMService, 
+        public AnalyticsService(ILogger logger, IDailyQuotesORMService dailyQuotesORMService, BollingerBandORMService bollingerBandORMService,
             BulkLoadSlopeCounts bulkloadSlopeCounts, BulkLoad60SMASlopes bulkLoad60SMASlopes, ISMA60CycleService sMA60CycleService) //, BulkLoadAnalyticsService bulkLoadAnalyticsService)
             : base(logger)
         {
@@ -36,7 +36,7 @@ namespace DataAnalyticsService
             this.dailyQuotesORMService = dailyQuotesORMService;
 
             this.bollingerBandORMService = bollingerBandORMService;
-            this.bulkLoadSlopeCounts = bulkloadSlopeCounts;
+            //this.bulkLoadSlopeCounts = bulkloadSlopeCounts;
 
             this.sMA60CycleService = sMA60CycleService;
             this.bulkLoad60SMASlopes = bulkLoad60SMASlopes;
@@ -115,11 +115,13 @@ namespace DataAnalyticsService
 
                         SlopeAnd60sCounts sbbr = new SlopeAnd60sCounts()
                         {
-                            Id = item.Id,
+                            SymbolId = item.Id,
                             Symbol = item.Symbol,
-                            Date = DateTime.Now, // FromUnixTimestamp(item.Timestamp),
+                            Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)item.Timestamp), // , // FromUnixTimestamp(item.Timestamp),
                             Exchange = item.Exchange,
                             InstrumentType = item.InstrumentType,
+                            Timestamp = item.Timestamp,
+                            Open = item.Open,
                             Close = item.Close,
                             High = item.High,
                             Low = item.Low,
@@ -135,6 +137,10 @@ namespace DataAnalyticsService
                             Slope60High = lastSMAHigh60 > 0 ? item.SMA60High - lastSMAHigh60 : 0,
                             Slope60Low = lastSMALow60 > 0 ? item.SMA60Low - lastSMALow60 : 0,
                             Slope60Volume = lastSMAVolume60 > 0 ? item.SMA60Volume - lastSMAVolume60 : 0,
+
+                            Ratio60High = 0,
+                            Ratio60Low = 0,
+                            Ratio60Close = 0
                         };
 
                         //sbbr.CountClose = sbbr.SlopeClose > 0 ? ++CountClose : 0;
@@ -345,7 +351,6 @@ namespace DataAnalyticsService
             {
                 var dt = bulkLoad60SMASlopes.ConfigureDataTable();
 
-                //dt = bulkLoadSlopeCounts.LoadDataTableWithDailyHistory(counts, dt);
                 dt = bulkLoad60SMASlopes.LoadDataTableWith60CycleSlopes(counts, dt);
 
                 if (dt == null)
@@ -354,7 +359,7 @@ namespace DataAnalyticsService
                 }
                 else
                 {
-                    success = bulkLoadSlopeCounts.BulkCopy<SlopeAnd60sCounts>(dt, "ScanOptsContext");
+                    success = bulkLoad60SMASlopes.BulkCopy<SlopeAnd60sCounts>(dt, "ScanOptsContext");
                     logger.InfoFormat("{0}BulkLoadSlopeAndBBCounts returned with: {1}", Environment.NewLine,
                                             success ? "Success" : "Fail");
                 }

@@ -12,8 +12,8 @@ namespace Core.BusinessModels
         [StringLength(60)]
         public string Symbol { get; set; }
 
-        //[Column(TypeName = "INT")]
-        //public int SymbolId { get; set; }
+        [Column(TypeName = "INT")]
+        public int SymbolId { get; set; }
 
         [DataType(DataType.DateTime)]
         [Column(TypeName = "DATETIME")]
