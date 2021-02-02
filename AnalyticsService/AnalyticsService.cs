@@ -16,7 +16,7 @@ namespace DataAnalyticsService
         private BulkLoadSlopeCounts bulkLoadSlopeCounts = null;
         private ISMA60CycleService sMA60CycleService = null;
         private BulkLoad60SMASlopes bulkLoad60SMASlopes = null;
-        private IDailyQuotesORMService dailyQuotesORMService = null;
+        private DailyQuotesORMService dailyQuotesORMService = null;
 
         #endregion Private properties
 
@@ -26,7 +26,7 @@ namespace DataAnalyticsService
 
         #region Constructors
 
-        public AnalyticsService(ILogger logger, IDailyQuotesORMService dailyQuotesORMService, BollingerBandORMService bollingerBandORMService,
+        public AnalyticsService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, BollingerBandORMService bollingerBandORMService,
             BulkLoadSlopeCounts bulkloadSlopeCounts, BulkLoad60SMASlopes bulkLoad60SMASlopes, ISMA60CycleService sMA60CycleService) //, BulkLoadAnalyticsService bulkLoadAnalyticsService)
             : base(logger)
         {
@@ -55,16 +55,6 @@ namespace DataAnalyticsService
 
             return FindRising60SMATrends(syms);
         }
-
-        //public const long UnixEpochTicks = 621355968000000000;
-        //public const long TicksPerMillisecond = 10000;
-        //public const long TicksPerSecond = TicksPerMillisecond * 1000;
-
-        ////[MethodImpl(MethodImplOptions.AggressiveInlining)]
-        //public static DateTime FromUnixTimestamp(this int? unixTime)
-        //{
-        //    return new DateTime(UnixEpochTicks + unixTime * TicksPerSecond);
-        //}
 
         public List<SlopeAnd60sCounts> FindRising60SMATrends(List<string> symbols)
         {
@@ -195,6 +185,113 @@ namespace DataAnalyticsService
             logger.Info("End - FindRising50SMATrends");
             return slopeAndCounts;
         }
+        
+        public List<DailyQuotes> FindRising60SMATrends(ref List<DailyQuotes> symbols)
+        {
+            logger.Info("Start - FindRising60SMATrends");
+            List<SlopeAnd60sCounts> slopeAndCounts = null;
+
+            if (symbols == null || symbols.Count == 0)
+            {
+                logger.WarnFormat("FindRising60SMATrends: No symbols were sent.");
+                return null;
+            }
+
+            try
+            {
+                foreach (string symbol in symbols)
+                {
+                    logger.InfoFormat("Processing symbol {0}", symbol);
+
+                    var dailyQuotes = dailyQuotesORMService.GetDailyQuotes(symbol);
+
+                    int start = 0;
+                    decimal? lastClose = 0;
+                    decimal? lastSMAHigh60 = 0;
+                    decimal? lastSMALow60 = 0;
+                    decimal? lastSMAClose60 = 0;
+                    int? lastSMAVolume60 = 0;
+                    decimal? lastSlopeHigh60 = 0;
+                    decimal? lastSlopeLow60 = 0;
+                    decimal? lastSlopeClose60 = 0;
+                    int lastSlopeVolume60 = 0;
+                    int Count60 = 0;
+
+                    slopeAndCounts = new List<SlopeAnd60sCounts>();
+
+                    foreach (DailyQuotes item in dailyQuotes)
+                    {
+                        if (start == 0)
+                        {
+                            lastClose = item.Close;
+                            start++;
+                            continue;
+                        }
+
+                        //var Date = FromUnixTimestamp(item.Timestamp);
+
+                        SlopeAnd60sCounts sbbr = new SlopeAnd60sCounts()
+                        {
+                            SymbolId = item.Id,
+                            Symbol = item.Symbol,
+                            Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)item.Timestamp),
+                            Exchange = item.Exchange,
+                            InstrumentType = item.InstrumentType,
+                            Timestamp = item.Timestamp,
+                            Open = item.Open,
+                            Close = item.Close,
+                            High = item.High,
+                            Low = item.Low,
+                            Volume = item.Volume,
+
+                            SMA60High = item.SMA60High,
+                            SMA60Low = item.SMA60Low,
+                            SMA60Close = item.SMA60Close,
+                            SMA60Volume = item.SMA60Volume,
+
+                            //Slope60Close = item.Close - lastClose,
+                            Slope60Close = lastSMAClose60 > 0 ? item.SMA60Close - lastSMAClose60 : 0,
+                            Slope60High = lastSMAHigh60 > 0 ? item.SMA60High - lastSMAHigh60 : 0,
+                            Slope60Low = lastSMALow60 > 0 ? item.SMA60Low - lastSMALow60 : 0,
+                            Slope60Volume = lastSMAVolume60 > 0 ? item.SMA60Volume - lastSMAVolume60 : 0,
+
+                            Ratio60High = 0,
+                            Ratio60Low = 0,
+                            Ratio60Close = 0
+                        };
+
+                        slopeAndCounts.Add(sbbr);
+
+                        start++;
+
+                        if (sbbr.Slope60High <= 0) Count60 = 0;
+
+                        if (start > 60)
+                        {
+                            lastSMAHigh60 = item.SMA60High;
+                            lastSMALow60 = item.SMA60Low;
+                            lastSMAClose60 = item.SMA60Close;
+                            lastSMAVolume60 = item.SMA60Volume;
+                        }
+                    }
+
+                    //if (sbbResults.Count > 0)
+                    //    start = start;
+
+                    //BulkLoadSlopeAndBBCounts(sbbResults);
+                    BulkLoadSlope60(slopeAndCounts);
+                    var mystart = start;
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.InfoFormat("Error - FindRising50SMATrends {0}", ex.Message);
+            }
+
+            logger.Info("End - FindRising50SMATrends");
+            return slopeAndCounts;
+        }
+
 
         #region SlopeAndBBCounts
         public List<SlopeAndBBCounts> FindRising50SMATrends(List<Symbols> symbols)

@@ -111,6 +111,7 @@ C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\EntityFramework.SqlSer
 C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\ORMService\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.InitialCreate.resources
 C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.ChangeColumnName.resources
 C:\Projects\Market Projects\ScanOpts\ORMService\obj\Debug\ORMService.Migrations.DividendsAndSplits.resources

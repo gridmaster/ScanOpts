@@ -85,6 +85,7 @@ C:\Projects\Market Projects\ScanOpts\OptonsService\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\OptonsService\bin\Debug\Ninject.xml
 C:\Projects\Market Projects\ScanOpts\OptonsService\bin\Debug\log4net.xml
 C:\Projects\Market Projects\ScanOpts\OptonsService\bin\Debug\EntityFramework.xml
+C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\OptonsService\obj\Debug\OptonsService.dll

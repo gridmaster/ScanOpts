@@ -1,18 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity.Core.EntityClient;
-using System.Linq;
+﻿using Core;
 using Core.Interface;
 using Core.JsonQuote;
 using Core.ORMModels;
 using DIContainer;
 using ORMService.Context;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 
 namespace ORMService
 {
-    public class DailyQuotesORMService : IDailyQuotesORMService
+    public class DailyQuotesORMService : BaseService, IDailyQuotesORMService
     {
+        //private IHistoryService historyService;
+
+        #region Constructors
+        public DailyQuotesORMService(ILogger logger) //, IHistoryService historyService) //, BulkLoadAnalyticsService bulkLoadAnalyticsService)
+            : base(logger)
+        {
+            ThrowIfIsInitialized();
+            IsInitialized = true;
+
+            //this.historyService = historyService;
+        }
+
+        #endregion Constructors
+
         public void Add(DailyQuotes entity)
         {
             using (var db = new ScanOptsContext())
@@ -121,7 +135,6 @@ namespace ORMService
             return dailyQuotes;
         }
 
-
         public bool UpdateDailyQuotes(List<DailyQuotes> dailyQuotes)
         {
             bool result = false;
@@ -194,7 +207,7 @@ namespace ORMService
             return result;
         }
         
-        public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
+        public List<DailyQuotes> ExtractDailyQuotesx(string symbol, JsonResult symbolHistory)
         {
             List<DailyQuotes> quotesList = new List<DailyQuotes>();
 
@@ -206,10 +219,12 @@ namespace ORMService
 
             for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
             {
+                string exchange = GetFullExchangeName(symbol);
+
                 int holdInt = 0;
 
                 DailyQuotes quote = new DailyQuotes();
-                quote.Date = date;
+                quote.Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime(timestamps[i]);
                 quote.Symbol = symbol;
                 quote.Exchange = exchangeName;
                 quote.InstrumentType = instrumentType;
@@ -244,6 +259,34 @@ namespace ORMService
             }
 
             return quotesList;
+        }
+
+        public string GetFullExchangeName(string symbol)
+        {
+            //            logger.InfoFormat("GetFullExchangeName - GetSymbols");
+
+            string result = string.Empty;
+            string uriString = "https://query2.finance.yahoo.com/v7/finance/quote?formatted=true&crumb=qJcTEExdoWL&lang=en-US&region=US&symbols={0}&fields=messageBoardId%2ClongName%2CshortName%2CmarketCap%2CunderlyingSymbol%2CunderlyingExchangeSymbol%2CheadSymbolAsString%2CregularMarketPrice%2CregularMarketChange%2CregularMarketChangePercent%2CregularMarketVolume%2Cuuid%2CregularMarketOpen%2CfiftyTwoWeekLow%2CfiftyTwoWeekHigh%2CtoCurrency%2CfromCurrency%2CtoExchange%2CfromExchange&corsDomain=finance.yahoo.com";
+
+            try
+            {
+                string sPage = WebPage.Get(String.Format(uriString, symbol));
+
+                string exchangeName = sPage.Substring(sPage.IndexOf("fullExchangeName\":\"") + "fullExchangeName\":\"".Length);
+                result = exchangeName.Substring(0, exchangeName.IndexOf("\""));
+
+                //write to database...
+                //                dailyQuotesORMService.UpdateExchange(symbol, result);
+            }
+            catch (Exception ex)
+            {
+                logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+            }
+
+            //logger.Info("End - GetFullExchangeName");
+            //logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+
+            return result;
         }
 
         public Dividends GetDividends(string symbol, JsonResult symbolHistory)

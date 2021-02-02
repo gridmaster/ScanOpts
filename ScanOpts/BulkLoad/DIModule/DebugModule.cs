@@ -23,8 +23,8 @@ namespace ScanOpts.DIModule
             Bind<ICallPutORMService>().To<CallPutORMService>().InSingletonScope();
             Bind<ISymbolORMService>().To<SymbolsORMService>().InSingletonScope();
             Bind<IOptionService>().To<OptionService>().InSingletonScope();
-            Bind<IHistoryService>().To<HistoryService>().InSingletonScope();
             Bind<IDailyQuotesORMService>().To<DailyQuotesORMService>().InSingletonScope();
+            Bind<IHistoryService>().To<HistoryService>().InSingletonScope();
             Bind<ISymbolService>().To<SymbolService>().InSingletonScope();
             Bind<IExchangeORMService>().To<ExchangeORMService>().InSingletonScope();
 

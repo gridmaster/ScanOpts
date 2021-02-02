@@ -112,3 +112,5 @@ C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csp
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.dll
 C:\Projects\Market Projects\ScanOpts\HistoryService\obj\Debug\HistoryService.pdb
+C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\SMA60CycleService.dll
+C:\Projects\Market Projects\ScanOpts\HistoryService\bin\Debug\SMA60CycleService.pdb

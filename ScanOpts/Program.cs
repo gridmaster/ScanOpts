@@ -59,10 +59,21 @@ namespace Core
             /*********************************************************************************/
             
             
-            ////IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
+            IOCContainer.Instance.Get<ISymbolService>().LoadAllSymbolsFromUSExchangesNoSave();
 
-            //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
-            ////List<string> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbolStringList();
+            ////List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbols();
+            List<string> symbols = IOCContainer.Instance.Get<ISymbolService>().GetSymbolStringList();
+
+            ////IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+
+
+            ////List<string> symbols = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
+
+            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+
+            //IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbols);
+
+            List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60sNoUpdate(symbols);
 
             //IOCContainer.Instance.Get<IBollingerBandService>().RunDaily(false);
             //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
@@ -76,17 +87,15 @@ namespace Core
 
             //List<Symbols> symbols = IOCContainer.Instance.Get<ISymbolORMService>().GetFromDBSymbolsFromTheseExchanges(null);
 
-            ////IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
+////            IOCContainer.Instance.Get<IHistoryService>().RunHistoryCollection(symbols);
 
-            List<string> symbolz = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
+////            IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbols);
 
-            ////IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbolz);
+            ////List<string> symbolz = IOCContainer.Instance.Get<IHistoryService>().GetSymbols();
 
-            List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbolz);
+            //List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbols);
 
-            IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbolz);
-
-            var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbolz);
+            var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbols);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 

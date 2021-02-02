@@ -1,4 +1,5 @@
-﻿using Core.ORMModels;
+﻿using Core.JsonQuote;
+using Core.ORMModels;
 using System.Collections.Generic;
 
 namespace Core.Interface
@@ -15,6 +16,10 @@ namespace Core.Interface
 
         string GetFullExchangeName();
 
+        string GetFullExchangeName(string symbol);
+
         string GetFullExchangeName(List<string> symbol);
+
+        List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory);
     }
 }

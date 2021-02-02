@@ -15,6 +15,7 @@ C:\Projects\Market Projects\ScanOpts\Services\bin\Debug\EntityFramework.xml
 C:\Projects\Market Projects\ScanOpts\Services\bin\Debug\DIContainer.pdb
 C:\Projects\Market Projects\ScanOpts\Services\bin\Debug\Ninject.pdb
 C:\Projects\Market Projects\ScanOpts\Services\bin\Debug\Ninject.xml
+C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csprojAssemblyReference.cache
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.csproj.CopyComplete
 C:\Projects\Market Projects\ScanOpts\Services\obj\Debug\Services.dll

@@ -7,6 +7,8 @@ using Core.ORMModels;
 using ORMService;
 using Core.BulkLoad;
 using Core.JsonQuote;
+using SMA60CycleService;
+using DataAnalyticsService;
 
 namespace SymbolHistoryService
 {
@@ -18,11 +20,13 @@ namespace SymbolHistoryService
         private SymbolsORMService symbolsORMService = null;
         private BulkLoadDividends bulkLoadDividends = null;
         private BulkLoadSplits bulkLoadSplits = null;
+        private SMA60CyclesService sMA60CyclesService = null;
+        private AnalyticsService analyticsService = null;
         #endregion Private properties
 
         #region Constructors
 
-        public HistoryService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolsORMService, BulkLoadHistory bulkLoadHistory, BulkLoadDividends bulkLoadDividends, BulkLoadSplits bulkLoadSplits)
+        public HistoryService(ILogger logger, SMA60CyclesService sMA60CyclesService, AnalyticsService analyticsService, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolsORMService, BulkLoadHistory bulkLoadHistory, BulkLoadDividends bulkLoadDividends, BulkLoadSplits bulkLoadSplits)
             : base(logger)
         {
             ThrowIfIsInitialized();
@@ -32,6 +36,7 @@ namespace SymbolHistoryService
             this.symbolsORMService = symbolsORMService;
             this.bulkLoadDividends = bulkLoadDividends;
             this.bulkLoadSplits = bulkLoadSplits;
+            this.sMA60CyclesService = sMA60CyclesService;
         }
 
         #endregion Constructors
@@ -113,6 +118,34 @@ namespace SymbolHistoryService
             return result;
         }
 
+        public string GetFullExchangeName(string symbol)
+        {
+            //            logger.InfoFormat("GetFullExchangeName - GetSymbols");
+
+            string result = string.Empty;
+            string uriString = "https://query2.finance.yahoo.com/v7/finance/quote?formatted=true&crumb=qJcTEExdoWL&lang=en-US&region=US&symbols={0}&fields=messageBoardId%2ClongName%2CshortName%2CmarketCap%2CunderlyingSymbol%2CunderlyingExchangeSymbol%2CheadSymbolAsString%2CregularMarketPrice%2CregularMarketChange%2CregularMarketChangePercent%2CregularMarketVolume%2Cuuid%2CregularMarketOpen%2CfiftyTwoWeekLow%2CfiftyTwoWeekHigh%2CtoCurrency%2CfromCurrency%2CtoExchange%2CfromExchange&corsDomain=finance.yahoo.com";
+
+            try
+            {
+                string sPage = WebPage.Get(String.Format(uriString, symbol));
+
+                string exchangeName = sPage.Substring(sPage.IndexOf("fullExchangeName\":\"") + "fullExchangeName\":\"".Length);
+                result = exchangeName.Substring(0, exchangeName.IndexOf("\""));
+
+                //write to database...
+                //                dailyQuotesORMService.UpdateExchange(symbol, result);
+            }
+            catch (Exception ex)
+            {
+                logger.InfoFormat($@"ERROR - GetFullExchangeName - Error: {ex.Message}");
+            }
+
+            //logger.Info("End - GetFullExchangeName");
+            //logger.InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+
+            return result;
+        }
+
         public void RunHistoryCollection(List<string> symbols)
         {
             logger.InfoFormat("Start - RunHistoryCollection");
@@ -127,8 +160,12 @@ namespace SymbolHistoryService
                     //if (!symbol.Contains("MO")) continue; 
 
                     logger.InfoFormat("Get {0} history page", symbol);
-                                       
+
                     // this gets the history
+                    // 5 days 5 minute intervals
+                    // string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/TSLA?symbol=TSLA&period1=1611085200&period2=1611946140&useYfid=true&interval=5m&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&crumb=qUOJAwBbdUN&corsDomain=finance.yahoo.com"
+
+                    // 15 months 1 day iintervals
                     string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={startDate}&period2={endDate}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
                     string sPage = WebPage.Get(uriString);
                     
@@ -142,14 +179,17 @@ namespace SymbolHistoryService
                     {
                         Core.JsonQuote.JsonResult symbolHistory = JsonConvert.DeserializeObject<Core.JsonQuote.JsonResult>(sPage);
 
-                        List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
+                        List<DailyQuotes> quotesList = ExtractDailyQuotes(symbol, symbolHistory);
+                        sMA60CyclesService.GenerateSMA60ForSymbol(ref quotesList);
+                        analyticsService.FindRising60SMATrends(ref quotesList);
+
                         bool success = BulkLoadHistory(quotesList);
 
-                        var dividends = dailyQuotesORMService.GetDividends(symbol, symbolHistory);
-                        success = BulkLoadDividends(dividends);
+                        //var dividends = dailyQuotesORMService.GetDividends(symbol, symbolHistory);
+                        //success = BulkLoadDividends(dividends);
 
-                        var splits = dailyQuotesORMService.GetSplits(symbol, symbolHistory);
-                        success = BulkLoadSplits(splits);
+                        //var splits = dailyQuotesORMService.GetSplits(symbol, symbolHistory);
+                        //success = BulkLoadSplits(splits);
                     }
                     catch (Exception ex)
                     {
@@ -169,6 +209,75 @@ namespace SymbolHistoryService
             }
         }
         #endregion Public methods
+
+        public List<DailyQuotes> ExtractDailyQuotes(string symbol, JsonResult symbolHistory)
+        {
+            List<DailyQuotes> quotesList = new List<DailyQuotes>();
+
+            var timestamps = symbolHistory.Chart.Result[0].timestamp;
+            string exchangeName = symbolHistory.Chart.Result[0].meta.exchangeName;
+            string exchange = GetFullExchangeName(symbol);
+
+            string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
+            DateTime date = DateTime.Now;
+
+            for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
+            {
+
+                int holdInt = 0;
+
+                DailyQuotes quote = new DailyQuotes();
+                quote.Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime(timestamps[i]);
+                quote.Symbol = symbol;
+                quote.Exchange = exchange;
+                quote.InstrumentType = instrumentType;
+                quote.Timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
+
+                quote.Open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
+                quote.Close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
+                quote.High = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
+                quote.Low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
+                quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToInteger(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
+                if (symbolHistory.Chart.Result[0].indicators.unadjquote != null)
+                {
+                    quote.UnadjOpen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
+                    quote.UnadjClose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
+                    quote.UnadjHigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
+                    quote.UnadjLow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
+                }
+                else
+                {
+                    quote.UnadjOpen = 0;
+                    quote.UnadjClose = 0;
+                    quote.UnadjHigh = 0;
+                    quote.UnadjLow = 0;
+                }
+
+                quote.SMA60Close = 0;
+                quote.SMA60High = 0;
+                quote.SMA60Low = 0;
+                quote.SMA60Volume = 0;
+
+                quotesList.Add(quote);
+
+            }
+
+            return quotesList;
+        }
+
+        private static decimal ConvertStringToDecimal(string value)
+        {
+            decimal holdDecimal = 0;
+            decimal.TryParse(value.ToString(), out holdDecimal);
+            return holdDecimal;
+        }
+
+        private static int ConvertStringToInteger(string value)
+        {
+            int holdInt = 0;
+            int.TryParse(value.ToString(), out holdInt);
+            return holdInt;
+        }
 
         #region classes
         public class Pre

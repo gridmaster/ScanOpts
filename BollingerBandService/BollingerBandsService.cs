@@ -18,8 +18,9 @@ namespace BollingerBandService
         private List<string> symbolList;
         private SymbolsORMService symbolORMService = new SymbolsORMService();
         private ExchangeORMService exchangeORMService = new ExchangeORMService();
-        private DailyQuotesORMService dailyQuotesORMService = null;
+        private ORMService.DailyQuotesORMService dailyQuotesORMService = null;
         private BulkLoadBollingerBands bulkLoadBollingerBands = null;
+        private IHistoryService historyService = null;
         private bool _runDaily = true;
         #endregion Private properties
 
@@ -29,7 +30,7 @@ namespace BollingerBandService
 
         #region Constructors
 
-        public BollingerBandsService(ILogger logger, DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService, BulkLoadBollingerBands bulkLoadBollingerBands)
+        public BollingerBandsService(ILogger logger, IHistoryService historyService, ORMService.DailyQuotesORMService dailyQuotesORMService, SymbolsORMService symbolORMService, ExchangeORMService exchangeORMService, BulkLoadBollingerBands bulkLoadBollingerBands)
             : base(logger)
         {
             ThrowIfIsInitialized();
@@ -38,6 +39,7 @@ namespace BollingerBandService
             this.exchangeORMService = exchangeORMService;
             this.dailyQuotesORMService = dailyQuotesORMService;
             this.bulkLoadBollingerBands = bulkLoadBollingerBands;
+            this.historyService = historyService;
         }
 
         #endregion Constructors
@@ -110,7 +112,7 @@ namespace BollingerBandService
                     }
 
                     if (symbolHistory.Chart.Result[0].indicators.unadjclose[0].unadjclose == null) continue;
-                    List<DailyQuotes> quotesList = dailyQuotesORMService.ExtractDailyQuotes(symbol, symbolHistory);
+                    List<DailyQuotes> quotesList = historyService.ExtractDailyQuotes(symbol, symbolHistory);
 
                     if(SkipThisSymbol(quotesList)) continue;
 
