@@ -353,12 +353,12 @@ namespace DailySymbolService
                     work = work.Substring(work.IndexOf("<td"));
 
                     // check if > 9.99
-                    decimal result = 0;
-                    bool tryParseResult = decimal.TryParse(closingPrice, out result);
+                    decimal close = 0;
+                    bool tryParseResult = decimal.TryParse(closingPrice, out close);
 
                     if (tryParseResult)
                     {
-                        if (result < 10)
+                        if (close < 10)
                             continue;
                     }
                     else
@@ -373,12 +373,13 @@ namespace DailySymbolService
                     string closingVolumn = work.Substring(startNdx, endNdx);
 
                     // check if > 9.99
-                    result = 0;
+                    decimal result = 0;
                     tryParseResult = decimal.TryParse(closingVolumn, out result);
+                    decimal lowclose = 75;
 
                     if (tryParseResult)
                     {
-                        if (result < 1000000)
+                        if (result < 1000000 && close < lowclose)
                             continue;
                     }
                     else

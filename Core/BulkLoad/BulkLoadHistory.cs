@@ -11,7 +11,7 @@ namespace Core.BulkLoad
     {
         
         private static readonly string[] ColumnNames = new string[] { "Symbol", "Date", "Exchange", "InstrumentType", "Timestamp", "Close", "High", "Low", "Open", "Volume",
-            "UnadjHigh", "UnadjLow", "UnadjClose", "UnadjOpen", "SMA60High", "SMA60Low", "SMA60Close", "SMA60Volume" };
+            "UnadjHigh", "UnadjLow", "UnadjClose", "UnadjOpen", "SMA60High", "SMA60Low", "SMA60Close", "SMA60Volume", "Slope60High", "Slope60Low", "Slope60Close", "Slope60Volume"};
 
         public BulkLoadHistory(ILogger logger) : base(logger, ColumnNames)
         {
@@ -23,7 +23,8 @@ namespace Core.BulkLoad
             {
                 var sValue = value.Symbol + "^" + value.Date + "^" + value.Exchange + "^" + value.InstrumentType + "^" + value.Timestamp + "^" + value.Close + "^" + value.High 
                     + "^" + value.Low + "^" + value.Open + "^" + value.Volume + "^" + value.UnadjHigh + "^" + value.UnadjLow + "^" + value.UnadjClose + "^" + value.UnadjOpen
-                    + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close + "^" + value.SMA60Volume;
+                    + "^" + value.SMA60High + "^" + value.SMA60Low + "^" + value.SMA60Close + "^" + value.SMA60Volume 
+                    + "^" + value.Slope60High + "^" + value.Slope60Low + "^" + value.Slope60Close + "^" + value.Slope60Volume;
 
                 DataRow row = dt.NewRow();
 

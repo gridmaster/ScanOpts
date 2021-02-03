@@ -186,102 +186,71 @@ namespace DataAnalyticsService
             return slopeAndCounts;
         }
         
-        public List<DailyQuotes> FindRising60SMATrends(ref List<DailyQuotes> symbols)
+        public List<DailyQuotes> FindRising60SMATrends(ref List<DailyQuotes> dailyQuotes)
         {
             logger.Info("Start - FindRising60SMATrends");
-            List<SlopeAnd60sCounts> slopeAndCounts = null;
-
-            if (symbols == null || symbols.Count == 0)
-            {
-                logger.WarnFormat("FindRising60SMATrends: No symbols were sent.");
-                return null;
-            }
+            //List<SlopeAnd60sCounts> slopeAndCounts = null;
 
             try
             {
-                foreach (string symbol in symbols)
+                int start = 0;
+                decimal lastClose = 0;
+                decimal lastSMAHigh60 = 0;
+                decimal lastSMALow60 = 0;
+                decimal lastSMAClose60 = 0;
+                int lastSMAVolume60 = 0;
+
+                foreach (DailyQuotes quote in dailyQuotes)
                 {
-                    logger.InfoFormat("Processing symbol {0}", symbol);
-
-                    var dailyQuotes = dailyQuotesORMService.GetDailyQuotes(symbol);
-
-                    int start = 0;
-                    decimal? lastClose = 0;
-                    decimal? lastSMAHigh60 = 0;
-                    decimal? lastSMALow60 = 0;
-                    decimal? lastSMAClose60 = 0;
-                    int? lastSMAVolume60 = 0;
-                    decimal? lastSlopeHigh60 = 0;
-                    decimal? lastSlopeLow60 = 0;
-                    decimal? lastSlopeClose60 = 0;
-                    int lastSlopeVolume60 = 0;
-                    int Count60 = 0;
-
-                    slopeAndCounts = new List<SlopeAnd60sCounts>();
-
-                    foreach (DailyQuotes item in dailyQuotes)
+                    if (start == 0)
                     {
-                        if (start == 0)
-                        {
-                            lastClose = item.Close;
-                            start++;
-                            continue;
-                        }
-
-                        //var Date = FromUnixTimestamp(item.Timestamp);
-
-                        SlopeAnd60sCounts sbbr = new SlopeAnd60sCounts()
-                        {
-                            SymbolId = item.Id,
-                            Symbol = item.Symbol,
-                            Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)item.Timestamp),
-                            Exchange = item.Exchange,
-                            InstrumentType = item.InstrumentType,
-                            Timestamp = item.Timestamp,
-                            Open = item.Open,
-                            Close = item.Close,
-                            High = item.High,
-                            Low = item.Low,
-                            Volume = item.Volume,
-
-                            SMA60High = item.SMA60High,
-                            SMA60Low = item.SMA60Low,
-                            SMA60Close = item.SMA60Close,
-                            SMA60Volume = item.SMA60Volume,
-
-                            //Slope60Close = item.Close - lastClose,
-                            Slope60Close = lastSMAClose60 > 0 ? item.SMA60Close - lastSMAClose60 : 0,
-                            Slope60High = lastSMAHigh60 > 0 ? item.SMA60High - lastSMAHigh60 : 0,
-                            Slope60Low = lastSMALow60 > 0 ? item.SMA60Low - lastSMALow60 : 0,
-                            Slope60Volume = lastSMAVolume60 > 0 ? item.SMA60Volume - lastSMAVolume60 : 0,
-
-                            Ratio60High = 0,
-                            Ratio60Low = 0,
-                            Ratio60Close = 0
-                        };
-
-                        slopeAndCounts.Add(sbbr);
-
+                        lastClose = quote.Close;
                         start++;
-
-                        if (sbbr.Slope60High <= 0) Count60 = 0;
-
-                        if (start > 60)
-                        {
-                            lastSMAHigh60 = item.SMA60High;
-                            lastSMALow60 = item.SMA60Low;
-                            lastSMAClose60 = item.SMA60Close;
-                            lastSMAVolume60 = item.SMA60Volume;
-                        }
+                        continue;
                     }
 
-                    //if (sbbResults.Count > 0)
-                    //    start = start;
+                    //SymbolId = item.Id,
+                    //Symbol = item.Symbol,
+                    //Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime((double)item.Timestamp),
+                    //Exchange = item.Exchange,
+                    //InstrumentType = item.InstrumentType,
+                    //Timestamp = item.Timestamp,
+                    //Open = item.Open,
+                    //Close = item.Close,
+                    //High = item.High,
+                    //Low = item.Low,
+                    //Volume = item.Volume,
 
-                    //BulkLoadSlopeAndBBCounts(sbbResults);
-                    BulkLoadSlope60(slopeAndCounts);
-                    var mystart = start;
+                    //SMA60High = quote.SMA60High;
+                    //    SMA60Low = quote.SMA60Low;
+                    //    SMA60Close = quote.SMA60Close;
+                    //    SMA60Volume = quote.SMA60Volume;
+
+                    quote.Slope60Close = lastSMAClose60 > 0 ? quote.SMA60Close - lastSMAClose60 : 0;
+                    quote.Slope60High = lastSMAHigh60 > 0 ? quote.SMA60High - lastSMAHigh60 : 0;
+                    quote.Slope60Low = lastSMALow60 > 0 ? quote.SMA60Low - lastSMALow60 : 0;
+                    quote.Slope60Volume = lastSMAVolume60 > 0 ? quote.SMA60Volume - lastSMAVolume60 : 0;
+
+                    //quote.Ratio60High = 0;
+                    //quote.Ratio60Low = 0;
+                    //quote.Ratio60Close = 0;
+                    
+                    //slopeAndCounts.Add(sbbr);
+
+                    start++;
+
+                    if (start > 60)
+                    {
+                        lastSMAHigh60 = quote.SMA60High;
+                        lastSMALow60 = quote.SMA60Low;
+                        lastSMAClose60 = quote.SMA60Close;
+                        lastSMAVolume60 = quote.SMA60Volume;
+                    }
                 }
+
+                //BulkLoadSlope60(slopeAndCounts);
+                var mystart = start;
+
             }
             catch (Exception ex)
             {
@@ -289,7 +258,7 @@ namespace DataAnalyticsService
             }
 
             logger.Info("End - FindRising50SMATrends");
-            return slopeAndCounts;
+            return null;
         }
 
 

@@ -73,7 +73,7 @@ namespace Core
 
             //IOCContainer.Instance.Get<IHistoryService>().GetFullExchangeName(symbols);
 
-            List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60sNoUpdate(symbols);
+            ////List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60sNoUpdate(symbols);
 
             //IOCContainer.Instance.Get<IBollingerBandService>().RunDaily(false);
             //IOCContainer.Instance.Get<IBollingerBandService>().RunBollingerBandsCheck(symbols);
@@ -95,7 +95,7 @@ namespace Core
 
             //List<DailyQuotes> dailyQuotes = IOCContainer.Instance.Get<ISMA60CycleService>().GenerateSMA60s(symbols);
 
-            var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbols);
+            ////var wtf = IOCContainer.Instance.Get<IAnalyticsService>().FindRising60SMATrends(symbols);
 
             //IOCContainer.Instance.Get<IOptionService>().RunOptionsCollection(symbols);
 

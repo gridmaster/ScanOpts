@@ -37,6 +37,7 @@ namespace SymbolHistoryService
             this.bulkLoadDividends = bulkLoadDividends;
             this.bulkLoadSplits = bulkLoadSplits;
             this.sMA60CyclesService = sMA60CyclesService;
+            this.analyticsService = analyticsService;
         }
 
         #endregion Constructors
@@ -151,6 +152,7 @@ namespace SymbolHistoryService
             logger.InfoFormat("Start - RunHistoryCollection");
             var i = 0;
             int startDate = (int)Core.Business.UnixTimeConverter.ToUnixTime(DateTime.Now.AddMonths(-15));
+            int startDate5Days = (int)Core.Business.UnixTimeConverter.ToUnixTime(DateTime.Now.AddDays(-5));
             int endDate = (int)Core.Business.UnixTimeConverter.ToUnixTime(DateTime.Now);
 
             try
@@ -163,10 +165,10 @@ namespace SymbolHistoryService
 
                     // this gets the history
                     // 5 days 5 minute intervals
-                    // string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/TSLA?symbol=TSLA&period1=1611085200&period2=1611946140&useYfid=true&interval=5m&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&crumb=qUOJAwBbdUN&corsDomain=finance.yahoo.com"
+                    string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?symbol=TSLA&period1={startDate5Days}&period2={endDate}&useYfid=true&interval=5m&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&crumb=qUOJAwBbdUN&corsDomain=finance.yahoo.com";
 
                     // 15 months 1 day iintervals
-                    string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={startDate}&period2={endDate}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
+                    //string uriString = $@"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?formatted=true&crumb=8ajQnG2d93l&lang=en-US&region=US&period1={startDate}&period2={endDate}&interval=1d&events=div%7Csplit&corsDomain=finance.yahoo.com";
                     string sPage = WebPage.Get(uriString);
                     
                     if (sPage.Contains("(404) Not Found")) continue;
@@ -220,48 +222,57 @@ namespace SymbolHistoryService
 
             string instrumentType = symbolHistory.Chart.Result[0].meta.instrumentType;
             DateTime date = DateTime.Now;
+            int i = 0;
 
-            for (int i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
+            try
             {
-
-                int holdInt = 0;
-
-                DailyQuotes quote = new DailyQuotes();
-                quote.Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime(timestamps[i]);
-                quote.Symbol = symbol;
-                quote.Exchange = exchange;
-                quote.InstrumentType = instrumentType;
-                quote.Timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
-
-                quote.Open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
-                quote.Close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
-                quote.High = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
-                quote.Low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
-                quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToInteger(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
-                if (symbolHistory.Chart.Result[0].indicators.unadjquote != null)
+                for (i = 0; i < symbolHistory.Chart.Result[0].timestamp.Count; i++)
                 {
-                    quote.UnadjOpen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
-                    quote.UnadjClose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
-                    quote.UnadjHigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
-                    quote.UnadjLow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
+
+                    int holdInt = 0;
+
+                    if (symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null || ConvertStringToInteger(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString()) == 0) continue;
+
+                    DailyQuotes quote = new DailyQuotes();
+                    quote.Date = Core.Business.UnixTimeConverter.UnixTimeStampToDateTime(timestamps[i]);
+                    quote.Symbol = symbol;
+                    quote.Exchange = exchange;
+                    quote.InstrumentType = instrumentType;
+                    quote.Timestamp = int.TryParse(timestamps[i].ToString(), out holdInt) ? timestamps[i] : (int?)null;
+
+                    quote.Open = symbolHistory.Chart.Result[0].indicators.quote[0].open[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].open[i].ToString());
+                    quote.Close = symbolHistory.Chart.Result[0].indicators.quote[0].close[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].close[i].ToString());
+                    quote.High = symbolHistory.Chart.Result[0].indicators.quote[0].high[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].high[i].ToString());
+                    quote.Low = symbolHistory.Chart.Result[0].indicators.quote[0].low[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.quote[0].low[i].ToString());
+                    quote.Volume = symbolHistory.Chart.Result[0].indicators.quote[0].volume[i] == null ? 0 : ConvertStringToInteger(symbolHistory.Chart.Result[0].indicators.quote[0].volume[i].ToString());
+                    if (symbolHistory.Chart.Result[0].indicators.unadjquote != null)
+                    {
+                        quote.UnadjOpen = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjopen[i].ToString());
+                        quote.UnadjClose = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjclose[i].ToString());
+                        quote.UnadjHigh = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjhigh[i].ToString());
+                        quote.UnadjLow = symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i] == null ? 0 : ConvertStringToDecimal(symbolHistory.Chart.Result[0].indicators.unadjquote[0].unadjlow[i].ToString());
+                    }
+                    else
+                    {
+                        quote.UnadjOpen = 0;
+                        quote.UnadjClose = 0;
+                        quote.UnadjHigh = 0;
+                        quote.UnadjLow = 0;
+                    }
+
+                    quote.SMA60Close = 0;
+                    quote.SMA60High = 0;
+                    quote.SMA60Low = 0;
+                    quote.SMA60Volume = 0;
+
+                    quotesList.Add(quote);
+
                 }
-                else
-                {
-                    quote.UnadjOpen = 0;
-                    quote.UnadjClose = 0;
-                    quote.UnadjHigh = 0;
-                    quote.UnadjLow = 0;
-                }
-
-                quote.SMA60Close = 0;
-                quote.SMA60High = 0;
-                quote.SMA60Low = 0;
-                quote.SMA60Volume = 0;
-
-                quotesList.Add(quote);
-
             }
-
+            catch (Exception ex)
+            {
+                logger.Error("error in ExtractDailyQuotes: {ex}");
+            }
             return quotesList;
         }
 

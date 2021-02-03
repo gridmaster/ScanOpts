@@ -59,10 +59,10 @@ namespace SMA60CycleService
 
             List<DailyQuotes> result = new List<DailyQuotes>();
 
-            List<decimal?> SMA60High = new List<decimal?>();
-            List<decimal?> SMA60Low = new List<decimal?>();
-            List<decimal?> SMA60Close = new List<decimal?>();
-            List<long?> SMA60Volume = new List<long?>();
+            List<decimal> SMA60High = new List<decimal>();
+            List<decimal> SMA60Low = new List<decimal>();
+            List<decimal> SMA60Close = new List<decimal>();
+            List<long> SMA60Volume = new List<long>();
             int iNdx = 0;
 
             foreach (string symbol in symbols)
@@ -140,10 +140,10 @@ namespace SMA60CycleService
             List<DailyQuotes> result = new List<DailyQuotes>();
             List<DailyQuotes> fullResult = new List<DailyQuotes>();
 
-            List<decimal?> SMA60High = new List<decimal?>();
-            List<decimal?> SMA60Low = new List<decimal?>();
-            List<decimal?> SMA60Close = new List<decimal?>();
-            List<long?> SMA60Volume = new List<long?>();
+            List<decimal> SMA60High = new List<decimal>();
+            List<decimal> SMA60Low = new List<decimal>();
+            List<decimal> SMA60Close = new List<decimal>();
+            List<long> SMA60Volume = new List<long>();
             int iNdx = 0;
 
             foreach (string symbol in symbols)
@@ -250,9 +250,9 @@ namespace SMA60CycleService
                     {
                         //DailyQuotes dq = dailyQuotesORMService.GetDailyQuote(quote.Symbol, (int)quote.Timestamp);
 
-                        quote.SMA60High = SMA60High.Sum() / 60;
-                        quote.SMA60Low = SMA60Low.Sum() / 60;
-                        quote.SMA60Close = SMA60Close.Sum() / 60;
+                        quote.SMA60High = (decimal)Math.Round(((decimal)SMA60High.Sum() / 60), 2);
+                        quote.SMA60Low = (decimal)Math.Round(((decimal)SMA60Low.Sum() / 60), 2);
+                        quote.SMA60Close = (decimal)Math.Round(((decimal)SMA60Close.Sum() / 60), 2);
                         quote.SMA60Volume = (int)(SMA60Volume.Sum() / 60);
 
                         //if (quote.SMA60Close > 0)
